@@ -6,6 +6,8 @@ book at the end of a shelf when there's room. The real layout will come from a s
 """
 import json
 import random
+
+import build_atlases
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -172,6 +174,7 @@ def record(slug, pose):
         # dust-jacket scans are hardcovers; otherwise trust Open Library's format, defaulting to paperback
         "binding": "hardcover" if slug in jackets or b.get("binding_class") == "hardcover" else "paperback",
         "review": reviews.get(slug, {}),
+        "atlas": build_atlases.build(slug, str(tex), *(str(HERE / f"data/{d}/{slug}.jpg") if (HERE / f"data/{d}/{slug}.jpg").exists() else None for d in ("covers", "backs"))),
         "publisher": b.get("publisher"), "pages": b.get("pages"), "year": b.get("year") or b.get("first_publish_year"),
     }
 

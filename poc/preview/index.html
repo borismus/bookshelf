@@ -336,15 +336,16 @@ const loadImg = async (url, tries = 3) => {
   }
   console.error('image failed:', url); return null;
 };
-function buildAtlas(imgs, pages, edge, [W, H]) {
+// Prebuilt atlases (build_atlases.py) carry cover | back | spine; the page paints the page-edge band and the
+// plain band (board edges) itself, so they can differ per book without being baked into the download.
+function atlasTexture(img, pages, edge) {
+  const W = img.naturalWidth || img.width, H = img.naturalHeight || img.height;
   const c = document.createElement('canvas'); c.width = W; c.height = H;
   const g = c.getContext('2d');
-  const put = (img, [x0, y0, x1, y1]) => {
-    const r = [x0 * W, y0 * H, (x1 - x0) * W, (y1 - y0) * H];
-    if (img) g.drawImage(img, ...r); else { g.fillStyle = edge.getStyle(); g.fillRect(...r); }
-  };
-  put(imgs.cover, REG.cover); put(imgs.back, REG.back); put(imgs.spine, REG.spine);
-  put(pages, REG.pages); put(null, REG.plain);
+  g.drawImage(img, 0, 0);
+  const band = ([x0, y0, x1, y1]) => [x0 * W, y0 * H, (x1 - x0) * W, (y1 - y0) * H];
+  g.drawImage(pages, ...band(REG.pages));
+  g.fillStyle = edge.getStyle(); g.fillRect(...band(REG.plain));
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = maxAniso;
   return tex;
@@ -480,16 +481,12 @@ function hardSpineGeometry(t, h, zBack, bulge) {
   return geo;
 }
 
-async function bookImages(b) {
-  const [spine, cover, back] = await Promise.all([loadImg(b.texture), b.cover ? loadImg(b.cover) : null, b.back ? loadImg(b.back) : null]);
-  return { spine, cover, back };
-}
 async function bookMesh(b) {
-  const imgs = await bookImages(b);
-  const edge = imgs.spine ? averageEdgeColor(imgs.spine) : new THREE.Color(0x888070);
+  const edge = new THREE.Color(b.atlas.edge);
   const { h, w, t } = b.dims;
   const pages = pageCanvas(t);
-  const material = new THREE.MeshStandardMaterial({ map: buildAtlas(imgs, pages, edge, ATLAS), roughness: 0.6 });
+  const lo = await loadImg(b.atlas.lo);
+  const material = new THREE.MeshStandardMaterial({ map: lo ? atlasTexture(lo, pages, edge) : null, color: lo ? 0xffffff : edge, roughness: 0.6 });
   const g = new THREE.Group();
   let geo;
   if (b.binding === 'hardcover' && t > 2 * BOARD + 2) {
@@ -504,7 +501,7 @@ async function bookMesh(b) {
     geo = paperbackGeometry(t, h, w);
   }
   part(geo, material, 0, 0, 0, g);
-  g.userData.atlasParts = { imgs, pages, edge, material };
+  g.userData.atlasParts = { pages, edge, material, tier: 'lo' };
   if (t > 8 && rand() < 0.12) {                              // bookmark / paper slip poking out of the top
     const sw = 8 + rand() * 30, sh = 12 + rand() * 25;
     const slip = new THREE.MeshStandardMaterial({ color: SLIPS[Math.floor(rand() * SLIPS.length)], roughness: 0.8 });
@@ -523,17 +520,28 @@ async function bookMesh(b) {
   g.userData.slug = b.slug; g.userData.link = b.link;
   return g;
 }
-// The book card shows one book large: give it a high-resolution atlas while it's open, then drop it again.
-function setHiRes(m, on) {
+// Texture tiers: every book's small 'lo' atlas is loaded up front and kept; the sharp 'card' atlas loads only for
+// the book whose card is open, and is dropped when it closes. (A middle tier for zoomed-in views was measured to
+// add almost nothing visually, so it's gone.)
+async function decode(url) {
+  try { const r = await fetch(url); return await createImageBitmap(await r.blob()); }
+  catch (e) { return await loadImg(url); }
+}
+function useTex(m, tex) {
   const ap = m.userData.atlasParts;
-  if (on) {
-    ap.hi = ap.hi || buildAtlas(ap.imgs, ap.pages, ap.edge, [1024, 2048]);
-    ap.lo = ap.lo || ap.material.map;
-    ap.material.map = ap.hi;
-  } else if (ap.lo) {
-    ap.material.map = ap.lo; ap.hi?.dispose(); ap.hi = null;
-  }
-  ap.material.needsUpdate = true;
+  if (!tex || ap.material.map === tex) return;
+  ap.material.map = tex; ap.material.color.set(0xffffff); ap.material.needsUpdate = true;
+  requestRender(); if (opened && opened.m === m) renderOverlay();
+}
+async function setHiRes(m, on) {
+  const ap = m.userData.atlasParts;
+  ap.lo = ap.lo || ap.material.map;
+  if (!on) { useTex(m, ap.lo); ap.card?.dispose(); ap.card = null; ap.want = false; return; }
+  ap.want = true;
+  const img = await decode(m.userData.book.atlas.card);
+  if (!img || !ap.want) return;
+  ap.card = atlasTexture(img, ap.pages, ap.edge); img.close?.();
+  useTex(m, ap.card);
 }
 
 const meshes = await Promise.all(books.map(bookMesh));
@@ -599,30 +607,6 @@ function placeStack(items) {
 }
 
 // Spine hue for the colour joke: average of the whole spine texture.
-function spineHue(m) {
-  const img = m.children.find(c => c.material?.[4]?.map)?.material[4].map.image
-           ?? m.children.map(c => c.material).flat().find(x => x?.map && x.map.image?.width < x.map.image?.height)?.map.image;
-  if (!img) return 0;
-  // Dominant saturated colour: hue of the clearly coloured pixels (circular mean). Spines that are mostly white,
-  // cream, grey or black are neutrals and go at the end, light to dark.
-  const c = document.createElement('canvas'); c.width = 8; c.height = 64;
-  const g = c.getContext('2d'); g.drawImage(img, 0, 0, 8, 64);
-  const d = g.getImageData(0, 0, 8, 64).data;
-  let sx = 0, sy = 0, n = 0, light = 0;
-  for (let i = 0; i < d.length; i += 4) {
-    const r = d[i] / 255, gg = d[i + 1] / 255, b = d[i + 2] / 255;
-    const mx = Math.max(r, gg, b), mn = Math.min(r, gg, b), ch = mx - mn;
-    light += (mx + mn) / 2;
-    if (ch < 0.25) continue;
-    let h = mx === r ? ((gg - b) / ch) % 6 : mx === gg ? (b - r) / ch + 2 : (r - gg) / ch + 4;
-    h = (h * 60 + 360) % 360;
-    sx += Math.cos(h * Math.PI / 180); sy += Math.sin(h * Math.PI / 180); n++;
-  }
-  const total = d.length / 4;
-  if (n < total * 0.25) return 2 - light / total;      // neutrals after colours: lightest first
-  return ((Math.atan2(sy, sx) * 180 / Math.PI + 360 + 15) % 360) / 360;   // +15 so deep reds start the rainbow
-}
-
 function clearLayout() {
   for (const m of meshes) { m.removeFromParent(); m.position.set(0, 0, 0); m.rotation.set(0, 0, 0); m.userData.tilt = null; }
   for (const n of notes) n.removeFromParent();
@@ -699,7 +683,7 @@ function layoutAll(byColour) {
 function colourPlan() {
   return cases.map(c => {
     const all = c.shelves.flat().map(b => ({ ...b, pose: 'upright', section: null }));
-    all.sort((a, b) => spineHue(meshBySlug.get(a.slug)) - spineHue(meshBySlug.get(b.slug)));
+    all.sort((a, b) => (a.atlas?.hue ?? 3) - (b.atlas?.hue ?? 3));   // spine colour, precomputed at build time
     const out = []; let row = [], used = 0;
     for (const b of all) {
       if (used + b.dims.t + 2 > inner - 8) { out.push(row); row = []; used = 0; }
@@ -733,7 +717,7 @@ const DEFAULT_W = caseW + 60;
 const minW = () => caseW * (innerWidth < 640 ? 0.35 : 0.7);   // closest zoom: 70% of a shelf (35% on phones)
 let camX = params.get('unit') ? cases[Number(params.get('unit'))].x0 + inner / 2 : null;   // debug: ?unit=<index>
 let camY = params.get('y') ? Number(params.get('y')) : null;
-let viewW = params.get('zoom') === 'all' ? Infinity : DEFAULT_W;                             // debug: ?zoom=all
+let viewW = params.get('zoom') === 'all' ? Infinity : (params.get('w') ? Number(params.get('w')) : DEFAULT_W);   // debug: ?w=<mm>                             // debug: ?zoom=all
 const fullW = () => Math.max(sceneW + 240, (sceneH * 1.18 + 200) * camera.aspect);   // room for the category bar
 function frame() {
   const tanH = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
@@ -947,7 +931,7 @@ function fillCard(b) {
   if (r.source === 'smus' && r.posted) meta.push(`Reviewed ${esc(r.posted)}`);
   if (r.read) meta.push(`Read ${esc(new Date(r.read.replace(/\//g, '-')).toLocaleDateString(undefined, { month: 'short', year: 'numeric' }))}`);
   if (r.rating) meta.push(`<span title="${r.rating} of 5 on Goodreads" style="letter-spacing:1px"><span class="star">${'★'.repeat(r.rating)}</span><span style="color:#d8cfc4">${'★'.repeat(5 - r.rating)}</span></span>`);
-  const link = r.source === 'goodreads' ? 'View on Goodreads →' : 'Read the full review →';
+  const link = r.source === 'goodreads' ? 'View on Goodreads →' : `Read the full review${r.minutes ? ` · ${r.minutes} min` : ''} →`;
   const t = x => (x || '').toLowerCase().replace(/[^a-z0-9]/g, '');
   const headline = r.headline && !t(r.headline).startsWith(t(b.title)) ? r.headline : '';   // skip "Title by Author"
   const paras = (r.paras && r.paras.length ? r.paras : [r.excerpt || '']).filter(Boolean);
@@ -966,7 +950,7 @@ function fillCard(b) {
   const ps = [...box.querySelectorAll('.excerpt')];
   while (box.scrollHeight > box.clientHeight + 1 && ps.length) {
     const last = ps.at(-1), words = last.textContent.replace(/…$/, '').split(' ');
-    if (words.length < 12) { last.remove(); ps.pop(); if (ps.length) ps.at(-1).textContent = ps.at(-1).textContent.replace(/[.,;:]?$/, '…'); continue; }
+    if (words.length < 12) { last.remove(); ps.pop(); if (ps.length && !/[.!?…"”’)]$/.test(ps.at(-1).textContent.trim())) ps.at(-1).textContent = ps.at(-1).textContent.trim().replace(/[,;:—–]$/, '') + '…'; continue; }
     last.textContent = words.slice(0, Math.floor(words.length * 0.85)).join(' ').replace(/[,;:]$/, '') + '…';
   }
 }
@@ -1185,6 +1169,11 @@ if (params.get('spintest')) setTimeout(() => {
   P('pointerup', cx + 80, cy - 50);
   setTimeout(() => console.log('SPIN released, back at pose:', opened.m.quaternion.angleTo(opened.to.quat).toFixed(4)), 800);
 }, 1200);
+if (params.get('sorttest')) setTimeout(() => {
+  const t0 = performance.now(); colourBtn.onclick(); const t1 = performance.now();
+  console.log(`SORT colour on: ${(t1 - t0).toFixed(0)} ms`);
+  const t2 = performance.now(); colourBtn.onclick(); console.log(`SORT colour off: ${(performance.now() - t2).toFixed(0)} ms`);
+}, 1500);
 document.title = 'ready';
 </script>
 </body>
