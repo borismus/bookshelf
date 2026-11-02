@@ -1,0 +1,21 @@
+{
+ "_note": "box = [x0,y0,x1,y1] as fractions of the candidate image; rotate in degrees (PIL, ccw). quality: clean | angled",
+ "bird-by-bird-by-anne-lamott": {
+  "cand": 0,
+  "box": [
+   0.322,
+   0.03,
+   0.405,
+   0.88
+  ],
+  "quality": "clean",
+  "upscale_rejected": "gemini garbled the text (\"Anne Laott\", \"biry bird\"); using original crop"
+ },
+ "_rejected": {
+  "the-dispossessed-by-u-k-le-guin": "only an angled photo; perspective made it unusable",
+  "dune-by-frank-herbert": "Easton Press leather edition; my cover is the orange movie tie-in paperback",
+  "troy-by-stephen-fry": "black-jacket edition; my cover is the yellow hardcover",
+  "invisible-cities-by-italo-calvino": "1974 HBJ jacket; no cover on smus.com to confirm the edition",
+  "red-plenty-by-francis-spufford": "Faber paperback photo; my edition is the hardcover (jacket scan on smus.com has the real spine)"
+ }
+}

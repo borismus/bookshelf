@@ -1,0 +1,319 @@
+{
+ "_note": "Search hints where the smus.com title/author doesn't find the right book on Open Library. display_author fixes non-Latin author names.",
+ "definitely-maybe-by-the-strugatskys": {
+  "title": "Definitely Maybe",
+  "author": "Arkady Strugatsky",
+  "display_author": "Arkady & Boris Strugatsky"
+ },
+ "hard-to-be-a-god-by-the-strugatskys": {
+  "title": "Hard to Be a God",
+  "author": "Arkady Strugatsky",
+  "display_author": "Arkady & Boris Strugatsky"
+ },
+ "when-we-cease-to-understand-the-world-by-benjamín-labatut": {
+  "title": "When We Cease to Understand the World",
+  "author": "Benjamin Labatut"
+ },
+ "forever-flowing-by-vasily-grossman": {
+  "title": "Forever Flowing",
+  "author": "Vasily Grossman"
+ },
+ "genesis-by-translated-by-robert-alter": {
+  "title": "Genesis: Translation and Commentary",
+  "author": "Robert Alter",
+  "set": {
+   "display_title": "Genesis",
+   "display_author": "Robert Alter"
+  }
+ },
+ "fatherhood-in-pieces-by-chabon": {
+  "title": "Pops",
+  "author": "Michael Chabon"
+ },
+ "the-odyssey-translated-by-emily-wilson-audio": {
+  "title": "The Odyssey",
+  "author": "Emily Wilson",
+  "display_author": "Homer, tr. Emily Wilson",
+  "set": {
+   "display_title": "The Odyssey"
+  }
+ },
+ "three-body-problem-by-liu-cixin-audio": {
+  "title": "The Three-Body Problem",
+  "author": "Cixin Liu",
+  "display_author": "Liu Cixin",
+  "isbn": "9780765382030"
+ },
+ "absolutely-on-music-by-haruki-murakami": {
+  "title": "Absolutely on Music",
+  "author": "Haruki Murakami",
+  "display_author": "Haruki Murakami & Seiji Ozawa",
+  "set": {
+   "publisher": "Vintage",
+   "binding_class": "paperback",
+   "format": "Paperback",
+   "dims_mm": {
+    "h": 203,
+    "w": 133,
+    "t": 22.0
+   },
+   "dims_source": "override: Vintage trade paperback (matches smus.com cover)"
+  }
+ },
+ "why-teach-thinking-by-jonathan-baron": {
+  "title": "Why Teach Thinking",
+  "author": "Jonathan Baron",
+  "_note": "may be an essay, not a book"
+ },
+ "this-is-how-you-lose-the-time-war": {
+  "title": "This Is How You Lose the Time War",
+  "author": "Amal El-Mohtar",
+  "set": {
+   "display_author": "Amal El-Mohtar & Max Gladstone"
+  }
+ },
+ "the-power-of-ritual-by-casper-ter-kuile": {
+  "title": "The Power of Ritual",
+  "author": "Casper ter Kuile",
+  "set": {
+   "pages": 256,
+   "dims_mm": {
+    "h": 210,
+    "w": 140,
+    "t": 16.4
+   },
+   "dims_source": "override: 256 pages, paperback default",
+   "publisher": "HarperOne"
+  }
+ },
+ "the-toynbee-convector-by-ray-bradbury": {
+  "title": "The Toynbee Convector",
+  "author": "Ray Bradbury",
+  "set": {
+   "dims_mm": {
+    "h": 180,
+    "w": 115,
+    "t": 3.5
+   },
+   "dims_source": "override: single short story shown as a chapbook",
+   "kind": "short story",
+   "binding_class": "paperback"
+  }
+ },
+ "the-truth-of-fact-the-truth-of-feeling-by-ted-chiang": {
+  "title": "The Truth of Fact, the Truth of Feeling",
+  "author": "Ted Chiang",
+  "set": {
+   "dims_mm": {
+    "h": 180,
+    "w": 115,
+    "t": 3.5
+   },
+   "dims_source": "override: single short story shown as a chapbook",
+   "kind": "short story",
+   "binding_class": "paperback"
+  }
+ },
+ "rewiring-america": {
+  "title": "Rewiring America",
+  "author": "Saul Griffith",
+  "set": {
+   "display_author": "Saul Griffith",
+   "dims_mm": {
+    "h": 216,
+    "w": 140,
+    "t": 14.0
+   },
+   "dims_source": "override: estimate",
+   "binding_class": "paperback"
+  }
+ },
+ "homo-deus-by-yuval-noah-harari": {
+  "title": "Homo Deus",
+  "author": "Yuval Noah Harari",
+  "isbn": "9780062464316"
+ },
+ "the-goal-a-business-graphic-novel": {
+  "title": "The Goal: A Business Graphic Novel",
+  "author": "Eliyahu Goldratt",
+  "set": {
+   "display_author": "Eliyahu M. Goldratt",
+   "dims_mm": {
+    "h": 260,
+    "w": 180,
+    "t": 11.0
+   },
+   "dims_source": "override: estimate (graphic novel)",
+   "binding_class": "paperback"
+  }
+ },
+ "selected-short-stories-of-philip-k-dick": {
+  "title": "Selected Stories of Philip K. Dick",
+  "author": "Philip K. Dick",
+  "set": {
+   "display_author": "Philip K. Dick",
+   "dims_mm": {
+    "h": 235,
+    "w": 155,
+    "t": 30.0
+   },
+   "dims_source": "override: estimate (456 pages)",
+   "binding_class": "paperback"
+  }
+ },
+ "my-russian-grandmother-by-meir-shalev": {
+  "title": "",
+  "author": "",
+  "set": {
+   "display_title": "My Russian Grandmother and Her American Vacuum Cleaner",
+   "display_author": "Meir Shalev"
+  }
+ },
+ "the-lessons-of-history-by-will-and-ariel-durant": {
+  "title": "",
+  "author": "",
+  "set": {
+   "display_author": "Will & Ariel Durant"
+  }
+ },
+ "quicksilver-by-neal-stephenson": {
+  "title": "",
+  "author": "",
+  "set": {
+   "publisher": "William Morrow"
+  }
+ },
+ "gr-2br02b": {
+  "title": "2 B R 0 2 B",
+  "author": "Kurt Vonnegut",
+  "set": {
+   "display_author": "Kurt Vonnegut",
+   "dims_mm": {
+    "h": 180,
+    "w": 115,
+    "t": 3.0
+   },
+   "dims_source": "override: single short story shown as a chapbook",
+   "binding_class": "paperback"
+  }
+ },
+ "gr-1984": {
+  "title": "1984",
+  "author": "George Orwell",
+  "set": {
+   "ol_title": "1984",
+   "ol_author": "George Orwell",
+   "display_author": "George Orwell",
+   "publisher": "Signet Classics",
+   "dims_mm": {
+    "h": 175,
+    "w": 105,
+    "t": 20.0
+   },
+   "dims_source": "override: Signet mass market",
+   "binding_class": "mass"
+  }
+ },
+ "gr-one-flew-over-the-cuckoo-s-nest": {
+  "title": "One Flew Over the Cuckoo's Nest",
+  "author": "Ken Kesey",
+  "isbn": "9780451163967"
+ },
+ "john-napier-hands": {
+  "title": "Hands",
+  "author": "John Napier",
+  "set": {
+   "display_title": "Hands",
+   "display_author": "John Napier"
+  }
+ },
+ "vernor-vinge-rainbows-end": {
+  "title": "Rainbows End",
+  "author": "Vernor Vinge",
+  "set": {
+   "display_title": "Rainbows End",
+   "display_author": "Vernor Vinge"
+  }
+ },
+ "gr-javascript-the-definitive-guide": {
+  "title": "JavaScript: The Definitive Guide",
+  "author": "David Flanagan",
+  "set": {
+   "isbn13": "9780596805524",
+   "publisher": "O'Reilly",
+   "ol_author": "David Flanagan"
+  }
+ },
+ "gr-harry-potter-and-the-deathly-hallows": {
+  "title": "Harry Potter and the Deathly Hallows",
+  "author": "J. K. Rowling",
+  "set": {
+   "dims_mm": {
+    "h": 240,
+    "w": 158,
+    "t": 52.0
+   },
+   "dims_source": "override: Bloomsbury adult hardcover (matches cover)",
+   "binding_class": "hardcover",
+   "publisher": "Bloomsbury"
+  }
+ },
+ "gr-the-lord-of-the-rings": {
+  "title": "",
+  "author": "",
+  "set": {
+   "dims_mm": {
+    "h": 229,
+    "w": 152,
+    "t": 58.0
+   },
+   "dims_source": "override: one-volume 50th anniversary paperback"
+  }
+ },
+ "gr-cryptonomicon": {
+  "title": "",
+  "author": "",
+  "set": {
+   "dims_mm": {
+    "h": 175,
+    "w": 106,
+    "t": 55.0
+   },
+   "dims_source": "override: Avon mass market, 1152 pages"
+  }
+ },
+ "gr-the-hitch-hiker-s-guide-to-the-galaxy-a-trilogy-in-five-part": {
+  "title": "",
+  "author": "",
+  "set": {
+   "dims_mm": {
+    "h": 222,
+    "w": 145,
+    "t": 52.0
+   },
+   "dims_source": "override: Heinemann omnibus hardcover",
+   "display_title": "The Hitchhiker's Guide to the Galaxy: A Trilogy in Five Parts",
+   "display_author": "Douglas Adams"
+  }
+ },
+ "gr-a-summer-of-faulkner-as-i-lay-dying-the-sound-and-the-fury-l": {
+  "title": "",
+  "author": "",
+  "set": {
+   "dims_mm": {
+    "h": 203,
+    "w": 133,
+    "t": 50.0
+   },
+   "dims_source": "override: Vintage boxed-set omnibus"
+  }
+ },
+ "gr-the-hebrew-bible-a-translation-with-commentary": {
+  "title": "",
+  "author": "",
+  "set": {
+   "display_title": "The Hebrew Bible",
+   "display_author": "Robert Alter"
+  }
+ }
+}

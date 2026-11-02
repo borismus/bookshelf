@@ -1,0 +1,18 @@
+# secrets
+.env
+
+# raw Goodreads export (includes private notes) — scripts read it from ../goodreads/
+goodreads/
+
+# scraped third-party candidate photos and raw image-model generations (large, regenerable)
+poc/data/spines/
+poc/data/ai/
+poc/data/backs_ai_test/
+poc/data/textures_sheet.jpg
+poc/preview/screenshot.png
+
+# logs and temp
+*.log
+*.tmp
+__pycache__/
+.DS_Store

@@ -1,0 +1,37 @@
+{
+ "skipped": [
+  "The Encyclopedia of Picture Chords for All Guitarists",
+  "The Other 1492: Ferdinand, Isabella, and the Making of an Empire",
+  "The Bible and Western Culture",
+  "Peoples and Cultures of the World",
+  "Best of Metallica Songbook for Piano/Vocal/Guitar | Classic Rock Sheet Music Book for Fans Students and Teachers | 12 Greatest Hits Arranged with Lyrics Chords and Melodies for Intermediate Musicians",
+  "Great Battles of the Ancient World",
+  "The History of Ancient Rome",
+  "Piano/Vocal/Guitar Sheet Music: The Chronicles of Narnia: The Lion, the Witch and The Wardrobe",
+  "The Death and Life of Great American Cities (duplicate)",
+  "Hal Leonard Guitar Method Complete Edition",
+  "Diesel Women's Casual Sandal"
+ ],
+ "isbn_for_smus": {
+  "the-goal-a-business-graphic-novel": {
+   "isbn13": "9780884272076",
+   "gr_id": "35528537",
+   "author": "Eliyahu M. Goldratt"
+  },
+  "selected-short-stories-of-philip-k-dick": {
+   "isbn13": "9780544040540",
+   "gr_id": "15815600",
+   "author": "Philip K. Dick"
+  },
+  "john-napier-hands": {
+   "isbn13": "9780691025476",
+   "gr_id": "1082840",
+   "author": "John Russell Napier"
+  },
+  "vernor-vinge-rainbows-end": {
+   "isbn13": "9780812536362",
+   "gr_id": "102439",
+   "author": "Vernor Vinge"
+  }
+ }
+}

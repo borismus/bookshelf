@@ -1,0 +1,45 @@
+{
+ "_note": "smus.com 'covers' that are full dust-jacket scans: x-ranges (fractions of width) of back | spine | front",
+ "red-plenty-by-francis-spufford": {
+  "back": [
+   0.0,
+   0.445
+  ],
+  "spine": [
+   0.445,
+   0.55
+  ],
+  "front": [
+   0.55,
+   1.0
+  ]
+ },
+ "the-dispossessed-by-u-k-le-guin": {
+  "back": [
+   0.0,
+   0.405
+  ],
+  "spine": [
+   0.405,
+   0.53
+  ],
+  "front": [
+   0.53,
+   1.0
+  ]
+ },
+ "secret-of-our-success-by-joseph-henrich": {
+  "back": [
+   0.0,
+   0.45
+  ],
+  "spine": [
+   0.45,
+   0.55
+  ],
+  "front": [
+   0.55,
+   1.0
+  ]
+ }
+}
