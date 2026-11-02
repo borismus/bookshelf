@@ -10,7 +10,7 @@
       "link": "https://www.goodreads.com/book/show/11",
       "title": "The Hitchhiker's Guide to the Galaxy",
       "author": "Douglas Adams",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 260,
        "w": 163,
@@ -31,7 +31,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-hitchhiker-s-guide-to-the-galaxy.webp",
        "card": "atlas/card/gr-the-hitchhiker-s-guide-to-the-galaxy.webp",
-       "edge": "#175c7a",
+       "edge": "#175c7b",
        "hue": 0.5915
       },
       "publisher": "Del Rey Books",
@@ -46,7 +46,7 @@
       "title": "The Hitchhiker's Guide to the Galaxy",
       "subtitle": "A Trilogy in Five Parts",
       "author": "Douglas Adams",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 222,
        "w": 156,
@@ -102,7 +102,7 @@
        "lo": "atlas/lo/gr-the-salmon-of-doubt-hitchhiking-the-galaxy-one-last-time.webp",
        "card": "atlas/card/gr-the-salmon-of-doubt-hitchhiking-the-galaxy-one-last-time.webp",
        "edge": "#132e49",
-       "hue": 0.6154
+       "hue": 0.615
       },
       "publisher": "Macmillan",
       "pages": 299,
@@ -141,7 +141,7 @@
        "lo": "atlas/lo/unsong-by-scott-alexander.webp",
        "card": "atlas/card/unsong-by-scott-alexander.webp",
        "edge": "#8b7f75",
-       "hue": 1.5114
+       "hue": 1.5113
       },
       "publisher": "Self published",
       "pages": null,
@@ -152,7 +152,7 @@
       "link": "https://www.goodreads.com/book/show/29579",
       "title": "Foundation",
       "author": "Isaac Asimov",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 220,
        "w": 146,
@@ -174,7 +174,7 @@
        "lo": "atlas/lo/gr-foundation.webp",
        "card": "atlas/card/gr-foundation.webp",
        "edge": "#ba7058",
-       "hue": 0.0632
+       "hue": 0.0633
       },
       "publisher": "Bantam",
       "pages": 244,
@@ -207,7 +207,7 @@
        "lo": "atlas/lo/gr-i-robot.webp",
        "card": "atlas/card/gr-i-robot.webp",
        "edge": "#656384",
-       "hue": 0.6656
+       "hue": 0.6664
       },
       "publisher": "Bantam Books",
       "pages": 224,
@@ -408,7 +408,7 @@
       "link": "https://www.goodreads.com/book/show/4381",
       "title": "Fahrenheit 451",
       "author": "Ray Bradbury",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 185,
        "w": 124,
@@ -430,7 +430,7 @@
        "lo": "atlas/lo/gr-fahrenheit-451.webp",
        "card": "atlas/card/gr-fahrenheit-451.webp",
        "edge": "#53312e",
-       "hue": 0.0492
+       "hue": 0.0493
       },
       "publisher": "DeBolsillo",
       "pages": 158,
@@ -441,7 +441,7 @@
       "link": "https://www.goodreads.com/book/show/76778",
       "title": "The Martian Chronicles",
       "author": "Ray Bradbury",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 170,
        "w": 99,
@@ -463,7 +463,7 @@
        "lo": "atlas/lo/gr-the-martian-chronicles.webp",
        "card": "atlas/card/gr-the-martian-chronicles.webp",
        "edge": "#66645c",
-       "hue": 0.0961
+       "hue": 0.0963
       },
       "publisher": "Bantam/Spectra",
       "pages": 182,
@@ -512,7 +512,7 @@
       "link": "https://www.goodreads.com/book/show/227463",
       "title": "A Clockwork Orange",
       "author": "Anthony Burgess",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 140,
@@ -545,7 +545,7 @@
       "link": "https://www.goodreads.com/book/show/375802",
       "title": "Ender’s Game",
       "author": "Orson Scott Card",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 170,
        "w": 102,
@@ -600,7 +600,7 @@
        "lo": "atlas/lo/gr-speaker-for-the-dead.webp",
        "card": "atlas/card/gr-speaker-for-the-dead.webp",
        "edge": "#403760",
-       "hue": 1.6683
+       "hue": 1.6682
       },
       "publisher": "Tor Books",
       "pages": 382,
@@ -647,7 +647,7 @@
       "link": "https://www.goodreads.com/book/show/52222275",
       "title": "Exhalation",
       "author": "Ted Chiang",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 220,
        "w": 152,
@@ -707,7 +707,7 @@
        "lo": "atlas/lo/stories-of-your-life-and-others.webp",
        "card": "atlas/card/stories-of-your-life-and-others.webp",
        "edge": "#121c1b",
-       "hue": 0.6004
+       "hue": 0.6003
       },
       "publisher": "Small Beer Press",
       "pages": 281,
@@ -751,7 +751,7 @@
       "link": "https://www.goodreads.com/book/show/414999",
       "title": "Childhood’s End",
       "author": "Arthur C. Clarke",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 173,
        "w": 104,
@@ -773,7 +773,7 @@
        "lo": "atlas/lo/gr-childhood-s-end.webp",
        "card": "atlas/card/gr-childhood-s-end.webp",
        "edge": "#386d9d",
-       "hue": 0.6196
+       "hue": 0.6197
       },
       "publisher": "Del Rey Books",
       "pages": 224,
@@ -863,7 +863,7 @@
       "link": "https://www.goodreads.com/book/show/7082",
       "title": "Do Androids Dream of Electric Sheep?",
       "author": "Philip K. Dick",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 201,
        "w": 130,
@@ -924,7 +924,7 @@
       "atlas": {
        "lo": "atlas/lo/selected-short-stories-of-philip-k-dick.webp",
        "card": "atlas/card/selected-short-stories-of-philip-k-dick.webp",
-       "edge": "#56819b",
+       "edge": "#56829b",
        "hue": 0.6028
       },
       "publisher": null,
@@ -963,7 +963,7 @@
        "lo": "atlas/lo/valis-by-phillip-k-dick.webp",
        "card": "atlas/card/valis-by-phillip-k-dick.webp",
        "edge": "#915147",
-       "hue": 0.0685
+       "hue": 0.0686
       },
       "publisher": "Houghton Mifflin Harcourt Publishing Company",
       "pages": 240,
@@ -1081,7 +1081,7 @@
        "lo": "atlas/lo/smoke-and-mirrors-by-neil-gaiman.webp",
        "card": "atlas/card/smoke-and-mirrors-by-neil-gaiman.webp",
        "edge": "#1f1b1d",
-       "hue": 1.8279
+       "hue": 1.8278
       },
       "publisher": "Avon Books",
       "pages": 365,
@@ -1115,7 +1115,7 @@
        "lo": "atlas/lo/gr-neuromancer.webp",
        "card": "atlas/card/gr-neuromancer.webp",
        "edge": "#0a4d2a",
-       "hue": 0.4341
+       "hue": 0.434
       },
       "publisher": "Ace Books",
       "pages": 271,
@@ -1152,8 +1152,8 @@
       "atlas": {
        "lo": "atlas/lo/the-dispossessed-by-u-k-le-guin.webp",
        "card": "atlas/card/the-dispossessed-by-u-k-le-guin.webp",
-       "edge": "#a4905f",
-       "hue": 0.1623
+       "edge": "#a3905f",
+       "hue": 0.1624
       },
       "publisher": "Harper & Row",
       "pages": 387,
@@ -1206,7 +1206,7 @@
       "link": "https://www.goodreads.com/book/show/16690",
       "title": "The Moon Is a Harsh Mistress",
       "author": "Robert A. Heinlein",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 173,
        "w": 109,
@@ -1383,7 +1383,7 @@
       "link": "https://www.goodreads.com/book/show/18373",
       "title": "Flowers for Algernon",
       "author": "Daniel Keyes",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 180,
        "w": 113,
@@ -1405,7 +1405,7 @@
        "lo": "atlas/lo/gr-flowers-for-algernon.webp",
        "card": "atlas/card/gr-flowers-for-algernon.webp",
        "edge": "#dbceb9",
-       "hue": 1.217
+       "hue": 1.2169
       },
       "publisher": "Harvest Books",
       "pages": 311,
@@ -1454,7 +1454,7 @@
       "link": "https://www.goodreads.com/book/show/95558",
       "title": "Solaris",
       "author": "Stanisław Lem",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 190,
        "w": 117,
@@ -1476,7 +1476,7 @@
        "lo": "atlas/lo/gr-solaris.webp",
        "card": "atlas/card/gr-solaris.webp",
        "edge": "#233339",
-       "hue": 1.7255
+       "hue": 1.7256
       },
       "publisher": "Harcourt",
       "pages": 204,
@@ -1590,7 +1590,7 @@
        "lo": "atlas/lo/three-body-problem-by-liu-cixin-audio.webp",
        "card": "atlas/card/three-body-problem-by-liu-cixin-audio.webp",
        "edge": "#163b63",
-       "hue": 0.6213
+       "hue": 0.6212
       },
       "publisher": "A Tor Book / Tom Doherty Associates",
       "pages": 416,
@@ -1601,7 +1601,7 @@
       "link": "https://www.goodreads.com/book/show/10572",
       "title": "A Clash of Kings",
       "author": "George R. R. Martin",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 250,
        "w": 163,
@@ -1634,7 +1634,7 @@
       "link": "https://www.goodreads.com/book/show/13496",
       "title": "A Game of Thrones",
       "author": "George R. R. Martin",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 240,
        "w": 155,
@@ -1656,7 +1656,7 @@
        "lo": "atlas/lo/gr-a-game-of-thrones.webp",
        "card": "atlas/card/gr-a-game-of-thrones.webp",
        "edge": "#5a4a4e",
-       "hue": 1.7778
+       "hue": 1.7779
       },
       "publisher": "Bantam",
       "pages": 835,
@@ -1707,7 +1707,7 @@
       "link": "https://www.goodreads.com/book/show/472331",
       "title": "Watchmen",
       "author": "Alan Moore",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 257,
        "w": 168,
@@ -1781,7 +1781,7 @@
       "link": "https://www.goodreads.com/book/show/455033",
       "title": "1984",
       "author": "George Orwell",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 175,
        "w": 105,
@@ -1999,7 +1999,7 @@
        "lo": "atlas/lo/old-mans-war-by-john-scalzi.webp",
        "card": "atlas/card/old-mans-war-by-john-scalzi.webp",
        "edge": "#397599",
-       "hue": 0.61
+       "hue": 0.6101
       },
       "publisher": "Tor Books",
       "pages": 318,
@@ -2071,7 +2071,7 @@
        "lo": "atlas/lo/gr-cryptonomicon.webp",
        "card": "atlas/card/gr-cryptonomicon.webp",
        "edge": "#585f68",
-       "hue": 1.79
+       "hue": 1.7901
       },
       "publisher": "Avon",
       "pages": 1152,
@@ -2111,7 +2111,7 @@
        "lo": "atlas/lo/diamond-age-by-stephenson-audio.webp",
        "card": "atlas/card/diamond-age-by-stephenson-audio.webp",
        "edge": "#acaca7",
-       "hue": 1.3557
+       "hue": 1.3558
       },
       "publisher": "Spectra",
       "pages": 512,
@@ -2160,7 +2160,7 @@
       "link": "https://www.goodreads.com/book/show/830",
       "title": "Snow Crash",
       "author": "Neal Stephenson",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 206,
        "w": 132,
@@ -2259,7 +2259,7 @@
        "lo": "atlas/lo/hard-to-be-a-god-by-the-strugatskys.webp",
        "card": "atlas/card/hard-to-be-a-god-by-the-strugatskys.webp",
        "edge": "#2b4434",
-       "hue": 1.7512
+       "hue": 1.7511
       },
       "publisher": "Eyre Methuen",
       "pages": 219,
@@ -2297,7 +2297,7 @@
        "lo": "atlas/lo/children-of-time-by-adrian-tchaikovsky.webp",
        "card": "atlas/card/children-of-time-by-adrian-tchaikovsky.webp",
        "edge": "#28342c",
-       "hue": 1.7814
+       "hue": 1.7815
       },
       "publisher": "Pan Macmillan",
       "pages": 624,
@@ -2310,7 +2310,7 @@
       "link": "https://www.goodreads.com/book/show/34",
       "title": "The Fellowship of the Ring",
       "author": "J.R.R. Tolkien",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 140,
@@ -2332,7 +2332,7 @@
        "lo": "atlas/lo/gr-the-fellowship-of-the-ring.webp",
        "card": "atlas/card/gr-the-fellowship-of-the-ring.webp",
        "edge": "#271e1b",
-       "hue": 1.8112
+       "hue": 1.8113
       },
       "publisher": "Houghton Mifflin Harcourt",
       "pages": 398,
@@ -2365,7 +2365,7 @@
        "lo": "atlas/lo/gr-the-hobbit-or-there-and-back-again.webp",
        "card": "atlas/card/gr-the-hobbit-or-there-and-back-again.webp",
        "edge": "#635734",
-       "hue": 1.5573
+       "hue": 1.5574
       },
       "publisher": "Houghton Mifflin",
       "pages": 366,
@@ -2376,7 +2376,7 @@
       "link": "https://www.goodreads.com/book/show/33",
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 229,
        "w": 152,
@@ -2488,7 +2488,7 @@
       "link": "https://www.goodreads.com/book/show/5048174",
       "title": "2BR02B",
       "author": "Kurt Vonnegut",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 180,
        "w": 115,
@@ -2509,7 +2509,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-2br02b.webp",
        "card": "atlas/card/gr-2br02b.webp",
-       "edge": "#a97c4b",
+       "edge": "#a97c4a",
        "hue": 0.1376
       },
       "publisher": "Dunda Books",
@@ -2548,7 +2548,7 @@
        "lo": "atlas/lo/blindsight-by-peter-watts.webp",
        "card": "atlas/card/blindsight-by-peter-watts.webp",
        "edge": "#9a988f",
-       "hue": 1.4826
+       "hue": 1.4825
       },
       "publisher": "Tor Books",
       "pages": 384,
@@ -2584,7 +2584,7 @@
        "lo": "atlas/lo/shadow-of-the-torturer.webp",
        "card": "atlas/card/shadow-of-the-torturer.webp",
        "edge": "#464632",
-       "hue": 0.13
+       "hue": 0.1301
       },
       "publisher": "Pocket Books",
       "pages": 262,
@@ -2630,7 +2630,7 @@
       "link": "https://www.goodreads.com/book/show/13821",
       "title": "Lord of Light",
       "author": "Roger Zelazny",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 135,
@@ -2651,7 +2651,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-lord-of-light.webp",
        "card": "atlas/card/gr-lord-of-light.webp",
-       "edge": "#3d4f3f",
+       "edge": "#3d4f3e",
        "hue": 1.6891
       },
       "publisher": "Harper Voyager",
@@ -2666,7 +2666,7 @@
       "link": "https://www.goodreads.com/book/show/37781",
       "title": "Things Fall Apart",
       "author": "Chinua Achebe",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 130,
@@ -2688,7 +2688,7 @@
        "lo": "atlas/lo/gr-things-fall-apart.webp",
        "card": "atlas/card/gr-things-fall-apart.webp",
        "edge": "#dbc8a8",
-       "hue": 1.282
+       "hue": 1.2819
       },
       "publisher": "Anchor Books",
       "pages": 215,
@@ -2701,7 +2701,7 @@
       "link": "https://www.goodreads.com/book/show/17716",
       "title": "Waiting for Godot",
       "author": "Samuel Beckett",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 208,
        "w": 112,
@@ -2734,7 +2734,7 @@
       "link": "https://www.goodreads.com/book/show/117833",
       "title": "The Master and Margarita",
       "author": "Mikhail Bulgakov",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 130,
@@ -2756,7 +2756,7 @@
        "lo": "atlas/lo/gr-the-master-and-margarita.webp",
        "card": "atlas/card/gr-the-master-and-margarita.webp",
        "edge": "#5c2b2c",
-       "hue": 0.0371
+       "hue": 0.037
       },
       "publisher": "Vintage International",
       "pages": 372,
@@ -2840,7 +2840,7 @@
       "link": "https://www.goodreads.com/book/show/49552",
       "title": "The Stranger",
       "author": "Albert Camus",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 220,
        "w": 129,
@@ -2895,7 +2895,7 @@
        "lo": "atlas/lo/gr-the-yiddish-policemen-s-union.webp",
        "card": "atlas/card/gr-the-yiddish-policemen-s-union.webp",
        "edge": "#407682",
-       "hue": 0.5726
+       "hue": 0.5725
       },
       "publisher": "Harper Perennial",
       "pages": 418,
@@ -2934,7 +2934,7 @@
        "lo": "atlas/lo/monkey-by-arthur-waley.webp",
        "card": "atlas/card/monkey-by-arthur-waley.webp",
        "edge": "#dac199",
-       "hue": 0.1234
+       "hue": 0.1229
       },
       "publisher": "Penguin Books, Limited",
       "pages": null,
@@ -2945,7 +2945,7 @@
       "link": "https://www.goodreads.com/book/show/774368",
       "title": "Tales from the Thousand and One Nights",
       "author": "N. J. Dawood",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 200,
        "w": 129,
@@ -3014,7 +3014,7 @@
       "link": "https://www.goodreads.com/book/show/7144",
       "title": "Crime and Punishment",
       "author": "Fyodor Dostoevsky",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 204,
        "w": 122,
@@ -3035,7 +3035,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-crime-and-punishment.webp",
        "card": "atlas/card/gr-crime-and-punishment.webp",
-       "edge": "#c7a783",
+       "edge": "#c7a883",
        "hue": 0.1244
       },
       "publisher": "Penguin",
@@ -3068,8 +3068,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-paddy-clarke-ha-ha-ha.webp",
        "card": "atlas/card/gr-paddy-clarke-ha-ha-ha.webp",
-       "edge": "#bebdb3",
-       "hue": 1.2564
+       "edge": "#bebdb4",
+       "hue": 1.2565
       },
       "publisher": "Vintage Books",
       "pages": 282,
@@ -3102,7 +3102,7 @@
        "lo": "atlas/lo/gr-the-memory-keeper-s-daughter.webp",
        "card": "atlas/card/gr-the-memory-keeper-s-daughter.webp",
        "edge": "#1f242a",
-       "hue": 1.8374
+       "hue": 1.8375
       },
       "publisher": "Penguin Books",
       "pages": 401,
@@ -3226,7 +3226,7 @@
       "link": "https://www.goodreads.com/book/show/5043",
       "title": "The Pillars of the Earth",
       "author": "Ken Follett",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 230,
        "w": 154,
@@ -3358,7 +3358,7 @@
        "lo": "atlas/lo/gr-lord-of-the-flies.webp",
        "card": "atlas/card/gr-lord-of-the-flies.webp",
        "edge": "#457775",
-       "hue": 0.5348
+       "hue": 0.5349
       },
       "publisher": "Penguin Books ",
       "pages": 182,
@@ -3408,7 +3408,7 @@
       "link": "https://www.goodreads.com/book/show/1618",
       "title": "The Curious Incident of the Dog in the Night-Time",
       "author": "Mark Haddon",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 130,
@@ -3430,7 +3430,7 @@
        "lo": "atlas/lo/gr-the-curious-incident-of-the-dog-in-the-night-time.webp",
        "card": "atlas/card/gr-the-curious-incident-of-the-dog-in-the-night-time.webp",
        "edge": "#d54826",
-       "hue": 0.0755
+       "hue": 0.0756
       },
       "publisher": "Vintage",
       "pages": 226,
@@ -3441,7 +3441,7 @@
       "link": "https://www.goodreads.com/book/show/168668",
       "title": "Catch-22",
       "author": "Joseph Heller",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 138,
@@ -3501,7 +3501,7 @@
       "atlas": {
        "lo": "atlas/lo/the-odyssey-translated-by-emily-wilson-audio.webp",
        "card": "atlas/card/the-odyssey-translated-by-emily-wilson-audio.webp",
-       "edge": "#c7c5bd",
+       "edge": "#c7c5bc",
        "hue": 1.1704
       },
       "publisher": "Norton",
@@ -3553,7 +3553,7 @@
       "link": "https://www.goodreads.com/book/show/28921",
       "title": "The Remains of the Day",
       "author": "Kazuo Ishiguro",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 196,
        "w": 131,
@@ -3626,7 +3626,7 @@
       "link": "https://www.goodreads.com/book/show/485894",
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 173,
        "w": 115,
@@ -3659,7 +3659,7 @@
       "link": "https://www.goodreads.com/book/show/7724",
       "title": "The Metamorphosis and Other Stories",
       "author": "Franz Kafka",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 203,
        "w": 130,
@@ -3681,7 +3681,7 @@
        "lo": "atlas/lo/gr-the-metamorphosis-and-other-stories.webp",
        "card": "atlas/card/gr-the-metamorphosis-and-other-stories.webp",
        "edge": "#4e7638",
-       "hue": 0.314
+       "hue": 0.3139
       },
       "publisher": "Dover Publications",
       "pages": 88,
@@ -3693,7 +3693,7 @@
       "link": "https://www.goodreads.com/book/show/332613",
       "title": "One Flew Over the Cuckoo’s Nest",
       "author": "Ken Kesey",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 175,
        "w": 99,
@@ -3715,7 +3715,7 @@
        "lo": "atlas/lo/gr-one-flew-over-the-cuckoo-s-nest.webp",
        "card": "atlas/card/gr-one-flew-over-the-cuckoo-s-nest.webp",
        "edge": "#1e5d8c",
-       "hue": 0.6112
+       "hue": 0.6113
       },
       "publisher": "Signet",
       "pages": 272,
@@ -3767,7 +3767,7 @@
       "link": "https://www.goodreads.com/book/show/96573",
       "title": "The Unbearable Lightness of Being",
       "author": "Milan Kundera",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 203,
        "w": 130,
@@ -3788,7 +3788,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-unbearable-lightness-of-being.webp",
        "card": "atlas/card/gr-the-unbearable-lightness-of-being.webp",
-       "edge": "#74634b",
+       "edge": "#75634b",
        "hue": 1.5735
       },
       "publisher": "Harpercollins",
@@ -3876,7 +3876,7 @@
       "link": "https://www.goodreads.com/book/show/37449",
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 170,
        "w": 94,
@@ -3898,7 +3898,7 @@
        "lo": "atlas/lo/gr-to-kill-a-mockingbird.webp",
        "card": "atlas/card/gr-to-kill-a-mockingbird.webp",
        "edge": "#6e567b",
-       "hue": 1.6278
+       "hue": 1.6277
       },
       "publisher": "Warner Books",
       "pages": 376,
@@ -3909,7 +3909,7 @@
       "link": "https://www.goodreads.com/book/show/604635",
       "title": "Naïve. Super",
       "author": "Erlend Loe",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 175,
        "w": 109,
@@ -3964,7 +3964,7 @@
        "lo": "atlas/lo/gr-no-one-writes-to-the-colonel-and-other-stories.webp",
        "card": "atlas/card/gr-no-one-writes-to-the-colonel-and-other-stories.webp",
        "edge": "#5c3b2f",
-       "hue": 0.0627
+       "hue": 0.0626
       },
       "publisher": "Harper Perennial",
       "pages": 170,
@@ -3975,7 +3975,7 @@
       "link": "https://www.goodreads.com/book/show/320",
       "title": "One Hundred Years of Solitude",
       "author": "Gabriel García Márquez",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 138,
@@ -4071,7 +4071,7 @@
        "lo": "atlas/lo/gr-blind-willow-sleeping-woman.webp",
        "card": "atlas/card/gr-blind-willow-sleeping-woman.webp",
        "edge": "#806956",
-       "hue": 0.1468
+       "hue": 0.1467
       },
       "publisher": "Knopf",
       "pages": 334,
@@ -4082,7 +4082,7 @@
       "link": "https://www.goodreads.com/book/show/334598",
       "title": "Dance Dance Dance",
       "author": "Haruki Murakami",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 131,
@@ -4104,7 +4104,7 @@
        "lo": "atlas/lo/gr-dance-dance-dance.webp",
        "card": "atlas/card/gr-dance-dance-dance.webp",
        "edge": "#52473d",
-       "hue": 1.7745
+       "hue": 1.7746
       },
       "publisher": "Vintage",
       "pages": 393,
@@ -4115,7 +4115,7 @@
       "link": "https://www.goodreads.com/book/show/106484",
       "title": "Hard-Boiled Wonderland and the End of the World",
       "author": "Haruki Murakami",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 203,
        "w": 133,
@@ -4148,7 +4148,7 @@
       "link": "https://www.goodreads.com/book/show/4929",
       "title": "Kafka on the Shore",
       "author": "Haruki Murakami",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 231,
        "w": 160,
@@ -4181,7 +4181,7 @@
       "link": "https://www.goodreads.com/book/show/818108",
       "title": "Norwegian Wood",
       "author": "Haruki Murakami",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 200,
        "w": 142,
@@ -4214,7 +4214,7 @@
       "link": "https://www.goodreads.com/book/show/7604",
       "title": "Lolita",
       "author": "Vladimir Nabokov",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 175,
        "w": 100,
@@ -4247,7 +4247,7 @@
       "link": "https://www.goodreads.com/book/show/7613",
       "title": "Animal Farm",
       "author": "George Orwell",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 205,
        "w": 114,
@@ -4307,7 +4307,7 @@
        "lo": "atlas/lo/anthem-by-ayn-rand.webp",
        "card": "atlas/card/anthem-by-ayn-rand.webp",
        "edge": "#d2c8de",
-       "hue": 1.2656
+       "hue": 1.2655
       },
       "publisher": "General Press",
       "pages": 80,
@@ -4318,7 +4318,7 @@
       "link": "https://www.goodreads.com/book/show/7178",
       "title": "The Catcher in the Rye",
       "author": "J. D. Salinger",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 180,
        "w": 115,
@@ -4351,7 +4351,7 @@
       "link": "https://www.goodreads.com/book/show/2526",
       "title": "Blindness",
       "author": "José Saramago",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 240,
        "w": 160,
@@ -4477,7 +4477,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-portuguese-irregular-verbs.webp",
        "card": "atlas/card/gr-portuguese-irregular-verbs.webp",
-       "edge": "#eadcb5",
+       "edge": "#e9dcb5",
        "hue": 1.2449
       },
       "publisher": "Random House Large Print Publi",
@@ -4528,7 +4528,7 @@
       "link": "https://www.goodreads.com/book/show/4799",
       "title": "Cannery Row",
       "author": "John Steinbeck",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 220,
        "w": 143,
@@ -4561,7 +4561,7 @@
       "link": "https://www.goodreads.com/book/show/4406",
       "title": "East of Eden",
       "author": "John Steinbeck",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 220,
        "w": 143,
@@ -4594,7 +4594,7 @@
       "link": "https://www.goodreads.com/book/show/890",
       "title": "Of Mice and Men",
       "author": "John Steinbeck",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 220,
        "w": 142,
@@ -4627,7 +4627,7 @@
       "link": "https://www.goodreads.com/book/show/4395",
       "title": "The Grapes of Wrath",
       "author": "John Steinbeck",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 200,
        "w": 127,
@@ -4699,7 +4699,7 @@
       "link": "https://www.goodreads.com/book/show/4980",
       "title": "Breakfast of Champions",
       "author": "Kurt Vonnegut",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 133,
@@ -4733,7 +4733,7 @@
       "link": "https://www.goodreads.com/book/show/9589",
       "title": "Hocus Pocus",
       "author": "Kurt Vonnegut",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 200,
        "w": 133,
@@ -4755,7 +4755,7 @@
        "lo": "atlas/lo/gr-hocus-pocus.webp",
        "card": "atlas/card/gr-hocus-pocus.webp",
        "edge": "#113163",
-       "hue": 0.6463
+       "hue": 0.6464
       },
       "publisher": "Berkley Books",
       "pages": 322,
@@ -4767,7 +4767,7 @@
       "link": "https://www.goodreads.com/book/show/2745816",
       "title": "Slaughterhouse-Five",
       "author": "Kurt Vonnegut",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 193,
        "w": 130,
@@ -4789,7 +4789,7 @@
        "lo": "atlas/lo/gr-slaughterhouse-five.webp",
        "card": "atlas/card/gr-slaughterhouse-five.webp",
        "edge": "#85614c",
-       "hue": 0.7837
+       "hue": 0.7843
       },
       "publisher": "Dell",
       "pages": 215,
@@ -4949,7 +4949,7 @@
       "atlas": {
        "lo": "atlas/lo/creativity-by-mihaly-csikszentmihalyi.webp",
        "card": "atlas/card/creativity-by-mihaly-csikszentmihalyi.webp",
-       "edge": "#d3042b",
+       "edge": "#d3042c",
        "hue": 0.0114
       },
       "publisher": "Harper Perennial",
@@ -4999,7 +4999,7 @@
       "link": "https://www.goodreads.com/book/show/231610",
       "title": "The World As I See It",
       "author": "Albert Einstein",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 224,
        "w": 150,
@@ -5228,7 +5228,7 @@
       "link": "https://www.goodreads.com/book/show/129846",
       "title": "The Cartoon Guide to Genetics",
       "author": "Larry Gonick",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 240,
        "w": 187,
@@ -5404,7 +5404,7 @@
       "atlas": {
        "lo": "atlas/lo/exploring-the-world-of-lucid-dreaming.webp",
        "card": "atlas/card/exploring-the-world-of-lucid-dreaming.webp",
-       "edge": "#0d396b",
+       "edge": "#0c396b",
        "hue": 0.6327
       },
       "publisher": "Ballantine Books",
@@ -5485,7 +5485,7 @@
        "lo": "atlas/lo/thinking-in-systems-a-primer.webp",
        "card": "atlas/card/thinking-in-systems-a-primer.webp",
        "edge": "#dec95c",
-       "hue": 0.1825
+       "hue": 0.1822
       },
       "publisher": "Chelsea Green Pub.",
       "pages": 218,
@@ -5523,8 +5523,8 @@
       "atlas": {
        "lo": "atlas/lo/john-napier-hands.webp",
        "card": "atlas/card/john-napier-hands.webp",
-       "edge": "#89706d",
-       "hue": 0.0714
+       "edge": "#896f6d",
+       "hue": 0.0713
       },
       "publisher": "Princeton University Press",
       "pages": 180,
@@ -5561,8 +5561,8 @@
       "atlas": {
        "lo": "atlas/lo/breath-by-james-nestor.webp",
        "card": "atlas/card/breath-by-james-nestor.webp",
-       "edge": "#ecd00b",
-       "hue": 0.187
+       "edge": "#eccf0b",
+       "hue": 0.1869
       },
       "publisher": "Riverhead Books",
       "pages": 304,
@@ -5640,7 +5640,7 @@
        "lo": "atlas/lo/blue-mind.webp",
        "card": "atlas/card/blue-mind.webp",
        "edge": "#dbdcd5",
-       "hue": 1.1597
+       "hue": 1.1596
       },
       "publisher": "Little, Brown and Company",
       "pages": 352,
@@ -5712,7 +5712,7 @@
        "lo": "atlas/lo/gr-the-end-of-certainty-time-chaos-and-the-new-laws-of-nature.webp",
        "card": "atlas/card/gr-the-end-of-certainty-time-chaos-and-the-new-laws-of-nature.webp",
        "edge": "#4f7e7e",
-       "hue": 0.5573
+       "hue": 0.5574
       },
       "publisher": "Free Press",
       "pages": 240,
@@ -6030,7 +6030,7 @@
       "title": "Gödel, Escher, Bach",
       "subtitle": "An Eternal Golden Braid",
       "author": "Douglas R. Hofstadter",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 230,
        "w": 151,
@@ -6064,7 +6064,7 @@
       "title": "Origami Design Secrets",
       "subtitle": "Mathematical Methods for an Ancient Art",
       "author": "Robert J. Lang",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 277,
        "w": 218,
@@ -6086,7 +6086,7 @@
        "lo": "atlas/lo/gr-origami-design-secrets-mathematical-methods-for-an-ancient-a.webp",
        "card": "atlas/card/gr-origami-design-secrets-mathematical-methods-for-an-ancient-a.webp",
        "edge": "#9f8764",
-       "hue": 1.5452
+       "hue": 1.5453
       },
       "publisher": "A K Peters/CRC Press",
       "pages": 594,
@@ -6158,7 +6158,7 @@
        "lo": "atlas/lo/math-from-three-to-seven-by-a-k-zvonkin.webp",
        "card": "atlas/card/math-from-three-to-seven-by-a-k-zvonkin.webp",
        "edge": "#d5d3cb",
-       "hue": 1.1833
+       "hue": 1.1834
       },
       "publisher": "American Mathematical Society",
       "pages": 300,
@@ -6211,7 +6211,7 @@
       "title": "A Pattern Language",
       "subtitle": "Towns, Buildings, Construction",
       "author": "Christopher Alexander",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 144,
@@ -6423,7 +6423,7 @@
       "atlas": {
        "lo": "atlas/lo/bird-by-bird-by-anne-lamott.webp",
        "card": "atlas/card/bird-by-bird-by-anne-lamott.webp",
-       "edge": "#d5979e",
+       "edge": "#d4979e",
        "hue": 0.0648
       },
       "publisher": "Anchor Books",
@@ -6608,7 +6608,7 @@
        "lo": "atlas/lo/mystery-teachings-by-j-m-greer.webp",
        "card": "atlas/card/mystery-teachings-by-j-m-greer.webp",
        "edge": "#20302b",
-       "hue": 1.7943
+       "hue": 1.7944
       },
       "publisher": "Weiser Books",
       "pages": 160,
@@ -6646,7 +6646,7 @@
        "lo": "atlas/lo/letters-to-my-palestinian-neighbor-by-halevi.webp",
        "card": "atlas/card/letters-to-my-palestinian-neighbor-by-halevi.webp",
        "edge": "#ddd7ce",
-       "hue": 1.2277
+       "hue": 1.2278
       },
       "publisher": "HarperCollins Publishers",
       "pages": 288,
@@ -6683,7 +6683,7 @@
       "atlas": {
        "lo": "atlas/lo/the-sabbath-by-heschel.webp",
        "card": "atlas/card/the-sabbath-by-heschel.webp",
-       "edge": "#e6e5d9",
+       "edge": "#e6e5da",
        "hue": 1.2058
       },
       "publisher": "Farrar, Straus and Giroux",
@@ -6763,7 +6763,7 @@
        "lo": "atlas/lo/the-new-father.webp",
        "card": "atlas/card/the-new-father.webp",
        "edge": "#c1c9ce",
-       "hue": 1.1942
+       "hue": 1.1941
       },
       "publisher": "Abbeville Press",
       "pages": 464,
@@ -6841,7 +6841,7 @@
        "lo": "atlas/lo/gardener-carpenter-by-alison-gopnik.webp",
        "card": "atlas/card/gardener-carpenter-by-alison-gopnik.webp",
        "edge": "#625934",
-       "hue": 0.1528
+       "hue": 0.1527
       },
       "publisher": "Penguin Random House",
       "pages": 320,
@@ -6882,7 +6882,7 @@
        "lo": "atlas/lo/good-inside-by-becky-kennedy.webp",
        "card": "atlas/card/good-inside-by-becky-kennedy.webp",
        "edge": "#e4c65b",
-       "hue": 0.173
+       "hue": 0.1732
       },
       "publisher": "Harper Wave",
       "pages": 336,
@@ -6921,7 +6921,7 @@
        "lo": "atlas/lo/emotional-life-of-the-toddler.webp",
        "card": "atlas/card/emotional-life-of-the-toddler.webp",
        "edge": "#ebe7db",
-       "hue": 1.2002
+       "hue": 1.2001
       },
       "publisher": "Free P.,U.S.",
       "pages": 20,
@@ -7082,7 +7082,7 @@
        "lo": "atlas/lo/whole-earth-discipline-by-stewart-brand.webp",
        "card": "atlas/card/whole-earth-discipline-by-stewart-brand.webp",
        "edge": "#a2bbc8",
-       "hue": 1.3569
+       "hue": 1.357
       },
       "publisher": "Penguin",
       "pages": 337,
@@ -7123,7 +7123,7 @@
        "lo": "atlas/lo/profiles-of-the-future-by-arthur-c-clarke.webp",
        "card": "atlas/card/profiles-of-the-future-by-arthur-c-clarke.webp",
        "edge": "#61504b",
-       "hue": 0.7309
+       "hue": 0.7313
       },
       "publisher": "Bantam Books",
       "pages": 235,
@@ -7353,7 +7353,7 @@
        "lo": "atlas/lo/sid-meiers-memoir.webp",
        "card": "atlas/card/sid-meiers-memoir.webp",
        "edge": "#0f467c",
-       "hue": 0.6217
+       "hue": 0.6215
       },
       "publisher": "Norton & Company, Incorporated, W. W.",
       "pages": 320,
@@ -7390,7 +7390,7 @@
        "lo": "atlas/lo/frank-herbert-by-tim-oreilly.webp",
        "card": "atlas/card/frank-herbert-by-tim-oreilly.webp",
        "edge": "#877b47",
-       "hue": 0.1787
+       "hue": 0.1788
       },
       "publisher": "Ungar",
       "pages": 216,
@@ -7403,7 +7403,7 @@
       "title": "Cryptography",
       "subtitle": "A Very Short Introduction",
       "author": "F. C. Piper",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 180,
        "w": 113,
@@ -7462,7 +7462,7 @@
       "atlas": {
        "lo": "atlas/lo/how-to-fail-at-almost-everything-by-scott-adams.webp",
        "card": "atlas/card/how-to-fail-at-almost-everything-by-scott-adams.webp",
-       "edge": "#da5e27",
+       "edge": "#da5f27",
        "hue": 0.0938
       },
       "publisher": null,
@@ -7504,7 +7504,7 @@
        "lo": "atlas/lo/the-one-minute-manager.webp",
        "card": "atlas/card/the-one-minute-manager.webp",
        "edge": "#e7d8b7",
-       "hue": 1.3055
+       "hue": 1.3054
       },
       "publisher": "Blanchard-Johnson Publishers",
       "pages": 112,
@@ -7542,7 +7542,7 @@
        "lo": "atlas/lo/empowered-by-cagan-jones.webp",
        "card": "atlas/card/empowered-by-cagan-jones.webp",
        "edge": "#b1b5c7",
-       "hue": 0.6529
+       "hue": 0.6522
       },
       "publisher": "Wiley & Sons, Limited, John",
       "pages": 368,
@@ -7582,7 +7582,7 @@
        "lo": "atlas/lo/bad-blood-by-john-carreyrou.webp",
        "card": "atlas/card/bad-blood-by-john-carreyrou.webp",
        "edge": "#060606",
-       "hue": 1.8792
+       "hue": 1.8791
       },
       "publisher": "Alfred A. Knopf",
       "pages": 339,
@@ -7594,7 +7594,7 @@
       "title": "The Innovator's Dilemma",
       "subtitle": "The Revolutionary Book that Will Change the Way You Do Business",
       "author": "Clayton M. Christensen",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 203,
        "w": 135,
@@ -7616,7 +7616,7 @@
        "lo": "atlas/lo/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.webp",
        "card": "atlas/card/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.webp",
        "edge": "#828860",
-       "hue": 0.3549
+       "hue": 0.3525
       },
       "publisher": "Collins",
       "pages": 320,
@@ -7683,7 +7683,7 @@
        "lo": "atlas/lo/gr-the-4-hour-workweek.webp",
        "card": "atlas/card/gr-the-4-hour-workweek.webp",
        "edge": "#c8c8a6",
-       "hue": 1.3053
+       "hue": 1.3054
       },
       "publisher": "Harmony",
       "pages": 308,
@@ -7999,7 +7999,7 @@
        "lo": "atlas/lo/abundance-by-ezra-klein-and-derek-thompson.webp",
        "card": "atlas/card/abundance-by-ezra-klein-and-derek-thompson.webp",
        "edge": "#e6dfcd",
-       "hue": 1.1793
+       "hue": 1.1792
       },
       "publisher": "Avid Reader Press / Simon & Schuster",
       "pages": 304,
@@ -8188,7 +8188,7 @@
        "lo": "atlas/lo/practical-doomsday-by-michal-zalewski.webp",
        "card": "atlas/card/practical-doomsday-by-michal-zalewski.webp",
        "edge": "#337187",
-       "hue": 0.5864
+       "hue": 0.5865
       },
       "publisher": "No Starch Press",
       "pages": 236,
@@ -8227,7 +8227,7 @@
        "lo": "atlas/lo/end-of-the-world-by-peter-zeihan.webp",
        "card": "atlas/card/end-of-the-world-by-peter-zeihan.webp",
        "edge": "#cec6bb",
-       "hue": 1.3094
+       "hue": 1.3093
       },
       "publisher": "HarperCollins Publishers",
       "pages": 400,
@@ -8267,7 +8267,7 @@
        "lo": "atlas/lo/asimovs-chronology-of-science-and-discovery.webp",
        "card": "atlas/card/asimovs-chronology-of-science-and-discovery.webp",
        "edge": "#17222b",
-       "hue": 1.8283
+       "hue": 1.8284
       },
       "publisher": "HarperCollins",
       "pages": 790,
@@ -8308,7 +8308,7 @@
        "lo": "atlas/lo/history-of-future-cities-by-daniel-brook.webp",
        "card": "atlas/card/history-of-future-cities-by-daniel-brook.webp",
        "edge": "#1f6a41",
-       "hue": 0.4611
+       "hue": 0.461
       },
       "publisher": "W W Norton & Co Inc",
       "pages": 457,
@@ -8346,7 +8346,7 @@
       "atlas": {
        "lo": "atlas/lo/boyd-by-robert-coram.webp",
        "card": "atlas/card/boyd-by-robert-coram.webp",
-       "edge": "#4f504b",
+       "edge": "#50504b",
        "hue": 1.5401
       },
       "publisher": "Little, Brown and Company",
@@ -8424,7 +8424,7 @@
        "lo": "atlas/lo/the-coffee-house-a-cultural-history.webp",
        "card": "atlas/card/the-coffee-house-a-cultural-history.webp",
        "edge": "#e2d5b8",
-       "hue": 1.2038
+       "hue": 1.2037
       },
       "publisher": "Weidenfeld & Nicolson",
       "pages": 336,
@@ -8613,7 +8613,7 @@
        "lo": "atlas/lo/gr-a-tale-of-love-and-darkness.webp",
        "card": "atlas/card/gr-a-tale-of-love-and-darkness.webp",
        "edge": "#736948",
-       "hue": 0.1863
+       "hue": 0.1864
       },
       "publisher": "Harvest / Harcourt",
       "pages": 560,
@@ -8624,7 +8624,7 @@
       "link": "https://www.goodreads.com/book/show/2318271",
       "title": "The Last Lecture",
       "author": "Randy Pausch",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 190,
        "w": 130,
@@ -8646,7 +8646,7 @@
        "lo": "atlas/lo/gr-the-last-lecture.webp",
        "card": "atlas/card/gr-the-last-lecture.webp",
        "edge": "#6d5c35",
-       "hue": 1.7698
+       "hue": 1.7699
       },
       "publisher": "Hachette Books",
       "pages": 206,
@@ -8684,7 +8684,7 @@
       "atlas": {
        "lo": "atlas/lo/nothing-is-true-and-everything-is-possible.webp",
        "card": "atlas/card/nothing-is-true-and-everything-is-possible.webp",
-       "edge": "#18171a",
+       "edge": "#181719",
        "hue": 1.8283
       },
       "publisher": "PublicAffairs",
@@ -8724,7 +8724,7 @@
        "lo": "atlas/lo/building-a-bridge-to-the-18th-century.webp",
        "card": "atlas/card/building-a-bridge-to-the-18th-century.webp",
        "edge": "#c3ad82",
-       "hue": 0.1488
+       "hue": 0.1486
       },
       "publisher": "Vintage",
       "pages": 224,
@@ -8775,7 +8775,7 @@
       "title": "Maus II",
       "subtitle": "A Survivor's Tale: And Here My Troubles Began",
       "author": "Art Spiegelman",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 240,
        "w": 165,
@@ -8797,7 +8797,7 @@
        "lo": "atlas/lo/gr-maus-ii-a-survivor-s-tale-and-here-my-troubles-began.webp",
        "card": "atlas/card/gr-maus-ii-a-survivor-s-tale-and-here-my-troubles-began.webp",
        "edge": "#2a2929",
-       "hue": 1.8322
+       "hue": 1.8321
       },
       "publisher": "Pantheon",
       "pages": 144,
@@ -8809,7 +8809,7 @@
       "title": "Maus",
       "subtitle": "A Survivor's Tale I: My Father Bleeds History",
       "author": "Art Spiegelman",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 230,
        "w": 165,
@@ -9021,7 +9021,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-ages-of-discord-a-structural-demographic-analysis-of-america.webp",
        "card": "atlas/card/gr-ages-of-discord-a-structural-demographic-analysis-of-america.webp",
-       "edge": "#bec0bf",
+       "edge": "#bebfbf",
        "hue": 1.2987
       },
       "publisher": "Beresta Books LLC",
@@ -9140,7 +9140,7 @@
        "lo": "atlas/lo/night-by-elie-wiesel.webp",
        "card": "atlas/card/night-by-elie-wiesel.webp",
        "edge": "#b7bab6",
-       "hue": 1.3115
+       "hue": 1.3116
       },
       "publisher": "Hill and Wang",
       "pages": 120,
@@ -9523,7 +9523,7 @@
        "lo": "atlas/lo/secret-of-our-success-by-joseph-henrich.webp",
        "card": "atlas/card/secret-of-our-success-by-joseph-henrich.webp",
        "edge": "#b3dfe8",
-       "hue": 1.163
+       "hue": 1.1629
       },
       "publisher": "Princeton University Press",
       "pages": 456,
@@ -9595,7 +9595,7 @@
        "lo": "atlas/lo/tribe-by-sebastian-junger.webp",
        "card": "atlas/card/tribe-by-sebastian-junger.webp",
        "edge": "#152639",
-       "hue": 1.7704
+       "hue": 1.7703
       },
       "publisher": "Twelve",
       "pages": 182,
@@ -9635,7 +9635,7 @@
        "lo": "atlas/lo/palaces-for-the-people-audio.webp",
        "card": "atlas/card/palaces-for-the-people-audio.webp",
        "edge": "#e7e7df",
-       "hue": 1.1158
+       "hue": 1.1157
       },
       "publisher": "Broadway Books",
       "pages": 277,
@@ -9829,7 +9829,7 @@
       "atlas": {
        "lo": "atlas/lo/impossible-owls-by-brian-phillips.webp",
        "card": "atlas/card/impossible-owls-by-brian-phillips.webp",
-       "edge": "#4a4e51",
+       "edge": "#4a4e52",
        "hue": 1.6643
       },
       "publisher": "Orion Publishing Group, Limited",
@@ -9882,7 +9882,7 @@
       "title": "Venedikt Erofeev's «Moscow-Petushki»",
       "subtitle": "Critical Perspectives (Middlebury Studies in Russian Language and Literature)",
       "author": "Karen L. Ryan-Hayes",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 240,
        "w": 160,
@@ -10056,7 +10056,7 @@
        "lo": "atlas/lo/story-of-us.webp",
        "card": "atlas/card/story-of-us.webp",
        "edge": "#ece9d4",
-       "hue": 1.1978
+       "hue": 1.1977
       },
       "publisher": "Transworld Publishers Limited",
       "pages": null,
@@ -10134,7 +10134,7 @@
       "atlas": {
        "lo": "atlas/lo/scale-by-geoffrey-west.webp",
        "card": "atlas/card/scale-by-geoffrey-west.webp",
-       "edge": "#0f1112",
+       "edge": "#0f1111",
        "hue": 1.8658
       },
       "publisher": "Penguin Press",
@@ -10329,7 +10329,7 @@
        "lo": "atlas/lo/the-burnout-society-by-byung-chul-han.webp",
        "card": "atlas/card/the-burnout-society-by-byung-chul-han.webp",
        "edge": "#121212",
-       "hue": 1.8641
+       "hue": 1.8642
       },
       "publisher": "Stanford Briefs",
       "pages": 70,
@@ -10366,7 +10366,7 @@
       "atlas": {
        "lo": "atlas/lo/the-crisis-of-narration-by-byung-chul-han.webp",
        "card": "atlas/card/the-crisis-of-narration-by-byung-chul-han.webp",
-       "edge": "#342e1e",
+       "edge": "#342e1d",
        "hue": 1.7637
       },
       "publisher": "Polity",
@@ -10520,7 +10520,7 @@
        "lo": "atlas/lo/12-rules-for-life.webp",
        "card": "atlas/card/12-rules-for-life.webp",
        "edge": "#e7e6e2",
-       "hue": 1.189
+       "hue": 1.1891
       },
       "publisher": "Allen Lane",
       "pages": 416,
@@ -10565,7 +10565,7 @@
       "link": "https://www.goodreads.com/book/show/17022",
       "title": "My Ishmael",
       "author": "Daniel Quinn",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 210,
        "w": 132,
@@ -10587,7 +10587,7 @@
        "lo": "atlas/lo/gr-my-ishmael.webp",
        "card": "atlas/card/gr-my-ishmael.webp",
        "edge": "#dad7cb",
-       "hue": 1.2339
+       "hue": 1.2338
       },
       "publisher": "Bantam Books",
       "pages": 293,
@@ -10598,7 +10598,7 @@
       "link": "https://www.goodreads.com/book/show/214579",
       "title": "The Story of B",
       "author": "Daniel Quinn",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 240,
        "w": 159,
@@ -10620,7 +10620,7 @@
        "lo": "atlas/lo/gr-the-story-of-b.webp",
        "card": "atlas/card/gr-the-story-of-b.webp",
        "edge": "#ccb186",
-       "hue": 0.1236
+       "hue": 0.1237
       },
       "publisher": "Bantam",
       "pages": 352,
@@ -10697,7 +10697,7 @@
        "lo": "atlas/lo/in-praise-of-idleness-by-bertrand-russell.webp",
        "card": "atlas/card/in-praise-of-idleness-by-bertrand-russell.webp",
        "edge": "#a8421c",
-       "hue": 0.0877
+       "hue": 0.0878
       },
       "publisher": "Simon & Schuster",
       "pages": 231,
@@ -10774,7 +10774,7 @@
        "lo": "atlas/lo/tao-of-philosophy-by-alan-watts.webp",
        "card": "atlas/card/tao-of-philosophy-by-alan-watts.webp",
        "edge": "#9b8c7f",
-       "hue": 0.0664
+       "hue": 0.0714
       },
       "publisher": "Tuttle Publishing",
       "pages": 96,
@@ -10813,7 +10813,7 @@
       "atlas": {
        "lo": "atlas/lo/on-the-shortness-of-life.webp",
        "card": "atlas/card/on-the-shortness-of-life.webp",
-       "edge": "#e7e7e1",
+       "edge": "#e7e6e1",
        "hue": 1.1322
       },
       "publisher": "Penguin Books",
@@ -10825,7 +10825,7 @@
       "link": "https://www.goodreads.com/book/show/5804047",
       "title": "AAA Italy TravelBook 2003",
       "author": "American Automobile Association",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 201,
        "w": 121,
@@ -10847,7 +10847,7 @@
        "lo": "atlas/lo/gr-aaa-italy-travelbook-2003.webp",
        "card": "atlas/card/gr-aaa-italy-travelbook-2003.webp",
        "edge": "#6a5763",
-       "hue": 0.1255
+       "hue": 0.1244
       },
       "publisher": "AAA",
       "pages": 224,
@@ -10860,7 +10860,7 @@
       "link": "https://www.goodreads.com/book/show/304542",
       "title": "Sushi: Taste and Techniques",
       "author": "Kimiko Barber",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 218,
        "w": 168,
@@ -10893,7 +10893,7 @@
       "link": "https://www.goodreads.com/book/show/6966627",
       "title": "The Card Players Companion",
       "author": "Gyles Daubeney Brandreth",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 234,
        "w": 180,
@@ -10915,7 +10915,7 @@
        "lo": "atlas/lo/gr-the-card-players-companion.webp",
        "card": "atlas/card/gr-the-card-players-companion.webp",
        "edge": "#d8d0c2",
-       "hue": 1.2143
+       "hue": 1.2142
       },
       "publisher": "Treasure",
       "pages": 192,
@@ -10927,7 +10927,7 @@
       "title": "The Craft of the Cocktail",
       "subtitle": "Everything You Need to Know to Be a Master Bartender, with 500 Recipes",
       "author": "Dale Degroff",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 260,
        "w": 198,
@@ -10996,7 +10996,7 @@
       "link": "https://www.goodreads.com/book/show/98251",
       "title": "The Competitive Runner's Handbook",
       "author": "Bob Glover",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 200,
        "w": 132,
@@ -11029,7 +11029,7 @@
       "link": "https://www.goodreads.com/book/show/2994725",
       "title": "Rome Spiral Guide",
       "author": "Tim Jepson",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 218,
        "w": 126,
@@ -11051,7 +11051,7 @@
        "lo": "atlas/lo/gr-rome-spiral-guide.webp",
        "card": "atlas/card/gr-rome-spiral-guide.webp",
        "edge": "#352b6c",
-       "hue": 0.7312
+       "hue": 0.731
       },
       "publisher": "AAA",
       "pages": 213,
@@ -11063,7 +11063,7 @@
       "title": "The PreHistory of The Far Side",
       "subtitle": "A 10th Anniversary Exhibit",
       "author": "Gary Larson",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 280,
        "w": 222,
@@ -11085,7 +11085,7 @@
        "lo": "atlas/lo/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.webp",
        "card": "atlas/card/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.webp",
        "edge": "#150e16",
-       "hue": 1.826
+       "hue": 1.8259
       },
       "publisher": "Andrews McMeel",
       "pages": 288,
@@ -11097,7 +11097,7 @@
       "title": "Born to Run",
       "subtitle": "A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen",
       "author": "Christopher McDougall",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 250,
        "w": 168,
@@ -11119,7 +11119,7 @@
        "lo": "atlas/lo/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.webp",
        "card": "atlas/card/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.webp",
        "edge": "#1b6497",
-       "hue": 0.6084
+       "hue": 0.6083
       },
       "publisher": "Knopf",
       "pages": 287,
@@ -11130,7 +11130,7 @@
       "link": "https://www.goodreads.com/book/show/2467833",
       "title": "What I Talk About When I Talk About Running",
       "author": "Haruki Murakami",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 198,
        "w": 137,
@@ -11152,7 +11152,7 @@
        "lo": "atlas/lo/gr-what-i-talk-about-when-i-talk-about-running.webp",
        "card": "atlas/card/gr-what-i-talk-about-when-i-talk-about-running.webp",
        "edge": "#d4b998",
-       "hue": 0.1018
+       "hue": 0.1017
       },
       "publisher": "Bond Street Books",
       "pages": 192,
@@ -11253,7 +11253,7 @@
        "lo": "atlas/lo/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.webp",
        "card": "atlas/card/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.webp",
        "edge": "#575151",
-       "hue": 1.5788
+       "hue": 1.5789
       },
       "publisher": "Peter Pauper Press",
       "pages": 160,
@@ -11319,7 +11319,7 @@
        "lo": "atlas/lo/gr-sports-nutrition-for-endurance-athletes.webp",
        "card": "atlas/card/gr-sports-nutrition-for-endurance-athletes.webp",
        "edge": "#96ae94",
-       "hue": 1.4358
+       "hue": 1.4359
       },
       "publisher": "VeloPress",
       "pages": 352,
@@ -11330,7 +11330,7 @@
       "link": "https://www.goodreads.com/book/show/77727",
       "title": "Calvin and Hobbes",
       "author": "Bill Watterson",
-      "beloved": false,
+      "beloved": true,
       "dims": {
        "h": 230,
        "w": 217,

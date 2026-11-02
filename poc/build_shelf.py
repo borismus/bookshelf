@@ -166,7 +166,8 @@ def record(slug, pose):
         return None
     return {
         "slug": slug, "link": b.get("link") or f"https://smus.com/books/{slug}", **split_title(b.get("display_title") or b["title"]), "author": author_name(b),
-        "beloved": b["beloved"], "dims": b["dims_mm"], "pose": pose,
+        "beloved": b["beloved"] or (reviews.get(slug, {}).get("rating") or 0) >= 4,   # smus ☆, or 4-5★ on Goodreads
+        "dims": b["dims_mm"], "pose": pose,
         "texture": f"../data/textures/{slug}.jpg",
         "cover": f"../data/covers/{slug}.jpg" if (HERE / f"data/covers/{slug}.jpg").exists() else None,
         "back": f"../data/backs/{slug}.jpg" if (HERE / f"data/backs/{slug}.jpg").exists() else None,

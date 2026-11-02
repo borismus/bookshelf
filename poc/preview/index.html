@@ -537,7 +537,9 @@ async function bookMesh(b) {
   if (b.beloved) {
     const size = Math.min(19, Math.max(9, t * 0.92));
     const star = new THREE.Mesh(new THREE.PlaneGeometry(size, size), starMaterial);
-    star.position.set(0, -h / 2 + 14 + size / 2, w / 2 + 0.25);
+    const k = Math.min(1, Math.max(0, (t - 15) / 35));          // same spine bulge as the geometry above
+    const bulge = b.binding === 'hardcover' && t > 2 * BOARD + 2 ? t * (0.015 + 0.075 * k) : k * t * 0.045;
+    star.position.set(0, -h / 2 + 14 + size / 2, w / 2 + bulge + 0.25);   // on top of the curved spine, not inside it
     star.rotation.z = jitter(0.25);
     star.visible = starredView; star.userData.owner = g; star.userData.star = true;
     g.add(star);
@@ -962,7 +964,7 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '
 function fillCard(b) {
   const r = b.review || {};
   const meta = [];
-  if (b.beloved) meta.push('<span class="star">★ Starred</span>');
+  if (b.beloved && !r.rating) meta.push('<span class="star">★ Starred</span>');   // Goodreads books show their rating instead
   if (r.source === 'smus' && r.posted) meta.push(`Reviewed ${esc(r.posted)}`);
   if (r.read) meta.push(`Read ${esc(new Date(r.read.replace(/\//g, '-')).toLocaleDateString(undefined, { month: 'short', year: 'numeric' }))}`);
   if (r.rating) meta.push(`<span title="${r.rating} of 5 on Goodreads" style="letter-spacing:1px"><span class="star">${'★'.repeat(r.rating)}</span><span style="color:#d8cfc4">${'★'.repeat(5 - r.rating)}</span></span>`);
