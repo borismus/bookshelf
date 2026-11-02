@@ -16,3 +16,4 @@ poc/preview/screenshot.png
 *.tmp
 __pycache__/
 .DS_Store
+dist/
