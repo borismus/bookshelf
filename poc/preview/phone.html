@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><title>phone test</title>
+<style>body{margin:0;background:#333;display:flex;gap:20px;padding:20px}iframe{width:390px;height:844px;border:0;background:#fff}</style>
+<script>
+const q = new URLSearchParams(location.search).getAll('q');
+for (const s of (q.length ? q : ['x=1'])) document.write(`<iframe src="index.html?${s}"></iframe>`);
+</script>

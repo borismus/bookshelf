@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bookshelf POC</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #e4e4e2; overflow: hidden; }
+  canvas { display: block; }
+  #label { position: fixed; pointer-events: none; opacity: 0; transition: opacity .12s;
+    background: rgba(255, 252, 246, .94); color: #2b2620; padding: 6px 9px; border-radius: 6px;
+    font: 12px/1.35 -apple-system, system-ui, sans-serif; box-shadow: 0 2px 10px rgba(0,0,0,.18); max-width: 260px; }
+  #veil { position: fixed; inset: 0; background: rgba(26, 22, 18, .62); opacity: 0; pointer-events: none; transition: opacity .35s ease; z-index: 5; }
+  #veil.open { opacity: 1; pointer-events: auto; }
+  #card { position: fixed; top: 50%; left: 50%; width: min(860px, 92vw); min-height: min(460px, 70vh); max-height: 88vh;
+    transform: translate(-50%, -50%) scale(.97); opacity: 0; pointer-events: none; transition: opacity .3s ease, transform .35s ease;
+    background: #fdfbf7; color: #2b2620; border-radius: 16px; box-shadow: 0 24px 70px rgba(0,0,0,.35);
+    display: grid; grid-template-columns: 42% 58%; z-index: 6; font: 15px/1.5 -apple-system, system-ui, sans-serif; }
+  #card.open { opacity: 1; pointer-events: auto; transform: translate(-50%, -50%); }
+  #card .slot { background: linear-gradient(160deg, #efe9df, #e4ddd1); border-radius: 16px 0 0 16px; }
+  #card .content { padding: 34px 34px 24px 30px; display: flex; flex-direction: column; min-height: 0; }
+  #card .scroll { overflow: hidden; flex: 1; min-height: 0; }
+  #card .foot { padding-top: 14px; }
+  #card h2 { font: 600 24px/1.25 -apple-system, system-ui, sans-serif; margin: 0 0 4px; }
+  #card .by { color: #6c6258; margin-bottom: 14px; }
+  #card .meta { font-size: 13px; color: #7a7064; margin-bottom: 16px; display: flex; gap: 14px; flex-wrap: wrap; }
+  #card .star { color: #d89a00; }
+  #card .headline { font: italic 600 18px/1.35 Georgia, serif; margin: 0 0 8px; }
+  #card .excerpt { font: 15px/1.6 Georgia, serif; color: #3d362f; margin: 0 0 12px; }
+  #card .excerpt:last-of-type { margin-bottom: 4px; }
+  #card .excerpt:empty { display: none; }
+  #card a.go { display: inline-block; background: #2b2620; color: #fbf7ef; text-decoration: none; padding: 9px 16px;
+    border-radius: 20px; font-size: 14px; }
+  #card .close { position: absolute; top: 10px; right: 14px; border: none; background: none; font-size: 24px;
+    color: #8a8076; cursor: pointer; z-index: 8; }
+  #overlay { position: fixed; inset: 0; pointer-events: none; z-index: 7; }
+  @media (max-aspect-ratio: 1/1) { #card { grid-template-columns: 1fr; grid-template-rows: 44% 56%; height: min(720px, 88vh); }
+    #card .slot { border-radius: 16px 16px 0 0; } }
+  #legend { position: fixed; left: 16px; bottom: 12px; font: 12px/1.4 -apple-system, system-ui, sans-serif; color: #5a544c; }
+  #cases { position: fixed; left: 16px; right: 16px; top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  #cases .group { font: 600 11px -apple-system, system-ui, sans-serif; letter-spacing: .06em; text-transform: uppercase;
+    color: #7a7064; margin: 0 2px 0 10px; }
+  #cases .group:first-child { margin-left: 0; }
+  #cases button.group { border: none; background: none; padding: 5px 4px; cursor: pointer; }
+  #cases button.group:hover { color: #3a332b; }
+  #cases button { font: 13px -apple-system, system-ui, sans-serif; padding: 5px 11px; border-radius: 16px;
+    border: 1px solid #b9ad9c; background: rgba(255,252,246,.85); color: #3a332b; cursor: pointer; }
+  #cases button.on { background: #3a332b; color: #fbf7ef; border-color: #3a332b; }
+  #cases .spacer { flex: 1; }
+  #views { position: fixed; right: 16px; bottom: 12px; display: flex; gap: 6px; }
+  #views button { font: 13px -apple-system, system-ui, sans-serif; padding: 5px 11px; border-radius: 16px;
+    border: 1px solid #b9ad9c; background: rgba(255,252,246,.9); color: #3a332b; cursor: pointer; }
+  #views button.on { background: #3a332b; color: #fbf7ef; border-color: #3a332b; }
+  @media (max-width: 640px) {
+    #cases { flex-wrap: nowrap; overflow-x: auto; left: 0; right: 0; top: 8px; padding: 0 12px 4px; gap: 5px;
+      scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    #cases::-webkit-scrollbar { display: none; }
+    #cases button, #cases .group { flex: none; font-size: 12px; padding: 5px 9px; }
+    #legend { display: none; }
+    #views { right: 10px; left: 10px; bottom: 10px; justify-content: center; }
+    #views button { font-size: 12px; padding: 6px 10px; }
+    #card { width: 94vw; max-height: 90vh; }
+    #card .content { padding: 22px 22px 20px; }
+    #card h2 { font-size: 21px; }
+  }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="cases"></div>
+<div id="views"></div>
+<div id="veil"></div>
+<div id="card"><button class="close" aria-label="Close">×</button><div class="slot"></div><div class="content"></div></div>
+<canvas id="overlay"></canvas>
+<script type="module">
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { GTAOPass } from 'three/addons/postprocessing/GTAOPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+
+// All units are millimetres. Each bookcase: front edge at z = 0, floor of its lowest shelf at y = 0.
+
+const LEAN_DEG = 11;
+const NOT_BELOVED_RECESS = 0;    // (old always-on beloved cue, replaced by the starred view)
+const CASE_GAP = 2;              // the two bookcases stand right next to each other
+
+const data = await (await fetch('shelf.json')).json();
+const cases = data.cases;        // [{name, shelves: [[book, ...], ...]}], top shelf first
+const books = cases.flatMap(c => c.shelves.flat());
+const tallest = Math.max(...books.map(b => b.dims.h));
+// IKEA Billy (80 x 28 x 202 cm): 76 cm inside, six compartments above a plinth, white melamine.
+const SHELF = { inner: data.inner, height: Math.max(300, Math.ceil(tallest + 25)), depth: 280, board: 16, plinth: 64 };
+const { inner, height, depth, board, plinth } = SHELF;
+const pitch = height + board;
+const caseW = inner + 2 * board;
+cases.forEach((c, i) => {
+  c.x0 = i * (caseW + CASE_GAP);                                 // x of the case's inner left edge
+  c.N = Math.max(6, ...cases.map(x => x.shelves.length));        // paired Billys: same height, extra shelves stay empty
+  c.H = c.N * height + (c.N - 1) * board;                        // inner height, bottom floor to top underside
+});
+const baseY = (c, i) => plinth + (c.N - 1 - i) * pitch;         // floor height of shelf i (0 = top) in case c
+
+// Debug params: ?hover=<slug> (render that book pulled out), ?case=<index>, ?y=<mm> (camera height)
+const params = new URLSearchParams(location.search);
+
+// Deterministic jitter so the shelf looks hand-placed but renders the same every time.
+let seed = 7;
+const rand = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+const jitter = (a) => (rand() - 0.5) * 2 * a;
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+// PCF soft shadows: filtered in the main shader (no blur passes), cheap enough to update every frame.
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.autoUpdate = false;   // re-rendered only when a book moves (see render())
+let shadowsDirty = true;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xe4e4e2);
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+scene.environmentIntensity = 0.35;
+const maxAniso = renderer.capabilities.getMaxAnisotropy();
+
+// ---------- materials ----------
+function woodTexture() {
+  const c = document.createElement('canvas'); c.width = 1024; c.height = 128;
+  const g = c.getContext('2d');
+  g.fillStyle = '#a77c52'; g.fillRect(0, 0, c.width, c.height);
+  for (let i = 0; i < 140; i++) {
+    const y = rand() * c.height, a = 0.04 + rand() * 0.08;
+    g.strokeStyle = rand() > 0.5 ? `rgba(70,40,20,${a})` : `rgba(255,220,180,${a})`;
+    g.lineWidth = 0.5 + rand() * 2.5;
+    g.beginPath(); g.moveTo(0, y);
+    for (let x = 0; x <= c.width; x += 64) g.lineTo(x, y + Math.sin(x / 140 + i) * 3);
+    g.stroke();
+  }
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  return t;
+}
+woodTexture();   // (kept so the seeded jitter sequence below doesn't shift)
+const wood = new THREE.MeshStandardMaterial({ color: 0xf3f2ee, roughness: 0.45 });      // white melamine
+const woodBack = new THREE.MeshStandardMaterial({ color: 0xe8e6e0, roughness: 0.8 });   // white fibreboard back
+const wall = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.95 });   // map + bump set below
+
+function box(w, h, d, mat, x, y, z) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+  m.position.set(x, y, z); m.castShadow = m.receiveShadow = true; scene.add(m); return m;
+}
+
+// ---------- bookcases ----------
+for (const c of cases) {
+  const cx = c.x0 + inner / 2, top = plinth + c.H;
+  for (let i = 0; i < c.N; i++) box(caseW, board, depth, wood, cx, baseY(c, i) - board / 2, -depth / 2);
+  box(caseW, board, depth, wood, cx, top + board / 2, -depth / 2);                                  // top
+  box(board, top + board, depth, wood, c.x0 - board / 2, (top + board) / 2, -depth / 2);            // left side to floor
+  box(board, top + board, depth, wood, c.x0 + inner + board / 2, (top + board) / 2, -depth / 2);    // right side
+  box(inner, plinth - board, board, wood, cx, (plinth - board) / 2, -12 - board / 2);               // recessed plinth front
+  box(caseW, top + board, 4, woodBack, cx, (top + board) / 2, -depth - 2);                          // back panel
+}
+const sceneW = cases.at(-1).x0 + caseW, sceneH = Math.max(...cases.map(c => plinth + c.H + board));
+// Floor: light cream carpet (dense random fibres + soft mottling), skirting board along the wall.
+// Wall: very light grey with a faint plaster texture (colour noise + matching bump map).
+function noiseCanvas(size, base, fibres, mottle, mottleA = 0.04, fibreA = 1) {
+  const c = document.createElement('canvas'); c.width = c.height = size;
+  const g = c.getContext('2d');
+  g.fillStyle = `rgb(${base})`; g.fillRect(0, 0, size, size);
+  for (let i = 0; i < mottle; i++) {                              // large soft blotches, wrapped so the tile is seamless
+    const x0 = rand() * size, y0 = rand() * size, r = 20 + rand() * 90, light = rand() < 0.5;
+    for (const ox of [-size, 0, size]) for (const oy of [-size, 0, size]) {
+      const x = x0 + ox, y = y0 + oy;
+      if (x + r < 0 || x - r > size || y + r < 0 || y - r > size) continue;
+      const grd = g.createRadialGradient(x, y, 0, x, y, r);
+      grd.addColorStop(0, light ? `rgba(255,255,255,${mottleA})` : `rgba(0,0,0,${mottleA * 0.8})`); grd.addColorStop(1, 'rgba(0,0,0,0)');
+      g.fillStyle = grd; g.fillRect(x - r, y - r, 2 * r, 2 * r);
+    }
+  }
+  for (let i = 0; i < fibres; i++) {                              // fine speckle / fibres
+    const v = rand(); g.fillStyle = v < 0.5 ? `rgba(0,0,0,${(0.03 + rand() * 0.07) * fibreA})` : `rgba(255,255,255,${(0.05 + rand() * 0.1) * fibreA})`;
+    g.fillRect(rand() * size, rand() * size, 1 + rand() * 1.5, 1 + rand() * 1.5);
+  }
+  return c;
+}
+function tiledTexture(canvas, repX, repY, srgb = true) {
+  const t = new THREE.CanvasTexture(canvas);
+  if (srgb) t.colorSpace = THREE.SRGBColorSpace;
+  t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = maxAniso; t.repeat.set(repX, repY);
+  return t;
+}
+const FLOOR_W = sceneW + 12000, FLOOR_D = 6000, CARPET_TILE = 600, WALL_TILE = 900;
+const carpetCanvas = noiseCanvas(512, '234,226,208', 90000, 60, 0.035);
+const floorMesh = new THREE.Mesh(new THREE.PlaneGeometry(FLOOR_W, FLOOR_D), new THREE.MeshStandardMaterial({
+  map: tiledTexture(carpetCanvas, FLOOR_W / CARPET_TILE, FLOOR_D / CARPET_TILE),
+  bumpMap: tiledTexture(carpetCanvas, FLOOR_W / CARPET_TILE, FLOOR_D / CARPET_TILE, false), bumpScale: 1.2,
+  roughness: 1.0 }));
+floorMesh.rotation.x = -Math.PI / 2;
+floorMesh.position.set(sceneW / 2, 0, -depth - 8 + FLOOR_D / 2);
+floorMesh.receiveShadow = true; scene.add(floorMesh);
+box(FLOOR_W, 90, 6, new THREE.MeshStandardMaterial({ color: 0xf1f0ec, roughness: 0.5 }), sceneW / 2, 45, -depth - 5);   // skirting
+
+const plaster = noiseCanvas(512, '230,230,228', 30000, 80, 0.012, 0.5);   // very subtle
+wall.map = tiledTexture(plaster, (sceneW + 12000) / WALL_TILE, 8000 / WALL_TILE);
+wall.bumpMap = tiledTexture(plaster, (sceneW + 12000) / WALL_TILE, 8000 / WALL_TILE, false); wall.bumpScale = 0.35;
+wall.needsUpdate = true;
+const wallMesh = new THREE.Mesh(new THREE.PlaneGeometry(sceneW + 12000, 8000), wall);
+wallMesh.position.set(sceneW / 2, 4000, -depth - 8); wallMesh.receiveShadow = true; scene.add(wallMesh);
+
+// ---------- books ----------
+const loader = new THREE.TextureLoader();
+
+function averageEdgeColor(img) {
+  const c = document.createElement('canvas'); c.width = 8; c.height = 64;
+  const g = c.getContext('2d'); g.drawImage(img, 0, 0, 8, 64);
+  const d = g.getImageData(0, 0, 1, 64).data;   // leftmost column ~ where the spine meets the cover
+  let r = 0, gg = 0, b = 0;
+  for (let i = 0; i < d.length; i += 4) { r += d[i]; gg += d[i + 1]; b += d[i + 2]; }
+  const n = d.length / 4;
+  return new THREE.Color(`rgb(${Math.round(r / n)},${Math.round(gg / n)},${Math.round(b / n)})`);
+}
+
+async function loadTex(url, tries = 3) {
+  for (let i = 0; i < tries; i++) {
+    try {
+      const tex = await loader.loadAsync(url);
+      tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = maxAniso;
+      return tex;
+    } catch (e) {
+      await new Promise(r => setTimeout(r, 200 * (i + 1)));
+    }
+  }
+  console.error('texture failed:', url);
+  return null;
+}
+
+// Page edges, one canvas per book. Texture u runs across the book's thickness on the top, bottom and fore-edge
+// faces, so stripes are drawn vertically. Bands are coarse and contrasty on purpose: at shelf distance a spine
+// is ~2 px per mm, so real 0.1 mm page lines would average out to a flat colour. Each book gets its own paper
+// tone (white to yellowed), uneven bands (signatures), a few dark gaps and some grime, so the edges look used.
+// Base tones are kept well below white: the key light hits book tops directly and near-white paper clips flat.
+// Every book gets its own page-edge character, drawn from wide ranges, so edges differ the way real ones do:
+// paper tone (bright modern white .. cream .. yellowed pulp; kept below pure white so lit tops don't clip),
+// how uneven the signatures are, how many dark gaps, fine-line density, grime near the covers, and now and then
+// sprayed (coloured) edges. Most books end up subtle; a few are rough.
+const SPRAYED = [[38, 36, 34], [128, 52, 44], [176, 150, 84]];   // black, muted red, gilt (no blues/purples)
+function pageCanvas(t) {
+  const W = Math.max(64, Math.round(t * 12)), H = 32;          // ~12 px per mm of thickness
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d');
+  const age = rand() ** 1.6;                                    // 0 = new white paper, 1 = old yellowed paper
+  let base = [226 - 18 * age, 222 - 30 * age, 212 - 55 * age].map(v => v + jitter(5));
+  if (rand() < 0.04) base = SPRAYED[Math.floor(rand() * SPRAYED.length)];
+  const [r, gg, b] = base;
+  g.fillStyle = `rgb(${r},${gg},${b})`; g.fillRect(0, 0, W, H);
+  const rough = rand() ** 2;                                    // most books smooth, some rough
+  const bandAmp = 3 + 16 * rough, gapP = 0.08 + 0.45 * rough, gapA = 0.12 + 0.35 * rough;
+  let x = 0;
+  while (x < W) {                                               // signatures: bands of slightly different tone
+    const bw = 3 + rand() * (16 - 10 * rough), k = jitter(bandAmp);
+    g.fillStyle = `rgb(${r + k},${gg + k},${b + k})`; g.fillRect(x, 0, bw, H);
+    x += bw;
+    if (rand() < gapP) { g.fillStyle = `rgba(60,45,28,${gapA * (0.5 + rand())})`; g.fillRect(x, 0, 1 + rand() * 1.5, H); }
+  }
+  const lines = W * (0.08 + 0.3 * rand());                      // fine page lines
+  for (let i = 0; i < lines; i++) {
+    g.fillStyle = rand() < 0.5 ? `rgba(80,60,38,${0.06 + 0.16 * rough})` : 'rgba(255,250,240,0.25)';
+    g.fillRect(rand() * W, 0, 1, H);
+  }
+  const grimeA = 0.25 * rand() ** 1.5;                          // handled books are darker near the covers
+  const grime = g.createLinearGradient(0, 0, W, 0);
+  grime.addColorStop(0, `rgba(80,60,40,${grimeA})`); grime.addColorStop(0.1 + 0.1 * rand(), 'rgba(80,60,40,0)');
+  grime.addColorStop(0.85 - 0.1 * rand(), 'rgba(80,60,40,0)'); grime.addColorStop(1, `rgba(80,60,40,${grimeA})`);
+  g.fillStyle = grime; g.fillRect(0, 0, W, H);
+  return c;
+}
+
+function part(geo, mats, x, y, z, group) {
+  const m = new THREE.Mesh(geo, mats);
+  m.position.set(x, y, z); m.castShadow = m.receiveShadow = true; m.userData.owner = group;
+  group.add(m); return m;
+}
+
+// A book is a Group (origin at its centre; spine towards +z, front cover towards +x).
+//  - paperback: one block, cover flush with the pages, page edges on top / bottom / fore-edge.
+//  - hardcover: 2.5 mm boards and a spine board around a page block recessed 3 mm at top, bottom and fore-edge.
+// Some books get a bookmark or a slip of paper sticking out of the top.
+const BOARD = 2.5, OVERHANG = 3;
+const SLIPS = [0xc23b2e, 0x2f5d8a, 0xe8e1cf, 0xd9b44a, 0x1f1f1f];
+// Gold foil star sticker for starred (beloved) books.
+let starredView = new URLSearchParams(location.search).get('starred') === '1';
+const starMaterial = (() => {
+  const S = 128, c = document.createElement('canvas'); c.width = c.height = S;
+  const g = c.getContext('2d');
+  const path = r => { g.beginPath(); for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, rr = i % 2 ? r * 0.45 : r;
+    g.lineTo(S / 2 + rr * Math.cos(a), S / 2 + rr * Math.sin(a)); } g.closePath(); };
+  path(S * 0.495); g.fillStyle = '#ffffff'; g.fill();              // thin white halo: separates it from dark spines
+  path(S * 0.465); g.fillStyle = '#000000'; g.fill();              // bold black outline
+  path(S * 0.355);
+  const grad = g.createLinearGradient(0, 0, S, S);
+  grad.addColorStop(0, '#fff7b0'); grad.addColorStop(0.4, '#ffc81a'); grad.addColorStop(1, '#d88f00');
+  g.fillStyle = grad; g.fill();
+  const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
+  return new THREE.MeshStandardMaterial({ map: tex, transparent: true, alphaTest: 0.5, metalness: 0.1, roughness: 0.35,
+    emissive: 0xffffff, emissiveMap: tex, emissiveIntensity: 0.25 });
+})();
+function setStarred(on) {
+  starredView = on;
+  for (const m of meshes) m.traverse(o => { if (o.userData.star) o.visible = on; });
+  render();
+}
+
+// ---- one texture + one mesh per book (was 6-9 materials and draw calls per book) ----
+// Atlas layout (fractions of the canvas; y down): cover | back | spine side by side on top, page edges and a plain
+// patch (board edges) in bands at the bottom. Each box face's UVs are remapped into its region.
+const REG = { cover: [0, 0, 0.42, 0.9], back: [0.42, 0, 0.66, 0.9], spine: [0.66, 0, 1, 0.9],
+              pages: [0, 0.9, 1, 0.97], plain: [0, 0.97, 1, 1] };
+const ATLAS = innerWidth < 640 ? [256, 640] : [512, 1024];
+const imageLoader = new THREE.ImageLoader();
+const loadImg = async (url, tries = 3) => {
+  for (let i = 0; i < tries; i++) {
+    try { return await imageLoader.loadAsync(url); } catch (e) { await new Promise(r => setTimeout(r, 200 * (i + 1))); }
+  }
+  console.error('image failed:', url); return null;
+};
+function buildAtlas(imgs, pages, edge, [W, H]) {
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d');
+  const put = (img, [x0, y0, x1, y1]) => {
+    const r = [x0 * W, y0 * H, (x1 - x0) * W, (y1 - y0) * H];
+    if (img) g.drawImage(img, ...r); else { g.fillStyle = edge.getStyle(); g.fillRect(...r); }
+  };
+  put(imgs.cover, REG.cover); put(imgs.back, REG.back); put(imgs.spine, REG.spine);
+  put(pages, REG.pages); put(null, REG.plain);
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = maxAniso;
+  return tex;
+}
+// BoxGeometry with each face (+x, -x, +y, -y, +z, -z) mapped into an atlas region; optional translation.
+function atlasBox(w, h, d, faces, x = 0, y = 0, z = 0) {
+  const geo = new THREE.BoxGeometry(w, h, d);
+  const uv = geo.attributes.uv;
+  for (let f = 0; f < 6; f++) {
+    const [x0, y0, x1, y1] = REG[faces[f]];
+    const pad = 0.004;                                                       // keep mip filtering inside the region
+    for (let i = f * 4; i < f * 4 + 4; i++) {
+      uv.setXY(i, x0 + pad + uv.getX(i) * (x1 - x0 - 2 * pad), (1 - y1 + pad) + uv.getY(i) * (y1 - y0 - 2 * pad));
+    }
+  }
+  geo.clearGroups();
+  geo.translate(x, y, z);
+  return geo;
+}
+
+// ---- rounded book bodies (top view): extrude a cross-section in the x-z plane along the height ----
+// pts: [{x, z, reg, u, smooth}] going round the outline; reg/u give the atlas region and its horizontal coordinate
+// for the side wall starting at that point. Side walls are smooth within an arc, hard at face boundaries.
+function regUV(reg, u, v) {
+  const [x0, y0, x1, y1] = REG[reg], pad = 0.004;
+  return [x0 + pad + u * (x1 - x0 - 2 * pad), (1 - y1 + pad) + v * (y1 - y0 - 2 * pad)];
+}
+function extrudeOutline(pts, h, capReg, capUV) {
+  const pos = [], nor = [], uvs = [], idx = [];
+  const n = pts.length, cx = pts.reduce((a, p) => a + p.x, 0) / n, cz = pts.reduce((a, p) => a + p.z, 0) / n;
+  const segN = i => { const a = pts[i], b = pts[(i + 1) % n]; let nx = b.z - a.z, nz = -(b.x - a.x);
+    const l = Math.hypot(nx, nz) || 1; nx /= l; nz /= l;
+    if (nx * ((a.x + b.x) / 2 - cx) + nz * ((a.z + b.z) / 2 - cz) < 0) { nx = -nx; nz = -nz; } return [nx, nz]; };
+  const ptN = (i, seg) => {                       // vertex normal at point i for segment seg
+    const prev = (i - 1 + n) % n;
+    if (pts[i].smooth && seg === i) { const a = segN(prev), b = segN(i); const l = Math.hypot(a[0] + b[0], a[1] + b[1]); return [(a[0] + b[0]) / l, (a[1] + b[1]) / l]; }
+    if (pts[i].smooth && seg === prev) { const a = segN(prev), b = segN(i); const l = Math.hypot(a[0] + b[0], a[1] + b[1]); return [(a[0] + b[0]) / l, (a[1] + b[1]) / l]; }
+    return segN(seg);
+  };
+  for (let i = 0; i < n; i++) {                   // side walls
+    const j = (i + 1) % n, a = pts[i], b = pts[j], base = pos.length / 3;
+    // both ends use the segment's own region's coordinate (never mix two faces' mappings on one wall)
+    const na = ptN(i, i), nb = ptN(j, i), ua = a.uv ? a.uv[a.reg] : a.u, ub = b.uv ? b.uv[a.reg] : (b.reg === a.reg ? b.u : b.u);
+    for (const [p, nn, u, y] of [[a, na, ua, -h / 2], [b, nb, ub, -h / 2], [b, nb, ub, h / 2], [a, na, ua, h / 2]]) {
+      pos.push(p.x, y, p.z); nor.push(nn[0], 0, nn[1]); uvs.push(...regUV(a.reg, u, y > 0 ? 1 : 0));
+    }
+    const cross = ((b.x - a.x) * 0 - 0) ; // orientation fixed below
+    const sn = segN(i), d = [b.x - a.x, b.z - a.z];
+    // quad a0 b0 b1 a1: normal of (b0-a0) x (a1-a0) = (dx,0,dz) x (0,h,0) = (-dz*h, 0, dx*h)
+    if (-d[1] * sn[0] + d[0] * sn[1] > 0) idx.push(base, base + 1, base + 2, base, base + 2, base + 3);
+    else idx.push(base, base + 2, base + 1, base, base + 3, base + 2);
+  }
+  for (const [y, ny] of [[h / 2, 1], [-h / 2, -1]]) {   // caps: fan around the centroid
+    const base = pos.length / 3;
+    pos.push(cx, y, cz); nor.push(0, ny, 0); uvs.push(...capUV(cx, cz));
+    for (const p of pts) { pos.push(p.x, y, p.z); nor.push(0, ny, 0); uvs.push(...capUV(p.x, p.z)); }
+    for (let i = 0; i < n; i++) {
+      const a = base + 1 + i, b = base + 1 + (i + 1) % n, A = pts[i], B = pts[(i + 1) % n];
+      const up = (A.z - cz) * (B.x - cx) - (A.x - cx) * (B.z - cz) > 0;   // (A-c) x (B-c) has +y component?
+      if (up === (ny > 0)) idx.push(base, a, b); else idx.push(base, b, a);
+    }
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+  geo.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2));
+  geo.setIndex(idx);
+  return geo;
+}
+// Paperback body: x from back (-t/2) to front cover (+t/2), z from fore-edge (-w/2) to spine (+w/2).
+// Spine corners rounded (radius grows with thickness), thick books bulge a little; fore-edge corners barely rounded.
+function paperbackGeometry(t, h, w) {
+  // curvature grows with thickness: none up to ~15 mm, full by ~50 mm
+  const k = Math.min(1, Math.max(0, (t - 15) / 35));
+  const rs = Math.min(0.7, t * 0.1) + k * Math.min(t * 0.16, 4), rf = Math.min(0.8, t * 0.1), bulge = k * t * 0.045;
+  const pts = [];
+  const arc = (cx, cz, r, a0, a1, steps, reg, uf, smooth) => {
+    for (let k = 0; k <= steps; k++) { const a = a0 + (a1 - a0) * k / steps, x = cx + r * Math.cos(a), z = cz + r * Math.sin(a);
+      pts.push({ x, z, reg, u: uf(x, z), smooth }); }
+  };
+  const uSpine = x => (x + t / 2) / t, uFront = (x, z) => (w / 2 - z) / w, uBack = (x, z) => (z + w / 2) / w;
+  // fore-edge, back -> front (pages)
+  arc(-t / 2 + rf, -w / 2 + rf, rf, Math.PI, 1.5 * Math.PI, 2, 'pages', x => uSpine(x), true);
+  arc(t / 2 - rf, -w / 2 + rf, rf, 1.5 * Math.PI, 2 * Math.PI, 2, 'cover', uFront, true);
+  // front cover up to the spine corner, then the rounded spine (bulging), then down the back cover
+  const steps = 10;
+  for (let k = 0; k <= steps; k++) {
+    const sx = 1 - k / steps;                                   // 1 = front edge, 0 = back edge
+    const x = -t / 2 + sx * t;
+    const edge = Math.min(sx, 1 - sx) * t;                      // distance from the nearer corner
+    const round = edge < rs ? rs - Math.sqrt(Math.max(0, rs * rs - (rs - edge) ** 2)) : 0;
+    const z = w / 2 - round + bulge * Math.sin(Math.PI * sx);
+    pts.push({ x, z, reg: k === 0 ? 'cover' : 'spine', u: k === 0 ? uFront(x, z - 0.001) : uSpine(x), smooth: k > 0 && k < steps });
+    if (k === 0) pts.push({ x, z, reg: 'spine', u: uSpine(x), smooth: false });
+  }
+  pts.push({ x: -t / 2, z: w / 2 - rs, reg: 'back', u: uBack(0, w / 2 - rs), smooth: false });
+  // fix up: segment regions are taken from the start point; mark the wall from the spine's last point as 'back'
+  const caps = (x, z) => regUV('pages', (x + t / 2) / t, (z + w / 2) / w);
+  for (let i = 0; i < pts.length; i++) if (pts[i].reg === 'spine' && i + 1 < pts.length && pts[i + 1].reg === 'back') pts[i] = { ...pts[i], reg: 'back', u: uBack(0, pts[i].z) };
+  for (const q of pts) q.uv = { spine: uSpine(q.x), pages: uSpine(q.x), cover: uFront(q.x, q.z), back: uBack(q.x, q.z), plain: 0.5 };
+  return extrudeOutline(pts.filter((p, i, a) => i === 0 || Math.hypot(p.x - a[i - 1].x, p.z - a[i - 1].z) > 1e-4 || p.reg !== a[i - 1].reg), h, 'pages', caps);
+}
+// Hardcover spine board: a curved shell (outer arc bulging out, inner arc BOARD behind it).
+function hardSpineGeometry(t, h, zBack, bulge) {
+  const N = 12, outer = [], inner = [];
+  for (let k = 0; k <= N; k++) {
+    const s = k / N, x = -t / 2 + s * t, b = bulge * Math.sin(Math.PI * s);
+    outer.push([x, zBack + BOARD + b]); inner.push([x, zBack + b * 0.85]);
+  }
+  const pos = [], nor = [], uvs = [], idx = [];
+  const quad = (a, b, c, d, n, uv) => { const base = pos.length / 3;
+    for (const [p, q] of [[a, uv[0]], [b, uv[1]], [c, uv[2]], [d, uv[3]]]) { pos.push(...p); nor.push(...n[pos.length / 3 - base - 1]); uvs.push(...q); }
+    idx.push(base, base + 2, base + 1, base, base + 3, base + 2); };   // wound so faces point outward
+  for (let k = 0; k < N; k++) {                                   // outer face (spine artwork)
+    const [x0, z0] = outer[k], [x1, z1] = outer[k + 1];
+    const nOf = i => { const a = outer[Math.max(0, i - 1)], b = outer[Math.min(N, i + 1)]; const nx = -(b[1] - a[1]), nz = b[0] - a[0], l = Math.hypot(nx, nz); return [nx / l, 0, nz / l]; };
+    const u0 = k / N, u1 = (k + 1) / N;
+    quad([x0, -h / 2, z0], [x0, h / 2, z0], [x1, h / 2, z1], [x1, -h / 2, z1],
+         [nOf(k), nOf(k), nOf(k + 1), nOf(k + 1)],
+         [regUV('spine', u0, 0), regUV('spine', u0, 1), regUV('spine', u1, 1), regUV('spine', u1, 0)]);
+    const pl = regUV('plain', 0.5, 0.5);
+    for (const [y, ny] of [[h / 2, 1], [-h / 2, -1]]) {           // top / bottom edge of the board
+      const [ix0, iz0] = inner[k], [ix1, iz1] = inner[k + 1], nn = [0, ny, 0];
+      if (ny > 0) quad([x0, y, z0], [ix0, y, iz0], [ix1, y, iz1], [x1, y, z1], [nn, nn, nn, nn], [pl, pl, pl, pl]);
+      else quad([x0, y, z0], [x1, y, z1], [ix1, y, iz1], [ix0, y, iz0], [nn, nn, nn, nn], [pl, pl, pl, pl]);
+    }
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+  geo.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2));
+  geo.setIndex(idx);
+  return geo;
+}
+
+async function bookImages(b) {
+  const [spine, cover, back] = await Promise.all([loadImg(b.texture), b.cover ? loadImg(b.cover) : null, b.back ? loadImg(b.back) : null]);
+  return { spine, cover, back };
+}
+async function bookMesh(b) {
+  const imgs = await bookImages(b);
+  const edge = imgs.spine ? averageEdgeColor(imgs.spine) : new THREE.Color(0x888070);
+  const { h, w, t } = b.dims;
+  const pages = pageCanvas(t);
+  const material = new THREE.MeshStandardMaterial({ map: buildAtlas(imgs, pages, edge, ATLAS), roughness: 0.6 });
+  const g = new THREE.Group();
+  let geo;
+  if (b.binding === 'hardcover' && t > 2 * BOARD + 2) {
+    const bw = w - BOARD, pt = t - 2 * BOARD, ph = h - 2 * OVERHANG, pw = w - BOARD - OVERHANG;
+    geo = mergeGeometries([
+      atlasBox(BOARD, h, bw, ['cover', 'plain', 'plain', 'plain', 'plain', 'plain'], t / 2 - BOARD / 2, 0, -BOARD / 2),
+      atlasBox(BOARD, h, bw, ['plain', 'back', 'plain', 'plain', 'plain', 'plain'], -t / 2 + BOARD / 2, 0, -BOARD / 2),
+      hardSpineGeometry(t, h, w / 2 - BOARD, t * (0.015 + 0.075 * Math.min(1, Math.max(0, (t - 15) / 35)))),
+      atlasBox(pt, ph, pw, ['pages', 'pages', 'pages', 'pages', 'pages', 'pages'], 0, 0, (OVERHANG - BOARD) / 2),
+    ]);
+  } else {
+    geo = paperbackGeometry(t, h, w);
+  }
+  part(geo, material, 0, 0, 0, g);
+  g.userData.atlasParts = { imgs, pages, edge, material };
+  if (t > 8 && rand() < 0.12) {                              // bookmark / paper slip poking out of the top
+    const sw = 8 + rand() * 30, sh = 12 + rand() * 25;
+    const slip = new THREE.MeshStandardMaterial({ color: SLIPS[Math.floor(rand() * SLIPS.length)], roughness: 0.8 });
+    const m = part(new THREE.BoxGeometry(0.4, sh, sw), slip, jitter(t / 3), h / 2 - OVERHANG + sh / 2 - 6, -w / 2 + 20 + rand() * (w - sw - 40), g);
+    m.rotation.x = jitter(0.08);
+    m.userData.slip = true;
+  }
+  if (b.beloved) {
+    const size = Math.min(19, Math.max(9, t * 0.92));
+    const star = new THREE.Mesh(new THREE.PlaneGeometry(size, size), starMaterial);
+    star.position.set(0, -h / 2 + 14 + size / 2, w / 2 + 0.25);
+    star.rotation.z = jitter(0.25);
+    star.visible = starredView; star.userData.owner = g; star.userData.star = true;
+    g.add(star);
+  }
+  g.userData.slug = b.slug; g.userData.link = b.link;
+  return g;
+}
+// The book card shows one book large: give it a high-resolution atlas while it's open, then drop it again.
+function setHiRes(m, on) {
+  const ap = m.userData.atlasParts;
+  if (on) {
+    ap.hi = ap.hi || buildAtlas(ap.imgs, ap.pages, ap.edge, [1024, 2048]);
+    ap.lo = ap.lo || ap.material.map;
+    ap.material.map = ap.hi;
+  } else if (ap.lo) {
+    ap.material.map = ap.lo; ap.hi?.dispose(); ap.hi = null;
+  }
+  ap.material.needsUpdate = true;
+}
+
+const meshes = await Promise.all(books.map(bookMesh));
+const meshBySlug = new Map(books.map((b, i) => [b.slug, meshes[i]]));
+
+// ---------- label-maker section labels ----------
+// White label tape (Brother / Dymo style): ~12 mm tall, black sans-serif print, square-cut ends, a little gloss.
+// Stuck on the front edge of the shelf board below the section's first book, never perfectly level.
+const TAPE_H = 12, PX_PER_MM = 16;
+const NOTE = 76;   // kept for the colour-mode label position
+function labelTape(text) {
+  const font = `500 ${Math.round(7.2 * PX_PER_MM)}px "Helvetica Neue", Helvetica, Arial, sans-serif`;
+  const probe = document.createElement('canvas').getContext('2d'); probe.font = font;
+  const margin = 5 * PX_PER_MM;                                  // blank tape the printer feeds before/after the text
+  const W = Math.ceil(probe.measureText(text).width + 2 * margin), H = TAPE_H * PX_PER_MM;
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d');
+  g.fillStyle = '#fbf8ef'; g.fillRect(0, 0, W, H);
+  g.strokeStyle = 'rgba(0,0,0,0.22)'; g.lineWidth = 3; g.strokeRect(1.5, 1.5, W - 3, H - 3);   // cut tape edge
+  const sheen = g.createLinearGradient(0, 0, 0, H);              // faint gloss band across the laminated tape
+  sheen.addColorStop(0, 'rgba(255,255,255,0.0)'); sheen.addColorStop(0.35, 'rgba(255,255,255,0.5)');
+  sheen.addColorStop(0.55, 'rgba(255,255,255,0.0)'); sheen.addColorStop(1, 'rgba(0,0,0,0.05)');
+  g.fillStyle = sheen; g.fillRect(0, 0, W, H);
+  g.fillStyle = '#141414'; g.font = font; g.textBaseline = 'middle';
+  g.fillText(text, margin, H / 2 + PX_PER_MM * 0.3);
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = maxAniso;
+  // a thin box rather than a plane, so the tape's edge catches light and casts a hairline shadow
+  const m = new THREE.Mesh(new THREE.BoxGeometry(W / PX_PER_MM, TAPE_H, 0.25),
+    new THREE.MeshStandardMaterial({ map: tex, roughness: 0.25, metalness: 0 }));
+  m.receiveShadow = true; m.castShadow = true;
+  m.userData.width = W / PX_PER_MM;
+  return m;
+}
+function placeNote(text, x, floor, group) {
+  const tape = labelTape(text);
+  tape.position.set(x + tape.userData.width / 2, floor - board / 2 + jitter(1), 0.3);   // centred on the board's front edge
+  tape.rotation.z = jitter(0.012);
+  tape.userData.label = text; tape.userData.floor = floor; tape.userData.group = group;
+  scene.add(tape); notes.push(tape);
+}
+
+// ---------- placement ----------
+let cursor = 0, floor = 0, prev = null, cx0 = 0;
+
+// Consecutive 'lying' books form one horizontal stack at that point in the row: biggest at the bottom,
+// spines facing out, top of each book to the left (title reads left-to-right).
+function placeStack(items) {
+  items.sort((a, b) => b.b.dims.h * b.b.dims.w - a.b.dims.h * a.b.dims.w);
+  let y = 0, width = 0;
+  for (const { b, m } of items) {
+    const { h, w, t } = b.dims;
+    m.children.forEach(c => { if (c.userData.slip) c.visible = false; });   // no bookmarks sticking out of lying books
+    m.rotation.z = Math.PI / 2;
+    m.rotation.y = jitter(0.05);
+    m.position.set(cx0 + cursor + h / 2 + jitter(4), floor + y + t / 2, -6 - rand() * 14 - w / 2 - (b.beloved ? 0 : NOT_BELOVED_RECESS));
+    y += t; width = Math.max(width, h);
+    scene.add(m);
+    m.userData.root = m;
+  }
+  prev = { right: cursor + width, h: y };
+  cursor += width + 14;
+}
+
+// Spine hue for the colour joke: average of the whole spine texture.
+function spineHue(m) {
+  const img = m.children.find(c => c.material?.[4]?.map)?.material[4].map.image
+           ?? m.children.map(c => c.material).flat().find(x => x?.map && x.map.image?.width < x.map.image?.height)?.map.image;
+  if (!img) return 0;
+  // Dominant saturated colour: hue of the clearly coloured pixels (circular mean). Spines that are mostly white,
+  // cream, grey or black are neutrals and go at the end, light to dark.
+  const c = document.createElement('canvas'); c.width = 8; c.height = 64;
+  const g = c.getContext('2d'); g.drawImage(img, 0, 0, 8, 64);
+  const d = g.getImageData(0, 0, 8, 64).data;
+  let sx = 0, sy = 0, n = 0, light = 0;
+  for (let i = 0; i < d.length; i += 4) {
+    const r = d[i] / 255, gg = d[i + 1] / 255, b = d[i + 2] / 255;
+    const mx = Math.max(r, gg, b), mn = Math.min(r, gg, b), ch = mx - mn;
+    light += (mx + mn) / 2;
+    if (ch < 0.25) continue;
+    let h = mx === r ? ((gg - b) / ch) % 6 : mx === gg ? (b - r) / ch + 2 : (r - gg) / ch + 4;
+    h = (h * 60 + 360) % 360;
+    sx += Math.cos(h * Math.PI / 180); sy += Math.sin(h * Math.PI / 180); n++;
+  }
+  const total = d.length / 4;
+  if (n < total * 0.25) return 2 - light / total;      // neutrals after colours: lightest first
+  return ((Math.atan2(sy, sx) * 180 / Math.PI + 360 + 15) % 360) / 360;   // +15 so deep reds start the rainbow
+}
+
+function clearLayout() {
+  for (const m of meshes) { m.removeFromParent(); m.position.set(0, 0, 0); m.rotation.set(0, 0, 0); m.userData.tilt = null; }
+  for (const n of notes) n.removeFromParent();
+  notes.length = 0;
+  for (const p of pivots) p.removeFromParent();
+  pivots.length = 0;
+}
+
+function layoutAll(byColour) {
+  shadowsDirty = true;
+  seed = 4242;                                         // same jitter every time a layout is rebuilt
+  clearLayout();
+  const plan = byColour ? colourPlan() : cases.map(c => c.shelves);
+  cases.forEach((c, ci) => {
+  cx0 = c.x0;
+  plan[ci].forEach((shelf, si) => {
+    cursor = 4; floor = baseY(c, si); prev = { right: 0, h: SHELF.height };
+    let pending = [];
+    shelf.forEach(b => {
+      const m = meshBySlug.get(b.slug), { h, w, t } = b.dims;
+      m.userData.book = b;
+      if (b.section) placeNote(b.section, cx0 + cursor + 4, floor, b.group);
+      if (b.pose === 'lying') { pending.push({ b, m }); return; }
+      if (pending.length) { placeStack(pending); pending = []; }
+      // Not every book is pushed in equally, and few stand perfectly square.
+      const inset = 3 + rand() * 24 + (b.beloved ? 0 : NOT_BELOVED_RECESS);
+      const z = -inset - w / 2;
+      m.children.forEach(ch => { if (ch.userData.slip) ch.visible = true; });
+      if (b.pose === 'upright') {
+        m.position.set(cx0 + cursor + t / 2, floor + h / 2, z);
+        m.rotation.y = jitter(0.035);
+        m.userData.tilt = { floor, h, w };
+        prev = { right: cursor + t, h, lean: false };
+        cursor += t + 0.4 + rand() * 1.4 + (rand() < 0.12 ? 3 + rand() * 9 : 0);   // occasional gap
+        scene.add(m);
+        m.userData.root = m;
+      } else if (b.pose === 'lean-run') {
+        // Narrow books slumping left. The first leans on its upright neighbour (top corner on the neighbour's face);
+        // each next one lies flush against the previous leaning book's right face, at nearly the same angle.
+        const th = THREE.MathUtils.degToRad((b.lean ?? 8) + (prev.lean ? jitter(0.8) : 0));
+        let px;
+        if (prev.lean) px = prev.pivot + prev.t / Math.cos(prev.th) + 0.3;
+        else px = prev.right + 0.5 + Math.min(prev.h, h * Math.cos(th)) * Math.tan(th);
+        const pivot = new THREE.Group();
+        pivot.position.set(cx0 + px, floor, z); pivot.rotation.z = th; pivot.rotation.y = jitter(0.02);
+        m.position.set(t / 2, h / 2, 0);
+        pivot.add(m); scene.add(pivot); pivots.push(pivot);
+        m.userData.root = pivot;
+        prev = { right: px + t * Math.cos(th), h: h * Math.cos(th), lean: true, pivot: px, t, th };
+        cursor = px + t * Math.cos(th) + 1.2;
+      } else if (b.pose === 'lean-left') {
+        // A book tipped left rests on its bottom-LEFT edge (so it never dips into the shelf) and its left face
+        // touches the previous book: at its own top corner if the neighbour is taller, else the neighbour's corner.
+        const th = THREE.MathUtils.degToRad(LEAN_DEG + jitter(3));
+        const contact = Math.min(prev.h, h * Math.cos(th));
+        const px = prev.right + 0.5 + contact * Math.tan(th);
+        const pivot = new THREE.Group();
+        pivot.position.set(cx0 + px, floor, z); pivot.rotation.z = th; pivot.rotation.y = jitter(0.04);
+        m.position.set(t / 2, h / 2, 0);
+        pivot.add(m); scene.add(pivot); pivots.push(pivot);
+        m.userData.root = pivot;
+        prev = { right: px + t * Math.cos(th), h: h * Math.cos(th) };
+        cursor = px + t * Math.cos(th) + 30;
+      }
+    });
+    if (pending.length) placeStack(pending);
+  });
+  if (byColour) placeNote('SORTED BY COLOUR (SORRY)', c.x0 + inner / 2 - 80, baseY(c, 0));
+  });
+  for (const m of meshes) { m.userData.z0 = m.userData.root.position.z; m.userData.p = 0; }
+}
+
+// Re-shelve every case by spine hue, everything upright, same number of books per shelf.
+function colourPlan() {
+  return cases.map(c => {
+    const all = c.shelves.flat().map(b => ({ ...b, pose: 'upright', section: null }));
+    all.sort((a, b) => spineHue(meshBySlug.get(a.slug)) - spineHue(meshBySlug.get(b.slug)));
+    const out = []; let row = [], used = 0;
+    for (const b of all) {
+      if (used + b.dims.t + 2 > inner - 8) { out.push(row); row = []; used = 0; }
+      row.push(b); used += b.dims.t + 2;
+    }
+    if (row.length) out.push(row);
+    return out;
+  });
+}
+const notes = [], pivots = [];
+layoutAll(params.get('sort') === 'colour');
+
+// ---------- lights ----------
+const key = new THREE.DirectionalLight(0xfff0dc, 2.0);
+key.position.set(sceneW * 0.3 - 150, sceneH + 380, 900 + sceneH * 0.4);
+key.target.position.set(sceneW / 2, sceneH / 2, -depth / 2);
+key.castShadow = true;
+key.shadow.mapSize.set(4096, 4096);
+const sh = Math.max(sceneW, sceneH) / 2 + 300;
+Object.assign(key.shadow.camera, { left: -sh, right: sh, top: sh, bottom: -sh, near: 10, far: 5000 });
+key.shadow.bias = -0.0004; key.shadow.normalBias = 0.5;
+scene.add(key, key.target);
+scene.add(new THREE.HemisphereLight(0xfff6ea, 0x8a7560, 0.8));
+
+// ---------- camera: viewW = millimetres of wall visible across the window ----------
+// Default view fits one Billy's width; pinch / ctrl+scroll or the zoom button widens it up to the whole collection.
+// Plain scroll pans (vertical between shelves, sideways swipe across units).
+const camera = new THREE.PerspectiveCamera(16, innerWidth / innerHeight, 10, 30000);
+const caseOf = x => cases.reduce((a, b) => Math.abs(b.x0 + inner / 2 - x) < Math.abs(a.x0 + inner / 2 - x) ? b : a);
+const DEFAULT_W = caseW + 60;
+const minW = () => caseW * (innerWidth < 640 ? 0.35 : 0.7);   // closest zoom: 70% of a shelf (35% on phones)
+let camX = params.get('unit') ? cases[Number(params.get('unit'))].x0 + inner / 2 : null;   // debug: ?unit=<index>
+let camY = params.get('y') ? Number(params.get('y')) : null;
+let viewW = params.get('zoom') === 'all' ? Infinity : DEFAULT_W;                             // debug: ?zoom=all
+const fullW = () => Math.max(sceneW + 240, (sceneH * 1.18 + 200) * camera.aspect);   // room for the category bar
+function frame() {
+  const tanH = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+  viewW = Math.min(fullW(), Math.max(minW(), viewW));
+  const dist = viewW / (2 * tanH * camera.aspect), halfH = dist * tanH, halfW = viewW / 2;
+  if (camX === null) camX = cases[0].x0 + inner / 2;
+  const xlo = halfW - 300, xhi = sceneW + 300 - halfW;
+  camX = (xlo > xhi || viewW >= fullW() * 0.98) ? sceneW / 2 : Math.min(xhi, Math.max(xlo, camX));
+  const ylo = halfH - 200, yhi = sceneH + 200 - halfH;
+  if (camY === null) { const c0 = caseOf(camX); camY = plinth + c0.H + board + 40 - halfH; }   // start on that case's top shelf
+  camY = ylo > yhi ? sceneH / 2 + sceneH * 0.05 : Math.min(yhi, Math.max(ylo, camY));
+  camera.position.set(camX, camY + 30 * (DEFAULT_W / viewW), dist);
+  camera.lookAt(camX, camY, -depth / 2);
+  frame.mmPerPx = (2 * halfH) / innerHeight;
+}
+function animateView(to, ms = 550) {                               // to: {x, y, w}, any subset
+  const from = { x: camX, y: camY, w: Math.min(viewW, fullW()) }, t0 = performance.now();
+  const step = now => {
+    const k = Math.min(1, (now - t0) / ms), e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+    if (to.x !== undefined) camX = from.x + (to.x - from.x) * e;
+    if (to.y !== undefined) camY = from.y + (to.y - from.y) * e;
+    if (to.w !== undefined) viewW = Math.exp(Math.log(from.w) + (Math.log(Math.min(to.w, fullW())) - Math.log(from.w)) * e);
+    frame(); render();
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+frame();
+// Category bar: every section, grouped (Fiction first); clicking glides the camera to that section's label.
+// The colour joke sits at the far right.
+const bar = document.getElementById('cases');
+const colourBtn = document.createElement('button');
+let colourMode = params.get('sort') === 'colour';
+colourBtn.onclick = () => {
+  colourMode = !colourMode;
+  hovered = null; layoutAll(colourMode); buildBar(); render();
+};
+let chips = [];
+const starBtn = document.createElement('button');
+starBtn.onclick = () => { setStarred(!starredView); buildBar(); };
+function buildBar() {
+  bar.innerHTML = ''; chips = [];
+  colourBtn.textContent = colourMode ? 'Sort by section' : 'Sort by colour';
+  colourBtn.className = colourMode ? 'on' : '';
+  starBtn.textContent = '★ Starred'; starBtn.className = starredView ? 'on' : '';
+  let group = null;
+  // group chips by the section's own bookcase; sections that overflowed onto the other case go last in their group
+  const key = n => { const g = n.userData.group || caseOf(n.position.x).name;
+    return cases.findIndex(c => c.name === g) * 2 + (g !== caseOf(n.position.x).name ? 1 : 0); };
+  const ordered = notes.filter(n => n.userData.label && !colourMode).sort((a, b) => key(a) - key(b));
+  for (const n of ordered) {
+    const c = cases.find(x => x.name === n.userData.group) || caseOf(n.position.x);
+    if (c.name !== group) {
+      group = c.name;
+      const g = document.createElement('button'); g.className = 'group'; g.textContent = group;
+      g.onclick = () => { chips.forEach(x => x.className = ''); frameCase(c); };
+      bar.appendChild(g);
+    }
+    const btn = document.createElement('button');
+    btn.textContent = n.userData.label;
+    btn.onclick = () => { chips.forEach(x => x.className = ''); btn.className = 'on'; glideTo(n); };
+    bar.appendChild(btn); chips.push(btn);
+  }
+  const views = document.getElementById('views'); views.innerHTML = '';
+  views.appendChild(starBtn);
+  updateZoomBtn(); views.appendChild(zoomBtn);
+  views.appendChild(colourBtn);
+}
+function glideTo(note) {
+  // lock onto the section's bookcase (centred, full width), with the section's shelf in the middle
+  const c = caseOf(note.position.x);
+  animateView({ x: c.x0 + inner / 2, y: note.userData.floor + height * 0.5, w: DEFAULT_W });
+}
+function frameCase(c) {
+  // the whole bookcase, top to plinth
+  const h = plinth + c.H + board + 120;
+  animateView({ x: c.x0 + inner / 2, y: h / 2 - 40, w: Math.max(DEFAULT_W, h * camera.aspect) });
+}
+const zoomBtn = document.createElement('button');
+function updateZoomBtn() {
+  const out = viewW >= fullW() * 0.98;
+  zoomBtn.textContent = out ? 'Zoom in' : 'Whole collection';
+  zoomBtn.className = out ? 'on' : '';
+}
+zoomBtn.onclick = () => {
+  if (viewW >= fullW() * 0.98) animateView({ w: DEFAULT_W, x: cases[0].x0 + inner / 2, y: Infinity });
+  else animateView({ w: fullW(), x: sceneW / 2, y: sceneH / 2 + sceneH * 0.05 });
+  setTimeout(updateZoomBtn, 600);
+};
+buildBar();
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight); composer.setSize(innerWidth, innerHeight); frame(); render();
+});
+
+// ---------- hover: slide the book out + label; click → review ----------
+const HOVER_PULL = 70;   // mm the hovered book slides towards the viewer
+const HOVER_TILT = THREE.MathUtils.degToRad(9);   // upright books also tip their top towards the viewer
+
+// p = 0 at rest, 1 fully hovered. Upright books slide out, then pivot so the top comes towards you: on their
+// bottom-front edge while still on the shelf, on the shelf's front edge once they overhang. Others only slide.
+function applyHover(m) {
+  const root = m.userData.root, p = m.userData.p, tl = m.userData.tilt;
+  const zc = m.userData.z0 + HOVER_PULL * p;
+  if (!tl) { root.position.z = zc; return; }
+  const a = HOVER_TILT * p, { floor, h, w } = tl;
+  const pivotZ = Math.min(zc + w / 2, 0);
+  const rz = zc - pivotZ;                          // book centre relative to the pivot (y: h/2, z: rz)
+  root.rotation.x = a;
+  root.position.y = floor + (h / 2) * Math.cos(a) - rz * Math.sin(a);
+  root.position.z = pivotZ + (h / 2) * Math.sin(a) + rz * Math.cos(a);
+}
+const ray = new THREE.Raycaster(), ptr = new THREE.Vector2();
+const label = document.createElement('div');
+label.id = 'label';
+document.body.appendChild(label);
+let hovered = null;
+
+function pick(e) {
+  ptr.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+  ray.setFromCamera(ptr, camera);
+  return ray.intersectObjects(meshes, true)[0]?.object.userData.owner ?? null;
+}
+renderer.domElement.addEventListener('pointermove', e => {
+  if (pointers.size || opened) return;              // dragging / pinching / card open
+  const m = pick(e);
+  renderer.domElement.style.cursor = m ? 'pointer' : 'grab';
+  if (m !== hovered) { hovered = m; animate(); }
+  if (m) {
+    const b = m.userData.book;
+    label.innerHTML = `<b>${b.title}</b><br>${b.author}${b.beloved ? ' · ☆' : ''}`;
+    label.style.left = `${e.clientX + 14}px`;
+    label.style.top = `${e.clientY + 18}px`;
+    label.style.opacity = 1;
+  } else {
+    label.style.opacity = 0;
+  }
+});
+// ---------- pan / zoom like a map ----------
+// Drag (mouse or one finger) pans; pinch, ctrl/cmd+scroll or a mouse wheel zooms around the cursor; a trackpad
+// two-finger swipe pans; double-click zooms in. A press that moves more than a few pixels is a drag, not a click.
+function zoomAt(clientX, clientY, factor) {
+  const ox = (clientX / innerWidth - 0.5), oy = (0.5 - clientY / innerHeight);
+  const before = { x: ox * viewW, y: oy * viewW / camera.aspect };
+  viewW = Math.min(fullW(), Math.max(minW(), viewW * factor));
+  camX += before.x - ox * viewW; camY += before.y - oy * viewW / camera.aspect;
+  updateZoomBtn(); requestRender();
+}
+// Two-finger scroll pans (both directions); pinch zooms around the cursor. Browsers report a trackpad pinch as a
+// wheel event with ctrlKey set; ctrl/cmd + mouse wheel zooms the same way.
+addEventListener('wheel', e => {
+  e.preventDefault();
+  if (opened) return;
+  if (e.ctrlKey || e.metaKey) zoomAt(e.clientX, e.clientY, Math.exp(e.deltaY * 0.01));
+  else { camX += e.deltaX * frame.mmPerPx; camY -= e.deltaY * frame.mmPerPx; requestRender(); }
+}, { passive: false });
+
+const pointers = new Map();   // pointerId -> {x, y}
+let dragMoved = 0, pinchDist = 0;
+const el = renderer.domElement;
+el.style.cursor = 'grab'; el.style.touchAction = 'none';
+el.addEventListener('pointerdown', e => {
+  if (opened) return;
+  try { el.setPointerCapture(e.pointerId); } catch (err) { /* not capturable: still track the pointer */ }
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  dragMoved = 0;
+  if (pointers.size === 2) { const [a, b] = [...pointers.values()]; pinchDist = Math.hypot(a.x - b.x, a.y - b.y); }
+});
+el.addEventListener('pointermove', e => {
+  const prev = pointers.get(e.pointerId);
+  if (!prev) return;                                // just hovering: handled by the hover listener
+  const dx = e.clientX - prev.x, dy = e.clientY - prev.y;
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (pointers.size === 2) {                        // two-finger pinch
+    const [a, b] = [...pointers.values()];
+    const d = Math.hypot(a.x - b.x, a.y - b.y);
+    if (pinchDist) zoomAt((a.x + b.x) / 2, (a.y + b.y) / 2, pinchDist / d);
+    pinchDist = d; dragMoved += 99;
+    return;
+  }
+  dragMoved += Math.abs(dx) + Math.abs(dy);
+  if (dragMoved > 4) {
+    el.style.cursor = 'grabbing';
+    if (hovered) { hovered = null; label.style.opacity = 0; animate(); }
+    camX -= dx * frame.mmPerPx; camY += dy * frame.mmPerPx; requestRender();
+  }
+});
+const endPointer = e => { pointers.delete(e.pointerId); pinchDist = 0; if (!pointers.size) el.style.cursor = hovered ? 'pointer' : 'grab'; };
+el.addEventListener('pointerup', endPointer);
+el.addEventListener('pointercancel', endPointer);
+el.addEventListener('dblclick', e => {             // frame the bookcase under the cursor
+  const wx = camX + (e.clientX / innerWidth - 0.5) * viewW;
+  const wy = camY + (0.5 - e.clientY / innerHeight) * viewW / camera.aspect;
+  animateView({ x: caseOf(wx).x0 + inner / 2, y: wy, w: DEFAULT_W });
+});
+el.addEventListener('pointerleave', () => { if (!pointers.size) { hovered = null; label.style.opacity = 0; animate(); } });
+el.addEventListener('click', e => {
+  if (opened) { closeBook(); return; }               // click outside the card closes it
+  if (dragMoved > 4) { if (params.get('selftest')) console.log('SELFTEST click suppressed'); return; }
+  const m = pick(e); if (m) openBook(m);
+});
+
+// ---------- book card: the clicked book comes off the shelf, turns to show its cover, and a card opens ----------
+const card = document.getElementById('card');
+let opened = null;            // { m, parent, pos, quat, from: {pos, quat}, to: {pos, quat} }
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function fillCard(b) {
+  const r = b.review || {};
+  const meta = [];
+  if (b.beloved) meta.push('<span class="star">★ Starred</span>');
+  if (r.source === 'smus' && r.posted) meta.push(`Reviewed ${esc(r.posted)}`);
+  if (r.read) meta.push(`Read ${esc(new Date(r.read.replace(/\//g, '-')).toLocaleDateString(undefined, { month: 'short', year: 'numeric' }))}`);
+  if (r.rating) meta.push(`<span title="${r.rating} of 5 on Goodreads" style="letter-spacing:1px"><span class="star">${'★'.repeat(r.rating)}</span><span style="color:#d8cfc4">${'★'.repeat(5 - r.rating)}</span></span>`);
+  const link = r.source === 'goodreads' ? 'View on Goodreads →' : 'Read the full review →';
+  const t = x => (x || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  const headline = r.headline && !t(r.headline).startsWith(t(b.title)) ? r.headline : '';   // skip "Title by Author"
+  const paras = (r.paras && r.paras.length ? r.paras : [r.excerpt || '']).filter(Boolean);
+  const facts = [b.year, b.pages ? b.pages + ' pages' : ''].filter(Boolean);
+  card.querySelector('.content').innerHTML = `
+    <div class="scroll">
+      <h2>${esc(b.title)}</h2>${b.subtitle ? `<div class="by" style="margin:-2px 0 6px;font-size:14px">${esc(b.subtitle)}</div>` : ''}<div class="by">${esc(b.author)}</div>
+      <div class="meta">${meta.join('')}</div>
+      ${facts.length ? `<div class="meta" style="margin-top:-8px">${esc(facts.join(' · '))}</div>` : ''}
+      ${headline ? `<p class="headline">${esc(headline)}</p>` : ''}
+      ${paras.map(x => `<p class="excerpt">${esc(x)}</p>`).join('')}
+    </div>
+    <div class="foot"><a class="go" href="${esc(b.link)}" target="_blank" rel="noopener">${link}</a></div>`;
+  // No scrolling: if the text is taller than the card can grow, trim the last paragraph(s) to fit.
+  const box = card.querySelector('.scroll');
+  const ps = [...box.querySelectorAll('.excerpt')];
+  while (box.scrollHeight > box.clientHeight + 1 && ps.length) {
+    const last = ps.at(-1), words = last.textContent.replace(/…$/, '').split(' ');
+    if (words.length < 12) { last.remove(); ps.pop(); if (ps.length) ps.at(-1).textContent = ps.at(-1).textContent.replace(/[.,;:]?$/, '…'); continue; }
+    last.textContent = words.slice(0, Math.floor(words.length * 0.85)).join(' ').replace(/[,;:]$/, '') + '…';
+  }
+}
+// The opened book is drawn by a second, transparent renderer on a canvas above the modal, so nothing on the shelf
+// (or the modal itself) can cover it. Same camera, so it leaves the shelf exactly where it was.
+const overlayCanvas = document.getElementById('overlay');
+const overlayRenderer = new THREE.WebGLRenderer({ canvas: overlayCanvas, antialias: true, alpha: true });
+overlayRenderer.setPixelRatio(renderer.getPixelRatio()); overlayRenderer.setSize(innerWidth, innerHeight);
+overlayRenderer.toneMapping = renderer.toneMapping; overlayRenderer.outputColorSpace = renderer.outputColorSpace;
+const overlayScene = new THREE.Scene();
+overlayScene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture; overlayScene.environmentIntensity = 0.75;
+overlayScene.add(new THREE.HemisphereLight(0xfff8ee, 0x9a8670, 1.35));
+const overlayKey = new THREE.DirectionalLight(0xfff3e4, 2.1); overlayScene.add(overlayKey, overlayKey.target);
+const veil = document.getElementById('veil');
+function renderOverlay() {
+  overlayKey.position.copy(camera.position).add(new THREE.Vector3(-300, 900, 300));   // from above-left: lights the top edges
+  overlayKey.target.position.copy(camera.position).add(new THREE.Vector3(0, 0, -1000));
+  overlayRenderer.render(overlayScene, camera);
+}
+addEventListener('resize', () => { overlayRenderer.setSize(innerWidth, innerHeight); renderOverlay(); });
+
+function displayPose(m) {
+  // Centre of the modal's book slot, sized to ~78% of the slot's height, front cover to the viewer, turned so the
+  // spine shows on the left.
+  const r = card.querySelector('.slot').getBoundingClientRect();
+  const b = m.userData.book, tanH = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+  const px = Math.min(r.height * 0.78, r.width * 0.78 * b.dims.h / b.dims.w);
+  const d = b.dims.h * innerHeight / (2 * tanH * px);
+  const nx = ((r.left + r.width / 2) / innerWidth) * 2 - 1, ny = -(((r.top + r.height / 2) / innerHeight) * 2 - 1);
+  const fwd = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion);
+  const dir = new THREE.Vector3(nx, ny, 0.5).unproject(camera).sub(camera.position).normalize();
+  const pos = camera.position.clone().addScaledVector(dir, d / dir.dot(fwd));
+  const quat = camera.quaternion.clone().multiply(new THREE.Quaternion().setFromEuler(new THREE.Euler(0.38, -Math.PI / 2 + 0.42, 0.04)));
+  return { pos, quat };
+}
+function ease(k) { return k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2; }
+function flyBook(m, from, to, ms, done) {
+  const t0 = performance.now(), lift = new THREE.Vector3(0, 0, 60);
+  const step = now => {
+    const k = Math.min(1, (now - t0) / ms), e = ease(k);
+    m.position.lerpVectors(from.pos, to.pos, e);
+    m.position.addScaledVector(lift, Math.sin(Math.PI * Math.min(1, k * 1.4)) * (1 - e));   // slide out first
+    m.quaternion.slerpQuaternions(from.quat, to.quat, e);
+    renderOverlay();
+    if (k < 1) requestAnimationFrame(step); else done?.();
+  };
+  requestAnimationFrame(step);
+}
+function openBook(m) {
+  if (opened) return;
+  hovered = null; label.style.opacity = 0;
+  m.userData.p = 0; applyHover(m);                         // start from its resting place on the shelf
+  const parent = m.parent, pos = m.position.clone(), quat = m.quaternion.clone();
+  m.updateWorldMatrix(true, false);
+  overlayScene.attach(m);                                  // same world transform, now drawn above everything
+  shadowsDirty = true; setHiRes(m, true);
+  render();                                                // shelf without it
+  fillCard(m.userData.book);
+  card.classList.add('open'); veil.classList.add('open');  // layout first, so the slot position is known
+  const from = { pos: m.position.clone(), quat: m.quaternion.clone() };
+  const to = displayPose(m);
+  opened = { m, parent, pos, quat, from, to };
+  flyBook(m, from, to, 800);
+  el.style.cursor = 'default';
+}
+function closeBook() {
+  if (!opened) return;
+  const { m, parent, pos, quat, from } = opened;
+  card.classList.remove('open'); veil.classList.remove('open');
+  flyBook(m, { pos: m.position.clone(), quat: m.quaternion.clone() }, from, 600, () => {
+    parent.attach(m); m.position.copy(pos); m.quaternion.copy(quat);
+    setHiRes(m, false); shadowsDirty = true;
+    opened = null; render(); renderOverlay();
+  });
+}
+veil.onclick = closeBook;
+
+// Drag the book in the card to turn it a little; on release it springs back to its display pose.
+const slot = card.querySelector('.slot');
+slot.style.cursor = 'grab'; slot.style.touchAction = 'none';
+let spin = null;                                   // { x, y, yaw, pitch }
+function applySpin(yaw, pitch) {
+  if (!opened) return;
+  const camQ = camera.quaternion, offset = new THREE.Quaternion().setFromEuler(new THREE.Euler(pitch, yaw, 0, 'YXZ'));
+  opened.m.quaternion.copy(camQ).multiply(offset).multiply(camQ.clone().invert()).multiply(opened.to.quat);
+  renderOverlay();
+}
+slot.addEventListener('pointerdown', e => {
+  if (!opened) return;
+  e.stopPropagation(); try { slot.setPointerCapture(e.pointerId); } catch (err) {}
+  spin = { x: e.clientX, y: e.clientY, yaw: 0, pitch: 0 }; slot.style.cursor = 'grabbing';
+});
+slot.addEventListener('pointermove', e => {
+  if (!spin) return;
+  const lim = 0.6;                                 // ~35 degrees each way
+  spin.yaw = Math.max(-lim, Math.min(lim, (e.clientX - spin.x) * 0.006));
+  spin.pitch = Math.max(-lim, Math.min(lim, (e.clientY - spin.y) * 0.006));
+  applySpin(spin.yaw, spin.pitch);
+});
+const releaseSpin = () => {
+  if (!spin) return;
+  const { yaw, pitch } = spin, t0 = performance.now(); spin = null; slot.style.cursor = 'grab';
+  const step = now => {
+    const k = Math.min(1, (now - t0) / 420);
+    const e = 1 - Math.pow(1 - k, 3) * Math.cos(k * Math.PI * 0.5) - 0;      // ease out
+    const f = Math.pow(1 - k, 3) * (1 + 1.6 * k);                            // decays with a slight overshoot
+    applySpin(yaw * f * Math.cos(k * 2.2), pitch * f * Math.cos(k * 2.2));
+    if (k < 1) requestAnimationFrame(step); else applySpin(0, 0);
+  };
+  requestAnimationFrame(step);
+};
+slot.addEventListener('pointerup', releaseSpin);
+slot.addEventListener('pointercancel', releaseSpin);
+card.querySelector('.close').onclick = closeBook;
+addEventListener('keydown', e => { if (e.key === 'Escape') closeBook(); });
+
+// Ease every book towards its target; render only while something is still moving (~150 ms, frame-rate independent).
+let animating = false;
+function animate() {
+  if (animating) return;
+  animating = true;
+  let last = performance.now();
+  const step = now => {
+    const k = 1 - Math.exp(-(now - last) / 55);
+    last = now;
+    let moving = false;
+    for (const m of meshes) {
+      if (opened && opened.m === m) continue;
+      const target = m === hovered ? 1 : 0, d = target - m.userData.p;
+      if (d === 0) continue;
+      if (Math.abs(d) > 0.004) { m.userData.p += d * k; moving = true; } else m.userData.p = target;
+      applyHover(m); shadowsDirty = true;
+    }
+    render();
+    if (moving) requestAnimationFrame(step); else animating = false;
+  };
+  requestAnimationFrame(step);
+}
+
+// Ambient occlusion: contact darkening in corners and between books.
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const gtao = new GTAOPass(scene, camera, innerWidth, innerHeight);
+gtao.updateGtaoMaterial({ radius: 40, distanceExponent: 1.5, thickness: 8, scale: 1.2, samples: 8 });
+gtao.blendIntensity = 1.0;
+composer.addPass(gtao);
+composer.addPass(new OutputPass());
+function render() {
+  if (shadowsDirty) { renderer.shadowMap.needsUpdate = true; shadowsDirty = false; }
+  composer.render();
+}
+// Pan/zoom input can arrive several times per frame: draw at most once per animation frame.
+let renderQueued = false;
+function requestRender() {
+  if (renderQueued) return;
+  renderQueued = true;
+  requestAnimationFrame(() => { renderQueued = false; frame(); render(); });
+}
+
+if (params.get('open')) { const m = meshBySlug.get(params.get('open')); if (m) setTimeout(() => openBook(m), 50); }
+const debugHover = params.get('hover');
+if (debugHover) {
+  const m = meshBySlug.get(debugHover);
+  if (m) { m.userData.p = 1; applyHover(m); }
+}
+render();
+if (params.get('selftest')) {
+  const st = () => `w=${viewW.toFixed(0)} x=${camX.toFixed(0)} y=${camY.toFixed(0)} hovered=${hovered?.userData.slug ?? '-'}`;
+  const log = m => console.log('SELFTEST ' + m + ' | ' + st());
+  const P = (type, x, y, id = 1) => el.dispatchEvent(new PointerEvent(type, { clientX: x, clientY: y, pointerId: id, bubbles: true, isPrimary: id === 1 }));
+  log('start');
+  dispatchEvent(new WheelEvent('wheel', { deltaY: 100, clientX: 800, clientY: 500, cancelable: true })); log('wheel down (pan down)');
+  dispatchEvent(new WheelEvent('wheel', { deltaY: -100, clientX: 800, clientY: 500, cancelable: true })); log('wheel up (pan up)');
+  dispatchEvent(new WheelEvent('wheel', { deltaY: 30, deltaX: 3, clientX: 400, clientY: 300, cancelable: true })); log('trackpad scroll (pan)');
+  dispatchEvent(new WheelEvent('wheel', { deltaY: 40, ctrlKey: true, clientX: 800, clientY: 500, cancelable: true })); log('pinch out (zoom out)'); dispatchEvent(new WheelEvent('wheel', { deltaY: -40, ctrlKey: true, clientX: 800, clientY: 500, cancelable: true })); log('pinch in (back, capped at one bookcase)');
+  P('pointerdown', 800, 500); P('pointermove', 700, 450); P('pointermove', 600, 400); log('dragged left/up 200,100 px');
+  P('pointerup', 600, 400); el.dispatchEvent(new MouseEvent('click', { clientX: 600, clientY: 400, bubbles: true })); log('click after drag (should not open)');
+  P('pointermove', 400, 450); log('hover');
+  el.dispatchEvent(new MouseEvent('dblclick', { clientX: 800, clientY: 500, bubbles: true })); log('double-click (zoom in 2x)');
+  for (let i = 0; i < 40; i++) dispatchEvent(new WheelEvent('wheel', { deltaY: 100, clientX: 800, clientY: 500, cancelable: true }));
+  log('40 wheel notches (pan, clamped)');
+}
+if (params.get('touchtest')) {
+  const T = (type, x, y, id) => el.dispatchEvent(new PointerEvent(type, { clientX: x, clientY: y, pointerId: id, pointerType: 'touch', bubbles: true, isPrimary: id === 1 }));
+  const st = m => console.log(`TOUCH ${m} | w=${viewW.toFixed(0)} x=${camX.toFixed(0)} y=${camY.toFixed(0)} open=${opened ? opened.m.userData.slug : '-'}`);
+  st('start');
+  T('pointerdown', 200, 400, 1); T('pointermove', 200, 300, 1); T('pointermove', 200, 200, 1); T('pointerup', 200, 200, 1); st('one-finger drag up 200px (pan down)');
+  T('pointerdown', 150, 400, 1); T('pointerdown', 250, 400, 2); T('pointermove', 100, 400, 1); T('pointermove', 300, 400, 2);
+  T('pointerup', 100, 400, 1); T('pointerup', 300, 400, 2); st('pinch apart (zoom in)');
+  T('pointerdown', 120, 420, 1); T('pointerup', 120, 420, 1); el.dispatchEvent(new MouseEvent('click', { clientX: 120, clientY: 420, bubbles: true })); st('tap a spine (opens card)');
+}
+if (params.get('perf')) {
+  const time = (label, fn, n = 10) => {
+    fn(); const gl = renderer.getContext(); gl.finish();
+    const t0 = performance.now();
+    for (let i = 0; i < n; i++) fn();
+    gl.finish();
+    const ms = (performance.now() - t0) / n;
+    console.log(`PERF ${label}: ${ms.toFixed(1)} ms/frame, calls ${renderer.info.render.calls}, tris ${renderer.info.render.triangles}`);
+  };
+  for (const [name, w] of [['default', DEFAULT_W], ['zoomed-out', Infinity]]) {
+    viewW = w; frame();
+    time(`${name} full (composer)`, () => composer.render());
+    time(`${name} no AO`, () => renderer.render(scene, camera));
+    renderer.shadowMap.autoUpdate = false;
+    time(`${name} no AO, no shadow update`, () => renderer.render(scene, camera));
+    renderer.shadowMap.autoUpdate = true;
+  }
+  console.log('PERF textures', renderer.info.memory.textures, 'geometries', renderer.info.memory.geometries, 'meshes', meshes.reduce((n, m) => n + m.children.length, 0));
+}
+if (params.get('spintest')) setTimeout(() => {
+  const P = (type, x, y) => slot.dispatchEvent(new PointerEvent(type, { clientX: x, clientY: y, pointerId: 7, bubbles: true }));
+  const r = slot.getBoundingClientRect(), cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+  P('pointerdown', cx, cy); P('pointermove', cx + 80, cy - 50);
+  console.log('SPIN dragged, quat', opened.m.quaternion.toArray().map(v => v.toFixed(3)).join(','));
+  P('pointerup', cx + 80, cy - 50);
+  setTimeout(() => console.log('SPIN released, back at pose:', opened.m.quaternion.angleTo(opened.to.quat).toFixed(4)), 800);
+}, 1200);
+document.title = 'ready';
+</script>
+</body>
+</html>
