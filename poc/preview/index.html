@@ -142,7 +142,7 @@ const rand = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
 const jitter = (a) => (rand() - 0.5) * 2 * a;
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+renderer.setPixelRatio(params.get('shot') ? devicePixelRatio : Math.min(devicePixelRatio, 1.5));   // ?shot: full-res stills
 renderer.setSize(innerWidth, innerHeight);
 renderer.shadowMap.enabled = true;
 // PCF soft shadows: filtered in the main shader (no blur passes), cheap enough to update every frame.
@@ -1145,6 +1145,10 @@ function requestRender() {
   requestAnimationFrame(() => { renderQueued = false; frame(); render(); });
 }
 
+if (params.get('shot')) {   // debug: ?shot=1 renders a clean high-res still (card-res spines, no buttons)
+  document.getElementById('cases').style.display = document.getElementById('views').style.display = 'none';
+  Promise.all(meshes.map(m => setHiRes(m, true))).then(() => { shadowsDirty = true; render(); console.log('SHOT ready'); });
+}
 if (params.get('open')) { const m = meshBySlug.get(params.get('open')); if (m) setTimeout(() => openBook(m), 50); }
 const debugHover = params.get('hover');
 if (debugHover) {
