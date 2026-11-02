@@ -363,11 +363,83 @@ const loadImg = async (url, tries = 3) => {
 };
 // Prebuilt atlases (build_atlases.py) carry cover | back | spine; the page paints the page-edge band and the
 // plain band (board edges) itself, so they can differ per book without being baked into the download.
-function atlasTexture(img, pages, edge) {
+// Per-book wear, painted onto the spine region of the atlas. Seeded by slug (its own RNG, so the layout's jitter sequence
+// is untouched) and drawn in atlas-relative units, so the shelf and card textures wear identically.
+const MONTHS = 'jan feb mar apr may jun jul aug sep oct nov dec'.split(' ');
+// Years since I read it: smus review month ("Jul 2020") or Goodreads read date ("2019/05/12"). Undated Goodreads
+// books are mostly old reads shelved after the fact, so they count as long ago.
+const yearsSinceRead = b => {
+  const r = b.review || {}, now = new Date().getFullYear() + new Date().getMonth() / 12;
+  let m = /^(\w{3})\w* (\d{4})/.exec(r.posted || '');
+  if (m && MONTHS.includes(m[1].toLowerCase())) return now - (+m[2] + MONTHS.indexOf(m[1].toLowerCase()) / 12);
+  m = /^(\d{4})[\/-](\d{1,2})/.exec(r.read || '');
+  return m ? now - (+m[1] + (m[2] - 1) / 12) : 15;
+};
+const wearOf = b => {
+  let h = 2166136261; for (const ch of b.slug) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
+  let st = (h >>> 0) % 2147483646 + 1; const r = () => ((st = (st * 16807) % 2147483647) / 2147483647);
+  const paper = b.binding !== 'hardcover', t = b.dims.t;
+  const age = Math.min(1, Math.max(0, (yearsSinceRead(b) - 1) / 12));   // 0: read this past year .. 1: 13+ years ago
+  const [r1, r2, r3, r4, r5, r6] = [r(), r(), r(), r(), r(), r()];   // fixed draw count keeps the stream stable
+  return {
+    age,
+    fade: r1 < 0.1 + 0.35 * age ? (0.04 + r2 * 0.1) * (0.4 + 0.6 * age) : 0,   // sun-faded spine (covers, hidden, stay fresh)
+    creases: paper && t > 9 && r3 < 0.1 + 0.4 * age ? 1 + Math.floor(r4 * Math.min(3, t / 8) * age) : 0,   // read-cracked paperbacks
+    scuff: (0.15 + r5 * 0.35) * (0.25 + 0.75 * age),                // head/tail rubbing
+    gloss: paper ? 0.42 + r6 * 0.3 : 0.32 + r6 * 0.25,             // laminated covers vary; jackets a bit glossier
+    r,
+  };
+};
+function paintWear(g, W, H, b) {
+  const w = b.wear || (b.wear = wearOf(b));
+  let st = w.seed ?? (w.seed = Math.floor(w.r() * 2147483646) + 1);
+  const r = () => ((st = (st * 16807) % 2147483647) / 2147483647);   // replayable: same marks at every resolution
+  const [x0, y0, x1, y1] = REG.spine, sx = x0 * W, sy = y0 * H, sw = (x1 - x0) * W, sh = (y1 - y0) * H;
+  const px = H / 512;                                               // ~1 lo-res pixel
+  g.save();
+  g.beginPath(); g.rect(sx, sy, sw, sh); g.clip();
+  if (w.fade) {                                                     // sun-faded: washed out, slightly warm
+    g.globalCompositeOperation = 'screen'; g.fillStyle = `rgba(236,226,206,${w.fade})`; g.fillRect(sx, sy, sw, sh);
+    g.globalCompositeOperation = 'saturation'; g.fillStyle = `rgba(128,128,128,${w.fade * 1.6})`; g.fillRect(sx, sy, sw, sh);
+  }
+  g.globalCompositeOperation = 'screen';
+  for (let i = 0; i < w.creases; i++) {                             // creases run along the spine, wobbly and partial
+    const len = sh * (0.15 + r() * 0.4), ya = sy + r() * (sh - len), xc = sx + sw * (0.15 + r() * 0.7);
+    const pts = [[xc, ya]];
+    for (let y = ya, x = xc; y < ya + len; ) { y += sh / 50; x += (r() - 0.5) * sw * 0.03; pts.push([x, y]); }
+    const lw = Math.max(1, px * (0.7 + r() * 0.8)), a = (0.25 + r() * 0.25) * (0.6 + 0.4 * w.age);
+    const stroke = (dx, style, op) => { g.globalCompositeOperation = op; g.strokeStyle = style; g.lineWidth = lw;
+      g.beginPath(); pts.forEach(([x, y], i) => i ? g.lineTo(x + dx, y) : g.moveTo(x + dx, y)); g.stroke(); };
+    stroke(lw, `rgba(60,50,40,${a * 0.35})`, 'multiply');           // the fold's shadow side (shows on pale spines)
+    stroke(0, `rgba(252,248,240,${a})`, 'screen');                   // cracked ink / lit ridge (shows on dark ones)
+  }
+  for (const [ey, dir] of [[sy, 1], [sy + sh, -1]]) {               // scuffed head and tail: speckles thinning inward
+    g.globalCompositeOperation = 'screen';
+    const band = sh * 0.012;                                        // rubbing hugs the edge (~2-3 mm)
+    const grd = g.createLinearGradient(0, ey, 0, ey + dir * band);
+    grd.addColorStop(0, `rgba(240,234,222,${0.35 * w.scuff})`); grd.addColorStop(1, 'rgba(240,234,222,0)');
+    g.fillStyle = grd; g.fillRect(sx, Math.min(ey, ey + dir * band), sw, band);
+    const n = Math.round(60 * w.scuff * (W / 256) ** 1.5);
+    for (let i = 0; i < n; i++) {                                   // a few chips, densest right at the edge
+      const d = Math.pow(r(), 3) * band * 1.6;
+      g.fillStyle = `rgba(245,240,230,${(0.2 + r() * 0.4) * w.scuff})`;
+      g.fillRect(sx + r() * sw, ey + dir * d - px / 2, px * (0.6 + r() * 2.5), px * (0.3 + r() * 0.6));
+    }
+  }
+  for (const ex of [sx, sx + sw]) {                                 // light rubbing where the spine folds onto the covers
+    const grd = g.createLinearGradient(ex, 0, ex + (ex === sx ? 1 : -1) * sw * 0.06, 0);
+    grd.addColorStop(0, `rgba(240,234,222,${0.2 * w.scuff})`); grd.addColorStop(1, 'rgba(240,234,222,0)');
+    g.fillStyle = grd; g.fillRect(Math.min(ex, ex - sw * 0.06), sy, sw * 0.12, sh);
+  }
+  g.restore();
+}
+
+function atlasTexture(img, pages, edge, b) {
   const W = img.naturalWidth || img.width, H = img.naturalHeight || img.height;
   const c = document.createElement('canvas'); c.width = W; c.height = H;
   const g = c.getContext('2d');
   g.drawImage(img, 0, 0);
+  if (b && !params.get('nowear')) paintWear(g, W, H, b);           // debug: ?nowear=1 for a pristine shelf
   const band = ([x0, y0, x1, y1]) => [x0 * W, y0 * H, (x1 - x0) * W, (y1 - y0) * H];
   g.drawImage(pages, ...band(REG.pages));
   g.fillStyle = edge.getStyle(); g.fillRect(...band(REG.plain));
@@ -507,11 +579,15 @@ function hardSpineGeometry(t, h, zBack, bulge) {
 }
 
 async function bookMesh(b) {
+  // Per-book RNG: these meshes build concurrently (after awaits), so the shared sequence would hand bookmarks out
+  // by image-load order and move them on every reload.
+  const rand = (b.wear || (b.wear = wearOf(b))).r, jitter = a => (rand() - 0.5) * 2 * a;
   const edge = new THREE.Color(b.atlas.edge);
   const { h, w, t } = b.dims;
   const pages = pageCanvas(t);
   const lo = await loadImg(b.atlas.lo);
-  const material = new THREE.MeshStandardMaterial({ map: lo ? atlasTexture(lo, pages, edge) : null, color: lo ? 0xffffff : edge, roughness: 0.6 });
+  const material = new THREE.MeshStandardMaterial({ map: lo ? atlasTexture(lo, pages, edge, b) : null, color: lo ? 0xffffff : edge,
+    roughness: params.get('nowear') ? 0.6 : (b.wear || (b.wear = wearOf(b))).gloss });
   const g = new THREE.Group();
   let geo;
   if (b.binding === 'hardcover' && t > 2 * BOARD + 2) {
@@ -567,7 +643,7 @@ async function setHiRes(m, on) {
   ap.want = true;
   const img = await decode(m.userData.book.atlas.card);
   if (!img || !ap.want) return;
-  ap.card = atlasTexture(img, ap.pages, ap.edge); img.close?.();
+  ap.card = atlasTexture(img, ap.pages, ap.edge, m.userData.book); img.close?.();
   useTex(m, ap.card);
 }
 
@@ -734,13 +810,30 @@ const notes = [], pivots = [];
 layoutAll(params.get('sort') === 'colour');
 
 // ---------- lights ----------
-const key = new THREE.DirectionalLight(0xfff0dc, 2.0);
-key.position.set(sceneW * 0.3 - 150, sceneH + 380, 900 + sceneH * 0.4);
-key.target.position.set(sceneW / 2, sceneH / 2, -depth / 2);
+// Daylight from a window up and off to the left: a broad soft spot whose falloff brightens the left bookcase and lets
+// the right one drift a little darker, with shadows raking rightwards. (?flatlight=1: the old even overhead key.)
+const flat = !!params.get('flatlight');
+const key = flat ? new THREE.DirectionalLight(0xfff0dc, 2.0) : new THREE.SpotLight(0xfff2e0, 1.7);
+if (flat) key.position.set(sceneW * 0.3 - 150, sceneH + 380, 900 + sceneH * 0.4);
+else key.position.set(-800, sceneH + 500, 2300);
+key.target.position.set(flat ? sceneW / 2 : sceneW * 0.28, sceneH * 0.55, -depth / 2);
 key.castShadow = true;
 key.shadow.mapSize.set(4096, 4096);
 const sh = Math.max(sceneW, sceneH) / 2 + 300;
-Object.assign(key.shadow.camera, { left: -sh, right: sh, top: sh, bottom: -sh, near: 10, far: 5000 });
+if (flat) Object.assign(key.shadow.camera, { left: -sh, right: sh, top: sh, bottom: -sh, near: 10, far: 5000 });
+else {
+  key.decay = 0;                                                    // no distance falloff: the gradient comes from the cone
+  const dir = key.target.position.clone().sub(key.position).normalize();
+  const off = p => Math.acos(dir.dot(p.clone().sub(key.position).normalize()));
+  const far = Math.max(...[[sceneW + 500, 0], [sceneW + 500, sceneH + 300], [-400, 0], [-400, sceneH + 300]]
+    .map(([x, y]) => off(new THREE.Vector3(x, y, 0))));
+  key.angle = far * 1.25; key.penumbra = 0.85;
+  key.shadow.camera.near = 500; key.shadow.camera.far = 8000;
+  // Same window, no shadow: a window is a big source, so its shadows are never fully dark.
+  const fill = new THREE.SpotLight(0xfff2e0, 0.9, 0, key.angle, 1, 0);
+  fill.position.copy(key.position); fill.target.position.copy(key.target.position);
+  scene.add(fill, fill.target);
+}
 key.shadow.bias = -0.0004; key.shadow.normalBias = 0.5;
 scene.add(key, key.target);
 scene.add(new THREE.HemisphereLight(0xfff6ea, 0x8a7560, 0.8));
