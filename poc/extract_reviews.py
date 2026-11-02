@@ -44,10 +44,19 @@ def opening(body, budget=900):
             if not out:                                     # always give at least one paragraph, cut at a sentence
                 cut = t[:budget]
                 end = max(cut.rfind(". "), cut.rfind("? "), cut.rfind("! "))
-                out.append(cut[:end + 1] if end > 200 else cut.rsplit(" ", 1)[0] + "…")
+                out.append(cut[:end + 1] + " …" if end > 200 else cut.rsplit(" ", 1)[0] + "…")
             break
         out.append(t); used += len(t)
-    return out
+    return [*out[:-1], finish(out[-1])] if out else out
+
+
+def finish(t):
+    """The excerpt stops here: if it ends mid-thought (a colon introducing a quote or list we don't show, a comma,
+    or no closing punctuation), end it with an ellipsis."""
+    t = t.rstrip()
+    if t.endswith(("…", ".", "!", "?", '"', "”", "’", ")")):
+        return t
+    return t.rstrip(":;,—– ") + "…"
 
 
 def main():
@@ -60,7 +69,13 @@ def main():
             m = re.search(r"<h1 class='title'>(.*?)</h1>", h, re.S)
             body = h.split("<div class='body'>", 1)[1] if "<div class='body'>" in h else ""
             paras = opening(body)
-            rec.update(headline=text(m.group(1)) if m else None, excerpt=paras[0] if paras else '', paras=paras)
+            body_text = text(body.split("<div class='discussion")[0].split("<div class='subfooter")[0])
+            words = len(body_text.split())
+            shown = sum(len(x.split()) for x in paras)
+            if paras and words > shown + 15 and not paras[-1].endswith("…"):     # the review goes on: say so
+                paras[-1] = paras[-1].rstrip() + " …"
+            rec.update(headline=text(m.group(1)) if m else None, excerpt=paras[0] if paras else '', paras=paras,
+                       words=words, minutes=max(1, round(words / 230)))
         out[b["slug"]] = rec
     rows = {r["Book Id"]: r for r in csv.DictReader(open(HERE.parent / "goodreads/goodreads_library_export_2026-08-18.csv"))}
     for b in json.loads((HERE / "data/goodreads_books.json").read_text()):
