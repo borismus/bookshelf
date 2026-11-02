@@ -298,7 +298,7 @@ function part(geo, mats, x, y, z, group) {
 //  - paperback: one block, cover flush with the pages, page edges on top / bottom / fore-edge.
 //  - hardcover: 2.5 mm boards and a spine board around a page block recessed 3 mm at top, bottom and fore-edge.
 // Some books get a bookmark or a slip of paper sticking out of the top.
-const BOARD = 2.5, OVERHANG = 3;
+const BOARD = 1.6, OVERHANG = 2.2;   // hardcover board thickness and how far boards stand proud of the pages (mm)
 const SLIPS = [0xc23b2e, 0x2f5d8a, 0xe8e1cf, 0xd9b44a, 0x1f1f1f];
 // Gold foil star sticker for starred (beloved) books.
 let starredView = new URLSearchParams(location.search).get('starred') === '1';
@@ -633,13 +633,14 @@ function layoutAll(byColour) {
       if (pending.length) { placeStack(pending); pending = []; }
       // Not every book is pushed in equally, and few stand perfectly square.
       const inset = 3 + rand() * 24 + (b.beloved ? 0 : NOT_BELOVED_RECESS);
-      const z = -inset - w / 2;
+      // books leaning on each other touch, so a leaning run sits at the depth of the book it leans on (front edges aligned)
+      const z = b.pose === 'lean-run' && prev.front !== undefined ? prev.front - w / 2 : -inset - w / 2;
       m.children.forEach(ch => { if (ch.userData.slip) ch.visible = true; });
       if (b.pose === 'upright') {
         m.position.set(cx0 + cursor + t / 2, floor + h / 2, z);
         m.rotation.y = jitter(0.035);
         m.userData.tilt = { floor, h, w };
-        prev = { right: cursor + t, h, lean: false };
+        prev = { right: cursor + t, h, lean: false, front: z + w / 2 };
         cursor += t + 0.4 + rand() * 1.4 + (rand() < 0.12 ? 3 + rand() * 9 : 0);   // occasional gap
         scene.add(m);
         m.userData.root = m;
@@ -648,14 +649,23 @@ function layoutAll(byColour) {
         // each next one lies flush against the previous leaning book's right face, at nearly the same angle.
         const th = THREE.MathUtils.degToRad((b.lean ?? 8) + (prev.lean ? jitter(0.8) : 0));
         let px;
-        if (prev.lean) px = prev.pivot + prev.t / Math.cos(prev.th) + 0.3;
-        else px = prev.right + 0.5 + Math.min(prev.h, h * Math.cos(th)) * Math.tan(th);
+        if (prev.lean) {
+          // Rest against the previous leaning book. Its right face runs from its lifted bottom-right corner B up to its
+          // top-right corner T; our left face is x(y) = px - y*tan(th). Push px right until no point of that face (up to
+          // our own height) is on our side: the binding point is one of the ends, since both faces are straight lines.
+          const c1 = Math.cos(prev.th), s1 = Math.sin(prev.th);
+          const B = [prev.pivot + prev.t * c1, prev.t * s1];
+          const topY = Math.min(prev.t * s1 + prev.hh * c1, h * Math.cos(th));
+          const k = (topY - B[1]) / c1;                        // distance up the previous book's right face
+          const T = [B[0] - k * s1, B[1] + k * c1];
+          px = Math.max(B[0] + B[1] * Math.tan(th), T[0] + T[1] * Math.tan(th)) + 0.3;
+        } else px = prev.right + 0.5 + Math.min(prev.h, h * Math.cos(th)) * Math.tan(th);
         const pivot = new THREE.Group();
         pivot.position.set(cx0 + px, floor, z); pivot.rotation.z = th; pivot.rotation.y = jitter(0.02);
         m.position.set(t / 2, h / 2, 0);
         pivot.add(m); scene.add(pivot); pivots.push(pivot);
         m.userData.root = pivot;
-        prev = { right: px + t * Math.cos(th), h: h * Math.cos(th), lean: true, pivot: px, t, th };
+        prev = { right: px + t * Math.cos(th), h: h * Math.cos(th), lean: true, pivot: px, t, th, hh: h, front: z + w / 2 };
         cursor = px + t * Math.cos(th) + 1.2;
       } else if (b.pose === 'lean-left') {
         // A book tipped left rests on its bottom-LEFT edge (so it never dips into the shelf) and its left face
@@ -1174,6 +1184,27 @@ if (params.get('sorttest')) setTimeout(() => {
   console.log(`SORT colour on: ${(t1 - t0).toFixed(0)} ms`);
   const t2 = performance.now(); colourBtn.onclick(); console.log(`SORT colour off: ${(performance.now() - t2).toFixed(0)} ms`);
 }, 1500);
+if (params.get('fitdebug')) {
+  let worst = -1e9, over = [];
+  for (const c of cases) c.shelves.forEach((sh, si) => {
+    let maxX = -1e9;
+    for (const b of sh) { const m = meshBySlug.get(b.slug); m.updateWorldMatrix(true, true); maxX = Math.max(maxX, new THREE.Box3().setFromObject(m).max.x); }
+    const slack = c.x0 + inner - maxX; worst = Math.max(worst, -slack);
+    if (slack < 0) over.push(`${c.name} shelf ${si}: ${(-slack).toFixed(1)} mm over`);
+  });
+  console.log('FIT ' + (over.length ? over.join('; ') : `all shelves fit (tightest has ${(-worst).toFixed(1)} mm spare)`));
+}
+if (params.get('leandebug')) {
+  for (const slug of ['tools-for-conviviality-by-ivan-illich', 'gr-you-are-not-a-gadget', 'sid-meiers-memoir', 'frank-herbert-by-tim-oreilly', 'gr-cryptography-a-very-short-introduction']) {
+    const m = meshBySlug.get(slug); m.updateWorldMatrix(true, true);
+    const bb = new THREE.Box3().setFromObject(m), r = m.userData.root;
+    // bottom corners of the spine face in world space
+    const b = m.userData.book, t = b.dims.t, h = b.dims.h;
+    const L = new THREE.Vector3(-t / 2, -h / 2, 0).applyMatrix4(m.matrixWorld), R = new THREE.Vector3(t / 2, -h / 2, 0).applyMatrix4(m.matrixWorld);
+    const TL = new THREE.Vector3(-t / 2, h / 2, 0).applyMatrix4(m.matrixWorld);
+    console.log(`LEAN ${slug.slice(0, 22)} pose=${b.pose} t=${t} rootPos=${r.position.x.toFixed(1)} rotZ=${(r.rotation.z * 57.3).toFixed(1)} bbX=[${bb.min.x.toFixed(1)}, ${bb.max.x.toFixed(1)}] bottomL=${L.x.toFixed(1)},${L.y.toFixed(1)} bottomR=${R.x.toFixed(1)},${R.y.toFixed(1)} topL=${TL.x.toFixed(1)}`);
+  }
+}
 document.title = 'ready';
 </script>
 </body>
