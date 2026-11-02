@@ -73,27 +73,29 @@
       - gr-javascript-the-good-parts
       - gr-fundamentals-of-computer-graphics
       - gr-cryptography-a-very-short-introduction
-  - label: Business & Design
+  - label: Business
     books:
-      - bird-by-bird-by-anne-lamott
-      - impro-by-keith-johnstone
-      - and-suddenly-the-inventor-appeared-by-genrikh-altshuller
       - empowered-by-cagan-jones
-      - the-timeless-way-of-building
       - the-goal-a-business-graphic-novel
-      - how-to-take-smart-notes
       - the-right-it-audio
       - bad-blood-by-john-carreyrou
       - deep-work-by-cal-newport
       - the-one-minute-manager
       - how-to-fail-at-almost-everything-by-scott-adams
       - art-of-tidying-by-marie-kondo
-      - gr-a-pattern-language-towns-buildings-construction
-      - gr-the-design-of-everyday-things
       - gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she
       - gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha
-      - gr-contextual-design-defining-customer-centered-systems
       - gr-the-4-hour-workweek
+  - label: Design
+    books:
+      - bird-by-bird-by-anne-lamott
+      - impro-by-keith-johnstone
+      - and-suddenly-the-inventor-appeared-by-genrikh-altshuller
+      - the-timeless-way-of-building
+      - how-to-take-smart-notes
+      - gr-a-pattern-language-towns-buildings-construction
+      - gr-the-design-of-everyday-things
+      - gr-contextual-design-defining-customer-centered-systems
   - label: Finance
     books:
       - debt-the-first-5000-years

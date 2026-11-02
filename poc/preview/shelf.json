@@ -31,7 +31,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-hitchhiker-s-guide-to-the-galaxy.webp",
        "card": "atlas/card/gr-the-hitchhiker-s-guide-to-the-galaxy.webp",
-       "edge": "#155e7e",
+       "edge": "#175c7a",
        "hue": 0.5915
       },
       "publisher": "Del Rey Books",
@@ -851,8 +851,8 @@
       "atlas": {
        "lo": "atlas/lo/great-work-of-time-by-john-crowley.webp",
        "card": "atlas/card/great-work-of-time-by-john-crowley.webp",
-       "edge": "#7d7457",
-       "hue": 1.3892
+       "edge": "#7f7556",
+       "hue": 1.3909
       },
       "publisher": "Spectra",
       "pages": null,
@@ -962,8 +962,8 @@
       "atlas": {
        "lo": "atlas/lo/valis-by-phillip-k-dick.webp",
        "card": "atlas/card/valis-by-phillip-k-dick.webp",
-       "edge": "#925247",
-       "hue": 0.0689
+       "edge": "#915147",
+       "hue": 0.0685
       },
       "publisher": "Houghton Mifflin Harcourt Publishing Company",
       "pages": 240,
@@ -1333,8 +1333,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-brave-new-world.webp",
        "card": "atlas/card/gr-brave-new-world.webp",
-       "edge": "#afacb1",
-       "hue": 1.3724
+       "edge": "#aca8ae",
+       "hue": 1.3869
       },
       "publisher": "HarperPerennial / Perennial Classics",
       "pages": 288,
@@ -2617,8 +2617,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-day-of-the-triffids.webp",
        "card": "atlas/card/gr-the-day-of-the-triffids.webp",
-       "edge": "#1b3626",
-       "hue": 1.8037
+       "edge": "#193526",
+       "hue": 1.7958
       },
       "publisher": "Modern Library",
       "pages": 228,
@@ -4582,8 +4582,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-east-of-eden.webp",
        "card": "atlas/card/gr-east-of-eden.webp",
-       "edge": "#f6f3e4",
-       "hue": 1.0974
+       "edge": "#f4f1e3",
+       "hue": 1.103
       },
       "publisher": "Penguin Books",
       "pages": 601,
@@ -5059,8 +5059,8 @@
       "atlas": {
        "lo": "atlas/lo/the-immense-journey-by-loren-eiseley.webp",
        "card": "atlas/card/the-immense-journey-by-loren-eiseley.webp",
-       "edge": "#2c6c89",
-       "hue": 0.5936
+       "edge": "#2b6a87",
+       "hue": 0.5935
       },
       "publisher": "Vintage",
       "pages": 224,
@@ -6165,6 +6165,1687 @@
       "year": null
      },
      {
+      "slug": "how-to-take-smart-notes",
+      "link": "https://smus.com/books/how-to-take-smart-notes",
+      "title": "How to Take Smart Notes",
+      "author": "Sönke Ahrens",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 133,
+       "t": 11.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/how-to-take-smart-notes.jpg",
+      "cover": "../data/covers/how-to-take-smart-notes.jpg",
+      "back": "../data/backs/how-to-take-smart-notes.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Feb 2021",
+       "source": "smus",
+       "headline": "How to Take Smart Notes",
+       "excerpt": "Zettelkasten Method, In Praise of Niklas Luhmann, or Ode To The Slip-box.",
+       "paras": [
+        "Zettelkasten Method, In Praise of Niklas Luhmann, or Ode To The Slip-box.",
+        "The Roam cult sprang out of a practice called Zettelkasten. I refuse to join the cult, but see great value in cross-linked note taking practice. So far my tool of choice is Obsidian, mainly because I like plaintext. This book introduces the Zettel method. …"
+       ],
+       "words": 968,
+       "minutes": 4
+      },
+      "atlas": {
+       "lo": "atlas/lo/how-to-take-smart-notes.webp",
+       "card": "atlas/card/how-to-take-smart-notes.webp",
+       "edge": "#acad98",
+       "hue": 1.3546
+      },
+      "publisher": "Unknown Publisher",
+      "pages": 178,
+      "year": null,
+      "section": "Design",
+      "group": "Non-fiction"
+     },
+     {
+      "slug": "gr-a-pattern-language-towns-buildings-construction",
+      "link": "https://www.goodreads.com/book/show/79766",
+      "title": "A Pattern Language",
+      "subtitle": "Towns, Buildings, Construction",
+      "author": "Christopher Alexander",
+      "beloved": false,
+      "dims": {
+       "h": 210,
+       "w": 144,
+       "t": 46.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-a-pattern-language-towns-buildings-construction.jpg",
+      "cover": "../data/covers/gr-a-pattern-language-towns-buildings-construction.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-a-pattern-language-towns-buildings-construction.webp",
+       "card": "atlas/card/gr-a-pattern-language-towns-buildings-construction.webp",
+       "edge": "#deceb0",
+       "hue": 1.2483
+      },
+      "publisher": "Oxford University Press",
+      "pages": 1171,
+      "year": null
+     },
+     {
+      "slug": "the-timeless-way-of-building",
+      "link": "https://smus.com/books/the-timeless-way-of-building",
+      "title": "The Timeless Way of Building",
+      "author": "Christopher Alexander",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 140,
+       "t": 51.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-timeless-way-of-building.jpg",
+      "cover": "../data/covers/the-timeless-way-of-building.jpg",
+      "back": "../data/backs/the-timeless-way-of-building.jpg",
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "posted": "Nov 2022",
+       "source": "smus",
+       "headline": "The Timeless Way of Building",
+       "excerpt": "The built world is defined by a small number of patterns, which keep repeating over and over and over again. The patterns are deep and mostly relational. This applies at all scales in human construction: to American cities, Gothic cathedrals, Paris, Chinese kitchens, doors, and so on.",
+       "paras": [
+        "The built world is defined by a small number of patterns, which keep repeating over and over and over again. The patterns are deep and mostly relational. This applies at all scales in human construction: to American cities, Gothic cathedrals, Paris, Chinese kitchens, doors, and so on.",
+        "These patterns can be codified into a pattern language. And just like a great writer or orator has an intuitive grasp of human language, a great builder can and should strive to attain an intuitive grasp of his pattern language.",
+        "But just because you have a pattern language does not make it good. A concrete jungle is also governed by a pattern language. Alexander strives to capture a collection of patterns that create a microcosm that has \"The Quality Without a Name\", which he defines via negativa (see Negative theology and via negativa). Here's a quick summary…"
+       ],
+       "words": 762,
+       "minutes": 3
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-timeless-way-of-building.webp",
+       "card": "atlas/card/the-timeless-way-of-building.webp",
+       "edge": "#ddcfa6",
+       "hue": 1.3069
+      },
+      "publisher": "Oxford University Press",
+      "pages": 576,
+      "year": null
+     },
+     {
+      "slug": "and-suddenly-the-inventor-appeared-by-genrikh-altshuller",
+      "link": "https://smus.com/books/and-suddenly-the-inventor-appeared-by-genrikh-altshuller",
+      "title": "And Suddenly the Inventor Appeared",
+      "author": "G. Altshuller",
+      "beloved": true,
+      "dims": {
+       "h": 226,
+       "w": 142,
+       "t": 15.2
+      },
+      "pose": "upright",
+      "texture": "../data/textures/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
+      "cover": "../data/covers/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
+      "back": "../data/backs/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Aug 2026",
+       "source": "smus",
+       "headline": "TRIZ and the Elusive Invention Machine",
+       "excerpt": "This book is an odd one. Is it written for children? Most of the text focuses on invention case studies that are presented like math-olympiad puzzles for precocious ten-year-olds. Altshuller eggs the reader on. A sixth grader can solve this; why can't you, dumbass?",
+       "paras": [
+        "This book is an odd one. Is it written for children? Most of the text focuses on invention case studies that are presented like math-olympiad puzzles for precocious ten-year-olds. Altshuller eggs the reader on. A sixth grader can solve this; why can't you, dumbass?",
+        "The English edition often reads like an excessively literal, amateurish translation. One problem, poorly titled \"A and B Were Sitting on the Pipe,\" is rendered word-for-word from \"А и Б сидели на трубе\", destroying the rhyme which was trite even in Russian. …"
+       ],
+       "words": 2037,
+       "minutes": 9
+      },
+      "atlas": {
+       "lo": "atlas/lo/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.webp",
+       "card": "atlas/card/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.webp",
+       "edge": "#f8f1d6",
+       "hue": 1.1567
+      },
+      "publisher": "Technical Innovation Center, Inc.",
+      "pages": 171,
+      "year": null
+     },
+     {
+      "slug": "gr-contextual-design-defining-customer-centered-systems",
+      "link": "https://www.goodreads.com/book/show/617137",
+      "title": "Contextual Design",
+      "subtitle": "Defining Customer-Centered Systems",
+      "author": "Hugh Beyer",
+      "beloved": false,
+      "dims": {
+       "h": 229,
+       "w": 183,
+       "t": 25.4
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-contextual-design-defining-customer-centered-systems.jpg",
+      "cover": "../data/covers/gr-contextual-design-defining-customer-centered-systems.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": "2009/10/29",
+       "rating": 1,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-contextual-design-defining-customer-centered-systems.webp",
+       "card": "atlas/card/gr-contextual-design-defining-customer-centered-systems.webp",
+       "edge": "#292f22",
+       "hue": 1.8007
+      },
+      "publisher": "Morgan Kaufmann",
+      "pages": 472,
+      "year": null
+     },
+     {
+      "slug": "impro-by-keith-johnstone",
+      "link": "https://smus.com/books/impro-by-keith-johnstone",
+      "title": "Impro",
+      "author": "Keith Johnstone",
+      "beloved": true,
+      "dims": {
+       "h": 206,
+       "w": 130,
+       "t": 17.8
+      },
+      "pose": "upright",
+      "texture": "../data/textures/impro-by-keith-johnstone.jpg",
+      "cover": "../data/covers/impro-by-keith-johnstone.jpg",
+      "back": "../data/backs/impro-by-keith-johnstone.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jan 2018",
+       "source": "smus",
+       "headline": "Impro by Keith Johnstone",
+       "excerpt": "I picked this book up because of a recommendation from the Internet. My first reaction was negative: the author’s claim pointing at things and calling them wrong names will cause your whole sense of perception to shift: colors become more vivid, outlines become sharper, people look smaller, the shape of the room changes. This, presented not as metaphorical truth, or a parable, but as actual truth, is something I continue to find hard to swallow. That said I think the essays in the book are worth it, if you suspend a bit of disbelief. …",
+       "paras": [
+        "I picked this book up because of a recommendation from the Internet. My first reaction was negative: the author’s claim pointing at things and calling them wrong names will cause your whole sense of perception to shift: colors become more vivid, outlines become sharper, people look smaller, the shape of the room changes. This, presented not as metaphorical truth, or a parable, but as actual truth, is something I continue to find hard to swallow. That said I think the essays in the book are worth it, if you suspend a bit of disbelief. …"
+       ],
+       "words": 1894,
+       "minutes": 8
+      },
+      "atlas": {
+       "lo": "atlas/lo/impro-by-keith-johnstone.webp",
+       "card": "atlas/card/impro-by-keith-johnstone.webp",
+       "edge": "#3e4242",
+       "hue": 1.6899
+      },
+      "publisher": "Theatre Arts Book",
+      "pages": 208,
+      "year": null
+     },
+     {
+      "slug": "bird-by-bird-by-anne-lamott",
+      "link": "https://smus.com/books/bird-by-bird-by-anne-lamott",
+      "title": "Bird by Bird",
+      "author": "Anne Lamott",
+      "beloved": false,
+      "dims": {
+       "h": 210,
+       "w": 131,
+       "t": 19.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/bird-by-bird-by-anne-lamott.jpg",
+      "cover": "../data/covers/bird-by-bird-by-anne-lamott.jpg",
+      "back": "../data/backs/bird-by-bird-by-anne-lamott.jpg",
+      "spine_source": "photo",
+      "binding": "paperback",
+      "review": {
+       "posted": "Nov 2018",
+       "source": "smus",
+       "headline": "Bird by Bird by Anne Lamott",
+       "excerpt": "I've forgotten how this book appeared on my radar, but I think it was on someone's list of most influential books ever. I am more ambivalent.",
+       "paras": [
+        "I've forgotten how this book appeared on my radar, but I think it was on someone's list of most influential books ever. I am more ambivalent.",
+        "The book's subtitle is \"Some Instructions on Writing and Life\", and honestly I was hoping for more of the latter. Unfortunately it was more of the former, specifically how to write fiction, which is interesting in theory, but is not something that is very high on my current list of things I would like to spend my time doing.",
+        "In general, the author has some good tips for the fledgeling writer. These are pretty intuitive, but do serve as good reminders…"
+       ],
+       "words": 573,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/bird-by-bird-by-anne-lamott.webp",
+       "card": "atlas/card/bird-by-bird-by-anne-lamott.webp",
+       "edge": "#d5979e",
+       "hue": 0.0648
+      },
+      "publisher": "Anchor Books",
+      "pages": 239,
+      "year": null
+     },
+     {
+      "slug": "gr-the-design-of-everyday-things",
+      "link": "https://www.goodreads.com/book/show/840",
+      "title": "The Design of Everyday Things",
+      "author": "Donald A. Norman",
+      "beloved": false,
+      "dims": {
+       "h": 210,
+       "w": 140,
+       "t": 16.4
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-design-of-everyday-things.jpg",
+      "cover": "../data/covers/gr-the-design-of-everyday-things.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-design-of-everyday-things.webp",
+       "card": "atlas/card/gr-the-design-of-everyday-things.webp",
+       "edge": "#202125",
+       "hue": 1.8328
+      },
+      "publisher": "Basic Books",
+      "pages": 257,
+      "year": null
+     },
+     {
+      "slug": "genesis-by-translated-by-robert-alter",
+      "link": "https://smus.com/books/genesis-by-translated-by-robert-alter",
+      "title": "Genesis",
+      "author": "Robert Alter",
+      "beloved": true,
+      "dims": {
+       "h": 240,
+       "w": 160,
+       "t": 32.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/genesis-by-translated-by-robert-alter.jpg",
+      "cover": "../data/covers/genesis-by-translated-by-robert-alter.jpg",
+      "back": "../data/backs/genesis-by-translated-by-robert-alter.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "May 2022",
+       "source": "smus",
+       "headline": "Genesis by ✨ translated by Robert Alter",
+       "excerpt": "Genesis is not so much a book, but an “accretion of sundry traditions, shot through with disjunctions and contradictions, and accumulated in an uneven editorial process over several centuries”. The Hebrew word for book, “Sefer” actually translates more to scroll than to book, and scrolls are much more fungible than books. A scroll can be stitched to another scroll, split, and spliced, and rarely has named attribution. Not a coherent artwork by a single author, Genesis is more like a cathedral of medieval Europe, the product of many hands, involving an elaborate process of editing, like the greatest Hollywood films.",
+       "paras": [
+        "Genesis is not so much a book, but an “accretion of sundry traditions, shot through with disjunctions and contradictions, and accumulated in an uneven editorial process over several centuries”. The Hebrew word for book, “Sefer” actually translates more to scroll than to book, and scrolls are much more fungible than books. A scroll can be stitched to another scroll, split, and spliced, and rarely has named attribution. Not a coherent artwork by a single author, Genesis is more like a cathedral of medieval Europe, the product of many hands, involving an elaborate process of editing, like the greatest Hollywood films.",
+        "Main sources of compilation include {Y/J}ahwist (J), Elohistic (E), and Priestly (P) source documents. J and E might be contemporary and early, P dates to about 6th century BCE. But all is hotly debated. …"
+       ],
+       "words": 1022,
+       "minutes": 4
+      },
+      "atlas": {
+       "lo": "atlas/lo/genesis-by-translated-by-robert-alter.webp",
+       "card": "atlas/card/genesis-by-translated-by-robert-alter.webp",
+       "edge": "#968151",
+       "hue": 0.1562
+      },
+      "publisher": "W. W. Norton & Company",
+      "pages": 324,
+      "year": null,
+      "section": "Religion",
+      "group": "Non-fiction"
+     },
+     {
+      "slug": "the-way-of-man-by-martin-buber",
+      "link": "https://smus.com/books/the-way-of-man-by-martin-buber",
+      "title": "The Way of Man",
+      "author": "Martin Buber",
+      "beloved": true,
+      "dims": {
+       "h": 200,
+       "w": 128,
+       "t": 3.5
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-way-of-man-by-martin-buber.jpg",
+      "cover": "../data/covers/the-way-of-man-by-martin-buber.jpg",
+      "back": "../data/backs/the-way-of-man-by-martin-buber.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Mar 2026",
+       "source": "smus",
+       "headline": "The Way of Man by Martin Buber",
+       "excerpt": "As it turns out, Buber is surprisingly accessible. This classic reads like a self-help book grounded in Hasidic tradition. The book is fundamentally an exegesis of 18th-century folklore—a sharp contrast to PKD's manic exegesis. My summary of Buber's take…",
+       "paras": [
+        "As it turns out, Buber is surprisingly accessible. This classic reads like a self-help book grounded in Hasidic tradition. The book is fundamentally an exegesis of 18th-century folklore—a sharp contrast to PKD's manic exegesis. My summary of Buber's take…"
+       ],
+       "words": 1353,
+       "minutes": 6
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-way-of-man-by-martin-buber.webp",
+       "card": "atlas/card/the-way-of-man-by-martin-buber.webp",
+       "edge": "#7d6c5a",
+       "hue": 1.5055
+      },
+      "publisher": "Citadel",
+      "pages": 41,
+      "year": null
+     },
+     {
+      "slug": "gr-beginning-biblical-hebrew",
+      "link": "https://www.goodreads.com/book/show/1382236",
+      "title": "Beginning Biblical Hebrew",
+      "author": "Mark David Futato",
+      "beloved": false,
+      "dims": {
+       "h": 279,
+       "w": 216,
+       "t": 27.9
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-beginning-biblical-hebrew.jpg",
+      "cover": "../data/covers/gr-beginning-biblical-hebrew.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 2,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-beginning-biblical-hebrew.webp",
+       "card": "atlas/card/gr-beginning-biblical-hebrew.webp",
+       "edge": "#0f3c71",
+       "hue": 0.6299
+      },
+      "publisher": "Eisenbrauns",
+      "pages": 351,
+      "year": null
+     },
+     {
+      "slug": "mystery-teachings-by-j-m-greer",
+      "link": "https://smus.com/books/mystery-teachings-by-j-m-greer",
+      "title": "Mystery Teachings",
+      "author": "John Michael Greer",
+      "beloved": true,
+      "dims": {
+       "h": 229,
+       "w": 152,
+       "t": 15.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/mystery-teachings-by-j-m-greer.jpg",
+      "cover": "../data/covers/mystery-teachings-by-j-m-greer.jpg",
+      "back": "../data/backs/mystery-teachings-by-j-m-greer.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Mar 2024",
+       "source": "smus",
+       "headline": "Mystery Teachings by J. M. Greer",
+       "excerpt": "Ecology, complexity, and other interdisciplinary fields can easily slip into woo. Initially I expected this book to suffer from this problem, but luckily there were no dizzying invocations of Deepak Chiopra™ style quantum physics. Instead, Greer presents a grounded worldview, rejecting spiritual stereotypes and \"half truths that you create your own reality\".",
+       "paras": [
+        "Ecology, complexity, and other interdisciplinary fields can easily slip into woo. Initially I expected this book to suffer from this problem, but luckily there were no dizzying invocations of Deepak Chiopra™ style quantum physics. Instead, Greer presents a grounded worldview, rejecting spiritual stereotypes and \"half truths that you create your own reality\".",
+        "The bulk of Greer's book features seven laws, which may be better described as perspectives or lenses. The first three are foundational, the fourth is a bridge, and the last three are somewhat derived from the first. Many of these so-called laws overlap with one another. Law of Planes and Law of Evolution are highly interrelated. Why are there seven laws? For relatively unconvincing reasons resembling gematria. I found these \"laws\" unevenly resonant, with the Law of Cause and Effect quite uninspiring, but others much more evocative. …"
+       ],
+       "words": 1674,
+       "minutes": 7
+      },
+      "atlas": {
+       "lo": "atlas/lo/mystery-teachings-by-j-m-greer.webp",
+       "card": "atlas/card/mystery-teachings-by-j-m-greer.webp",
+       "edge": "#20302b",
+       "hue": 1.7943
+      },
+      "publisher": "Weiser Books",
+      "pages": 160,
+      "year": null
+     },
+     {
+      "slug": "letters-to-my-palestinian-neighbor-by-halevi",
+      "link": "https://smus.com/books/letters-to-my-palestinian-neighbor-by-halevi",
+      "title": "Letters to my Palestinian Neighbor",
+      "author": "Yossi Klein Halevi",
+      "beloved": true,
+      "dims": {
+       "h": 204,
+       "w": 134,
+       "t": 18.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/letters-to-my-palestinian-neighbor-by-halevi.jpg",
+      "cover": "../data/covers/letters-to-my-palestinian-neighbor-by-halevi.jpg",
+      "back": "../data/backs/letters-to-my-palestinian-neighbor-by-halevi.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Dec 2023",
+       "source": "smus",
+       "headline": "Letters to my Palestinian Neighbor by Halevi",
+       "excerpt": "I discovered Yossi Klein Halevi following Hamas' massacre on Oct 7 on a podcast. Halevi's ability to combine a firmly pro-Israeli position with a gentle touch impressed me. This comes through in his book too, which I liked overall. I'll recommend it to left-leaning friends struggling to understand the situation. …",
+       "paras": [
+        "I discovered Yossi Klein Halevi following Hamas' massacre on Oct 7 on a podcast. Halevi's ability to combine a firmly pro-Israeli position with a gentle touch impressed me. This comes through in his book too, which I liked overall. I'll recommend it to left-leaning friends struggling to understand the situation. …"
+       ],
+       "words": 879,
+       "minutes": 4
+      },
+      "atlas": {
+       "lo": "atlas/lo/letters-to-my-palestinian-neighbor-by-halevi.webp",
+       "card": "atlas/card/letters-to-my-palestinian-neighbor-by-halevi.webp",
+       "edge": "#ddd7ce",
+       "hue": 1.2277
+      },
+      "publisher": "HarperCollins Publishers",
+      "pages": 288,
+      "year": null
+     },
+     {
+      "slug": "the-sabbath-by-heschel",
+      "link": "https://smus.com/books/the-sabbath-by-heschel",
+      "title": "The Sabbath",
+      "author": "Abraham Joshua Heschel",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 164,
+       "t": 11.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/the-sabbath-by-heschel.jpg",
+      "cover": "../data/covers/the-sabbath-by-heschel.jpg",
+      "back": "../data/backs/the-sabbath-by-heschel.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Dec 2022",
+       "source": "smus",
+       "headline": "The Sabbath by Heschel",
+       "excerpt": "This is a great example of a branch book (see Narrative, tree, and branch books), containing one big idea followed by elaboration. In this case, the core idea is that the Jewish Sabbath celebrates time over space, which is a rare thing to celebrate. The elaboration is a poetic meditation on time's superiority over space, and it quickly gets koan-like, but in a way that is less repetitive than Finite and Infinite Games by James Carse. …",
+       "paras": [
+        "This is a great example of a branch book (see Narrative, tree, and branch books), containing one big idea followed by elaboration. In this case, the core idea is that the Jewish Sabbath celebrates time over space, which is a rare thing to celebrate. The elaboration is a poetic meditation on time's superiority over space, and it quickly gets koan-like, but in a way that is less repetitive than Finite and Infinite Games by James Carse. …"
+       ],
+       "words": 1033,
+       "minutes": 4
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-sabbath-by-heschel.webp",
+       "card": "atlas/card/the-sabbath-by-heschel.webp",
+       "edge": "#e6e5d9",
+       "hue": 1.2058
+      },
+      "publisher": "Farrar, Straus and Giroux",
+      "pages": 118,
+      "year": null,
+      "lean": 4.6
+     },
+     {
+      "slug": "david-the-divided-heart-by-david-wolpe",
+      "link": "https://smus.com/books/david-the-divided-heart-by-david-wolpe",
+      "title": "David: The Divided Heart",
+      "author": "David Wolpe",
+      "beloved": true,
+      "dims": {
+       "h": 220,
+       "w": 146,
+       "t": 17.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/david-the-divided-heart-by-david-wolpe.jpg",
+      "cover": "../data/covers/david-the-divided-heart-by-david-wolpe.jpg",
+      "back": "../data/backs/david-the-divided-heart-by-david-wolpe.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Feb 2024",
+       "source": "smus",
+       "headline": "David: The Divided Heart by David Wolpe",
+       "excerpt": "I read this book as respite from Samuel I and before tackling Samuel II. Wolpe's retelling of David's stories is lively, easy to read, and insightful. Most of this book summarizes David's story from various perspectives: as a young man, on the run from Saul, as a king, as a father, at the end of his journey, and as the progenitor of the Messiah. I found Wolpe's negative insights to be the most incisive. …",
+       "paras": [
+        "I read this book as respite from Samuel I and before tackling Samuel II. Wolpe's retelling of David's stories is lively, easy to read, and insightful. Most of this book summarizes David's story from various perspectives: as a young man, on the run from Saul, as a king, as a father, at the end of his journey, and as the progenitor of the Messiah. I found Wolpe's negative insights to be the most incisive. …"
+       ],
+       "words": 539,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/david-the-divided-heart-by-david-wolpe.webp",
+       "card": "atlas/card/david-the-divided-heart-by-david-wolpe.webp",
+       "edge": "#b7a390",
+       "hue": 1.2076
+      },
+      "publisher": null,
+      "pages": 153,
+      "year": null,
+      "lean": 4.6
+     },
+     {
+      "slug": "the-new-father",
+      "link": "https://smus.com/books/the-new-father",
+      "title": "The New Father",
+      "author": "Armin A. Brott",
+      "beloved": true,
+      "dims": {
+       "h": 236,
+       "w": 155,
+       "t": 40.6
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-new-father.jpg",
+      "cover": "../data/covers/the-new-father.jpg",
+      "back": "../data/backs/the-new-father.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Feb 2019",
+       "source": "smus",
+       "headline": "The New Father",
+       "excerpt": "My daughter Elichka is a year old! She's the best, let me show you a picture? Actually no. Not on the internet.",
+       "paras": [
+        "My daughter Elichka is a year old! She's the best, let me show you a picture? Actually no. Not on the internet.",
+        "This book was a trusty reference for me when things got a bit dicey. Rather than reading daddy or mommy blogs (urgh), a quick look at the relevant age was sometimes helpful in calming the nerves. I'd recommend it to a new father."
+       ],
+       "words": 65,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-new-father.webp",
+       "card": "atlas/card/the-new-father.webp",
+       "edge": "#c1c9ce",
+       "hue": 1.1942
+      },
+      "publisher": "Abbeville Press",
+      "pages": 464,
+      "year": null,
+      "section": "Parenting",
+      "group": "Non-fiction"
+     },
+     {
+      "slug": "fatherhood-in-pieces-by-chabon",
+      "link": "https://smus.com/books/fatherhood-in-pieces-by-chabon",
+      "title": "Fatherhood in Pieces",
+      "author": "Michael Chabon",
+      "beloved": false,
+      "dims": {
+       "h": 198,
+       "w": 129,
+       "t": 9.6
+      },
+      "pose": "upright",
+      "texture": "../data/textures/fatherhood-in-pieces-by-chabon.jpg",
+      "cover": "../data/covers/fatherhood-in-pieces-by-chabon.jpg",
+      "back": "../data/backs/fatherhood-in-pieces-by-chabon.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jan 2020",
+       "source": "smus",
+       "headline": "Fatherhood in Pieces by Chabon",
+       "excerpt": "Collection of essays, from wistful to banal. Nothing that special. But I liked a few vignettes: the one about how each kid costs you a book. And about how baseball is nostalgia, nicely tying three generations of men.",
+       "paras": [
+        "Collection of essays, from wistful to banal. Nothing that special. But I liked a few vignettes: the one about how each kid costs you a book. And about how baseball is nostalgia, nicely tying three generations of men."
+       ],
+       "words": 38,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/fatherhood-in-pieces-by-chabon.webp",
+       "card": "atlas/card/fatherhood-in-pieces-by-chabon.webp",
+       "edge": "#798e99",
+       "hue": 0.6055
+      },
+      "publisher": "Harper Perennial",
+      "pages": 144,
+      "year": null
+     },
+     {
+      "slug": "gardener-carpenter-by-alison-gopnik",
+      "link": "https://smus.com/books/gardener-carpenter-by-alison-gopnik",
+      "title": "Gardener & Carpenter",
+      "author": "Alison Gopnik",
+      "beloved": true,
+      "dims": {
+       "h": 230,
+       "w": 153,
+       "t": 20.2
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gardener-carpenter-by-alison-gopnik.jpg",
+      "cover": "../data/covers/gardener-carpenter-by-alison-gopnik.jpg",
+      "back": "../data/backs/gardener-carpenter-by-alison-gopnik.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Aug 2021",
+       "source": "smus",
+       "headline": "Gardener & Carpenter by Alison Gopnik",
+       "excerpt": "This one's been on my radar for years. I've read a lot of the author's articles and generally feel a strong affinity for Isaiah Berlin, whom Gopnik has done quite a bit to popularize. Self described as a Bubbie from Berkeley with a PhD in developmental neuroscience that sometimes dabbles in philosophy. …",
+       "paras": [
+        "This one's been on my radar for years. I've read a lot of the author's articles and generally feel a strong affinity for Isaiah Berlin, whom Gopnik has done quite a bit to popularize. Self described as a Bubbie from Berkeley with a PhD in developmental neuroscience that sometimes dabbles in philosophy. …"
+       ],
+       "words": 1937,
+       "minutes": 8
+      },
+      "atlas": {
+       "lo": "atlas/lo/gardener-carpenter-by-alison-gopnik.webp",
+       "card": "atlas/card/gardener-carpenter-by-alison-gopnik.webp",
+       "edge": "#625934",
+       "hue": 0.1528
+      },
+      "publisher": "Penguin Random House",
+      "pages": 320,
+      "year": null
+     },
+     {
+      "slug": "good-inside-by-becky-kennedy",
+      "link": "https://smus.com/books/good-inside-by-becky-kennedy",
+      "title": "Good Inside",
+      "author": "Becky Kennedy",
+      "beloved": false,
+      "dims": {
+       "h": 240,
+       "w": 152,
+       "t": 28.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/good-inside-by-becky-kennedy.jpg",
+      "cover": "../data/covers/good-inside-by-becky-kennedy.jpg",
+      "back": "../data/backs/good-inside-by-becky-kennedy.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jun 2026",
+       "source": "smus",
+       "headline": "Good Inside by Becky Kennedy",
+       "excerpt": "I’m not actually going to recommend this book, but I figured I might as well post a quick review anyway.",
+       "paras": [
+        "I’m not actually going to recommend this book, but I figured I might as well post a quick review anyway.",
+        "Becky's pitch of the book is highly attractive: I don't believe in trade-offs. You can have it all, and everyone is good inside. Of course this is a bestseller. It tells highly anxious, guilt-ridden, burnt-out parents exactly what they want to hear, interspersed with heavy-handed cheerleading: \"It's not too late,\" \"You're doing great\". I was left waiting for the hard truth, and though I found anything but that, the book was definitely a catalyst to get me thinking about parenting.",
+        "Because to me, \"good inside\" is insufficient. Of course our kids are good inside! But my job as a parent is to raise kids that are also good outside.",
+        "When S initially pitched this book to me, it sounded like Becky was aiming for a synthesis between old and new school parenting…"
+       ],
+       "words": 1147,
+       "minutes": 5
+      },
+      "atlas": {
+       "lo": "atlas/lo/good-inside-by-becky-kennedy.webp",
+       "card": "atlas/card/good-inside-by-becky-kennedy.webp",
+       "edge": "#e4c65b",
+       "hue": 0.173
+      },
+      "publisher": "Harper Wave",
+      "pages": 336,
+      "year": null
+     },
+     {
+      "slug": "emotional-life-of-the-toddler",
+      "link": "https://smus.com/books/emotional-life-of-the-toddler",
+      "title": "Emotional Life of the Toddler",
+      "author": "Alicia Lieberman",
+      "beloved": true,
+      "dims": {
+       "h": 222,
+       "w": 140,
+       "t": 15.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/emotional-life-of-the-toddler.jpg",
+      "cover": "../data/covers/emotional-life-of-the-toddler.jpg",
+      "back": "../data/backs/emotional-life-of-the-toddler.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "May 2021",
+       "source": "smus",
+       "headline": "Emotional Life of the Toddler",
+       "excerpt": "\"Every generation Western Civilization is invaded by barbarians. We call them children.\" — Hannah Arendt",
+       "paras": [
+        "\"Every generation Western Civilization is invaded by barbarians. We call them children.\" — Hannah Arendt",
+        "Alicia F. Lieberman begins with a milder version of the same sentiment…"
+       ],
+       "words": 897,
+       "minutes": 4
+      },
+      "atlas": {
+       "lo": "atlas/lo/emotional-life-of-the-toddler.webp",
+       "card": "atlas/card/emotional-life-of-the-toddler.webp",
+       "edge": "#ebe7db",
+       "hue": 1.2002
+      },
+      "publisher": "Free P.,U.S.",
+      "pages": 20,
+      "year": null,
+      "lean": 7.7
+     },
+     {
+      "slug": "the-blessing-of-a-skinned-knee-by-wendy-mogel",
+      "link": "https://smus.com/books/the-blessing-of-a-skinned-knee-by-wendy-mogel",
+      "title": "The Blessing of a Skinned Knee",
+      "author": "Wendy Mogel",
+      "beloved": false,
+      "dims": {
+       "h": 200,
+       "w": 133,
+       "t": 15.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
+      "cover": "../data/covers/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
+      "back": "../data/backs/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "May 2024",
+       "source": "smus",
+       "headline": "The Blessing of a Skinned Knee by Wendy Mogel",
+       "excerpt": "This is a Jewish take on parenting from a former psychologist who became disenchanted with her profession and sought wisdom in the tradition of her ancestors. I found myself nodding along in agreement to many of her ideas, which try to synthesize Jewish concepts with \"common sense\" parenting. Less charitably, this book can also be seen as a conservative reaction to modern parenting trends. Either way, a better than average parenting book. Thanks to LL for the recommendation. …",
+       "paras": [
+        "This is a Jewish take on parenting from a former psychologist who became disenchanted with her profession and sought wisdom in the tradition of her ancestors. I found myself nodding along in agreement to many of her ideas, which try to synthesize Jewish concepts with \"common sense\" parenting. Less charitably, this book can also be seen as a conservative reaction to modern parenting trends. Either way, a better than average parenting book. Thanks to LL for the recommendation. …"
+       ],
+       "words": 603,
+       "minutes": 3
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-blessing-of-a-skinned-knee-by-wendy-mogel.webp",
+       "card": "atlas/card/the-blessing-of-a-skinned-knee-by-wendy-mogel.webp",
+       "edge": "#3d5982",
+       "hue": 0.635
+      },
+      "publisher": "Penguin (Non-Classics)",
+      "pages": 304,
+      "year": null,
+      "lean": 7.7
+     },
+     {
+      "slug": "mindstorms-by-seymour-papert",
+      "link": "https://smus.com/books/mindstorms-by-seymour-papert",
+      "title": "Mindstorms",
+      "author": "Seymour Papert",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 140,
+       "t": 14.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/mindstorms-by-seymour-papert.jpg",
+      "cover": "../data/covers/mindstorms-by-seymour-papert.jpg",
+      "back": "../data/backs/mindstorms-by-seymour-papert.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Feb 2017",
+       "source": "smus",
+       "headline": "Mindstorms by Seymour Papert",
+       "excerpt": "I enjoyed this short book by the inventor of LOGO, which I fondly remember first hearing about from Yuri as a kid. It was a challenging read, especially in the philosophical sections in the end. Also I have this weird thing where Seymour Papert and Mark Gross somehow blend into one person??",
+       "paras": [
+        "I enjoyed this short book by the inventor of LOGO, which I fondly remember first hearing about from Yuri as a kid. It was a challenging read, especially in the philosophical sections in the end. Also I have this weird thing where Seymour Papert and Mark Gross somehow blend into one person??",
+        "Papert is fascinated by embodied learning, and the LOGO Turtle is one of many examples of an \"object to think with\". This has great benefits for children, since they can imagine becoming a turtle in their mind. For example, drawing a circle as a Turtle is simple: take a small step forward, turn to the right a bit, rinse and repeat. This is easily translated into LOGO: FORWARD 1; RIGHT 1;. …"
+       ],
+       "words": 467,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/mindstorms-by-seymour-papert.webp",
+       "card": "atlas/card/mindstorms-by-seymour-papert.webp",
+       "edge": "#362f7a",
+       "hue": 0.7562
+      },
+      "publisher": "Basic Books",
+      "pages": 230,
+      "year": null,
+      "lean": 6.9
+     },
+     {
+      "slug": "understanding-how-we-learn-a-visual-guide",
+      "link": "https://smus.com/books/understanding-how-we-learn-a-visual-guide",
+      "title": "Understanding How We Learn",
+      "subtitle": "A Visual Guide",
+      "author": "Yana Weinstein",
+      "beloved": true,
+      "dims": {
+       "h": 250,
+       "w": 174,
+       "t": 10.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/understanding-how-we-learn-a-visual-guide.jpg",
+      "cover": "../data/covers/understanding-how-we-learn-a-visual-guide.jpg",
+      "back": "../data/backs/understanding-how-we-learn-a-visual-guide.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Nov 2021",
+       "source": "smus",
+       "headline": "Understanding How We Learn: A Visual Guide",
+       "excerpt": "I read this book because it was recommended by C for work. This book serves as a nice visual summary of what we know about learning from a cognitive science perspective. The authors lament the large gap between what we know from this field and how educators do their job in practice. …",
+       "paras": [
+        "I read this book because it was recommended by C for work. This book serves as a nice visual summary of what we know about learning from a cognitive science perspective. The authors lament the large gap between what we know from this field and how educators do their job in practice. …"
+       ],
+       "words": 2678,
+       "minutes": 12
+      },
+      "atlas": {
+       "lo": "atlas/lo/understanding-how-we-learn-a-visual-guide.webp",
+       "card": "atlas/card/understanding-how-we-learn-a-visual-guide.webp",
+       "edge": "#067aac",
+       "hue": 0.5868
+      },
+      "publisher": "Routledge",
+      "pages": 176,
+      "year": null,
+      "lean": 6.9
+     }
+    ],
+    [
+     {
+      "slug": "whole-earth-discipline-by-stewart-brand",
+      "link": "https://smus.com/books/whole-earth-discipline-by-stewart-brand",
+      "title": "Whole Earth Discipline",
+      "author": "Stewart Brand",
+      "beloved": true,
+      "dims": {
+       "h": 213,
+       "w": 140,
+       "t": 21.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/whole-earth-discipline-by-stewart-brand.jpg",
+      "cover": "../data/covers/whole-earth-discipline-by-stewart-brand.jpg",
+      "back": "../data/backs/whole-earth-discipline-by-stewart-brand.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jul 2017",
+       "source": "smus",
+       "headline": "Whole Earth Discipline by Stewart Brand",
+       "excerpt": "In the spirit of the Whole Earth Catalog, this book reads more like an extended blog post than a non-fiction book, mainly because it covers so much material at a pretty high level. I feel like each chapter is a well crafted summary of at least five other books cited in the end-notes. This is not a complaint; synthesis is where Stewart Brand shines.",
+       "paras": [
+        "In the spirit of the Whole Earth Catalog, this book reads more like an extended blog post than a non-fiction book, mainly because it covers so much material at a pretty high level. I feel like each chapter is a well crafted summary of at least five other books cited in the end-notes. This is not a complaint; synthesis is where Stewart Brand shines.",
+        "The basic thesis of the book is this…"
+       ],
+       "words": 1918,
+       "minutes": 8
+      },
+      "atlas": {
+       "lo": "atlas/lo/whole-earth-discipline-by-stewart-brand.webp",
+       "card": "atlas/card/whole-earth-discipline-by-stewart-brand.webp",
+       "edge": "#a2bbc8",
+       "hue": 1.3569
+      },
+      "publisher": "Penguin",
+      "pages": 337,
+      "year": null,
+      "section": "Technology",
+      "group": "Non-fiction"
+     },
+     {
+      "slug": "profiles-of-the-future-by-arthur-c-clarke",
+      "link": "https://smus.com/books/profiles-of-the-future-by-arthur-c-clarke",
+      "title": "Profiles of the Future",
+      "author": "Arthur C. Clarke",
+      "beloved": true,
+      "dims": {
+       "h": 180,
+       "w": 109,
+       "t": 15.1
+      },
+      "pose": "upright",
+      "texture": "../data/textures/profiles-of-the-future-by-arthur-c-clarke.jpg",
+      "cover": "../data/covers/profiles-of-the-future-by-arthur-c-clarke.jpg",
+      "back": "../data/backs/profiles-of-the-future-by-arthur-c-clarke.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Dec 2020",
+       "source": "smus",
+       "headline": "Profiles of the Future by Arthur C. Clarke",
+       "excerpt": "Originally written in 1960, I’m reading the edition revised in 1977. Clarke begins by reflecting on the last few decades and observing that although there were many important and expected inventions (eg. automobiles, planes, submarines, and spaceships), many of the most important were completely unexpected (eg. X-rays, nuclear energy, radio and television, electronics, and photography).",
+       "paras": [
+        "Originally written in 1960, I’m reading the edition revised in 1977. Clarke begins by reflecting on the last few decades and observing that although there were many important and expected inventions (eg. automobiles, planes, submarines, and spaceships), many of the most important were completely unexpected (eg. X-rays, nuclear energy, radio and television, electronics, and photography).",
+        "Clarke sets out not to predict the future but to outline a range of possible futures. This approach is a sibling to scenario planning, and is more hedgy and humble. But the real value I got from reading this book was to get a sense for a 1960s umwelt seen through a futurist’s eyes. …"
+       ],
+       "words": 2766,
+       "minutes": 12
+      },
+      "atlas": {
+       "lo": "atlas/lo/profiles-of-the-future-by-arthur-c-clarke.webp",
+       "card": "atlas/card/profiles-of-the-future-by-arthur-c-clarke.webp",
+       "edge": "#61504b",
+       "hue": 0.7309
+      },
+      "publisher": "Bantam Books",
+      "pages": 235,
+      "year": null
+     },
+     {
+      "slug": "rewiring-america",
+      "link": "https://smus.com/books/rewiring-america",
+      "title": "Rewiring America",
+      "author": "Saul Griffith",
+      "beloved": true,
+      "dims": {
+       "h": 216,
+       "w": 140,
+       "t": 14.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/rewiring-america.jpg",
+      "cover": "../data/covers/rewiring-america.jpg",
+      "back": "../data/backs/rewiring-america.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Sep 2020",
+       "source": "smus",
+       "headline": "Rewiring America",
+       "excerpt": "This is less of a book and more of a propaganda pamphlet, which can be succinctly summarized as follows…",
+       "paras": [
+        "This is less of a book and more of a propaganda pamphlet, which can be succinctly summarized as follows…"
+       ],
+       "words": 947,
+       "minutes": 4
+      },
+      "atlas": {
+       "lo": "atlas/lo/rewiring-america.webp",
+       "card": "atlas/card/rewiring-america.webp",
+       "edge": "#bf73b8",
+       "hue": 0.8997
+      },
+      "publisher": null,
+      "pages": null,
+      "year": null
+     },
+     {
+      "slug": "abc-by-illich-and-sanders",
+      "link": "https://smus.com/books/abc-by-illich-and-sanders",
+      "title": "ABC",
+      "author": "Ivan Illich",
+      "beloved": false,
+      "dims": {
+       "h": 203,
+       "w": 132,
+       "t": 12.7
+      },
+      "pose": "upright",
+      "texture": "../data/textures/abc-by-illich-and-sanders.jpg",
+      "cover": "../data/covers/abc-by-illich-and-sanders.jpg",
+      "back": "../data/backs/abc-by-illich-and-sanders.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Sep 2021",
+       "source": "smus",
+       "headline": "ABC by Illich and Sanders",
+       "excerpt": "The Alphabetization of the Popular Mind is an interesting deep dive into the way that consciousness evolved throughout history, especially as a result of literacy. I guess this is the Illich version of Orality and Literacy (which I have not yet read).",
+       "paras": [
+        "The Alphabetization of the Popular Mind is an interesting deep dive into the way that consciousness evolved throughout history, especially as a result of literacy. I guess this is the Illich version of Orality and Literacy (which I have not yet read).",
+        "In general, the book is overly declamatory, often feels like a sermon. Parts of it are more literary critique, especially where Illich/Sanders delves into specific literary works (Chaucer's Canterbury, Defoe's Journal, Twain's Huck Finn) and tries to make sweeping generalizations based on their novels. Arguments rely mostly on wordplay and clever assertions, but are often unconvincing.",
+        "Sections correspond to chapters in the book that I thought were vaguely interesting…"
+       ],
+       "words": 1799,
+       "minutes": 8
+      },
+      "atlas": {
+       "lo": "atlas/lo/abc-by-illich-and-sanders.webp",
+       "card": "atlas/card/abc-by-illich-and-sanders.webp",
+       "edge": "#ddd6b9",
+       "hue": 1.1478
+      },
+      "publisher": "Vintage",
+      "pages": 187,
+      "year": null
+     },
+     {
+      "slug": "deschooling-society-by-ivan-illich",
+      "link": "https://smus.com/books/deschooling-society-by-ivan-illich",
+      "title": "Deschooling Society",
+      "author": "Ivan Illich",
+      "beloved": false,
+      "dims": {
+       "h": 193,
+       "w": 122,
+       "t": 10.2
+      },
+      "pose": "upright",
+      "texture": "../data/textures/deschooling-society-by-ivan-illich.jpg",
+      "cover": "../data/covers/deschooling-society-by-ivan-illich.jpg",
+      "back": "../data/backs/deschooling-society-by-ivan-illich.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jul 2019",
+       "source": "smus",
+       "headline": "Deschooling Society by Ivan Illich",
+       "excerpt": "A lot of this book agrees emphatically with this Twain quote. Fundamentally, Illich believes that \"universal education through schooling is not feasible\". Did you know that \"schole\", the origin of the word \"school\" and \"школа\", is the greek word for leisure? The book is written as a collection of essays. Overall, Illich is an Anarchist, and the essays are too radical for me temperament. …",
+       "paras": [
+        "A lot of this book agrees emphatically with this Twain quote. Fundamentally, Illich believes that \"universal education through schooling is not feasible\". Did you know that \"schole\", the origin of the word \"school\" and \"школа\", is the greek word for leisure? The book is written as a collection of essays. Overall, Illich is an Anarchist, and the essays are too radical for me temperament. …"
+       ],
+       "words": 595,
+       "minutes": 3
+      },
+      "atlas": {
+       "lo": "atlas/lo/deschooling-society-by-ivan-illich.webp",
+       "card": "atlas/card/deschooling-society-by-ivan-illich.webp",
+       "edge": "#181b1b",
+       "hue": 1.8142
+      },
+      "publisher": "Marion Boyars Publishers",
+      "pages": 116,
+      "year": null
+     },
+     {
+      "slug": "tools-for-conviviality-by-ivan-illich",
+      "link": "https://smus.com/books/tools-for-conviviality-by-ivan-illich",
+      "title": "Tools for Conviviality",
+      "author": "Ivan Illich",
+      "beloved": true,
+      "dims": {
+       "h": 213,
+       "w": 135,
+       "t": 10.2
+      },
+      "pose": "upright",
+      "texture": "../data/textures/tools-for-conviviality-by-ivan-illich.jpg",
+      "cover": "../data/covers/tools-for-conviviality-by-ivan-illich.jpg",
+      "back": "../data/backs/tools-for-conviviality-by-ivan-illich.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Oct 2020",
+       "source": "smus",
+       "headline": "Tools for Conviviality by Ivan Illich",
+       "excerpt": "My main objection to Deschooling Society was that Illich completely neglected the babysitting aspect of the institution. With that out the window, feels like a reread is in order. However, I donated Deschooling to the LFL at work, but happened to have a copy of Tools for Conviviality. So here we are!",
+       "paras": [
+        "My main objection to Deschooling Society was that Illich completely neglected the babysitting aspect of the institution. With that out the window, feels like a reread is in order. However, I donated Deschooling to the LFL at work, but happened to have a copy of Tools for Conviviality. So here we are!",
+        "I found this book easier to digest than Deschooling. Perhaps I knew a bit better what I was getting myself into? By the way, book PDF is available. …"
+       ],
+       "words": 1260,
+       "minutes": 5
+      },
+      "atlas": {
+       "lo": "atlas/lo/tools-for-conviviality-by-ivan-illich.webp",
+       "card": "atlas/card/tools-for-conviviality-by-ivan-illich.webp",
+       "edge": "#658ba4",
+       "hue": 0.5996
+      },
+      "publisher": "Harper & Row",
+      "pages": 110,
+      "year": null
+     },
+     {
+      "slug": "gr-you-are-not-a-gadget",
+      "link": "https://www.goodreads.com/book/show/6683549",
+      "title": "You Are Not a Gadget",
+      "author": "Jaron Lanier",
+      "beloved": false,
+      "dims": {
+       "h": 220,
+       "w": 148,
+       "t": 23.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/gr-you-are-not-a-gadget.jpg",
+      "cover": "../data/covers/gr-you-are-not-a-gadget.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-you-are-not-a-gadget.webp",
+       "card": "atlas/card/gr-you-are-not-a-gadget.webp",
+       "edge": "#2b2620",
+       "hue": 1.8583
+      },
+      "publisher": "Alfred A. Knopf",
+      "pages": 221,
+      "year": null,
+      "lean": 3.3
+     },
+     {
+      "slug": "sid-meiers-memoir",
+      "link": "https://smus.com/books/sid-meiers-memoir",
+      "title": "Sid Meier's Memoir!",
+      "author": "Sid Meier",
+      "beloved": true,
+      "dims": {
+       "h": 199,
+       "w": 131,
+       "t": 20.2
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/sid-meiers-memoir.jpg",
+      "cover": "../data/covers/sid-meiers-memoir.jpg",
+      "back": "../data/backs/sid-meiers-memoir.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jan 2021",
+       "source": "smus",
+       "headline": "Sid Meier's Memoir!",
+       "excerpt": "MJ recommended I pick up this book. I regret nothing.",
+       "paras": [
+        "MJ recommended I pick up this book. I regret nothing.",
+        "This was a fun look into game development history, narrated by a venerable insider. I remember spending days with AK and MN playing Civ 1 in the mid-90s, and have played every game in the series since.",
+        "Billed as a memoir, this book focuses on anecdotes about the games and the game industry, with Sid Meier's personal life taking the backseat. I especially enjoyed the Nuclear Gandhi story. It's such a colorful intersection of a funny premise, computer science, and a hoax.",
+        "Sid Meier's taste for non-violent educational simulators is especially compelling, and reading about these games made me really miss them. As a kid, I think Civ sparked my interest in history and war and complex systems. But I was mainly just having a lot of fun! These days playing even one game of Civ is a heavy lift, but maybe it's worth giving Civ Revolutions a look? …"
+       ],
+       "words": 418,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/sid-meiers-memoir.webp",
+       "card": "atlas/card/sid-meiers-memoir.webp",
+       "edge": "#0f467c",
+       "hue": 0.6217
+      },
+      "publisher": "Norton & Company, Incorporated, W. W.",
+      "pages": 320,
+      "year": null,
+      "lean": 3.3
+     },
+     {
+      "slug": "frank-herbert-by-tim-oreilly",
+      "link": "https://smus.com/books/frank-herbert-by-tim-oreilly",
+      "title": "Frank Herbert",
+      "author": "Tim O'Reilly",
+      "beloved": true,
+      "dims": {
+       "h": 220,
+       "w": 151,
+       "t": 14.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/frank-herbert-by-tim-oreilly.jpg",
+      "cover": "../data/covers/frank-herbert-by-tim-oreilly.jpg",
+      "back": "../data/backs/frank-herbert-by-tim-oreilly.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Oct 2020",
+       "source": "smus",
+       "headline": "Frank Herbert by Tim O’Reilly",
+       "excerpt": "",
+       "paras": [],
+       "words": 1511,
+       "minutes": 7
+      },
+      "atlas": {
+       "lo": "atlas/lo/frank-herbert-by-tim-oreilly.webp",
+       "card": "atlas/card/frank-herbert-by-tim-oreilly.webp",
+       "edge": "#877b47",
+       "hue": 0.1787
+      },
+      "publisher": "Ungar",
+      "pages": 216,
+      "year": null,
+      "lean": 3.3
+     },
+     {
+      "slug": "gr-cryptography-a-very-short-introduction",
+      "link": "https://www.goodreads.com/book/show/634834",
+      "title": "Cryptography",
+      "subtitle": "A Very Short Introduction",
+      "author": "F. C. Piper",
+      "beloved": false,
+      "dims": {
+       "h": 180,
+       "w": 113,
+       "t": 9.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-cryptography-a-very-short-introduction.jpg",
+      "cover": "../data/covers/gr-cryptography-a-very-short-introduction.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-cryptography-a-very-short-introduction.webp",
+       "card": "atlas/card/gr-cryptography-a-very-short-introduction.webp",
+       "edge": "#273e67",
+       "hue": 0.6447
+      },
+      "publisher": "Oxford University Press",
+      "pages": 160,
+      "year": null
+     },
+     {
+      "slug": "how-to-fail-at-almost-everything-by-scott-adams",
+      "link": "https://smus.com/books/how-to-fail-at-almost-everything-by-scott-adams",
+      "title": "How to Fail at Almost Everything",
+      "author": "Scott Adams",
+      "beloved": false,
+      "dims": {
+       "h": 240,
+       "w": 158,
+       "t": 25.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/how-to-fail-at-almost-everything-by-scott-adams.jpg",
+      "cover": "../data/covers/how-to-fail-at-almost-everything-by-scott-adams.jpg",
+      "back": "../data/backs/how-to-fail-at-almost-everything-by-scott-adams.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Apr 2016",
+       "source": "smus",
+       "headline": "How to Fail at Almost Everything by Scott Adams",
+       "excerpt": "Let's be clear: this is a self help book. I somehow got suckered into reading it because I liked one of his blog posts. There are very few interesting or original things in the book, and the author comes off as brash and trying too hard to be funny. That said, I liked some ideas…",
+       "paras": [
+        "Let's be clear: this is a self help book. I somehow got suckered into reading it because I liked one of his blog posts. There are very few interesting or original things in the book, and the author comes off as brash and trying too hard to be funny. That said, I liked some ideas…"
+       ],
+       "words": 194,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/how-to-fail-at-almost-everything-by-scott-adams.webp",
+       "card": "atlas/card/how-to-fail-at-almost-everything-by-scott-adams.webp",
+       "edge": "#da5e27",
+       "hue": 0.0938
+      },
+      "publisher": null,
+      "pages": 248,
+      "year": null,
+      "section": "Business",
+      "group": "Non-fiction"
+     },
+     {
+      "slug": "the-one-minute-manager",
+      "link": "https://smus.com/books/the-one-minute-manager",
+      "title": "The One Minute Manager",
+      "author": "Kenneth H. Blanchard",
+      "beloved": true,
+      "dims": {
+       "h": 230,
+       "w": 148,
+       "t": 7.7
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-one-minute-manager.jpg",
+      "cover": "../data/covers/the-one-minute-manager.jpg",
+      "back": "../data/backs/the-one-minute-manager.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jun 2016",
+       "source": "smus",
+       "headline": "The One Minute Manager",
+       "excerpt": "This little book was recommended to me by a ski instructor after a ski lesson at Squaw. The man was probably in his 70s, but skied incredibly well, and had a lot of wisdom to pass on. He was tough, but nice, like a One Minute Manager.",
+       "paras": [
+        "This little book was recommended to me by a ski instructor after a ski lesson at Squaw. The man was probably in his 70s, but skied incredibly well, and had a lot of wisdom to pass on. He was tough, but nice, like a One Minute Manager.",
+        "More of a pamphlet than a book, One Minute Manager unfolds as a story about a young man wanting to learn to be a good people manager. The story makes the points more vivid, but at its core, there is an interesting and somewhat surprising strategy outlined for being a good hands off manager. The approach reminds me a little bit of Christian's management style. There are three parts…"
+       ],
+       "words": 191,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-one-minute-manager.webp",
+       "card": "atlas/card/the-one-minute-manager.webp",
+       "edge": "#e7d8b7",
+       "hue": 1.3055
+      },
+      "publisher": "Blanchard-Johnson Publishers",
+      "pages": 112,
+      "year": null
+     },
+     {
+      "slug": "empowered-by-cagan-jones",
+      "link": "https://smus.com/books/empowered-by-cagan-jones",
+      "title": "Empowered",
+      "author": "Marty Cagan",
+      "beloved": false,
+      "dims": {
+       "h": 226,
+       "w": 152,
+       "t": 41.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/empowered-by-cagan-jones.jpg",
+      "cover": "../data/covers/empowered-by-cagan-jones.jpg",
+      "back": "../data/backs/empowered-by-cagan-jones.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Sep 2023",
+       "source": "smus",
+       "headline": "Empowered by Cagan & Jones",
+       "excerpt": "My skip-skip-skip level manager at work recommended it to all of his manager reports, and so I decided to read this book to get closer to the top brass. Overall it was a sobering read, actively reminding me how far my organization is from being customer-centric. The book mostly addresses product managers, but tries to also apply to leaders in general, and \"product people\" in particular. It's a bit unclear who these people are, but I suspect they include product-minded engineers and designers. …",
+       "paras": [
+        "My skip-skip-skip level manager at work recommended it to all of his manager reports, and so I decided to read this book to get closer to the top brass. Overall it was a sobering read, actively reminding me how far my organization is from being customer-centric. The book mostly addresses product managers, but tries to also apply to leaders in general, and \"product people\" in particular. It's a bit unclear who these people are, but I suspect they include product-minded engineers and designers. …"
+       ],
+       "words": 380,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/empowered-by-cagan-jones.webp",
+       "card": "atlas/card/empowered-by-cagan-jones.webp",
+       "edge": "#b1b5c7",
+       "hue": 0.6529
+      },
+      "publisher": "Wiley & Sons, Limited, John",
+      "pages": 368,
+      "year": null
+     },
+     {
+      "slug": "bad-blood-by-john-carreyrou",
+      "link": "https://smus.com/books/bad-blood-by-john-carreyrou",
+      "title": "Bad Blood",
+      "author": "John Carreyrou",
+      "beloved": false,
+      "dims": {
+       "h": 244,
+       "w": 163,
+       "t": 30.5
+      },
+      "pose": "upright",
+      "texture": "../data/textures/bad-blood-by-john-carreyrou.jpg",
+      "cover": "../data/covers/bad-blood-by-john-carreyrou.jpg",
+      "back": "../data/backs/bad-blood-by-john-carreyrou.jpg",
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "posted": "Jul 2018",
+       "source": "smus",
+       "headline": "Bad Blood by John Carreyrou",
+       "excerpt": "A sad story about Theranos and it’s leadership, in large part Elisabeth Holmes, a tragic hero with a fatal flaw: unbridled ambition.",
+       "paras": [
+        "A sad story about Theranos and it’s leadership, in large part Elisabeth Holmes, a tragic hero with a fatal flaw: unbridled ambition.",
+        "The rest follows: unreasonably high confidence, sweeping major problems under the rug, and cargo cult worship dedicated to successful leaders. Which includes setting super high expectations for employees, fostering internal competition, demanding absolute loyalty and punishing any whiffs of dissent.",
+        "What was most surprising to me were the many ethical breaches exhibited by Holmes herself: mixing business and romance, hiring exclusively political celebrities to your board, and showing almost no empathy for employees, while pursuing ruthless legal tactics in personal vendettas. …"
+       ],
+       "words": 239,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/bad-blood-by-john-carreyrou.webp",
+       "card": "atlas/card/bad-blood-by-john-carreyrou.webp",
+       "edge": "#060606",
+       "hue": 1.8792
+      },
+      "publisher": "Alfred A. Knopf",
+      "pages": 339,
+      "year": null
+     },
+     {
+      "slug": "gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha",
+      "link": "https://www.goodreads.com/book/show/2615",
+      "title": "The Innovator's Dilemma",
+      "subtitle": "The Revolutionary Book that Will Change the Way You Do Business",
+      "author": "Clayton M. Christensen",
+      "beloved": false,
+      "dims": {
+       "h": 203,
+       "w": 135,
+       "t": 22.9
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.jpg",
+      "cover": "../data/covers/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": "2010/03/24",
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.webp",
+       "card": "atlas/card/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.webp",
+       "edge": "#828860",
+       "hue": 0.3549
+      },
+      "publisher": "Collins",
+      "pages": 320,
+      "year": null
+     },
+     {
+      "slug": "gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she",
+      "link": "https://www.goodreads.com/book/show/9266037",
+      "title": "The Entrepreneur's Guide to Customer Development",
+      "subtitle": "A cheat sheet to The Four Steps to the Epiphany",
+      "author": "Brant Cooper",
+      "beloved": false,
+      "dims": {
+       "h": 240,
+       "w": 152,
+       "t": 6.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she.jpg",
+      "cover": "../data/covers/gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she.webp",
+       "card": "atlas/card/gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she.webp",
+       "edge": "#0968a2",
+       "hue": 0.6022
+      },
+      "publisher": "Cooper-Vlaskovits",
+      "pages": 104,
+      "year": null
+     },
+     {
+      "slug": "gr-the-4-hour-workweek",
+      "link": "https://www.goodreads.com/book/show/368593",
+      "title": "The 4-Hour Workweek",
+      "author": "Timothy Ferriss",
+      "beloved": false,
+      "dims": {
+       "h": 208,
+       "w": 137,
+       "t": 33.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-4-hour-workweek.jpg",
+      "cover": "../data/covers/gr-the-4-hour-workweek.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-4-hour-workweek.webp",
+       "card": "atlas/card/gr-the-4-hour-workweek.webp",
+       "edge": "#c8c8a6",
+       "hue": 1.3053
+      },
+      "publisher": "Harmony",
+      "pages": 308,
+      "year": null
+     },
+     {
+      "slug": "the-goal-a-business-graphic-novel",
+      "link": "https://smus.com/books/the-goal-a-business-graphic-novel",
+      "title": "The Goal - A Business Graphic Novel",
+      "author": "Eliyahu M. Goldratt",
+      "beloved": true,
+      "dims": {
+       "h": 244,
+       "w": 174,
+       "t": 10.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-goal-a-business-graphic-novel.jpg",
+      "cover": "../data/covers/the-goal-a-business-graphic-novel.jpg",
+      "back": "../data/backs/the-goal-a-business-graphic-novel.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Aug 2022",
+       "source": "smus",
+       "headline": "The Goal - A Business Graphic Novel",
+       "excerpt": "The Goal: A Business Graphic novel is crass, outdated and overly on the nose. At the same time, it is a relatively entertaining illustrated introduction to a boring idea (a management paradigm). For this alone, I can't help but recommend it.",
+       "paras": [
+        "The Goal: A Business Graphic novel is crass, outdated and overly on the nose. At the same time, it is a relatively entertaining illustrated introduction to a boring idea (a management paradigm). For this alone, I can't help but recommend it.",
+        "Alex Rogo directs a plant at Unico. He’s struggling to turn his business around and the CEO has just given him an ultimatum. I've never read a business novel before, and the combination of words is surprising. Is Rogo up to his managerial task? (Of course, otherwise there would be no hero's journey... But how?) Like “Obi Wan Kenobi instructing Luke Skywalker on the use of the force”, his former professor turned consultant Jonah saves the day.",
+        "The formulation of a business seems very crass and slightly outdated. None of this ESG shit; the goal is to make money. How? In a nutshell…"
+       ],
+       "words": 661,
+       "minutes": 3
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-goal-a-business-graphic-novel.webp",
+       "card": "atlas/card/the-goal-a-business-graphic-novel.webp",
+       "edge": "#697776",
+       "hue": 1.419
+      },
+      "publisher": "North River Press",
+      "pages": 130,
+      "year": null
+     },
+     {
+      "slug": "art-of-tidying-by-marie-kondo",
+      "link": "https://smus.com/books/art-of-tidying-by-marie-kondo",
+      "title": "Art of Tidying",
+      "author": "Marie Kondo",
+      "beloved": false,
+      "dims": {
+       "h": 231,
+       "w": 162,
+       "t": 19.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/art-of-tidying-by-marie-kondo.jpg",
+      "cover": "../data/covers/art-of-tidying-by-marie-kondo.jpg",
+      "back": "../data/backs/art-of-tidying-by-marie-kondo.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Apr 2016",
+       "source": "smus",
+       "headline": "Art of Tidying by Marie Kondo",
+       "excerpt": "An endearing manual for tidying up. I'm naturally inclined to minimalism as it stands and did a massive cleanup of my old room in my parents house just last month so consider myself proficient. But Marie takes it to the next level, revealing an autistic inclination towards the personification of inanimate objects.",
+       "paras": [
+        "An endearing manual for tidying up. I'm naturally inclined to minimalism as it stands and did a massive cleanup of my old room in my parents house just last month so consider myself proficient. But Marie takes it to the next level, revealing an autistic inclination towards the personification of inanimate objects.",
+        "This manifesto can easily be reduced to an illustrated one pager, but Marie insists on treading over the same ground multiple times. …"
+       ],
+       "words": 138,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/art-of-tidying-by-marie-kondo.webp",
+       "card": "atlas/card/art-of-tidying-by-marie-kondo.webp",
+       "edge": "#b2c4b8",
+       "hue": 1.2597
+      },
+      "publisher": "Tantor Media Inc",
+      "pages": null,
+      "year": null
+     },
+     {
+      "slug": "deep-work-by-cal-newport",
+      "link": "https://smus.com/books/deep-work-by-cal-newport",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "beloved": true,
+      "dims": {
+       "h": 220,
+       "w": 147,
+       "t": 34.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/deep-work-by-cal-newport.jpg",
+      "cover": "../data/covers/deep-work-by-cal-newport.jpg",
+      "back": "../data/backs/deep-work-by-cal-newport.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Mar 2017",
+       "source": "smus",
+       "headline": "Deep Work by Cal Newport",
+       "excerpt": "Several strategies for deeply working…",
+       "paras": [
+        "Several strategies for deeply working…"
+       ],
+       "words": 108,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/deep-work-by-cal-newport.webp",
+       "card": "atlas/card/deep-work-by-cal-newport.webp",
+       "edge": "#e4ac3b",
+       "hue": 0.1535
+      },
+      "publisher": "Grand Central Publishing",
+      "pages": 295,
+      "year": null
+     },
+     {
+      "slug": "the-right-it-audio",
+      "link": "https://smus.com/books/the-right-it-audio",
+      "title": "The Right It",
+      "author": "Alberto Savoia",
+      "beloved": false,
+      "dims": {
+       "h": 220,
+       "w": 147,
+       "t": 15.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-right-it-audio.jpg",
+      "cover": "../data/covers/the-right-it-audio.jpg",
+      "back": "../data/backs/the-right-it-audio.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Dec 2019",
+       "source": "smus",
+       "headline": "The Right It (audio)",
+       "excerpt": "Cass suggested I check out The Right It by Alberto Savoia. This book is an ode to an idea: do as much as you can to vet an idea before committing a lot of time and energy on it. In other words, become as confident as possible in product-market fit before spending a lot of resources building even the first version. I strongly agree with the sentiment of the book, and have seen product and research teams fail for this exact reason. That said, it’s quite easy to condense into a substantially smaller format, and I might recommend that (if available) rather than reading the entire book.",
+       "paras": [
+        "Cass suggested I check out The Right It by Alberto Savoia. This book is an ode to an idea: do as much as you can to vet an idea before committing a lot of time and energy on it. In other words, become as confident as possible in product-market fit before spending a lot of resources building even the first version. I strongly agree with the sentiment of the book, and have seen product and research teams fail for this exact reason. That said, it’s quite easy to condense into a substantially smaller format, and I might recommend that (if available) rather than reading the entire book.",
+        "Most new ventures fail. Savoia encourages founders to be brutally honest with themselves, make their hypotheses explicit and quantified, and then find clever ways to quickly and cheaply validate them. The steps are as follows…"
+       ],
+       "words": 488,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-right-it-audio.webp",
+       "card": "atlas/card/the-right-it-audio.webp",
+       "edge": "#edcb02",
+       "hue": 0.1847
+      },
+      "publisher": "HarperCollins Publishers",
+      "pages": 137,
+      "year": null
+     },
+     {
       "slug": "real-estate-and-cash-flow",
       "link": "https://smus.com/books/real-estate-and-cash-flow",
       "title": "Real Estate and Cash Flow",
@@ -6175,7 +7856,7 @@
        "w": 154,
        "t": 20.2
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/real-estate-and-cash-flow.jpg",
       "cover": "../data/covers/real-estate-and-cash-flow.jpg",
       "back": "../data/backs/real-estate-and-cash-flow.jpg",
@@ -6203,6 +7884,7 @@
       "publisher": "McGraw-Hill",
       "pages": 320,
       "year": null,
+      "lean": 7.4,
       "section": "Finance",
       "group": "Non-fiction"
      },
@@ -6217,7 +7899,7 @@
        "w": 158,
        "t": 18.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/debt-the-first-5000-years.jpg",
       "cover": "../data/covers/debt-the-first-5000-years.jpg",
       "back": "../data/backs/debt-the-first-5000-years.jpg",
@@ -6243,7 +7925,8 @@
       },
       "publisher": "Melville House",
       "pages": 534,
-      "year": null
+      "year": null,
+      "lean": 7.4
      },
      {
       "slug": "why-information-grows-by-cesar-hidalgo",
@@ -6549,1687 +8232,6 @@
       "publisher": "HarperCollins Publishers",
       "pages": 400,
       "year": null
-     },
-     {
-      "slug": "genesis-by-translated-by-robert-alter",
-      "link": "https://smus.com/books/genesis-by-translated-by-robert-alter",
-      "title": "Genesis",
-      "author": "Robert Alter",
-      "beloved": true,
-      "dims": {
-       "h": 240,
-       "w": 160,
-       "t": 32.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/genesis-by-translated-by-robert-alter.jpg",
-      "cover": "../data/covers/genesis-by-translated-by-robert-alter.jpg",
-      "back": "../data/backs/genesis-by-translated-by-robert-alter.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "May 2022",
-       "source": "smus",
-       "headline": "Genesis by ✨ translated by Robert Alter",
-       "excerpt": "Genesis is not so much a book, but an “accretion of sundry traditions, shot through with disjunctions and contradictions, and accumulated in an uneven editorial process over several centuries”. The Hebrew word for book, “Sefer” actually translates more to scroll than to book, and scrolls are much more fungible than books. A scroll can be stitched to another scroll, split, and spliced, and rarely has named attribution. Not a coherent artwork by a single author, Genesis is more like a cathedral of medieval Europe, the product of many hands, involving an elaborate process of editing, like the greatest Hollywood films.",
-       "paras": [
-        "Genesis is not so much a book, but an “accretion of sundry traditions, shot through with disjunctions and contradictions, and accumulated in an uneven editorial process over several centuries”. The Hebrew word for book, “Sefer” actually translates more to scroll than to book, and scrolls are much more fungible than books. A scroll can be stitched to another scroll, split, and spliced, and rarely has named attribution. Not a coherent artwork by a single author, Genesis is more like a cathedral of medieval Europe, the product of many hands, involving an elaborate process of editing, like the greatest Hollywood films.",
-        "Main sources of compilation include {Y/J}ahwist (J), Elohistic (E), and Priestly (P) source documents. J and E might be contemporary and early, P dates to about 6th century BCE. But all is hotly debated. …"
-       ],
-       "words": 1022,
-       "minutes": 4
-      },
-      "atlas": {
-       "lo": "atlas/lo/genesis-by-translated-by-robert-alter.webp",
-       "card": "atlas/card/genesis-by-translated-by-robert-alter.webp",
-       "edge": "#968151",
-       "hue": 0.1562
-      },
-      "publisher": "W. W. Norton & Company",
-      "pages": 324,
-      "year": null,
-      "section": "Religion",
-      "group": "Non-fiction"
-     },
-     {
-      "slug": "the-way-of-man-by-martin-buber",
-      "link": "https://smus.com/books/the-way-of-man-by-martin-buber",
-      "title": "The Way of Man",
-      "author": "Martin Buber",
-      "beloved": true,
-      "dims": {
-       "h": 200,
-       "w": 128,
-       "t": 3.5
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-way-of-man-by-martin-buber.jpg",
-      "cover": "../data/covers/the-way-of-man-by-martin-buber.jpg",
-      "back": "../data/backs/the-way-of-man-by-martin-buber.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Mar 2026",
-       "source": "smus",
-       "headline": "The Way of Man by Martin Buber",
-       "excerpt": "As it turns out, Buber is surprisingly accessible. This classic reads like a self-help book grounded in Hasidic tradition. The book is fundamentally an exegesis of 18th-century folklore—a sharp contrast to PKD's manic exegesis. My summary of Buber's take…",
-       "paras": [
-        "As it turns out, Buber is surprisingly accessible. This classic reads like a self-help book grounded in Hasidic tradition. The book is fundamentally an exegesis of 18th-century folklore—a sharp contrast to PKD's manic exegesis. My summary of Buber's take…"
-       ],
-       "words": 1353,
-       "minutes": 6
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-way-of-man-by-martin-buber.webp",
-       "card": "atlas/card/the-way-of-man-by-martin-buber.webp",
-       "edge": "#7d6c5a",
-       "hue": 1.5055
-      },
-      "publisher": "Citadel",
-      "pages": 41,
-      "year": null
-     },
-     {
-      "slug": "gr-beginning-biblical-hebrew",
-      "link": "https://www.goodreads.com/book/show/1382236",
-      "title": "Beginning Biblical Hebrew",
-      "author": "Mark David Futato",
-      "beloved": false,
-      "dims": {
-       "h": 279,
-       "w": 216,
-       "t": 27.9
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-beginning-biblical-hebrew.jpg",
-      "cover": "../data/covers/gr-beginning-biblical-hebrew.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 2,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-beginning-biblical-hebrew.webp",
-       "card": "atlas/card/gr-beginning-biblical-hebrew.webp",
-       "edge": "#0f3c71",
-       "hue": 0.6299
-      },
-      "publisher": "Eisenbrauns",
-      "pages": 351,
-      "year": null
-     },
-     {
-      "slug": "mystery-teachings-by-j-m-greer",
-      "link": "https://smus.com/books/mystery-teachings-by-j-m-greer",
-      "title": "Mystery Teachings",
-      "author": "John Michael Greer",
-      "beloved": true,
-      "dims": {
-       "h": 229,
-       "w": 152,
-       "t": 15.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/mystery-teachings-by-j-m-greer.jpg",
-      "cover": "../data/covers/mystery-teachings-by-j-m-greer.jpg",
-      "back": "../data/backs/mystery-teachings-by-j-m-greer.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Mar 2024",
-       "source": "smus",
-       "headline": "Mystery Teachings by J. M. Greer",
-       "excerpt": "Ecology, complexity, and other interdisciplinary fields can easily slip into woo. Initially I expected this book to suffer from this problem, but luckily there were no dizzying invocations of Deepak Chiopra™ style quantum physics. Instead, Greer presents a grounded worldview, rejecting spiritual stereotypes and \"half truths that you create your own reality\".",
-       "paras": [
-        "Ecology, complexity, and other interdisciplinary fields can easily slip into woo. Initially I expected this book to suffer from this problem, but luckily there were no dizzying invocations of Deepak Chiopra™ style quantum physics. Instead, Greer presents a grounded worldview, rejecting spiritual stereotypes and \"half truths that you create your own reality\".",
-        "The bulk of Greer's book features seven laws, which may be better described as perspectives or lenses. The first three are foundational, the fourth is a bridge, and the last three are somewhat derived from the first. Many of these so-called laws overlap with one another. Law of Planes and Law of Evolution are highly interrelated. Why are there seven laws? For relatively unconvincing reasons resembling gematria. I found these \"laws\" unevenly resonant, with the Law of Cause and Effect quite uninspiring, but others much more evocative. …"
-       ],
-       "words": 1674,
-       "minutes": 7
-      },
-      "atlas": {
-       "lo": "atlas/lo/mystery-teachings-by-j-m-greer.webp",
-       "card": "atlas/card/mystery-teachings-by-j-m-greer.webp",
-       "edge": "#20302b",
-       "hue": 1.7943
-      },
-      "publisher": "Weiser Books",
-      "pages": 160,
-      "year": null
-     },
-     {
-      "slug": "letters-to-my-palestinian-neighbor-by-halevi",
-      "link": "https://smus.com/books/letters-to-my-palestinian-neighbor-by-halevi",
-      "title": "Letters to my Palestinian Neighbor",
-      "author": "Yossi Klein Halevi",
-      "beloved": true,
-      "dims": {
-       "h": 204,
-       "w": 134,
-       "t": 18.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/letters-to-my-palestinian-neighbor-by-halevi.jpg",
-      "cover": "../data/covers/letters-to-my-palestinian-neighbor-by-halevi.jpg",
-      "back": "../data/backs/letters-to-my-palestinian-neighbor-by-halevi.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Dec 2023",
-       "source": "smus",
-       "headline": "Letters to my Palestinian Neighbor by Halevi",
-       "excerpt": "I discovered Yossi Klein Halevi following Hamas' massacre on Oct 7 on a podcast. Halevi's ability to combine a firmly pro-Israeli position with a gentle touch impressed me. This comes through in his book too, which I liked overall. I'll recommend it to left-leaning friends struggling to understand the situation. …",
-       "paras": [
-        "I discovered Yossi Klein Halevi following Hamas' massacre on Oct 7 on a podcast. Halevi's ability to combine a firmly pro-Israeli position with a gentle touch impressed me. This comes through in his book too, which I liked overall. I'll recommend it to left-leaning friends struggling to understand the situation. …"
-       ],
-       "words": 879,
-       "minutes": 4
-      },
-      "atlas": {
-       "lo": "atlas/lo/letters-to-my-palestinian-neighbor-by-halevi.webp",
-       "card": "atlas/card/letters-to-my-palestinian-neighbor-by-halevi.webp",
-       "edge": "#ddd7ce",
-       "hue": 1.2277
-      },
-      "publisher": "HarperCollins Publishers",
-      "pages": 288,
-      "year": null,
-      "lean": 10.5
-     },
-     {
-      "slug": "the-sabbath-by-heschel",
-      "link": "https://smus.com/books/the-sabbath-by-heschel",
-      "title": "The Sabbath",
-      "author": "Abraham Joshua Heschel",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 164,
-       "t": 11.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/the-sabbath-by-heschel.jpg",
-      "cover": "../data/covers/the-sabbath-by-heschel.jpg",
-      "back": "../data/backs/the-sabbath-by-heschel.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Dec 2022",
-       "source": "smus",
-       "headline": "The Sabbath by Heschel",
-       "excerpt": "This is a great example of a branch book (see Narrative, tree, and branch books), containing one big idea followed by elaboration. In this case, the core idea is that the Jewish Sabbath celebrates time over space, which is a rare thing to celebrate. The elaboration is a poetic meditation on time's superiority over space, and it quickly gets koan-like, but in a way that is less repetitive than Finite and Infinite Games by James Carse. …",
-       "paras": [
-        "This is a great example of a branch book (see Narrative, tree, and branch books), containing one big idea followed by elaboration. In this case, the core idea is that the Jewish Sabbath celebrates time over space, which is a rare thing to celebrate. The elaboration is a poetic meditation on time's superiority over space, and it quickly gets koan-like, but in a way that is less repetitive than Finite and Infinite Games by James Carse. …"
-       ],
-       "words": 1033,
-       "minutes": 4
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-sabbath-by-heschel.webp",
-       "card": "atlas/card/the-sabbath-by-heschel.webp",
-       "edge": "#e6e5d9",
-       "hue": 1.2058
-      },
-      "publisher": "Farrar, Straus and Giroux",
-      "pages": 118,
-      "year": null,
-      "lean": 10.5
-     },
-     {
-      "slug": "david-the-divided-heart-by-david-wolpe",
-      "link": "https://smus.com/books/david-the-divided-heart-by-david-wolpe",
-      "title": "David: The Divided Heart",
-      "author": "David Wolpe",
-      "beloved": true,
-      "dims": {
-       "h": 220,
-       "w": 146,
-       "t": 17.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/david-the-divided-heart-by-david-wolpe.jpg",
-      "cover": "../data/covers/david-the-divided-heart-by-david-wolpe.jpg",
-      "back": "../data/backs/david-the-divided-heart-by-david-wolpe.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Feb 2024",
-       "source": "smus",
-       "headline": "David: The Divided Heart by David Wolpe",
-       "excerpt": "I read this book as respite from Samuel I and before tackling Samuel II. Wolpe's retelling of David's stories is lively, easy to read, and insightful. Most of this book summarizes David's story from various perspectives: as a young man, on the run from Saul, as a king, as a father, at the end of his journey, and as the progenitor of the Messiah. I found Wolpe's negative insights to be the most incisive. …",
-       "paras": [
-        "I read this book as respite from Samuel I and before tackling Samuel II. Wolpe's retelling of David's stories is lively, easy to read, and insightful. Most of this book summarizes David's story from various perspectives: as a young man, on the run from Saul, as a king, as a father, at the end of his journey, and as the progenitor of the Messiah. I found Wolpe's negative insights to be the most incisive. …"
-       ],
-       "words": 539,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/david-the-divided-heart-by-david-wolpe.webp",
-       "card": "atlas/card/david-the-divided-heart-by-david-wolpe.webp",
-       "edge": "#b7a390",
-       "hue": 1.2076
-      },
-      "publisher": null,
-      "pages": 153,
-      "year": null,
-      "lean": 10.5
-     },
-     {
-      "slug": "the-new-father",
-      "link": "https://smus.com/books/the-new-father",
-      "title": "The New Father",
-      "author": "Armin A. Brott",
-      "beloved": true,
-      "dims": {
-       "h": 236,
-       "w": 155,
-       "t": 40.6
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-new-father.jpg",
-      "cover": "../data/covers/the-new-father.jpg",
-      "back": "../data/backs/the-new-father.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Feb 2019",
-       "source": "smus",
-       "headline": "The New Father",
-       "excerpt": "My daughter Elichka is a year old! She's the best, let me show you a picture? Actually no. Not on the internet.",
-       "paras": [
-        "My daughter Elichka is a year old! She's the best, let me show you a picture? Actually no. Not on the internet.",
-        "This book was a trusty reference for me when things got a bit dicey. Rather than reading daddy or mommy blogs (urgh), a quick look at the relevant age was sometimes helpful in calming the nerves. I'd recommend it to a new father."
-       ],
-       "words": 65,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-new-father.webp",
-       "card": "atlas/card/the-new-father.webp",
-       "edge": "#c1c9ce",
-       "hue": 1.1942
-      },
-      "publisher": "Abbeville Press",
-      "pages": 464,
-      "year": null,
-      "section": "Parenting",
-      "group": "Non-fiction"
-     },
-     {
-      "slug": "fatherhood-in-pieces-by-chabon",
-      "link": "https://smus.com/books/fatherhood-in-pieces-by-chabon",
-      "title": "Fatherhood in Pieces",
-      "author": "Michael Chabon",
-      "beloved": false,
-      "dims": {
-       "h": 198,
-       "w": 129,
-       "t": 9.6
-      },
-      "pose": "upright",
-      "texture": "../data/textures/fatherhood-in-pieces-by-chabon.jpg",
-      "cover": "../data/covers/fatherhood-in-pieces-by-chabon.jpg",
-      "back": "../data/backs/fatherhood-in-pieces-by-chabon.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Jan 2020",
-       "source": "smus",
-       "headline": "Fatherhood in Pieces by Chabon",
-       "excerpt": "Collection of essays, from wistful to banal. Nothing that special. But I liked a few vignettes: the one about how each kid costs you a book. And about how baseball is nostalgia, nicely tying three generations of men.",
-       "paras": [
-        "Collection of essays, from wistful to banal. Nothing that special. But I liked a few vignettes: the one about how each kid costs you a book. And about how baseball is nostalgia, nicely tying three generations of men."
-       ],
-       "words": 38,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/fatherhood-in-pieces-by-chabon.webp",
-       "card": "atlas/card/fatherhood-in-pieces-by-chabon.webp",
-       "edge": "#798e99",
-       "hue": 0.6055
-      },
-      "publisher": "Harper Perennial",
-      "pages": 144,
-      "year": null
-     },
-     {
-      "slug": "gardener-carpenter-by-alison-gopnik",
-      "link": "https://smus.com/books/gardener-carpenter-by-alison-gopnik",
-      "title": "Gardener & Carpenter",
-      "author": "Alison Gopnik",
-      "beloved": true,
-      "dims": {
-       "h": 230,
-       "w": 153,
-       "t": 20.2
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gardener-carpenter-by-alison-gopnik.jpg",
-      "cover": "../data/covers/gardener-carpenter-by-alison-gopnik.jpg",
-      "back": "../data/backs/gardener-carpenter-by-alison-gopnik.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Aug 2021",
-       "source": "smus",
-       "headline": "Gardener & Carpenter by Alison Gopnik",
-       "excerpt": "This one's been on my radar for years. I've read a lot of the author's articles and generally feel a strong affinity for Isaiah Berlin, whom Gopnik has done quite a bit to popularize. Self described as a Bubbie from Berkeley with a PhD in developmental neuroscience that sometimes dabbles in philosophy. …",
-       "paras": [
-        "This one's been on my radar for years. I've read a lot of the author's articles and generally feel a strong affinity for Isaiah Berlin, whom Gopnik has done quite a bit to popularize. Self described as a Bubbie from Berkeley with a PhD in developmental neuroscience that sometimes dabbles in philosophy. …"
-       ],
-       "words": 1937,
-       "minutes": 8
-      },
-      "atlas": {
-       "lo": "atlas/lo/gardener-carpenter-by-alison-gopnik.webp",
-       "card": "atlas/card/gardener-carpenter-by-alison-gopnik.webp",
-       "edge": "#625934",
-       "hue": 0.1528
-      },
-      "publisher": "Penguin Random House",
-      "pages": 320,
-      "year": null
-     },
-     {
-      "slug": "good-inside-by-becky-kennedy",
-      "link": "https://smus.com/books/good-inside-by-becky-kennedy",
-      "title": "Good Inside",
-      "author": "Becky Kennedy",
-      "beloved": false,
-      "dims": {
-       "h": 240,
-       "w": 152,
-       "t": 28.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/good-inside-by-becky-kennedy.jpg",
-      "cover": "../data/covers/good-inside-by-becky-kennedy.jpg",
-      "back": "../data/backs/good-inside-by-becky-kennedy.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Jun 2026",
-       "source": "smus",
-       "headline": "Good Inside by Becky Kennedy",
-       "excerpt": "I’m not actually going to recommend this book, but I figured I might as well post a quick review anyway.",
-       "paras": [
-        "I’m not actually going to recommend this book, but I figured I might as well post a quick review anyway.",
-        "Becky's pitch of the book is highly attractive: I don't believe in trade-offs. You can have it all, and everyone is good inside. Of course this is a bestseller. It tells highly anxious, guilt-ridden, burnt-out parents exactly what they want to hear, interspersed with heavy-handed cheerleading: \"It's not too late,\" \"You're doing great\". I was left waiting for the hard truth, and though I found anything but that, the book was definitely a catalyst to get me thinking about parenting.",
-        "Because to me, \"good inside\" is insufficient. Of course our kids are good inside! But my job as a parent is to raise kids that are also good outside.",
-        "When S initially pitched this book to me, it sounded like Becky was aiming for a synthesis between old and new school parenting…"
-       ],
-       "words": 1147,
-       "minutes": 5
-      },
-      "atlas": {
-       "lo": "atlas/lo/good-inside-by-becky-kennedy.webp",
-       "card": "atlas/card/good-inside-by-becky-kennedy.webp",
-       "edge": "#e4c65b",
-       "hue": 0.173
-      },
-      "publisher": "Harper Wave",
-      "pages": 336,
-      "year": null
-     },
-     {
-      "slug": "emotional-life-of-the-toddler",
-      "link": "https://smus.com/books/emotional-life-of-the-toddler",
-      "title": "Emotional Life of the Toddler",
-      "author": "Alicia Lieberman",
-      "beloved": true,
-      "dims": {
-       "h": 222,
-       "w": 140,
-       "t": 15.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/emotional-life-of-the-toddler.jpg",
-      "cover": "../data/covers/emotional-life-of-the-toddler.jpg",
-      "back": "../data/backs/emotional-life-of-the-toddler.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "May 2021",
-       "source": "smus",
-       "headline": "Emotional Life of the Toddler",
-       "excerpt": "\"Every generation Western Civilization is invaded by barbarians. We call them children.\" — Hannah Arendt",
-       "paras": [
-        "\"Every generation Western Civilization is invaded by barbarians. We call them children.\" — Hannah Arendt",
-        "Alicia F. Lieberman begins with a milder version of the same sentiment…"
-       ],
-       "words": 897,
-       "minutes": 4
-      },
-      "atlas": {
-       "lo": "atlas/lo/emotional-life-of-the-toddler.webp",
-       "card": "atlas/card/emotional-life-of-the-toddler.webp",
-       "edge": "#ebe7db",
-       "hue": 1.2002
-      },
-      "publisher": "Free P.,U.S.",
-      "pages": 20,
-      "year": null
-     },
-     {
-      "slug": "the-blessing-of-a-skinned-knee-by-wendy-mogel",
-      "link": "https://smus.com/books/the-blessing-of-a-skinned-knee-by-wendy-mogel",
-      "title": "The Blessing of a Skinned Knee",
-      "author": "Wendy Mogel",
-      "beloved": false,
-      "dims": {
-       "h": 200,
-       "w": 133,
-       "t": 15.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
-      "cover": "../data/covers/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
-      "back": "../data/backs/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "May 2024",
-       "source": "smus",
-       "headline": "The Blessing of a Skinned Knee by Wendy Mogel",
-       "excerpt": "This is a Jewish take on parenting from a former psychologist who became disenchanted with her profession and sought wisdom in the tradition of her ancestors. I found myself nodding along in agreement to many of her ideas, which try to synthesize Jewish concepts with \"common sense\" parenting. Less charitably, this book can also be seen as a conservative reaction to modern parenting trends. Either way, a better than average parenting book. Thanks to LL for the recommendation. …",
-       "paras": [
-        "This is a Jewish take on parenting from a former psychologist who became disenchanted with her profession and sought wisdom in the tradition of her ancestors. I found myself nodding along in agreement to many of her ideas, which try to synthesize Jewish concepts with \"common sense\" parenting. Less charitably, this book can also be seen as a conservative reaction to modern parenting trends. Either way, a better than average parenting book. Thanks to LL for the recommendation. …"
-       ],
-       "words": 603,
-       "minutes": 3
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-blessing-of-a-skinned-knee-by-wendy-mogel.webp",
-       "card": "atlas/card/the-blessing-of-a-skinned-knee-by-wendy-mogel.webp",
-       "edge": "#3d5982",
-       "hue": 0.635
-      },
-      "publisher": "Penguin (Non-Classics)",
-      "pages": 304,
-      "year": null
-     },
-     {
-      "slug": "mindstorms-by-seymour-papert",
-      "link": "https://smus.com/books/mindstorms-by-seymour-papert",
-      "title": "Mindstorms",
-      "author": "Seymour Papert",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 140,
-       "t": 14.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/mindstorms-by-seymour-papert.jpg",
-      "cover": "../data/covers/mindstorms-by-seymour-papert.jpg",
-      "back": "../data/backs/mindstorms-by-seymour-papert.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Feb 2017",
-       "source": "smus",
-       "headline": "Mindstorms by Seymour Papert",
-       "excerpt": "I enjoyed this short book by the inventor of LOGO, which I fondly remember first hearing about from Yuri as a kid. It was a challenging read, especially in the philosophical sections in the end. Also I have this weird thing where Seymour Papert and Mark Gross somehow blend into one person??",
-       "paras": [
-        "I enjoyed this short book by the inventor of LOGO, which I fondly remember first hearing about from Yuri as a kid. It was a challenging read, especially in the philosophical sections in the end. Also I have this weird thing where Seymour Papert and Mark Gross somehow blend into one person??",
-        "Papert is fascinated by embodied learning, and the LOGO Turtle is one of many examples of an \"object to think with\". This has great benefits for children, since they can imagine becoming a turtle in their mind. For example, drawing a circle as a Turtle is simple: take a small step forward, turn to the right a bit, rinse and repeat. This is easily translated into LOGO: FORWARD 1; RIGHT 1;. …"
-       ],
-       "words": 467,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/mindstorms-by-seymour-papert.webp",
-       "card": "atlas/card/mindstorms-by-seymour-papert.webp",
-       "edge": "#362f7a",
-       "hue": 0.7562
-      },
-      "publisher": "Basic Books",
-      "pages": 230,
-      "year": null
-     },
-     {
-      "slug": "understanding-how-we-learn-a-visual-guide",
-      "link": "https://smus.com/books/understanding-how-we-learn-a-visual-guide",
-      "title": "Understanding How We Learn",
-      "subtitle": "A Visual Guide",
-      "author": "Yana Weinstein",
-      "beloved": true,
-      "dims": {
-       "h": 250,
-       "w": 174,
-       "t": 10.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/understanding-how-we-learn-a-visual-guide.jpg",
-      "cover": "../data/covers/understanding-how-we-learn-a-visual-guide.jpg",
-      "back": "../data/backs/understanding-how-we-learn-a-visual-guide.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Nov 2021",
-       "source": "smus",
-       "headline": "Understanding How We Learn: A Visual Guide",
-       "excerpt": "I read this book because it was recommended by C for work. This book serves as a nice visual summary of what we know about learning from a cognitive science perspective. The authors lament the large gap between what we know from this field and how educators do their job in practice. …",
-       "paras": [
-        "I read this book because it was recommended by C for work. This book serves as a nice visual summary of what we know about learning from a cognitive science perspective. The authors lament the large gap between what we know from this field and how educators do their job in practice. …"
-       ],
-       "words": 2678,
-       "minutes": 12
-      },
-      "atlas": {
-       "lo": "atlas/lo/understanding-how-we-learn-a-visual-guide.webp",
-       "card": "atlas/card/understanding-how-we-learn-a-visual-guide.webp",
-       "edge": "#067aac",
-       "hue": 0.5868
-      },
-      "publisher": "Routledge",
-      "pages": 176,
-      "year": null
-     }
-    ],
-    [
-     {
-      "slug": "whole-earth-discipline-by-stewart-brand",
-      "link": "https://smus.com/books/whole-earth-discipline-by-stewart-brand",
-      "title": "Whole Earth Discipline",
-      "author": "Stewart Brand",
-      "beloved": true,
-      "dims": {
-       "h": 213,
-       "w": 140,
-       "t": 21.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/whole-earth-discipline-by-stewart-brand.jpg",
-      "cover": "../data/covers/whole-earth-discipline-by-stewart-brand.jpg",
-      "back": "../data/backs/whole-earth-discipline-by-stewart-brand.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Jul 2017",
-       "source": "smus",
-       "headline": "Whole Earth Discipline by Stewart Brand",
-       "excerpt": "In the spirit of the Whole Earth Catalog, this book reads more like an extended blog post than a non-fiction book, mainly because it covers so much material at a pretty high level. I feel like each chapter is a well crafted summary of at least five other books cited in the end-notes. This is not a complaint; synthesis is where Stewart Brand shines.",
-       "paras": [
-        "In the spirit of the Whole Earth Catalog, this book reads more like an extended blog post than a non-fiction book, mainly because it covers so much material at a pretty high level. I feel like each chapter is a well crafted summary of at least five other books cited in the end-notes. This is not a complaint; synthesis is where Stewart Brand shines.",
-        "The basic thesis of the book is this…"
-       ],
-       "words": 1918,
-       "minutes": 8
-      },
-      "atlas": {
-       "lo": "atlas/lo/whole-earth-discipline-by-stewart-brand.webp",
-       "card": "atlas/card/whole-earth-discipline-by-stewart-brand.webp",
-       "edge": "#a2bbc8",
-       "hue": 1.3569
-      },
-      "publisher": "Penguin",
-      "pages": 337,
-      "year": null,
-      "section": "Technology",
-      "group": "Non-fiction"
-     },
-     {
-      "slug": "profiles-of-the-future-by-arthur-c-clarke",
-      "link": "https://smus.com/books/profiles-of-the-future-by-arthur-c-clarke",
-      "title": "Profiles of the Future",
-      "author": "Arthur C. Clarke",
-      "beloved": true,
-      "dims": {
-       "h": 180,
-       "w": 109,
-       "t": 15.1
-      },
-      "pose": "upright",
-      "texture": "../data/textures/profiles-of-the-future-by-arthur-c-clarke.jpg",
-      "cover": "../data/covers/profiles-of-the-future-by-arthur-c-clarke.jpg",
-      "back": "../data/backs/profiles-of-the-future-by-arthur-c-clarke.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Dec 2020",
-       "source": "smus",
-       "headline": "Profiles of the Future by Arthur C. Clarke",
-       "excerpt": "Originally written in 1960, I’m reading the edition revised in 1977. Clarke begins by reflecting on the last few decades and observing that although there were many important and expected inventions (eg. automobiles, planes, submarines, and spaceships), many of the most important were completely unexpected (eg. X-rays, nuclear energy, radio and television, electronics, and photography).",
-       "paras": [
-        "Originally written in 1960, I’m reading the edition revised in 1977. Clarke begins by reflecting on the last few decades and observing that although there were many important and expected inventions (eg. automobiles, planes, submarines, and spaceships), many of the most important were completely unexpected (eg. X-rays, nuclear energy, radio and television, electronics, and photography).",
-        "Clarke sets out not to predict the future but to outline a range of possible futures. This approach is a sibling to scenario planning, and is more hedgy and humble. But the real value I got from reading this book was to get a sense for a 1960s umwelt seen through a futurist’s eyes. …"
-       ],
-       "words": 2766,
-       "minutes": 12
-      },
-      "atlas": {
-       "lo": "atlas/lo/profiles-of-the-future-by-arthur-c-clarke.webp",
-       "card": "atlas/card/profiles-of-the-future-by-arthur-c-clarke.webp",
-       "edge": "#61504b",
-       "hue": 0.7309
-      },
-      "publisher": "Bantam Books",
-      "pages": 235,
-      "year": null
-     },
-     {
-      "slug": "rewiring-america",
-      "link": "https://smus.com/books/rewiring-america",
-      "title": "Rewiring America",
-      "author": "Saul Griffith",
-      "beloved": true,
-      "dims": {
-       "h": 216,
-       "w": 140,
-       "t": 14.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/rewiring-america.jpg",
-      "cover": "../data/covers/rewiring-america.jpg",
-      "back": "../data/backs/rewiring-america.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Sep 2020",
-       "source": "smus",
-       "headline": "Rewiring America",
-       "excerpt": "This is less of a book and more of a propaganda pamphlet, which can be succinctly summarized as follows…",
-       "paras": [
-        "This is less of a book and more of a propaganda pamphlet, which can be succinctly summarized as follows…"
-       ],
-       "words": 947,
-       "minutes": 4
-      },
-      "atlas": {
-       "lo": "atlas/lo/rewiring-america.webp",
-       "card": "atlas/card/rewiring-america.webp",
-       "edge": "#bf73b8",
-       "hue": 0.8997
-      },
-      "publisher": null,
-      "pages": null,
-      "year": null
-     },
-     {
-      "slug": "abc-by-illich-and-sanders",
-      "link": "https://smus.com/books/abc-by-illich-and-sanders",
-      "title": "ABC",
-      "author": "Ivan Illich",
-      "beloved": false,
-      "dims": {
-       "h": 203,
-       "w": 132,
-       "t": 12.7
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/abc-by-illich-and-sanders.jpg",
-      "cover": "../data/covers/abc-by-illich-and-sanders.jpg",
-      "back": "../data/backs/abc-by-illich-and-sanders.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Sep 2021",
-       "source": "smus",
-       "headline": "ABC by Illich and Sanders",
-       "excerpt": "The Alphabetization of the Popular Mind is an interesting deep dive into the way that consciousness evolved throughout history, especially as a result of literacy. I guess this is the Illich version of Orality and Literacy (which I have not yet read).",
-       "paras": [
-        "The Alphabetization of the Popular Mind is an interesting deep dive into the way that consciousness evolved throughout history, especially as a result of literacy. I guess this is the Illich version of Orality and Literacy (which I have not yet read).",
-        "In general, the book is overly declamatory, often feels like a sermon. Parts of it are more literary critique, especially where Illich/Sanders delves into specific literary works (Chaucer's Canterbury, Defoe's Journal, Twain's Huck Finn) and tries to make sweeping generalizations based on their novels. Arguments rely mostly on wordplay and clever assertions, but are often unconvincing.",
-        "Sections correspond to chapters in the book that I thought were vaguely interesting…"
-       ],
-       "words": 1799,
-       "minutes": 8
-      },
-      "atlas": {
-       "lo": "atlas/lo/abc-by-illich-and-sanders.webp",
-       "card": "atlas/card/abc-by-illich-and-sanders.webp",
-       "edge": "#ddd6b9",
-       "hue": 1.1478
-      },
-      "publisher": "Vintage",
-      "pages": 187,
-      "year": null,
-      "lean": 11.9
-     },
-     {
-      "slug": "deschooling-society-by-ivan-illich",
-      "link": "https://smus.com/books/deschooling-society-by-ivan-illich",
-      "title": "Deschooling Society",
-      "author": "Ivan Illich",
-      "beloved": false,
-      "dims": {
-       "h": 193,
-       "w": 122,
-       "t": 10.2
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/deschooling-society-by-ivan-illich.jpg",
-      "cover": "../data/covers/deschooling-society-by-ivan-illich.jpg",
-      "back": "../data/backs/deschooling-society-by-ivan-illich.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Jul 2019",
-       "source": "smus",
-       "headline": "Deschooling Society by Ivan Illich",
-       "excerpt": "A lot of this book agrees emphatically with this Twain quote. Fundamentally, Illich believes that \"universal education through schooling is not feasible\". Did you know that \"schole\", the origin of the word \"school\" and \"школа\", is the greek word for leisure? The book is written as a collection of essays. Overall, Illich is an Anarchist, and the essays are too radical for me temperament. …",
-       "paras": [
-        "A lot of this book agrees emphatically with this Twain quote. Fundamentally, Illich believes that \"universal education through schooling is not feasible\". Did you know that \"schole\", the origin of the word \"school\" and \"школа\", is the greek word for leisure? The book is written as a collection of essays. Overall, Illich is an Anarchist, and the essays are too radical for me temperament. …"
-       ],
-       "words": 595,
-       "minutes": 3
-      },
-      "atlas": {
-       "lo": "atlas/lo/deschooling-society-by-ivan-illich.webp",
-       "card": "atlas/card/deschooling-society-by-ivan-illich.webp",
-       "edge": "#181b1b",
-       "hue": 1.8142
-      },
-      "publisher": "Marion Boyars Publishers",
-      "pages": 116,
-      "year": null,
-      "lean": 11.9
-     },
-     {
-      "slug": "tools-for-conviviality-by-ivan-illich",
-      "link": "https://smus.com/books/tools-for-conviviality-by-ivan-illich",
-      "title": "Tools for Conviviality",
-      "author": "Ivan Illich",
-      "beloved": true,
-      "dims": {
-       "h": 213,
-       "w": 135,
-       "t": 10.2
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/tools-for-conviviality-by-ivan-illich.jpg",
-      "cover": "../data/covers/tools-for-conviviality-by-ivan-illich.jpg",
-      "back": "../data/backs/tools-for-conviviality-by-ivan-illich.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Oct 2020",
-       "source": "smus",
-       "headline": "Tools for Conviviality by Ivan Illich",
-       "excerpt": "My main objection to Deschooling Society was that Illich completely neglected the babysitting aspect of the institution. With that out the window, feels like a reread is in order. However, I donated Deschooling to the LFL at work, but happened to have a copy of Tools for Conviviality. So here we are!",
-       "paras": [
-        "My main objection to Deschooling Society was that Illich completely neglected the babysitting aspect of the institution. With that out the window, feels like a reread is in order. However, I donated Deschooling to the LFL at work, but happened to have a copy of Tools for Conviviality. So here we are!",
-        "I found this book easier to digest than Deschooling. Perhaps I knew a bit better what I was getting myself into? By the way, book PDF is available. …"
-       ],
-       "words": 1260,
-       "minutes": 5
-      },
-      "atlas": {
-       "lo": "atlas/lo/tools-for-conviviality-by-ivan-illich.webp",
-       "card": "atlas/card/tools-for-conviviality-by-ivan-illich.webp",
-       "edge": "#658ba4",
-       "hue": 0.5996
-      },
-      "publisher": "Harper & Row",
-      "pages": 110,
-      "year": null,
-      "lean": 11.9
-     },
-     {
-      "slug": "gr-you-are-not-a-gadget",
-      "link": "https://www.goodreads.com/book/show/6683549",
-      "title": "You Are Not a Gadget",
-      "author": "Jaron Lanier",
-      "beloved": false,
-      "dims": {
-       "h": 220,
-       "w": 148,
-       "t": 23.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/gr-you-are-not-a-gadget.jpg",
-      "cover": "../data/covers/gr-you-are-not-a-gadget.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-you-are-not-a-gadget.webp",
-       "card": "atlas/card/gr-you-are-not-a-gadget.webp",
-       "edge": "#2b2620",
-       "hue": 1.8583
-      },
-      "publisher": "Alfred A. Knopf",
-      "pages": 221,
-      "year": null,
-      "lean": 11.9
-     },
-     {
-      "slug": "sid-meiers-memoir",
-      "link": "https://smus.com/books/sid-meiers-memoir",
-      "title": "Sid Meier's Memoir!",
-      "author": "Sid Meier",
-      "beloved": true,
-      "dims": {
-       "h": 199,
-       "w": 131,
-       "t": 20.2
-      },
-      "pose": "upright",
-      "texture": "../data/textures/sid-meiers-memoir.jpg",
-      "cover": "../data/covers/sid-meiers-memoir.jpg",
-      "back": "../data/backs/sid-meiers-memoir.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Jan 2021",
-       "source": "smus",
-       "headline": "Sid Meier's Memoir!",
-       "excerpt": "MJ recommended I pick up this book. I regret nothing.",
-       "paras": [
-        "MJ recommended I pick up this book. I regret nothing.",
-        "This was a fun look into game development history, narrated by a venerable insider. I remember spending days with AK and MN playing Civ 1 in the mid-90s, and have played every game in the series since.",
-        "Billed as a memoir, this book focuses on anecdotes about the games and the game industry, with Sid Meier's personal life taking the backseat. I especially enjoyed the Nuclear Gandhi story. It's such a colorful intersection of a funny premise, computer science, and a hoax.",
-        "Sid Meier's taste for non-violent educational simulators is especially compelling, and reading about these games made me really miss them. As a kid, I think Civ sparked my interest in history and war and complex systems. But I was mainly just having a lot of fun! These days playing even one game of Civ is a heavy lift, but maybe it's worth giving Civ Revolutions a look? …"
-       ],
-       "words": 418,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/sid-meiers-memoir.webp",
-       "card": "atlas/card/sid-meiers-memoir.webp",
-       "edge": "#0f467c",
-       "hue": 0.6217
-      },
-      "publisher": "Norton & Company, Incorporated, W. W.",
-      "pages": 320,
-      "year": null
-     },
-     {
-      "slug": "frank-herbert-by-tim-oreilly",
-      "link": "https://smus.com/books/frank-herbert-by-tim-oreilly",
-      "title": "Frank Herbert",
-      "author": "Tim O'Reilly",
-      "beloved": true,
-      "dims": {
-       "h": 220,
-       "w": 151,
-       "t": 14.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/frank-herbert-by-tim-oreilly.jpg",
-      "cover": "../data/covers/frank-herbert-by-tim-oreilly.jpg",
-      "back": "../data/backs/frank-herbert-by-tim-oreilly.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Oct 2020",
-       "source": "smus",
-       "headline": "Frank Herbert by Tim O’Reilly",
-       "excerpt": "",
-       "paras": [],
-       "words": 1511,
-       "minutes": 7
-      },
-      "atlas": {
-       "lo": "atlas/lo/frank-herbert-by-tim-oreilly.webp",
-       "card": "atlas/card/frank-herbert-by-tim-oreilly.webp",
-       "edge": "#877b47",
-       "hue": 0.1787
-      },
-      "publisher": "Ungar",
-      "pages": 216,
-      "year": null,
-      "lean": 3.6
-     },
-     {
-      "slug": "gr-cryptography-a-very-short-introduction",
-      "link": "https://www.goodreads.com/book/show/634834",
-      "title": "Cryptography",
-      "subtitle": "A Very Short Introduction",
-      "author": "F. C. Piper",
-      "beloved": false,
-      "dims": {
-       "h": 180,
-       "w": 113,
-       "t": 9.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/gr-cryptography-a-very-short-introduction.jpg",
-      "cover": "../data/covers/gr-cryptography-a-very-short-introduction.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-cryptography-a-very-short-introduction.webp",
-       "card": "atlas/card/gr-cryptography-a-very-short-introduction.webp",
-       "edge": "#1e2749",
-       "hue": 0.6777
-      },
-      "publisher": "Oxford University Press",
-      "pages": 160,
-      "year": null,
-      "lean": 3.6
-     },
-     {
-      "slug": "how-to-fail-at-almost-everything-by-scott-adams",
-      "link": "https://smus.com/books/how-to-fail-at-almost-everything-by-scott-adams",
-      "title": "How to Fail at Almost Everything",
-      "author": "Scott Adams",
-      "beloved": false,
-      "dims": {
-       "h": 240,
-       "w": 158,
-       "t": 25.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/how-to-fail-at-almost-everything-by-scott-adams.jpg",
-      "cover": "../data/covers/how-to-fail-at-almost-everything-by-scott-adams.jpg",
-      "back": "../data/backs/how-to-fail-at-almost-everything-by-scott-adams.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Apr 2016",
-       "source": "smus",
-       "headline": "How to Fail at Almost Everything by Scott Adams",
-       "excerpt": "Let's be clear: this is a self help book. I somehow got suckered into reading it because I liked one of his blog posts. There are very few interesting or original things in the book, and the author comes off as brash and trying too hard to be funny. That said, I liked some ideas…",
-       "paras": [
-        "Let's be clear: this is a self help book. I somehow got suckered into reading it because I liked one of his blog posts. There are very few interesting or original things in the book, and the author comes off as brash and trying too hard to be funny. That said, I liked some ideas…"
-       ],
-       "words": 194,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/how-to-fail-at-almost-everything-by-scott-adams.webp",
-       "card": "atlas/card/how-to-fail-at-almost-everything-by-scott-adams.webp",
-       "edge": "#da5e27",
-       "hue": 0.0938
-      },
-      "publisher": null,
-      "pages": 248,
-      "year": null,
-      "section": "Business & Design",
-      "group": "Non-fiction"
-     },
-     {
-      "slug": "how-to-take-smart-notes",
-      "link": "https://smus.com/books/how-to-take-smart-notes",
-      "title": "How to Take Smart Notes",
-      "author": "Sönke Ahrens",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 133,
-       "t": 11.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/how-to-take-smart-notes.jpg",
-      "cover": "../data/covers/how-to-take-smart-notes.jpg",
-      "back": "../data/backs/how-to-take-smart-notes.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Feb 2021",
-       "source": "smus",
-       "headline": "How to Take Smart Notes",
-       "excerpt": "Zettelkasten Method, In Praise of Niklas Luhmann, or Ode To The Slip-box.",
-       "paras": [
-        "Zettelkasten Method, In Praise of Niklas Luhmann, or Ode To The Slip-box.",
-        "The Roam cult sprang out of a practice called Zettelkasten. I refuse to join the cult, but see great value in cross-linked note taking practice. So far my tool of choice is Obsidian, mainly because I like plaintext. This book introduces the Zettel method. …"
-       ],
-       "words": 968,
-       "minutes": 4
-      },
-      "atlas": {
-       "lo": "atlas/lo/how-to-take-smart-notes.webp",
-       "card": "atlas/card/how-to-take-smart-notes.webp",
-       "edge": "#acad98",
-       "hue": 1.3546
-      },
-      "publisher": "Unknown Publisher",
-      "pages": 178,
-      "year": null
-     },
-     {
-      "slug": "gr-a-pattern-language-towns-buildings-construction",
-      "link": "https://www.goodreads.com/book/show/79766",
-      "title": "A Pattern Language",
-      "subtitle": "Towns, Buildings, Construction",
-      "author": "Christopher Alexander",
-      "beloved": false,
-      "dims": {
-       "h": 210,
-       "w": 144,
-       "t": 46.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-a-pattern-language-towns-buildings-construction.jpg",
-      "cover": "../data/covers/gr-a-pattern-language-towns-buildings-construction.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-a-pattern-language-towns-buildings-construction.webp",
-       "card": "atlas/card/gr-a-pattern-language-towns-buildings-construction.webp",
-       "edge": "#deceb0",
-       "hue": 1.2483
-      },
-      "publisher": "Oxford University Press",
-      "pages": 1171,
-      "year": null
-     },
-     {
-      "slug": "the-timeless-way-of-building",
-      "link": "https://smus.com/books/the-timeless-way-of-building",
-      "title": "The Timeless Way of Building",
-      "author": "Christopher Alexander",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 140,
-       "t": 51.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-timeless-way-of-building.jpg",
-      "cover": "../data/covers/the-timeless-way-of-building.jpg",
-      "back": "../data/backs/the-timeless-way-of-building.jpg",
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "posted": "Nov 2022",
-       "source": "smus",
-       "headline": "The Timeless Way of Building",
-       "excerpt": "The built world is defined by a small number of patterns, which keep repeating over and over and over again. The patterns are deep and mostly relational. This applies at all scales in human construction: to American cities, Gothic cathedrals, Paris, Chinese kitchens, doors, and so on.",
-       "paras": [
-        "The built world is defined by a small number of patterns, which keep repeating over and over and over again. The patterns are deep and mostly relational. This applies at all scales in human construction: to American cities, Gothic cathedrals, Paris, Chinese kitchens, doors, and so on.",
-        "These patterns can be codified into a pattern language. And just like a great writer or orator has an intuitive grasp of human language, a great builder can and should strive to attain an intuitive grasp of his pattern language.",
-        "But just because you have a pattern language does not make it good. A concrete jungle is also governed by a pattern language. Alexander strives to capture a collection of patterns that create a microcosm that has \"The Quality Without a Name\", which he defines via negativa (see Negative theology and via negativa). Here's a quick summary…"
-       ],
-       "words": 762,
-       "minutes": 3
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-timeless-way-of-building.webp",
-       "card": "atlas/card/the-timeless-way-of-building.webp",
-       "edge": "#ddcfa6",
-       "hue": 1.3069
-      },
-      "publisher": "Oxford University Press",
-      "pages": 576,
-      "year": null
-     },
-     {
-      "slug": "and-suddenly-the-inventor-appeared-by-genrikh-altshuller",
-      "link": "https://smus.com/books/and-suddenly-the-inventor-appeared-by-genrikh-altshuller",
-      "title": "And Suddenly the Inventor Appeared",
-      "author": "G. Altshuller",
-      "beloved": true,
-      "dims": {
-       "h": 226,
-       "w": 142,
-       "t": 15.2
-      },
-      "pose": "upright",
-      "texture": "../data/textures/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
-      "cover": "../data/covers/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
-      "back": "../data/backs/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Aug 2026",
-       "source": "smus",
-       "headline": "TRIZ and the Elusive Invention Machine",
-       "excerpt": "This book is an odd one. Is it written for children? Most of the text focuses on invention case studies that are presented like math-olympiad puzzles for precocious ten-year-olds. Altshuller eggs the reader on. A sixth grader can solve this; why can't you, dumbass?",
-       "paras": [
-        "This book is an odd one. Is it written for children? Most of the text focuses on invention case studies that are presented like math-olympiad puzzles for precocious ten-year-olds. Altshuller eggs the reader on. A sixth grader can solve this; why can't you, dumbass?",
-        "The English edition often reads like an excessively literal, amateurish translation. One problem, poorly titled \"A and B Were Sitting on the Pipe,\" is rendered word-for-word from \"А и Б сидели на трубе\", destroying the rhyme which was trite even in Russian. …"
-       ],
-       "words": 2037,
-       "minutes": 9
-      },
-      "atlas": {
-       "lo": "atlas/lo/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.webp",
-       "card": "atlas/card/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.webp",
-       "edge": "#f8f1d6",
-       "hue": 1.1567
-      },
-      "publisher": "Technical Innovation Center, Inc.",
-      "pages": 171,
-      "year": null
-     },
-     {
-      "slug": "gr-contextual-design-defining-customer-centered-systems",
-      "link": "https://www.goodreads.com/book/show/617137",
-      "title": "Contextual Design",
-      "subtitle": "Defining Customer-Centered Systems",
-      "author": "Hugh Beyer",
-      "beloved": false,
-      "dims": {
-       "h": 229,
-       "w": 183,
-       "t": 25.4
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-contextual-design-defining-customer-centered-systems.jpg",
-      "cover": "../data/covers/gr-contextual-design-defining-customer-centered-systems.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": "2009/10/29",
-       "rating": 1,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-contextual-design-defining-customer-centered-systems.webp",
-       "card": "atlas/card/gr-contextual-design-defining-customer-centered-systems.webp",
-       "edge": "#292f22",
-       "hue": 1.8007
-      },
-      "publisher": "Morgan Kaufmann",
-      "pages": 472,
-      "year": null
-     },
-     {
-      "slug": "the-one-minute-manager",
-      "link": "https://smus.com/books/the-one-minute-manager",
-      "title": "The One Minute Manager",
-      "author": "Kenneth H. Blanchard",
-      "beloved": true,
-      "dims": {
-       "h": 230,
-       "w": 148,
-       "t": 7.7
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-one-minute-manager.jpg",
-      "cover": "../data/covers/the-one-minute-manager.jpg",
-      "back": "../data/backs/the-one-minute-manager.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Jun 2016",
-       "source": "smus",
-       "headline": "The One Minute Manager",
-       "excerpt": "This little book was recommended to me by a ski instructor after a ski lesson at Squaw. The man was probably in his 70s, but skied incredibly well, and had a lot of wisdom to pass on. He was tough, but nice, like a One Minute Manager.",
-       "paras": [
-        "This little book was recommended to me by a ski instructor after a ski lesson at Squaw. The man was probably in his 70s, but skied incredibly well, and had a lot of wisdom to pass on. He was tough, but nice, like a One Minute Manager.",
-        "More of a pamphlet than a book, One Minute Manager unfolds as a story about a young man wanting to learn to be a good people manager. The story makes the points more vivid, but at its core, there is an interesting and somewhat surprising strategy outlined for being a good hands off manager. The approach reminds me a little bit of Christian's management style. There are three parts…"
-       ],
-       "words": 191,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-one-minute-manager.webp",
-       "card": "atlas/card/the-one-minute-manager.webp",
-       "edge": "#e7d8b7",
-       "hue": 1.3055
-      },
-      "publisher": "Blanchard-Johnson Publishers",
-      "pages": 112,
-      "year": null
-     },
-     {
-      "slug": "empowered-by-cagan-jones",
-      "link": "https://smus.com/books/empowered-by-cagan-jones",
-      "title": "Empowered",
-      "author": "Marty Cagan",
-      "beloved": false,
-      "dims": {
-       "h": 226,
-       "w": 152,
-       "t": 41.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/empowered-by-cagan-jones.jpg",
-      "cover": "../data/covers/empowered-by-cagan-jones.jpg",
-      "back": "../data/backs/empowered-by-cagan-jones.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Sep 2023",
-       "source": "smus",
-       "headline": "Empowered by Cagan & Jones",
-       "excerpt": "My skip-skip-skip level manager at work recommended it to all of his manager reports, and so I decided to read this book to get closer to the top brass. Overall it was a sobering read, actively reminding me how far my organization is from being customer-centric. The book mostly addresses product managers, but tries to also apply to leaders in general, and \"product people\" in particular. It's a bit unclear who these people are, but I suspect they include product-minded engineers and designers. …",
-       "paras": [
-        "My skip-skip-skip level manager at work recommended it to all of his manager reports, and so I decided to read this book to get closer to the top brass. Overall it was a sobering read, actively reminding me how far my organization is from being customer-centric. The book mostly addresses product managers, but tries to also apply to leaders in general, and \"product people\" in particular. It's a bit unclear who these people are, but I suspect they include product-minded engineers and designers. …"
-       ],
-       "words": 380,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/empowered-by-cagan-jones.webp",
-       "card": "atlas/card/empowered-by-cagan-jones.webp",
-       "edge": "#b1b5c7",
-       "hue": 0.6529
-      },
-      "publisher": "Wiley & Sons, Limited, John",
-      "pages": 368,
-      "year": null
-     },
-     {
-      "slug": "bad-blood-by-john-carreyrou",
-      "link": "https://smus.com/books/bad-blood-by-john-carreyrou",
-      "title": "Bad Blood",
-      "author": "John Carreyrou",
-      "beloved": false,
-      "dims": {
-       "h": 244,
-       "w": 163,
-       "t": 30.5
-      },
-      "pose": "upright",
-      "texture": "../data/textures/bad-blood-by-john-carreyrou.jpg",
-      "cover": "../data/covers/bad-blood-by-john-carreyrou.jpg",
-      "back": "../data/backs/bad-blood-by-john-carreyrou.jpg",
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "posted": "Jul 2018",
-       "source": "smus",
-       "headline": "Bad Blood by John Carreyrou",
-       "excerpt": "A sad story about Theranos and it’s leadership, in large part Elisabeth Holmes, a tragic hero with a fatal flaw: unbridled ambition.",
-       "paras": [
-        "A sad story about Theranos and it’s leadership, in large part Elisabeth Holmes, a tragic hero with a fatal flaw: unbridled ambition.",
-        "The rest follows: unreasonably high confidence, sweeping major problems under the rug, and cargo cult worship dedicated to successful leaders. Which includes setting super high expectations for employees, fostering internal competition, demanding absolute loyalty and punishing any whiffs of dissent.",
-        "What was most surprising to me were the many ethical breaches exhibited by Holmes herself: mixing business and romance, hiring exclusively political celebrities to your board, and showing almost no empathy for employees, while pursuing ruthless legal tactics in personal vendettas. …"
-       ],
-       "words": 239,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/bad-blood-by-john-carreyrou.webp",
-       "card": "atlas/card/bad-blood-by-john-carreyrou.webp",
-       "edge": "#060606",
-       "hue": 1.8792
-      },
-      "publisher": "Alfred A. Knopf",
-      "pages": 339,
-      "year": null
-     },
-     {
-      "slug": "gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha",
-      "link": "https://www.goodreads.com/book/show/2615",
-      "title": "The Innovator's Dilemma",
-      "subtitle": "The Revolutionary Book that Will Change the Way You Do Business",
-      "author": "Clayton M. Christensen",
-      "beloved": false,
-      "dims": {
-       "h": 203,
-       "w": 135,
-       "t": 22.9
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.jpg",
-      "cover": "../data/covers/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": "2010/03/24",
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.webp",
-       "card": "atlas/card/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.webp",
-       "edge": "#828860",
-       "hue": 0.3549
-      },
-      "publisher": "Collins",
-      "pages": 320,
-      "year": null
-     },
-     {
-      "slug": "gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she",
-      "link": "https://www.goodreads.com/book/show/9266037",
-      "title": "The Entrepreneur's Guide to Customer Development",
-      "subtitle": "A cheat sheet to The Four Steps to the Epiphany",
-      "author": "Brant Cooper",
-      "beloved": false,
-      "dims": {
-       "h": 240,
-       "w": 152,
-       "t": 6.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she.jpg",
-      "cover": "../data/covers/gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she.webp",
-       "card": "atlas/card/gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she.webp",
-       "edge": "#0968a2",
-       "hue": 0.6022
-      },
-      "publisher": "Cooper-Vlaskovits",
-      "pages": 104,
-      "year": null
-     },
-     {
-      "slug": "gr-the-4-hour-workweek",
-      "link": "https://www.goodreads.com/book/show/368593",
-      "title": "The 4-Hour Workweek",
-      "author": "Timothy Ferriss",
-      "beloved": false,
-      "dims": {
-       "h": 208,
-       "w": 137,
-       "t": 33.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-4-hour-workweek.jpg",
-      "cover": "../data/covers/gr-the-4-hour-workweek.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-4-hour-workweek.webp",
-       "card": "atlas/card/gr-the-4-hour-workweek.webp",
-       "edge": "#c8c8a6",
-       "hue": 1.3053
-      },
-      "publisher": "Harmony",
-      "pages": 308,
-      "year": null
-     },
-     {
-      "slug": "the-goal-a-business-graphic-novel",
-      "link": "https://smus.com/books/the-goal-a-business-graphic-novel",
-      "title": "The Goal - A Business Graphic Novel",
-      "author": "Eliyahu M. Goldratt",
-      "beloved": true,
-      "dims": {
-       "h": 244,
-       "w": 174,
-       "t": 10.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-goal-a-business-graphic-novel.jpg",
-      "cover": "../data/covers/the-goal-a-business-graphic-novel.jpg",
-      "back": "../data/backs/the-goal-a-business-graphic-novel.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Aug 2022",
-       "source": "smus",
-       "headline": "The Goal - A Business Graphic Novel",
-       "excerpt": "The Goal: A Business Graphic novel is crass, outdated and overly on the nose. At the same time, it is a relatively entertaining illustrated introduction to a boring idea (a management paradigm). For this alone, I can't help but recommend it.",
-       "paras": [
-        "The Goal: A Business Graphic novel is crass, outdated and overly on the nose. At the same time, it is a relatively entertaining illustrated introduction to a boring idea (a management paradigm). For this alone, I can't help but recommend it.",
-        "Alex Rogo directs a plant at Unico. He’s struggling to turn his business around and the CEO has just given him an ultimatum. I've never read a business novel before, and the combination of words is surprising. Is Rogo up to his managerial task? (Of course, otherwise there would be no hero's journey... But how?) Like “Obi Wan Kenobi instructing Luke Skywalker on the use of the force”, his former professor turned consultant Jonah saves the day.",
-        "The formulation of a business seems very crass and slightly outdated. None of this ESG shit; the goal is to make money. How? In a nutshell…"
-       ],
-       "words": 661,
-       "minutes": 3
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-goal-a-business-graphic-novel.webp",
-       "card": "atlas/card/the-goal-a-business-graphic-novel.webp",
-       "edge": "#697776",
-       "hue": 1.419
-      },
-      "publisher": "North River Press",
-      "pages": 130,
-      "year": null
-     },
-     {
-      "slug": "impro-by-keith-johnstone",
-      "link": "https://smus.com/books/impro-by-keith-johnstone",
-      "title": "Impro",
-      "author": "Keith Johnstone",
-      "beloved": true,
-      "dims": {
-       "h": 206,
-       "w": 130,
-       "t": 17.8
-      },
-      "pose": "upright",
-      "texture": "../data/textures/impro-by-keith-johnstone.jpg",
-      "cover": "../data/covers/impro-by-keith-johnstone.jpg",
-      "back": "../data/backs/impro-by-keith-johnstone.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Jan 2018",
-       "source": "smus",
-       "headline": "Impro by Keith Johnstone",
-       "excerpt": "I picked this book up because of a recommendation from the Internet. My first reaction was negative: the author’s claim pointing at things and calling them wrong names will cause your whole sense of perception to shift: colors become more vivid, outlines become sharper, people look smaller, the shape of the room changes. This, presented not as metaphorical truth, or a parable, but as actual truth, is something I continue to find hard to swallow. That said I think the essays in the book are worth it, if you suspend a bit of disbelief. …",
-       "paras": [
-        "I picked this book up because of a recommendation from the Internet. My first reaction was negative: the author’s claim pointing at things and calling them wrong names will cause your whole sense of perception to shift: colors become more vivid, outlines become sharper, people look smaller, the shape of the room changes. This, presented not as metaphorical truth, or a parable, but as actual truth, is something I continue to find hard to swallow. That said I think the essays in the book are worth it, if you suspend a bit of disbelief. …"
-       ],
-       "words": 1894,
-       "minutes": 8
-      },
-      "atlas": {
-       "lo": "atlas/lo/impro-by-keith-johnstone.webp",
-       "card": "atlas/card/impro-by-keith-johnstone.webp",
-       "edge": "#3e4242",
-       "hue": 1.6895
-      },
-      "publisher": "Theatre Arts Book",
-      "pages": 208,
-      "year": null
-     },
-     {
-      "slug": "art-of-tidying-by-marie-kondo",
-      "link": "https://smus.com/books/art-of-tidying-by-marie-kondo",
-      "title": "Art of Tidying",
-      "author": "Marie Kondo",
-      "beloved": false,
-      "dims": {
-       "h": 231,
-       "w": 162,
-       "t": 19.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/art-of-tidying-by-marie-kondo.jpg",
-      "cover": "../data/covers/art-of-tidying-by-marie-kondo.jpg",
-      "back": "../data/backs/art-of-tidying-by-marie-kondo.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Apr 2016",
-       "source": "smus",
-       "headline": "Art of Tidying by Marie Kondo",
-       "excerpt": "An endearing manual for tidying up. I'm naturally inclined to minimalism as it stands and did a massive cleanup of my old room in my parents house just last month so consider myself proficient. But Marie takes it to the next level, revealing an autistic inclination towards the personification of inanimate objects.",
-       "paras": [
-        "An endearing manual for tidying up. I'm naturally inclined to minimalism as it stands and did a massive cleanup of my old room in my parents house just last month so consider myself proficient. But Marie takes it to the next level, revealing an autistic inclination towards the personification of inanimate objects.",
-        "This manifesto can easily be reduced to an illustrated one pager, but Marie insists on treading over the same ground multiple times. …"
-       ],
-       "words": 138,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/art-of-tidying-by-marie-kondo.webp",
-       "card": "atlas/card/art-of-tidying-by-marie-kondo.webp",
-       "edge": "#b2c4b8",
-       "hue": 1.2597
-      },
-      "publisher": "Tantor Media Inc",
-      "pages": null,
-      "year": null
-     },
-     {
-      "slug": "bird-by-bird-by-anne-lamott",
-      "link": "https://smus.com/books/bird-by-bird-by-anne-lamott",
-      "title": "Bird by Bird",
-      "author": "Anne Lamott",
-      "beloved": false,
-      "dims": {
-       "h": 210,
-       "w": 131,
-       "t": 19.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/bird-by-bird-by-anne-lamott.jpg",
-      "cover": "../data/covers/bird-by-bird-by-anne-lamott.jpg",
-      "back": "../data/backs/bird-by-bird-by-anne-lamott.jpg",
-      "spine_source": "photo",
-      "binding": "paperback",
-      "review": {
-       "posted": "Nov 2018",
-       "source": "smus",
-       "headline": "Bird by Bird by Anne Lamott",
-       "excerpt": "I've forgotten how this book appeared on my radar, but I think it was on someone's list of most influential books ever. I am more ambivalent.",
-       "paras": [
-        "I've forgotten how this book appeared on my radar, but I think it was on someone's list of most influential books ever. I am more ambivalent.",
-        "The book's subtitle is \"Some Instructions on Writing and Life\", and honestly I was hoping for more of the latter. Unfortunately it was more of the former, specifically how to write fiction, which is interesting in theory, but is not something that is very high on my current list of things I would like to spend my time doing.",
-        "In general, the author has some good tips for the fledgeling writer. These are pretty intuitive, but do serve as good reminders…"
-       ],
-       "words": 573,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/bird-by-bird-by-anne-lamott.webp",
-       "card": "atlas/card/bird-by-bird-by-anne-lamott.webp",
-       "edge": "#d5979e",
-       "hue": 0.0648
-      },
-      "publisher": "Anchor Books",
-      "pages": 239,
-      "year": null
-     },
-     {
-      "slug": "deep-work-by-cal-newport",
-      "link": "https://smus.com/books/deep-work-by-cal-newport",
-      "title": "Deep Work",
-      "author": "Cal Newport",
-      "beloved": true,
-      "dims": {
-       "h": 220,
-       "w": 147,
-       "t": 34.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/deep-work-by-cal-newport.jpg",
-      "cover": "../data/covers/deep-work-by-cal-newport.jpg",
-      "back": "../data/backs/deep-work-by-cal-newport.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Mar 2017",
-       "source": "smus",
-       "headline": "Deep Work by Cal Newport",
-       "excerpt": "Several strategies for deeply working…",
-       "paras": [
-        "Several strategies for deeply working…"
-       ],
-       "words": 108,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/deep-work-by-cal-newport.webp",
-       "card": "atlas/card/deep-work-by-cal-newport.webp",
-       "edge": "#e4ac3b",
-       "hue": 0.1535
-      },
-      "publisher": "Grand Central Publishing",
-      "pages": 295,
-      "year": null
-     },
-     {
-      "slug": "gr-the-design-of-everyday-things",
-      "link": "https://www.goodreads.com/book/show/840",
-      "title": "The Design of Everyday Things",
-      "author": "Donald A. Norman",
-      "beloved": false,
-      "dims": {
-       "h": 210,
-       "w": 140,
-       "t": 16.4
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/gr-the-design-of-everyday-things.jpg",
-      "cover": "../data/covers/gr-the-design-of-everyday-things.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-design-of-everyday-things.webp",
-       "card": "atlas/card/gr-the-design-of-everyday-things.webp",
-       "edge": "#202125",
-       "hue": 1.8328
-      },
-      "publisher": "Basic Books",
-      "pages": 257,
-      "year": null,
-      "lean": 6.4
-     },
-     {
-      "slug": "the-right-it-audio",
-      "link": "https://smus.com/books/the-right-it-audio",
-      "title": "The Right It",
-      "author": "Alberto Savoia",
-      "beloved": false,
-      "dims": {
-       "h": 220,
-       "w": 147,
-       "t": 15.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/the-right-it-audio.jpg",
-      "cover": "../data/covers/the-right-it-audio.jpg",
-      "back": "../data/backs/the-right-it-audio.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Dec 2019",
-       "source": "smus",
-       "headline": "The Right It (audio)",
-       "excerpt": "Cass suggested I check out The Right It by Alberto Savoia. This book is an ode to an idea: do as much as you can to vet an idea before committing a lot of time and energy on it. In other words, become as confident as possible in product-market fit before spending a lot of resources building even the first version. I strongly agree with the sentiment of the book, and have seen product and research teams fail for this exact reason. That said, it’s quite easy to condense into a substantially smaller format, and I might recommend that (if available) rather than reading the entire book.",
-       "paras": [
-        "Cass suggested I check out The Right It by Alberto Savoia. This book is an ode to an idea: do as much as you can to vet an idea before committing a lot of time and energy on it. In other words, become as confident as possible in product-market fit before spending a lot of resources building even the first version. I strongly agree with the sentiment of the book, and have seen product and research teams fail for this exact reason. That said, it’s quite easy to condense into a substantially smaller format, and I might recommend that (if available) rather than reading the entire book.",
-        "Most new ventures fail. Savoia encourages founders to be brutally honest with themselves, make their hypotheses explicit and quantified, and then find clever ways to quickly and cheaply validate them. The steps are as follows…"
-       ],
-       "words": 488,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-right-it-audio.webp",
-       "card": "atlas/card/the-right-it-audio.webp",
-       "edge": "#edcb02",
-       "hue": 0.1847
-      },
-      "publisher": "HarperCollins Publishers",
-      "pages": 137,
-      "year": null,
-      "lean": 6.4
      }
     ],
     [
@@ -8382,8 +8384,8 @@
       "atlas": {
        "lo": "atlas/lo/the-lessons-of-history-by-will-and-ariel-durant.webp",
        "card": "atlas/card/the-lessons-of-history-by-will-and-ariel-durant.webp",
-       "edge": "#222021",
-       "hue": 1.8728
+       "edge": "#232122",
+       "hue": 1.8681
       },
       "publisher": "Simon & Schuster Paperbacks",
       "pages": 128,
@@ -8643,8 +8645,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-last-lecture.webp",
        "card": "atlas/card/gr-the-last-lecture.webp",
-       "edge": "#6d5c36",
-       "hue": 1.7705
+       "edge": "#6d5c35",
+       "hue": 1.7698
       },
       "publisher": "Hachette Books",
       "pages": 206,
@@ -8688,7 +8690,7 @@
       "publisher": "PublicAffairs",
       "pages": 256,
       "year": null,
-      "lean": 9.5
+      "lean": 8.6
      },
      {
       "slug": "building-a-bridge-to-the-18th-century",
@@ -8727,7 +8729,7 @@
       "publisher": "Vintage",
       "pages": 224,
       "year": null,
-      "lean": 9.5
+      "lean": 8.6
      },
      {
       "slug": "bloodlands-by-timothy-snyder",
@@ -8760,8 +8762,8 @@
       "atlas": {
        "lo": "atlas/lo/bloodlands-by-timothy-snyder.webp",
        "card": "atlas/card/bloodlands-by-timothy-snyder.webp",
-       "edge": "#a19c94",
-       "hue": 1.3154
+       "edge": "#959088",
+       "hue": 1.3492
       },
       "publisher": "Penguin Random House",
       "pages": 544,
@@ -8924,7 +8926,7 @@
        "w": 174,
        "t": 15.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/collapse-of-complex-societies-by-joseph-tainter.jpg",
       "cover": "../data/covers/collapse-of-complex-societies-by-joseph-tainter.jpg",
       "back": "../data/backs/collapse-of-complex-societies-by-joseph-tainter.jpg",
@@ -8950,7 +8952,8 @@
       },
       "publisher": "Cambridge University Press",
       "pages": 262,
-      "year": null
+      "year": null,
+      "lean": 11.6
      },
      {
       "slug": "medieval-robots-by-e-r-truitt",
@@ -8963,7 +8966,7 @@
        "w": 168,
        "t": 19.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/medieval-robots-by-e-r-truitt.jpg",
       "cover": "../data/covers/medieval-robots-by-e-r-truitt.jpg",
       "back": "../data/backs/medieval-robots-by-e-r-truitt.jpg",
@@ -8988,7 +8991,8 @@
       },
       "publisher": "University of Pennsylvania Press",
       "pages": 255,
-      "year": null
+      "year": null,
+      "lean": 11.6
      },
      {
       "slug": "gr-ages-of-discord-a-structural-demographic-analysis-of-america",
@@ -9002,7 +9006,7 @@
        "w": 152,
        "t": 15.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-ages-of-discord-a-structural-demographic-analysis-of-america.jpg",
       "cover": "../data/covers/gr-ages-of-discord-a-structural-demographic-analysis-of-america.jpg",
       "back": null,
@@ -9022,7 +9026,8 @@
       },
       "publisher": "Beresta Books LLC",
       "pages": 395,
-      "year": null
+      "year": null,
+      "lean": 11.6
      },
      {
       "slug": "war-and-peace-and-war-by-peter-turchin",
@@ -9073,7 +9078,7 @@
        "w": 135,
        "t": 11.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/medieval-technology-and-social-change.jpg",
       "cover": "../data/covers/medieval-technology-and-social-change.jpg",
       "back": "../data/backs/medieval-technology-and-social-change.jpg",
@@ -9100,8 +9105,7 @@
       },
       "publisher": "Oxford University Press",
       "pages": 194,
-      "year": null,
-      "lean": 9.1
+      "year": null
      },
      {
       "slug": "night-by-elie-wiesel",
@@ -9114,7 +9118,7 @@
        "w": 168,
        "t": 12.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/night-by-elie-wiesel.jpg",
       "cover": "../data/covers/night-by-elie-wiesel.jpg",
       "back": "../data/backs/night-by-elie-wiesel.jpg",
@@ -9135,13 +9139,12 @@
       "atlas": {
        "lo": "atlas/lo/night-by-elie-wiesel.webp",
        "card": "atlas/card/night-by-elie-wiesel.webp",
-       "edge": "#c2c3bc",
-       "hue": 1.2797
+       "edge": "#b7bab6",
+       "hue": 1.3115
       },
       "publisher": "Hill and Wang",
       "pages": 120,
-      "year": null,
-      "lean": 9.1
+      "year": null
      }
     ],
     [
@@ -9726,7 +9729,7 @@
        "w": 133,
        "t": 22.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/absolutely-on-music-by-haruki-murakami.jpg",
       "cover": "../data/covers/absolutely-on-music-by-haruki-murakami.jpg",
       "back": "../data/backs/absolutely-on-music-by-haruki-murakami.jpg",
@@ -9751,7 +9754,8 @@
       },
       "publisher": "Vintage",
       "pages": null,
-      "year": null
+      "year": null,
+      "lean": 6.9
      },
      {
       "slug": "the-persuaders-audio",
@@ -9764,7 +9768,7 @@
        "w": 140,
        "t": 7.6
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/the-persuaders-audio.jpg",
       "cover": "../data/covers/the-persuaders-audio.jpg",
       "back": "../data/backs/the-persuaders-audio.jpg",
@@ -9790,7 +9794,8 @@
       },
       "publisher": "Ig Publishing",
       "pages": 240,
-      "year": null
+      "year": null,
+      "lean": 6.9
      },
      {
       "slug": "impossible-owls-by-brian-phillips",
@@ -9803,7 +9808,7 @@
        "w": 139,
        "t": 20.2
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/impossible-owls-by-brian-phillips.jpg",
       "cover": "../data/covers/impossible-owls-by-brian-phillips.jpg",
       "back": "../data/backs/impossible-owls-by-brian-phillips.jpg",
@@ -9829,7 +9834,8 @@
       },
       "publisher": "Orion Publishing Group, Limited",
       "pages": 320,
-      "year": null
+      "year": null,
+      "lean": 6.9
      },
      {
       "slug": "bowling-alone-by-robert-putnam",
@@ -10055,7 +10061,7 @@
       "publisher": "Transworld Publishers Limited",
       "pages": null,
       "year": null,
-      "lean": 12.0
+      "lean": 4.7
      },
      {
       "slug": "the-protestant-ethic-and-the-spirit-of-capitalism-by-max-weber",
@@ -10094,7 +10100,7 @@
       "publisher": "CreateSpace Independent Publishing Platform",
       "pages": 106,
       "year": null,
-      "lean": 12.0
+      "lean": 4.7
      },
      {
       "slug": "scale-by-geoffrey-west",
@@ -10302,7 +10308,7 @@
        "w": 127,
        "t": 5.2
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/the-burnout-society-by-byung-chul-han.jpg",
       "cover": "../data/covers/the-burnout-society-by-byung-chul-han.jpg",
       "back": "../data/backs/the-burnout-society-by-byung-chul-han.jpg",
@@ -10327,8 +10333,7 @@
       },
       "publisher": "Stanford Briefs",
       "pages": 70,
-      "year": null,
-      "lean": 4.9
+      "year": null
      },
      {
       "slug": "the-crisis-of-narration-by-byung-chul-han",
@@ -10341,7 +10346,7 @@
        "w": 151,
        "t": 5.6
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/the-crisis-of-narration-by-byung-chul-han.jpg",
       "cover": "../data/covers/the-crisis-of-narration-by-byung-chul-han.jpg",
       "back": "../data/backs/the-crisis-of-narration-by-byung-chul-han.jpg",
@@ -10366,8 +10371,7 @@
       },
       "publisher": "Polity",
       "pages": 77,
-      "year": null,
-      "lean": 4.9
+      "year": null
      },
      {
       "slug": "the-moral-landscape-by-sam-harris",
@@ -10380,7 +10384,7 @@
        "w": 143,
        "t": 22.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/the-moral-landscape-by-sam-harris.jpg",
       "cover": "../data/covers/the-moral-landscape-by-sam-harris.jpg",
       "back": "../data/backs/the-moral-landscape-by-sam-harris.jpg",
@@ -10406,8 +10410,7 @@
       },
       "publisher": "Bantam",
       "pages": 291,
-      "year": null,
-      "lean": 4.9
+      "year": null
      },
      {
       "slug": "you-belong-to-the-universe-audio",
@@ -10770,8 +10773,8 @@
       "atlas": {
        "lo": "atlas/lo/tao-of-philosophy-by-alan-watts.webp",
        "card": "atlas/card/tao-of-philosophy-by-alan-watts.webp",
-       "edge": "#9a8b7f",
-       "hue": 0.0669
+       "edge": "#9b8c7f",
+       "hue": 0.0664
       },
       "publisher": "Tuttle Publishing",
       "pages": 96,
@@ -10930,7 +10933,7 @@
        "w": 198,
        "t": 20.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.jpg",
       "cover": "../data/covers/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.jpg",
       "back": null,
@@ -10950,7 +10953,8 @@
       },
       "publisher": "Clarkson Potter",
       "pages": 240,
-      "year": null
+      "year": null,
+      "lean": 6.3
      },
      {
       "slug": "gr-unit-origami-multidimensional-transformations",
@@ -10964,7 +10968,7 @@
        "w": 181,
        "t": 18.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-unit-origami-multidimensional-transformations.jpg",
       "cover": "../data/covers/gr-unit-origami-multidimensional-transformations.jpg",
       "back": null,
@@ -10984,7 +10988,8 @@
       },
       "publisher": "Japan Publications",
       "pages": 240,
-      "year": null
+      "year": null,
+      "lean": 6.3
      },
      {
       "slug": "gr-the-competitive-runner-s-handbook",
@@ -11045,8 +11050,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-rome-spiral-guide.webp",
        "card": "atlas/card/gr-rome-spiral-guide.webp",
-       "edge": "#342b6c",
-       "hue": 0.7284
+       "edge": "#352b6c",
+       "hue": 0.7312
       },
       "publisher": "AAA",
       "pages": 213,
