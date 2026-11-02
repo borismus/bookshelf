@@ -176,7 +176,15 @@ def trim(im):
     cols = a[:, x0:x1]
     top_bg, bot_bg = a[:10, x0:x1].mean(axis=0), a[-10:, x0:x1].mean(axis=0)       # per column
     d = np.minimum(np.abs(cols - top_bg).sum(axis=2), np.abs(cols - bot_bg).sum(axis=2))
-    y0, y1 = _longest_run((d > 40).mean(axis=1) > 0.5)
+    # A row is spine if most of it differs from the background, or if it has texture at all: the generated background
+    # is perfectly flat (row std < 1), so spine areas whose colour happens to match the grey are still caught.
+    texture = cols.std(axis=1).mean(axis=1)
+    core = (d > 40).mean(axis=1) > 0.5
+    y0, y1 = _longest_run(core | (texture > 6))
+    while y1 - y0 > 8 and not core[y0]:          # ends must clearly differ from the background (not a soft shadow)
+        y0 += 1
+    while y1 - y0 > 8 and not core[y1 - 1]:
+        y1 -= 1
     if y1 - y0 < 8:
         return im
     px = max(2, round((x1 - x0) * 0.03)); py = max(2, round((y1 - y0) * 0.01))
