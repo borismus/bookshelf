@@ -3,8 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookshelf POC</title>
+<title>Boris Smus's Bookshelf · Books I've Read and Reviewed, in 3D</title>
+<meta name="description" content="A photoreal 3D bookshelf of 300+ books Boris Smus has read: science, technology, history, philosophy, science fiction and more. Starred favourites, sorted by section and author, each linking to a review.">
+<meta name="author" content="Boris Smus">
+<link rel="canonical" href="https://borismus.github.io/bookshelf/">
+<meta name="theme-color" content="#e4e4e2">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Boris Smus">
+<meta property="og:title" content="Boris Smus's Bookshelf">
+<meta property="og:description" content="300+ books I've read, on two IKEA Billys rendered in 3D. Starred favourites link to my reviews on smus.com.">
+<meta property="og:url" content="https://borismus.github.io/bookshelf/">
+<meta property="og:image" content="https://borismus.github.io/bookshelf/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Two white bookcases full of books, organised by section with label-maker labels">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Boris Smus's Bookshelf">
+<meta name="twitter:description" content="300+ books I've read, on two IKEA Billys rendered in 3D.">
+<meta name="twitter:image" content="https://borismus.github.io/bookshelf/og.jpg">
+<!--JSONLD-->
 <style>
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
   html, body { margin: 0; height: 100%; background: #e4e4e2; overflow: hidden; }
   canvas { display: block; }
   #label { position: fixed; pointer-events: none; opacity: 0; transition: opacity .12s;
@@ -72,6 +92,11 @@
 </script>
 </head>
 <body>
+<main class="sr-only">
+<h1>Boris Smus's Bookshelf</h1>
+<p>Books I've read and reviewed, arranged on two bookcases (Fiction and Non-fiction), sorted by section and author. Starred books are favourites; each links to my review on <a href="https://smus.com/books/">smus.com/books</a> or to Goodreads.</p>
+<!--CATALOG-->
+</main>
 <div id="cases"></div>
 <div id="views"></div>
 <div id="veil"></div>

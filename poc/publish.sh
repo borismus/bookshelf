@@ -16,6 +16,8 @@ for c in d["cases"]:
                 b.pop(k, None)
 json.dump(d, open("dist/shelf.json", "w"), ensure_ascii=False, separators=(",", ":"))
 PY
+python3 poc/seo.py dist
+cp poc/preview/og.jpg dist/og.jpg
 touch dist/.nojekyll
 if [ "${1:-}" = "--dry-run" ]; then du -sh dist; exit 0; fi
 REMOTE=$(git remote get-url origin)
