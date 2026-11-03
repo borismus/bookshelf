@@ -2,6 +2,551 @@
  "inner": 762,
  "cases": [
   {
+   "name": "Hobbies",
+   "low": true,
+   "shelves": [
+    [],
+    [
+     {
+      "slug": "gr-aaa-italy-travelbook-2003",
+      "link": "https://www.goodreads.com/book/show/5804047",
+      "title": "AAA Italy TravelBook 2003",
+      "author": "American Automobile Association",
+      "beloved": true,
+      "dims": {
+       "h": 201,
+       "w": 121,
+       "t": 14.4
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-aaa-italy-travelbook-2003.jpg",
+      "cover": "../data/covers/gr-aaa-italy-travelbook-2003.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-aaa-italy-travelbook-2003.webp",
+       "card": "atlas/card/gr-aaa-italy-travelbook-2003.webp",
+       "edge": "#6a5763",
+       "hue": 0.1255
+      },
+      "publisher": "AAA",
+      "pages": 224,
+      "year": null,
+      "section": "Hobbies",
+      "group": "Non-fiction"
+     },
+     {
+      "slug": "gr-sushi-taste-and-techniques",
+      "link": "https://www.goodreads.com/book/show/304542",
+      "title": "Sushi: Taste and Techniques",
+      "author": "Kimiko Barber",
+      "beloved": true,
+      "dims": {
+       "h": 218,
+       "w": 168,
+       "t": 25.4
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-sushi-taste-and-techniques.jpg",
+      "cover": "../data/covers/gr-sushi-taste-and-techniques.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 5,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-sushi-taste-and-techniques.webp",
+       "card": "atlas/card/gr-sushi-taste-and-techniques.webp",
+       "edge": "#7c7f81",
+       "hue": 1.5796
+      },
+      "publisher": "DK",
+      "pages": 256,
+      "year": null
+     },
+     {
+      "slug": "gr-the-card-players-companion",
+      "link": "https://www.goodreads.com/book/show/6966627",
+      "title": "The Card Players Companion",
+      "author": "Gyles Daubeney Brandreth",
+      "beloved": true,
+      "dims": {
+       "h": 234,
+       "w": 180,
+       "t": 18.4
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-card-players-companion.jpg",
+      "cover": "../data/covers/gr-the-card-players-companion.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-card-players-companion.webp",
+       "card": "atlas/card/gr-the-card-players-companion.webp",
+       "edge": "#d8d0c2",
+       "hue": 1.2143
+      },
+      "publisher": "Treasure",
+      "pages": 192,
+      "year": null
+     },
+     {
+      "slug": "gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-",
+      "link": "https://www.goodreads.com/book/show/154964",
+      "title": "The Craft of the Cocktail",
+      "subtitle": "Everything You Need to Know to Be a Master Bartender, with 500 Recipes",
+      "author": "Dale Degroff",
+      "beloved": true,
+      "dims": {
+       "h": 260,
+       "w": 198,
+       "t": 20.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.jpg",
+      "cover": "../data/covers/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 5,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.webp",
+       "card": "atlas/card/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.webp",
+       "edge": "#1d1613",
+       "hue": 1.8748
+      },
+      "publisher": "Clarkson Potter",
+      "pages": 240,
+      "year": null
+     },
+     {
+      "slug": "gr-unit-origami-multidimensional-transformations",
+      "link": "https://www.goodreads.com/book/show/1124001",
+      "title": "Unit Origami",
+      "subtitle": "Multidimensional Transformations",
+      "author": "Tomoko Fuse",
+      "beloved": false,
+      "dims": {
+       "h": 260,
+       "w": 181,
+       "t": 18.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-unit-origami-multidimensional-transformations.jpg",
+      "cover": "../data/covers/gr-unit-origami-multidimensional-transformations.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": null,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-unit-origami-multidimensional-transformations.webp",
+       "card": "atlas/card/gr-unit-origami-multidimensional-transformations.webp",
+       "edge": "#d2924d",
+       "hue": 0.1208
+      },
+      "publisher": "Japan Publications",
+      "pages": 240,
+      "year": null
+     },
+     {
+      "slug": "gr-the-competitive-runner-s-handbook",
+      "link": "https://www.goodreads.com/book/show/98251",
+      "title": "The Competitive Runner's Handbook",
+      "author": "Bob Glover",
+      "beloved": true,
+      "dims": {
+       "h": 200,
+       "w": 132,
+       "t": 38.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-competitive-runner-s-handbook.jpg",
+      "cover": "../data/covers/gr-the-competitive-runner-s-handbook.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-competitive-runner-s-handbook.webp",
+       "card": "atlas/card/gr-the-competitive-runner-s-handbook.webp",
+       "edge": "#e9e9e6",
+       "hue": 1.1406
+      },
+      "publisher": "Penguin Publishing Group",
+      "pages": 688,
+      "year": null
+     },
+     {
+      "slug": "gr-rome-spiral-guide",
+      "link": "https://www.goodreads.com/book/show/2994725",
+      "title": "Rome Spiral Guide",
+      "author": "Tim Jepson",
+      "beloved": true,
+      "dims": {
+       "h": 218,
+       "w": 126,
+       "t": 15.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-rome-spiral-guide.jpg",
+      "cover": "../data/covers/gr-rome-spiral-guide.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 5,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-rome-spiral-guide.webp",
+       "card": "atlas/card/gr-rome-spiral-guide.webp",
+       "edge": "#352b6c",
+       "hue": 0.7312
+      },
+      "publisher": "AAA",
+      "pages": 213,
+      "year": null
+     },
+     {
+      "slug": "gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit",
+      "link": "https://www.goodreads.com/book/show/233712",
+      "title": "The PreHistory of The Far Side",
+      "subtitle": "A 10th Anniversary Exhibit",
+      "author": "Gary Larson",
+      "beloved": true,
+      "dims": {
+       "h": 280,
+       "w": 222,
+       "t": 24.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.jpg",
+      "cover": "../data/covers/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.webp",
+       "card": "atlas/card/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.webp",
+       "edge": "#150e16",
+       "hue": 1.826
+      },
+      "publisher": "Andrews McMeel",
+      "pages": 288,
+      "year": null
+     },
+     {
+      "slug": "gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra",
+      "link": "https://www.goodreads.com/book/show/6289283",
+      "title": "Born to Run",
+      "subtitle": "A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen",
+      "author": "Christopher McDougall",
+      "beloved": true,
+      "dims": {
+       "h": 250,
+       "w": 168,
+       "t": 30.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.jpg",
+      "cover": "../data/covers/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": "2010/05/06",
+       "rating": 5,
+       "excerpt": "Philosophy. Running. What more can you want?"
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.webp",
+       "card": "atlas/card/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.webp",
+       "edge": "#1b6497",
+       "hue": 0.6084
+      },
+      "publisher": "Knopf",
+      "pages": 287,
+      "year": null
+     },
+     {
+      "slug": "gr-what-i-talk-about-when-i-talk-about-running",
+      "link": "https://www.goodreads.com/book/show/2467833",
+      "title": "What I Talk About When I Talk About Running",
+      "author": "Haruki Murakami",
+      "beloved": true,
+      "dims": {
+       "h": 198,
+       "w": 137,
+       "t": 23.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-what-i-talk-about-when-i-talk-about-running.jpg",
+      "cover": "../data/covers/gr-what-i-talk-about-when-i-talk-about-running.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 5,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-what-i-talk-about-when-i-talk-about-running.webp",
+       "card": "atlas/card/gr-what-i-talk-about-when-i-talk-about-running.webp",
+       "edge": "#c7b484",
+       "hue": 0.1547
+      },
+      "publisher": "Bond Street Books",
+      "pages": 192,
+      "year": null
+     },
+     {
+      "slug": "gr-singing-for-dummies",
+      "link": "https://www.goodreads.com/book/show/375578",
+      "title": "Singing for Dummies",
+      "author": "Pamelia S. Phillips",
+      "beloved": false,
+      "dims": {
+       "h": 236,
+       "w": 185,
+       "t": 38.1
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-singing-for-dummies.jpg",
+      "cover": "../data/covers/gr-singing-for-dummies.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-singing-for-dummies.webp",
+       "card": "atlas/card/gr-singing-for-dummies.webp",
+       "edge": "#453e25",
+       "hue": 1.7526
+      },
+      "publisher": "For Dummies",
+      "pages": 360,
+      "year": null
+     },
+     {
+      "slug": "gr-red-wine-discovering-exploring-enjoying",
+      "link": "https://www.goodreads.com/book/show/700371",
+      "title": "Red Wine",
+      "subtitle": "Discovering, Exploring, Enjoying",
+      "author": "Jonathan Ray",
+      "beloved": false,
+      "dims": {
+       "h": 200,
+       "w": 197,
+       "t": 10.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-red-wine-discovering-exploring-enjoying.jpg",
+      "cover": "../data/covers/gr-red-wine-discovering-exploring-enjoying.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-red-wine-discovering-exploring-enjoying.webp",
+       "card": "atlas/card/gr-red-wine-discovering-exploring-enjoying.webp",
+       "edge": "#1e1112",
+       "hue": 1.8643
+      },
+      "publisher": "Ryland Peters & Small",
+      "pages": 61,
+      "year": null
+     },
+     {
+      "slug": "gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne",
+      "link": "https://www.goodreads.com/book/show/626328",
+      "title": "The Little Black Book of Cocktails",
+      "author": "Virginia Reynolds",
+      "beloved": false,
+      "dims": {
+       "h": 146,
+       "w": 105,
+       "t": 13.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.jpg",
+      "cover": "../data/covers/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.webp",
+       "card": "atlas/card/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.webp",
+       "edge": "#2f2e2c",
+       "hue": 1.8196
+      },
+      "publisher": "Peter Pauper Press",
+      "pages": 160,
+      "year": null
+     },
+     {
+      "slug": "gr-the-essential-klezmer",
+      "link": "https://www.goodreads.com/book/show/64299",
+      "title": "The Essential Klezmer",
+      "author": "Seth Rogovoy",
+      "beloved": false,
+      "dims": {
+       "h": 226,
+       "w": 150,
+       "t": 22.9
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-essential-klezmer.jpg",
+      "cover": "../data/covers/gr-the-essential-klezmer.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": null,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-essential-klezmer.webp",
+       "card": "atlas/card/gr-the-essential-klezmer.webp",
+       "edge": "#3b1d19",
+       "hue": 1.7571
+      },
+      "publisher": "Algonquin Books",
+      "pages": 320,
+      "year": null
+     },
+     {
+      "slug": "gr-sports-nutrition-for-endurance-athletes",
+      "link": "https://www.goodreads.com/book/show/267729",
+      "title": "Sports Nutrition for Endurance Athletes",
+      "author": "Monique Ryan",
+      "beloved": false,
+      "dims": {
+       "h": 226,
+       "w": 150,
+       "t": 22.9
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-sports-nutrition-for-endurance-athletes.jpg",
+      "cover": "../data/covers/gr-sports-nutrition-for-endurance-athletes.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-sports-nutrition-for-endurance-athletes.webp",
+       "card": "atlas/card/gr-sports-nutrition-for-endurance-athletes.webp",
+       "edge": "#96ae94",
+       "hue": 1.4358
+      },
+      "publisher": "VeloPress",
+      "pages": 352,
+      "year": null
+     },
+     {
+      "slug": "gr-calvin-and-hobbes",
+      "link": "https://www.goodreads.com/book/show/77727",
+      "title": "Calvin and Hobbes",
+      "author": "Bill Watterson",
+      "beloved": true,
+      "dims": {
+       "h": 230,
+       "w": 217,
+       "t": 10.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-calvin-and-hobbes.jpg",
+      "cover": "../data/covers/gr-calvin-and-hobbes.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-calvin-and-hobbes.webp",
+       "card": "atlas/card/gr-calvin-and-hobbes.webp",
+       "edge": "#e6ded2",
+       "hue": 1.1997
+      },
+      "publisher": "Andrews McMeel Publishing",
+      "pages": 128,
+      "year": null
+     }
+    ],
+    []
+   ]
+  },
+  {
    "name": "Fiction",
    "shelves": [
     [
@@ -224,7 +769,7 @@
        "w": 118,
        "t": 20.3
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/the-end-of-eternity-by-isaac-asimov.jpg",
       "cover": "../data/covers/the-end-of-eternity-by-isaac-asimov.jpg",
       "back": "../data/backs/the-end-of-eternity-by-isaac-asimov.jpg",
@@ -249,8 +794,7 @@
       },
       "publisher": "Spectra",
       "pages": 194,
-      "year": null,
-      "lean": 10.7
+      "year": null
      },
      {
       "slug": "gr-the-handmaid-s-tale",
@@ -263,7 +807,7 @@
        "w": 140,
        "t": 19.7
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-the-handmaid-s-tale.jpg",
       "cover": "../data/covers/gr-the-handmaid-s-tale.jpg",
       "back": null,
@@ -283,8 +827,7 @@
       },
       "publisher": "Anchor Books",
       "pages": 311,
-      "year": null,
-      "lean": 10.7
+      "year": null
      },
      {
       "slug": "consider-phlebas-by-iain-m-banks",
@@ -657,7 +1200,7 @@
        "w": 152,
        "t": 25.0
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/gr-exhalation.jpg",
       "cover": "../data/covers/gr-exhalation.jpg",
       "back": null,
@@ -690,7 +1233,7 @@
        "w": 109,
        "t": 22.9
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/stories-of-your-life-and-others.jpg",
       "cover": "../data/covers/stories-of-your-life-and-others.jpg",
       "back": "../data/backs/stories-of-your-life-and-others.jpg",
@@ -728,7 +1271,7 @@
        "w": 103,
        "t": 25.0
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/gr-2001-a-space-odyssey.jpg",
       "cover": "../data/covers/gr-2001-a-space-odyssey.jpg",
       "back": null,
@@ -782,9 +1325,7 @@
       "publisher": "Del Rey Books",
       "pages": 224,
       "year": null
-     }
-    ],
-    [
+     },
      {
       "slug": "piranesi-by-susanne-clark",
       "link": "https://smus.com/books/piranesi-by-susanne-clark",
@@ -1024,7 +1565,7 @@
        "w": 140,
        "t": 20.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/this-is-how-you-lose-the-time-war.jpg",
       "cover": "../data/covers/this-is-how-you-lose-the-time-war.jpg",
       "back": "../data/backs/this-is-how-you-lose-the-time-war.jpg",
@@ -1049,8 +1590,7 @@
       },
       "publisher": "Simon and Schuster",
       "pages": 208,
-      "year": null,
-      "lean": 9.3
+      "year": null
      },
      {
       "slug": "smoke-and-mirrors-by-neil-gaiman",
@@ -1063,7 +1603,7 @@
        "w": 106,
        "t": 24.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/smoke-and-mirrors-by-neil-gaiman.jpg",
       "cover": "../data/covers/smoke-and-mirrors-by-neil-gaiman.jpg",
       "back": "../data/backs/smoke-and-mirrors-by-neil-gaiman.jpg",
@@ -1089,9 +1629,10 @@
       },
       "publisher": "Avon Books",
       "pages": 365,
-      "year": null,
-      "lean": 9.3
-     },
+      "year": null
+     }
+    ],
+    [
      {
       "slug": "gr-neuromancer",
       "link": "https://www.goodreads.com/book/show/22328",
@@ -1174,7 +1715,7 @@
        "w": 114,
        "t": 20.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/the-winds-twelve-quarters-by-ursula-k-le-guin.jpg",
       "cover": "../data/covers/the-winds-twelve-quarters-by-ursula-k-le-guin.jpg",
       "back": "../data/backs/the-winds-twelve-quarters-by-ursula-k-le-guin.jpg",
@@ -1202,8 +1743,7 @@
       },
       "publisher": "HarperCollins Publishers",
       "pages": 320,
-      "year": null,
-      "lean": 9.5
+      "year": null
      },
      {
       "slug": "gr-the-moon-is-a-harsh-mistress",
@@ -1216,7 +1756,7 @@
        "w": 109,
        "t": 22.9
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-the-moon-is-a-harsh-mistress.jpg",
       "cover": "../data/covers/gr-the-moon-is-a-harsh-mistress.jpg",
       "back": null,
@@ -1236,8 +1776,7 @@
       },
       "publisher": "Hodder & Stoughton",
       "pages": 288,
-      "year": null,
-      "lean": 9.5
+      "year": null
      },
      {
       "slug": "gr-children-of-dune",
@@ -1250,7 +1789,7 @@
        "w": 126,
        "t": 23.4
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-children-of-dune.jpg",
       "cover": "../data/covers/gr-children-of-dune.jpg",
       "back": null,
@@ -1270,8 +1809,7 @@
       },
       "publisher": "Ace Books",
       "pages": 408,
-      "year": null,
-      "lean": 9.5
+      "year": null
      },
      {
       "slug": "dune-by-frank-herbert",
@@ -1393,7 +1931,7 @@
        "w": 113,
        "t": 21.0
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/gr-flowers-for-algernon.jpg",
       "cover": "../data/covers/gr-flowers-for-algernon.jpg",
       "back": null,
@@ -1426,7 +1964,7 @@
        "w": 140,
        "t": 25.5
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/ancillary-justice-by-ann-leckie.jpg",
       "cover": "../data/covers/ancillary-justice-by-ann-leckie.jpg",
       "back": "../data/backs/ancillary-justice-by-ann-leckie.jpg",
@@ -1464,7 +2002,7 @@
        "w": 117,
        "t": 25.0
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/gr-solaris.jpg",
       "cover": "../data/covers/gr-solaris.jpg",
       "back": null,
@@ -1525,9 +2063,48 @@
       "publisher": "Mandarin",
       "pages": 156,
       "year": null
-     }
-    ],
-    [
+     },
+     {
+      "slug": "infinite-planets",
+      "link": "https://smus.com/books/infinite-planets",
+      "title": "Invisible Planets",
+      "author": "Ken Liu",
+      "beloved": true,
+      "dims": {
+       "h": 206,
+       "w": 136,
+       "t": 24.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/infinite-planets.jpg",
+      "cover": "../data/covers/infinite-planets.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jan 2019",
+       "source": "smus",
+       "headline": "Infinite Planets",
+       "excerpt": "I've only just touched the tip of the Chinese Sci-Fi iceberg by reading Three Body Problem. So I picked up Infinite Planets, also translated by the same guy, Ken Liu.",
+       "paras": [
+        "I've only just touched the tip of the Chinese Sci-Fi iceberg by reading Three Body Problem. So I picked up Infinite Planets, also translated by the same guy, Ken Liu.",
+        "Many of the stories were just too out there for me to fully enjoy. I'm not sure if this is what's meant by \"wuxia\", but some had a sort of Crouching Tiger, Hidden Dragon feeling to them: extremely ephemeral, very unpredictable, hard to understand. I really enjoyed many of the stories, though. Here are my favorites:",
+        "The Fish of Lijiang: an endearing vignette of fast paced life placed on pause. Opposites attract in a science fiction cliche kind of way.",
+        "A Hundred Ghosts Parade Tonight: where does reality end and really good simulation begin? Emotionally driven, powerful storytelling. Interesting blend of Chinese folklore with speculative far future robotics/AI. …"
+       ],
+       "words": 263,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/infinite-planets.webp",
+       "card": "atlas/card/infinite-planets.webp",
+       "edge": "#304057",
+       "hue": 1.774
+      },
+      "publisher": "Head of Zeus",
+      "pages": 384,
+      "year": null
+     },
      {
       "slug": "gr-the-wandering-earth",
       "link": "https://www.goodreads.com/book/show/56525263",
@@ -1791,7 +2368,7 @@
        "w": 105,
        "t": 20.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-1984.jpg",
       "cover": "../data/covers/gr-1984.jpg",
       "back": null,
@@ -1811,8 +2388,7 @@
       },
       "publisher": "Signet Classics",
       "pages": 72,
-      "year": null,
-      "lean": 12.9
+      "year": null
      },
      {
       "slug": "gateway-by-frederik-pohl",
@@ -1825,7 +2401,7 @@
        "w": 130,
        "t": 17.8
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gateway-by-frederik-pohl.jpg",
       "cover": "../data/covers/gateway-by-frederik-pohl.jpg",
       "back": "../data/backs/gateway-by-frederik-pohl.jpg",
@@ -1850,8 +2426,7 @@
       },
       "publisher": "Del Rey",
       "pages": 278,
-      "year": null,
-      "lean": 12.9
+      "year": null
      },
      {
       "slug": "good-omens-by-pratchett-and-gaiman",
@@ -1864,7 +2439,7 @@
        "w": 104,
        "t": 33.0
       },
-      "pose": "upright",
+      "pose": "lean-left",
       "texture": "../data/textures/good-omens-by-pratchett-and-gaiman.jpg",
       "cover": "../data/covers/good-omens-by-pratchett-and-gaiman.jpg",
       "back": "../data/backs/good-omens-by-pratchett-and-gaiman.jpg",
@@ -1891,7 +2466,9 @@
       "publisher": "William Morrow Paperbacks",
       "pages": 491,
       "year": null
-     },
+     }
+    ],
+    [
      {
       "slug": "ministry-for-the-future",
       "link": "https://smus.com/books/ministry-for-the-future",
@@ -2203,7 +2780,7 @@
        "w": 127,
        "t": 12.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/definitely-maybe-by-the-strugatskys.jpg",
       "cover": "../data/covers/definitely-maybe-by-the-strugatskys.jpg",
       "back": "../data/backs/definitely-maybe-by-the-strugatskys.jpg",
@@ -2229,7 +2806,8 @@
       },
       "publisher": "Melville House",
       "pages": 149,
-      "year": null
+      "year": null,
+      "lean": 12.0
      },
      {
       "slug": "hard-to-be-a-god-by-the-strugatskys",
@@ -2242,7 +2820,7 @@
        "w": 136,
        "t": 14.1
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/hard-to-be-a-god-by-the-strugatskys.jpg",
       "cover": "../data/covers/hard-to-be-a-god-by-the-strugatskys.jpg",
       "back": "../data/backs/hard-to-be-a-god-by-the-strugatskys.jpg",
@@ -2267,7 +2845,8 @@
       },
       "publisher": "Eyre Methuen",
       "pages": 219,
-      "year": null
+      "year": null,
+      "lean": 12.0
      },
      {
       "slug": "children-of-time-by-adrian-tchaikovsky",
@@ -2306,9 +2885,7 @@
       "publisher": "Pan Macmillan",
       "pages": 624,
       "year": null
-     }
-    ],
-    [
+     },
      {
       "slug": "gr-the-fellowship-of-the-ring",
       "link": "https://www.goodreads.com/book/show/34",
@@ -2386,7 +2963,7 @@
        "w": 152,
        "t": 58.0
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/gr-the-lord-of-the-rings.jpg",
       "cover": "../data/covers/gr-the-lord-of-the-rings.jpg",
       "back": null,
@@ -2419,7 +2996,7 @@
        "w": 130,
        "t": 16.0
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/annihilation-by-jeff-vandermeer.jpg",
       "cover": "../data/covers/annihilation-by-jeff-vandermeer.jpg",
       "back": "../data/backs/annihilation-by-jeff-vandermeer.jpg",
@@ -2459,7 +3036,7 @@
        "w": 102,
        "t": 38.1
       },
-      "pose": "lying",
+      "pose": "upright",
       "texture": "../data/textures/vernor-vinge-rainbows-end.jpg",
       "cover": "../data/covers/vernor-vinge-rainbows-end.jpg",
       "back": null,
@@ -2498,7 +3075,7 @@
        "w": 115,
        "t": 3.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-2br02b.jpg",
       "cover": "../data/covers/gr-2br02b.jpg",
       "back": null,
@@ -2518,7 +3095,42 @@
       },
       "publisher": "Dunda Books",
       "pages": 26,
-      "year": null
+      "year": null,
+      "lean": 9.5
+     },
+     {
+      "slug": "gr-the-sirens-of-titan",
+      "link": "https://www.goodreads.com/book/show/4982",
+      "title": "The Sirens of Titan",
+      "author": "Kurt Vonnegut Jr.",
+      "beloved": false,
+      "dims": {
+       "h": 212,
+       "w": 140,
+       "t": 14.4
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/gr-the-sirens-of-titan.jpg",
+      "cover": "../data/covers/gr-the-sirens-of-titan.jpg",
+      "back": "../data/backs/gr-the-sirens-of-titan.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-sirens-of-titan.webp",
+       "card": "atlas/card/gr-the-sirens-of-titan.webp",
+       "edge": "#8b89b1",
+       "hue": 1.413
+      },
+      "publisher": "Gollancz",
+      "pages": 224,
+      "year": null,
+      "lean": 9.5
      },
      {
       "slug": "blindsight-by-peter-watts",
@@ -2569,7 +3181,7 @@
        "w": 129,
        "t": 16.7
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/shadow-of-the-torturer.jpg",
       "cover": "../data/covers/shadow-of-the-torturer.jpg",
       "back": "../data/backs/shadow-of-the-torturer.jpg",
@@ -2598,8 +3210,7 @@
       },
       "publisher": "Pocket Books",
       "pages": 262,
-      "year": null,
-      "lean": 5.3
+      "year": null
      },
      {
       "slug": "gr-the-day-of-the-triffids",
@@ -2612,7 +3223,7 @@
        "w": 133,
        "t": 14.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-the-day-of-the-triffids.jpg",
       "cover": "../data/covers/gr-the-day-of-the-triffids.jpg",
       "back": null,
@@ -2632,8 +3243,7 @@
       },
       "publisher": "Modern Library",
       "pages": 228,
-      "year": null,
-      "lean": 5.3
+      "year": null
      },
      {
       "slug": "gr-lord-of-light",
@@ -2646,7 +3256,7 @@
        "w": 135,
        "t": 17.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-lord-of-light.jpg",
       "cover": "../data/covers/gr-lord-of-light.jpg",
       "back": null,
@@ -2666,8 +3276,7 @@
       },
       "publisher": "Harper Voyager",
       "pages": 296,
-      "year": null,
-      "lean": 5.3
+      "year": null
      }
     ],
     [
@@ -2783,7 +3392,7 @@
        "w": 135,
        "t": 16.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-if-on-a-winter-s-night-a-traveler.jpg",
       "cover": "../data/covers/gr-if-on-a-winter-s-night-a-traveler.jpg",
       "back": null,
@@ -2803,7 +3412,8 @@
       },
       "publisher": "L&OD Key Porter",
       "pages": 260,
-      "year": null
+      "year": null,
+      "lean": 7.6
      },
      {
       "slug": "invisible-cities-by-italo-calvino",
@@ -2816,7 +3426,7 @@
        "w": 135,
        "t": 10.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/invisible-cities-by-italo-calvino.jpg",
       "cover": "../data/covers/invisible-cities-by-italo-calvino.jpg",
       "back": "../data/backs/invisible-cities-by-italo-calvino.jpg",
@@ -2843,7 +3453,8 @@
       },
       "publisher": "Harvest",
       "pages": 165,
-      "year": null
+      "year": null,
+      "lean": 7.6
      },
      {
       "slug": "gr-the-stranger",
@@ -2856,7 +3467,7 @@
        "w": 129,
        "t": 8.4
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-the-stranger.jpg",
       "cover": "../data/covers/gr-the-stranger.jpg",
       "back": null,
@@ -2876,7 +3487,42 @@
       },
       "publisher": "Vintage International",
       "pages": 123,
-      "year": null
+      "year": null,
+      "lean": 5.7
+     },
+     {
+      "slug": "gr-alice-s-adventures-in-wonderland-through-the-looking-glass",
+      "link": "https://www.goodreads.com/book/show/24213",
+      "title": "Alice’s Adventures in Wonderland / Through the Looking-Glass",
+      "author": "Lewis Carroll",
+      "beloved": true,
+      "dims": {
+       "h": 198,
+       "w": 129,
+       "t": 22.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/gr-alice-s-adventures-in-wonderland-through-the-looking-glass.jpg",
+      "cover": "../data/covers/gr-alice-s-adventures-in-wonderland-through-the-looking-glass.jpg",
+      "back": "../data/backs/gr-alice-s-adventures-in-wonderland-through-the-looking-glass.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-alice-s-adventures-in-wonderland-through-the-looking-glass.webp",
+       "card": "atlas/card/gr-alice-s-adventures-in-wonderland-through-the-looking-glass.webp",
+       "edge": "#314981",
+       "hue": 0.6586
+      },
+      "publisher": null,
+      "pages": 400,
+      "year": null,
+      "lean": 5.7
      },
      {
       "slug": "gr-the-yiddish-policemen-s-union",
@@ -3349,6 +3995,44 @@
       "year": null
      },
      {
+      "slug": "sophies-world-by-jostein-gaardner",
+      "link": "https://smus.com/books/sophies-world-by-jostein-gaardner",
+      "title": "Sophie's World",
+      "author": "Jostein Gaardner",
+      "beloved": true,
+      "dims": {
+       "h": 208,
+       "w": 137,
+       "t": 19.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/sophies-world-by-jostein-gaardner.jpg",
+      "cover": "../data/covers/sophies-world-by-jostein-gaardner.jpg",
+      "back": "../data/backs/sophies-world-by-jostein-gaardner.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Nov 2015",
+       "source": "smus",
+       "headline": "Sophie's World by Jostein Gaardner",
+       "excerpt": "I really enjoyed this one. Clearly a novel for kids, this book provides a nice overview of philosophy. However, it is also quite entertaining. Events center around Sophie and her mysterious philosophy teacher. Initially I was disappointed, since it read like a philosophy class given to the reader through letters sent to Sophie, but as the plot thickened, the format changed to Socratic dialog. …",
+       "paras": [
+        "I really enjoyed this one. Clearly a novel for kids, this book provides a nice overview of philosophy. However, it is also quite entertaining. Events center around Sophie and her mysterious philosophy teacher. Initially I was disappointed, since it read like a philosophy class given to the reader through letters sent to Sophie, but as the plot thickened, the format changed to Socratic dialog. …"
+       ],
+       "words": 206,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/sophies-world-by-jostein-gaardner.webp",
+       "card": "atlas/card/sophies-world-by-jostein-gaardner.webp",
+       "edge": "#c4bead",
+       "hue": 1.2581
+      },
+      "publisher": "PDF/Epub File",
+      "pages": null,
+      "year": null
+     },
+     {
       "slug": "gr-lord-of-the-flies",
       "link": "https://www.goodreads.com/book/show/7624",
       "title": "Lord of the Flies",
@@ -3564,7 +4248,9 @@
       "publisher": "Vintage Books ",
       "pages": 288,
       "year": null
-     },
+     }
+    ],
+    [
      {
       "slug": "gr-the-remains-of-the-day",
       "link": "https://www.goodreads.com/book/show/28921",
@@ -3609,7 +4295,7 @@
        "w": 136,
        "t": 14.0
       },
-      "pose": "upright",
+      "pose": "lying",
       "texture": "../data/textures/parables-by-franz-kafka.jpg",
       "cover": "../data/covers/parables-by-franz-kafka.jpg",
       "back": "../data/backs/parables-by-franz-kafka.jpg",
@@ -3649,7 +4335,7 @@
        "w": 115,
        "t": 17.8
       },
-      "pose": "upright",
+      "pose": "lying",
       "texture": "../data/textures/gr-the-metamorphosis.jpg",
       "cover": "../data/covers/gr-the-metamorphosis.jpg",
       "back": null,
@@ -3682,7 +4368,7 @@
        "w": 130,
        "t": 12.7
       },
-      "pose": "lean-run",
+      "pose": "lying",
       "texture": "../data/textures/gr-the-metamorphosis-and-other-stories.jpg",
       "cover": "../data/covers/gr-the-metamorphosis-and-other-stories.jpg",
       "back": null,
@@ -3702,8 +4388,7 @@
       },
       "publisher": "Dover Publications",
       "pages": 88,
-      "year": null,
-      "lean": 3.6
+      "year": null
      },
      {
       "slug": "gr-one-flew-over-the-cuckoo-s-nest",
@@ -3716,7 +4401,7 @@
        "w": 99,
        "t": 16.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-one-flew-over-the-cuckoo-s-nest.jpg",
       "cover": "../data/covers/gr-one-flew-over-the-cuckoo-s-nest.jpg",
       "back": null,
@@ -3736,11 +4421,8 @@
       },
       "publisher": "Signet",
       "pages": 272,
-      "year": null,
-      "lean": 3.6
-     }
-    ],
-    [
+      "year": null
+     },
      {
       "slug": "darkness-at-noon-by-arthur-koestler-audio",
       "link": "https://smus.com/books/darkness-at-noon-by-arthur-koestler-audio",
@@ -4021,6 +4703,40 @@
       "year": null
      },
      {
+      "slug": "gr-life-of-pi",
+      "link": "https://www.goodreads.com/book/show/820599",
+      "title": "Life of Pi",
+      "author": "Yann Martel",
+      "beloved": true,
+      "dims": {
+       "h": 246,
+       "w": 193,
+       "t": 22.2
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/gr-life-of-pi.jpg",
+      "cover": "../data/covers/gr-life-of-pi.jpg",
+      "back": "../data/backs/gr-life-of-pi.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-life-of-pi.webp",
+       "card": "atlas/card/gr-life-of-pi.webp",
+       "edge": "#024a7e",
+       "hue": 0.61
+      },
+      "publisher": "Vintage",
+      "pages": 354,
+      "year": null,
+      "lean": 12.4
+     },
+     {
       "slug": "the-road-by-cormac-mccarthy",
       "link": "https://smus.com/books/the-road-by-cormac-mccarthy",
       "title": "The Road",
@@ -4031,7 +4747,7 @@
        "w": 130,
        "t": 20.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/the-road-by-cormac-mccarthy.jpg",
       "cover": "../data/covers/the-road-by-cormac-mccarthy.jpg",
       "back": "../data/backs/the-road-by-cormac-mccarthy.jpg",
@@ -4059,7 +4775,8 @@
       },
       "publisher": "Picador",
       "pages": 306,
-      "year": null
+      "year": null,
+      "lean": 12.4
      },
      {
       "slug": "gr-blind-willow-sleeping-woman",
@@ -4204,7 +4921,7 @@
        "w": 142,
        "t": 25.0
       },
-      "pose": "upright",
+      "pose": "lean-left",
       "texture": "../data/textures/gr-norwegian-wood.jpg",
       "cover": "../data/covers/gr-norwegian-wood.jpg",
       "back": null,
@@ -4225,7 +4942,9 @@
       "publisher": "Vintage",
       "pages": 389,
       "year": null
-     },
+     }
+    ],
+    [
      {
       "slug": "gr-lolita",
       "link": "https://www.goodreads.com/book/show/7604",
@@ -4270,7 +4989,7 @@
        "w": 114,
        "t": 8.7
       },
-      "pose": "upright",
+      "pose": "lying",
       "texture": "../data/textures/gr-animal-farm.jpg",
       "cover": "../data/covers/gr-animal-farm.jpg",
       "back": null,
@@ -4303,7 +5022,7 @@
        "w": 140,
        "t": 8.0
       },
-      "pose": "upright",
+      "pose": "lying",
       "texture": "../data/textures/anthem-by-ayn-rand.jpg",
       "cover": "../data/covers/anthem-by-ayn-rand.jpg",
       "back": "../data/backs/anthem-by-ayn-rand.jpg",
@@ -4341,7 +5060,7 @@
        "w": 115,
        "t": 20.0
       },
-      "pose": "upright",
+      "pose": "lying",
       "texture": "../data/textures/gr-the-catcher-in-the-rye.jpg",
       "cover": "../data/covers/gr-the-catcher-in-the-rye.jpg",
       "back": null,
@@ -4361,6 +5080,39 @@
       },
       "publisher": "Little, Brown",
       "pages": 234,
+      "year": null
+     },
+     {
+      "slug": "gr-bashert",
+      "link": "https://www.goodreads.com/book/show/9772751",
+      "title": "Bashert",
+      "author": "Lior Samson",
+      "beloved": true,
+      "dims": {
+       "h": 229,
+       "w": 152,
+       "t": 17.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-bashert.jpg",
+      "cover": "../data/covers/gr-bashert.jpg",
+      "back": "../data/backs/gr-bashert.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-bashert.webp",
+       "card": "atlas/card/gr-bashert.webp",
+       "edge": "#94754b",
+       "hue": 0.1404
+      },
+      "publisher": null,
+      "pages": 290,
       "year": null
      },
      {
@@ -4407,7 +5159,7 @@
        "w": 125,
        "t": 16.5
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-romeo-and-juliet.jpg",
       "cover": "../data/covers/gr-romeo-and-juliet.jpg",
       "back": null,
@@ -4427,7 +5179,8 @@
       },
       "publisher": "Washington Square Press",
       "pages": 281,
-      "year": null
+      "year": null,
+      "lean": 10.2
      },
      {
       "slug": "my-russian-grandmother-by-meir-shalev",
@@ -4440,7 +5193,7 @@
        "w": 140,
        "t": 22.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/my-russian-grandmother-by-meir-shalev.jpg",
       "cover": "../data/covers/my-russian-grandmother-by-meir-shalev.jpg",
       "back": "../data/backs/my-russian-grandmother-by-meir-shalev.jpg",
@@ -4466,7 +5219,8 @@
       },
       "publisher": "Schocken",
       "pages": 224,
-      "year": null
+      "year": null,
+      "lean": 10.2
      },
      {
       "slug": "gr-portuguese-irregular-verbs",
@@ -4617,7 +5371,7 @@
        "w": 142,
        "t": 10.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-of-mice-and-men.jpg",
       "cover": "../data/covers/gr-of-mice-and-men.jpg",
       "back": null,
@@ -4637,7 +5391,8 @@
       },
       "publisher": "Penguin Books",
       "pages": 107,
-      "year": null
+      "year": null,
+      "lean": 7.0
      },
      {
       "slug": "gr-the-grapes-of-wrath",
@@ -4650,7 +5405,7 @@
        "w": 127,
        "t": 23.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-the-grapes-of-wrath.jpg",
       "cover": "../data/covers/gr-the-grapes-of-wrath.jpg",
       "back": null,
@@ -4670,7 +5425,8 @@
       },
       "publisher": "Penguin Books",
       "pages": 455,
-      "year": null
+      "year": null,
+      "lean": 7.0
      },
      {
       "slug": "arcadia-by-tom-stoppard",
@@ -4683,7 +5439,7 @@
        "w": 124,
        "t": 7.6
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/arcadia-by-tom-stoppard.jpg",
       "cover": "../data/covers/arcadia-by-tom-stoppard.jpg",
       "back": "../data/backs/arcadia-by-tom-stoppard.jpg",
@@ -4709,7 +5465,48 @@
       },
       "publisher": "Faber & Faber",
       "pages": 101,
-      "year": null
+      "year": null,
+      "lean": 7.0
+     },
+     {
+      "slug": "battle-of-maldon-homecoming-of-beorhtnoth",
+      "link": "https://smus.com/books/battle-of-maldon-homecoming-of-beorhtnoth",
+      "title": "The Battle of Maldon",
+      "author": "J.R.R. Tolkien",
+      "beloved": false,
+      "dims": {
+       "h": 228,
+       "w": 152,
+       "t": 13.5
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/battle-of-maldon-homecoming-of-beorhtnoth.jpg",
+      "cover": "../data/covers/battle-of-maldon-homecoming-of-beorhtnoth.jpg",
+      "back": "../data/backs/battle-of-maldon-homecoming-of-beorhtnoth.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Aug 2025",
+       "source": "smus",
+       "headline": "Battle of Maldon & Homecoming of Beorhtnoth",
+       "excerpt": "I learned about the Old English Poem \"Battle of Maldon\" from a David Chapman in a recent podcast with Jim Rutt, which I found really insightful. I haven't read meaningness for a long time. But Chapman seems to have reemerged onto my radar recently in a series of compelling articles on his (new?) substack.",
+       "paras": [
+        "I learned about the Old English Poem \"Battle of Maldon\" from a David Chapman in a recent podcast with Jim Rutt, which I found really insightful. I haven't read meaningness for a long time. But Chapman seems to have reemerged onto my radar recently in a series of compelling articles on his (new?) substack.",
+        "And so I picked up this lauded Tolkien book in anticipation of something extra amazing, but found it to be too dry and academic for my simple tastes. That said I was intrigued by Old English and inspired by read Beowulf in a recent translation someday soon. …"
+       ],
+       "words": 399,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/battle-of-maldon-homecoming-of-beorhtnoth.webp",
+       "card": "atlas/card/battle-of-maldon-homecoming-of-beorhtnoth.webp",
+       "edge": "#413434",
+       "hue": 1.7802
+      },
+      "publisher": "HarperCollins Publishers",
+      "pages": 208,
+      "year": null,
+      "lean": 7.0
      },
      {
       "slug": "the-death-of-ivan-ilyich-by-lev-tolstoy",
@@ -4722,7 +5519,7 @@
        "w": 104,
        "t": 10.2
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/the-death-of-ivan-ilyich-by-lev-tolstoy.jpg",
       "cover": "../data/covers/the-death-of-ivan-ilyich-by-lev-tolstoy.jpg",
       "back": "../data/backs/the-death-of-ivan-ilyich-by-lev-tolstoy.jpg",
@@ -4748,8 +5545,7 @@
       },
       "publisher": "Bantam Books",
       "pages": 128,
-      "year": null,
-      "lean": 6.8
+      "year": null
      },
      {
       "slug": "gr-breakfast-of-champions",
@@ -4762,7 +5558,7 @@
        "w": 133,
        "t": 16.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-breakfast-of-champions.jpg",
       "cover": "../data/covers/gr-breakfast-of-champions.jpg",
       "back": null,
@@ -4782,8 +5578,7 @@
       },
       "publisher": "Dell Publishing",
       "pages": 303,
-      "year": null,
-      "lean": 6.8
+      "year": null
      },
      {
       "slug": "gr-hocus-pocus",
@@ -4817,7 +5612,7 @@
       "publisher": "Berkley Books",
       "pages": 322,
       "year": null,
-      "lean": 6.8
+      "lean": 12.9
      },
      {
       "slug": "gr-slaughterhouse-five",
@@ -4830,7 +5625,7 @@
        "w": 130,
        "t": 17.8
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-slaughterhouse-five.jpg",
       "cover": "../data/covers/gr-slaughterhouse-five.jpg",
       "back": null,
@@ -4850,7 +5645,8 @@
       },
       "publisher": "Dell",
       "pages": 215,
-      "year": null
+      "year": null,
+      "lean": 12.9
      },
      {
       "slug": "gr-the-glass-menagerie",
@@ -4863,7 +5659,7 @@
        "w": 132,
        "t": 10.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-the-glass-menagerie.jpg",
       "cover": "../data/covers/gr-the-glass-menagerie.jpg",
       "back": null,
@@ -4883,7 +5679,8 @@
       },
       "publisher": "New Directions",
       "pages": 104,
-      "year": null
+      "year": null,
+      "lean": 12.9
      }
     ]
    ]
@@ -6160,7 +6957,7 @@
        "w": 168,
        "t": 5.1
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gr-mathematical-origami-geometrical-shapes-by-paper-folding.jpg",
       "cover": "../data/covers/gr-mathematical-origami-geometrical-shapes-by-paper-folding.jpg",
       "back": null,
@@ -6180,7 +6977,8 @@
       },
       "publisher": "AmazonUs/INDPB",
       "pages": 64,
-      "year": null
+      "year": null,
+      "lean": 11.1
      },
      {
       "slug": "math-from-three-to-seven-by-a-k-zvonkin",
@@ -6193,7 +6991,7 @@
        "w": 181,
        "t": 15.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/math-from-three-to-seven-by-a-k-zvonkin.jpg",
       "cover": "../data/covers/math-from-three-to-seven-by-a-k-zvonkin.jpg",
       "back": "../data/backs/math-from-three-to-seven-by-a-k-zvonkin.jpg",
@@ -6218,305 +7016,8 @@
       },
       "publisher": "American Mathematical Society",
       "pages": 300,
-      "year": null
-     },
-     {
-      "slug": "how-to-take-smart-notes",
-      "link": "https://smus.com/books/how-to-take-smart-notes",
-      "title": "How to Take Smart Notes",
-      "author": "Sönke Ahrens",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 133,
-       "t": 11.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/how-to-take-smart-notes.jpg",
-      "cover": "../data/covers/how-to-take-smart-notes.jpg",
-      "back": "../data/backs/how-to-take-smart-notes.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Feb 2021",
-       "source": "smus",
-       "headline": "How to Take Smart Notes",
-       "excerpt": "Zettelkasten Method, In Praise of Niklas Luhmann, or Ode To The Slip-box.",
-       "paras": [
-        "Zettelkasten Method, In Praise of Niklas Luhmann, or Ode To The Slip-box.",
-        "The Roam cult sprang out of a practice called Zettelkasten. I refuse to join the cult, but see great value in cross-linked note taking practice. So far my tool of choice is Obsidian, mainly because I like plaintext. This book introduces the Zettel method. …"
-       ],
-       "words": 968,
-       "minutes": 4
-      },
-      "atlas": {
-       "lo": "atlas/lo/how-to-take-smart-notes.webp",
-       "card": "atlas/card/how-to-take-smart-notes.webp",
-       "edge": "#acad98",
-       "hue": 1.3546
-      },
-      "publisher": "Unknown Publisher",
-      "pages": 178,
       "year": null,
-      "section": "Design",
-      "group": "Non-fiction"
-     },
-     {
-      "slug": "gr-a-pattern-language-towns-buildings-construction",
-      "link": "https://www.goodreads.com/book/show/79766",
-      "title": "A Pattern Language",
-      "subtitle": "Towns, Buildings, Construction",
-      "author": "Christopher Alexander",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 144,
-       "t": 46.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-a-pattern-language-towns-buildings-construction.jpg",
-      "cover": "../data/covers/gr-a-pattern-language-towns-buildings-construction.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-a-pattern-language-towns-buildings-construction.webp",
-       "card": "atlas/card/gr-a-pattern-language-towns-buildings-construction.webp",
-       "edge": "#deceb0",
-       "hue": 1.2483
-      },
-      "publisher": "Oxford University Press",
-      "pages": 1171,
-      "year": null
-     },
-     {
-      "slug": "the-timeless-way-of-building",
-      "link": "https://smus.com/books/the-timeless-way-of-building",
-      "title": "The Timeless Way of Building",
-      "author": "Christopher Alexander",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 140,
-       "t": 51.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-timeless-way-of-building.jpg",
-      "cover": "../data/covers/the-timeless-way-of-building.jpg",
-      "back": "../data/backs/the-timeless-way-of-building.jpg",
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "posted": "Nov 2022",
-       "source": "smus",
-       "headline": "The Timeless Way of Building",
-       "excerpt": "The built world is defined by a small number of patterns, which keep repeating over and over and over again. The patterns are deep and mostly relational. This applies at all scales in human construction: to American cities, Gothic cathedrals, Paris, Chinese kitchens, doors, and so on.",
-       "paras": [
-        "The built world is defined by a small number of patterns, which keep repeating over and over and over again. The patterns are deep and mostly relational. This applies at all scales in human construction: to American cities, Gothic cathedrals, Paris, Chinese kitchens, doors, and so on.",
-        "These patterns can be codified into a pattern language. And just like a great writer or orator has an intuitive grasp of human language, a great builder can and should strive to attain an intuitive grasp of his pattern language.",
-        "But just because you have a pattern language does not make it good. A concrete jungle is also governed by a pattern language. Alexander strives to capture a collection of patterns that create a microcosm that has \"The Quality Without a Name\", which he defines via negativa (see Negative theology and via negativa). Here's a quick summary…"
-       ],
-       "words": 762,
-       "minutes": 3
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-timeless-way-of-building.webp",
-       "card": "atlas/card/the-timeless-way-of-building.webp",
-       "edge": "#ddcfa6",
-       "hue": 1.3069
-      },
-      "publisher": "Oxford University Press",
-      "pages": 576,
-      "year": null
-     },
-     {
-      "slug": "and-suddenly-the-inventor-appeared-by-genrikh-altshuller",
-      "link": "https://smus.com/books/and-suddenly-the-inventor-appeared-by-genrikh-altshuller",
-      "title": "And Suddenly the Inventor Appeared",
-      "author": "G. Altshuller",
-      "beloved": true,
-      "dims": {
-       "h": 226,
-       "w": 142,
-       "t": 15.2
-      },
-      "pose": "upright",
-      "texture": "../data/textures/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
-      "cover": "../data/covers/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
-      "back": "../data/backs/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Aug 2026",
-       "source": "smus",
-       "headline": "TRIZ and the Elusive Invention Machine",
-       "excerpt": "This book is an odd one. Is it written for children? Most of the text focuses on invention case studies that are presented like math-olympiad puzzles for precocious ten-year-olds. Altshuller eggs the reader on. A sixth grader can solve this; why can't you, dumbass?",
-       "paras": [
-        "This book is an odd one. Is it written for children? Most of the text focuses on invention case studies that are presented like math-olympiad puzzles for precocious ten-year-olds. Altshuller eggs the reader on. A sixth grader can solve this; why can't you, dumbass?",
-        "The English edition often reads like an excessively literal, amateurish translation. One problem, poorly titled \"A and B Were Sitting on the Pipe,\" is rendered word-for-word from \"А и Б сидели на трубе\", destroying the rhyme which was trite even in Russian. …"
-       ],
-       "words": 2037,
-       "minutes": 9
-      },
-      "atlas": {
-       "lo": "atlas/lo/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.webp",
-       "card": "atlas/card/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.webp",
-       "edge": "#f8f1d6",
-       "hue": 1.1567
-      },
-      "publisher": "Technical Innovation Center, Inc.",
-      "pages": 171,
-      "year": null
-     },
-     {
-      "slug": "gr-contextual-design-defining-customer-centered-systems",
-      "link": "https://www.goodreads.com/book/show/617137",
-      "title": "Contextual Design",
-      "author": "Hugh Beyer",
-      "beloved": false,
-      "dims": {
-       "h": 229,
-       "w": 183,
-       "t": 25.4
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-contextual-design-defining-customer-centered-systems.jpg",
-      "cover": "../data/covers/gr-contextual-design-defining-customer-centered-systems.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": "2009/10/29",
-       "rating": 1,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-contextual-design-defining-customer-centered-systems.webp",
-       "card": "atlas/card/gr-contextual-design-defining-customer-centered-systems.webp",
-       "edge": "#0c1112",
-       "hue": 1.9076
-      },
-      "publisher": "Morgan Kaufmann",
-      "pages": 472,
-      "year": null
-     },
-     {
-      "slug": "impro-by-keith-johnstone",
-      "link": "https://smus.com/books/impro-by-keith-johnstone",
-      "title": "Impro",
-      "author": "Keith Johnstone",
-      "beloved": true,
-      "dims": {
-       "h": 206,
-       "w": 130,
-       "t": 17.8
-      },
-      "pose": "upright",
-      "texture": "../data/textures/impro-by-keith-johnstone.jpg",
-      "cover": "../data/covers/impro-by-keith-johnstone.jpg",
-      "back": "../data/backs/impro-by-keith-johnstone.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Jan 2018",
-       "source": "smus",
-       "headline": "Impro by Keith Johnstone",
-       "excerpt": "I picked this book up because of a recommendation from the Internet. My first reaction was negative: the author’s claim pointing at things and calling them wrong names will cause your whole sense of perception to shift: colors become more vivid, outlines become sharper, people look smaller, the shape of the room changes. This, presented not as metaphorical truth, or a parable, but as actual truth, is something I continue to find hard to swallow. That said I think the essays in the book are worth it, if you suspend a bit of disbelief. …",
-       "paras": [
-        "I picked this book up because of a recommendation from the Internet. My first reaction was negative: the author’s claim pointing at things and calling them wrong names will cause your whole sense of perception to shift: colors become more vivid, outlines become sharper, people look smaller, the shape of the room changes. This, presented not as metaphorical truth, or a parable, but as actual truth, is something I continue to find hard to swallow. That said I think the essays in the book are worth it, if you suspend a bit of disbelief. …"
-       ],
-       "words": 1894,
-       "minutes": 8
-      },
-      "atlas": {
-       "lo": "atlas/lo/impro-by-keith-johnstone.webp",
-       "card": "atlas/card/impro-by-keith-johnstone.webp",
-       "edge": "#3e4242",
-       "hue": 1.6899
-      },
-      "publisher": "Theatre Arts Book",
-      "pages": 208,
-      "year": null
-     },
-     {
-      "slug": "bird-by-bird-by-anne-lamott",
-      "link": "https://smus.com/books/bird-by-bird-by-anne-lamott",
-      "title": "Bird by Bird",
-      "author": "Anne Lamott",
-      "beloved": false,
-      "dims": {
-       "h": 210,
-       "w": 131,
-       "t": 19.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/bird-by-bird-by-anne-lamott.jpg",
-      "cover": "../data/covers/bird-by-bird-by-anne-lamott.jpg",
-      "back": "../data/backs/bird-by-bird-by-anne-lamott.jpg",
-      "spine_source": "photo",
-      "binding": "paperback",
-      "review": {
-       "posted": "Nov 2018",
-       "source": "smus",
-       "headline": "Bird by Bird by Anne Lamott",
-       "excerpt": "I've forgotten how this book appeared on my radar, but I think it was on someone's list of most influential books ever. I am more ambivalent.",
-       "paras": [
-        "I've forgotten how this book appeared on my radar, but I think it was on someone's list of most influential books ever. I am more ambivalent.",
-        "The book's subtitle is \"Some Instructions on Writing and Life\", and honestly I was hoping for more of the latter. Unfortunately it was more of the former, specifically how to write fiction, which is interesting in theory, but is not something that is very high on my current list of things I would like to spend my time doing.",
-        "In general, the author has some good tips for the fledgeling writer. These are pretty intuitive, but do serve as good reminders…"
-       ],
-       "words": 573,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/bird-by-bird-by-anne-lamott.webp",
-       "card": "atlas/card/bird-by-bird-by-anne-lamott.webp",
-       "edge": "#d5979e",
-       "hue": 0.0648
-      },
-      "publisher": "Anchor Books",
-      "pages": 239,
-      "year": null
-     },
-     {
-      "slug": "gr-the-design-of-everyday-things",
-      "link": "https://www.goodreads.com/book/show/840",
-      "title": "The Design of Everyday Things",
-      "author": "Donald A. Norman",
-      "beloved": false,
-      "dims": {
-       "h": 210,
-       "w": 140,
-       "t": 16.4
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-design-of-everyday-things.jpg",
-      "cover": "../data/covers/gr-the-design-of-everyday-things.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-design-of-everyday-things.webp",
-       "card": "atlas/card/gr-the-design-of-everyday-things.webp",
-       "edge": "#202125",
-       "hue": 1.8328
-      },
-      "publisher": "Basic Books",
-      "pages": 257,
-      "year": null
+      "lean": 11.1
      },
      {
       "slug": "genesis-by-translated-by-robert-alter",
@@ -6680,7 +7181,7 @@
        "w": 134,
        "t": 18.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/letters-to-my-palestinian-neighbor-by-halevi.jpg",
       "cover": "../data/covers/letters-to-my-palestinian-neighbor-by-halevi.jpg",
       "back": "../data/backs/letters-to-my-palestinian-neighbor-by-halevi.jpg",
@@ -6705,7 +7206,8 @@
       },
       "publisher": "HarperCollins Publishers",
       "pages": 288,
-      "year": null
+      "year": null,
+      "lean": 10.2
      },
      {
       "slug": "the-sabbath-by-heschel",
@@ -6744,7 +7246,7 @@
       "publisher": "Farrar, Straus and Giroux",
       "pages": 118,
       "year": null,
-      "lean": 4.6
+      "lean": 10.2
      },
      {
       "slug": "david-the-divided-heart-by-david-wolpe",
@@ -6783,7 +7285,7 @@
       "publisher": null,
       "pages": 153,
       "year": null,
-      "lean": 4.6
+      "lean": 10.2
      },
      {
       "slug": "the-new-father",
@@ -6837,7 +7339,7 @@
        "w": 129,
        "t": 9.6
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/fatherhood-in-pieces-by-chabon.jpg",
       "cover": "../data/covers/fatherhood-in-pieces-by-chabon.jpg",
       "back": "../data/backs/fatherhood-in-pieces-by-chabon.jpg",
@@ -6862,7 +7364,8 @@
       },
       "publisher": "Harper Perennial",
       "pages": 144,
-      "year": null
+      "year": null,
+      "lean": 3.5
      },
      {
       "slug": "gardener-carpenter-by-alison-gopnik",
@@ -6875,7 +7378,7 @@
        "w": 153,
        "t": 20.2
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/gardener-carpenter-by-alison-gopnik.jpg",
       "cover": "../data/covers/gardener-carpenter-by-alison-gopnik.jpg",
       "back": "../data/backs/gardener-carpenter-by-alison-gopnik.jpg",
@@ -6900,7 +7403,8 @@
       },
       "publisher": "Penguin Random House",
       "pages": 320,
-      "year": null
+      "year": null,
+      "lean": 3.5
      },
      {
       "slug": "good-inside-by-becky-kennedy",
@@ -6954,7 +7458,7 @@
        "w": 140,
        "t": 15.0
       },
-      "pose": "lean-run",
+      "pose": "lying",
       "texture": "../data/textures/emotional-life-of-the-toddler.jpg",
       "cover": "../data/covers/emotional-life-of-the-toddler.jpg",
       "back": "../data/backs/emotional-life-of-the-toddler.jpg",
@@ -6980,8 +7484,7 @@
       },
       "publisher": "Free P.,U.S.",
       "pages": 20,
-      "year": null,
-      "lean": 7.7
+      "year": null
      },
      {
       "slug": "the-blessing-of-a-skinned-knee-by-wendy-mogel",
@@ -6994,7 +7497,7 @@
        "w": 133,
        "t": 15.0
       },
-      "pose": "lean-run",
+      "pose": "lying",
       "texture": "../data/textures/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
       "cover": "../data/covers/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
       "back": "../data/backs/the-blessing-of-a-skinned-knee-by-wendy-mogel.jpg",
@@ -7019,8 +7522,7 @@
       },
       "publisher": "Penguin (Non-Classics)",
       "pages": 304,
-      "year": null,
-      "lean": 7.7
+      "year": null
      },
      {
       "slug": "mindstorms-by-seymour-papert",
@@ -7033,7 +7535,7 @@
        "w": 140,
        "t": 14.0
       },
-      "pose": "lean-run",
+      "pose": "lying",
       "texture": "../data/textures/mindstorms-by-seymour-papert.jpg",
       "cover": "../data/covers/mindstorms-by-seymour-papert.jpg",
       "back": "../data/backs/mindstorms-by-seymour-papert.jpg",
@@ -7059,8 +7561,45 @@
       },
       "publisher": "Basic Books",
       "pages": 230,
-      "year": null,
-      "lean": 6.9
+      "year": null
+     },
+     {
+      "slug": "yes-brain-by-siegel-and-bryson",
+      "link": "https://smus.com/books/yes-brain-by-siegel-and-bryson",
+      "title": "Yes Brain",
+      "author": "Daniel J. Siegel",
+      "beloved": false,
+      "dims": {
+       "h": 204,
+       "w": 135,
+       "t": 12.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/yes-brain-by-siegel-and-bryson.jpg",
+      "cover": "../data/covers/yes-brain-by-siegel-and-bryson.jpg",
+      "back": "../data/backs/yes-brain-by-siegel-and-bryson.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Sep 2019",
+       "source": "smus",
+       "headline": "Yes Brain by Siegel and Bryson",
+       "excerpt": "Yes Brain is a parenting book. This immediately means several things…",
+       "paras": [
+        "Yes Brain is a parenting book. This immediately means several things…"
+       ],
+       "words": 563,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/yes-brain-by-siegel-and-bryson.webp",
+       "card": "atlas/card/yes-brain-by-siegel-and-bryson.webp",
+       "edge": "#f7dc84",
+       "hue": 0.1594
+      },
+      "publisher": null,
+      "pages": 184,
+      "year": null
      },
      {
       "slug": "understanding-how-we-learn-a-visual-guide",
@@ -7074,7 +7613,7 @@
        "w": 174,
        "t": 10.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/understanding-how-we-learn-a-visual-guide.jpg",
       "cover": "../data/covers/understanding-how-we-learn-a-visual-guide.jpg",
       "back": "../data/backs/understanding-how-we-learn-a-visual-guide.jpg",
@@ -7099,8 +7638,7 @@
       },
       "publisher": "Routledge",
       "pages": 176,
-      "year": null,
-      "lean": 6.9
+      "year": null
      }
     ],
     [
@@ -7350,7 +7888,7 @@
        "w": 148,
        "t": 23.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-you-are-not-a-gadget.jpg",
       "cover": "../data/covers/gr-you-are-not-a-gadget.jpg",
       "back": null,
@@ -7370,8 +7908,7 @@
       },
       "publisher": "Alfred A. Knopf",
       "pages": 221,
-      "year": null,
-      "lean": 3.3
+      "year": null
      },
      {
       "slug": "sid-meiers-memoir",
@@ -7384,7 +7921,7 @@
        "w": 131,
        "t": 20.2
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/sid-meiers-memoir.jpg",
       "cover": "../data/covers/sid-meiers-memoir.jpg",
       "back": "../data/backs/sid-meiers-memoir.jpg",
@@ -7412,8 +7949,7 @@
       },
       "publisher": "Norton & Company, Incorporated, W. W.",
       "pages": 320,
-      "year": null,
-      "lean": 3.3
+      "year": null
      },
      {
       "slug": "frank-herbert-by-tim-oreilly",
@@ -7426,7 +7962,7 @@
        "w": 151,
        "t": 14.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/frank-herbert-by-tim-oreilly.jpg",
       "cover": "../data/covers/frank-herbert-by-tim-oreilly.jpg",
       "back": "../data/backs/frank-herbert-by-tim-oreilly.jpg",
@@ -7455,8 +7991,7 @@
       },
       "publisher": "Ungar",
       "pages": 216,
-      "year": null,
-      "lean": 3.3
+      "year": null
      },
      {
       "slug": "gr-cryptography-a-very-short-introduction",
@@ -7490,6 +8025,86 @@
       },
       "publisher": "Oxford University Press",
       "pages": 160,
+      "year": null
+     },
+     {
+      "slug": "revenge-of-analog",
+      "link": "https://smus.com/books/revenge-of-analog",
+      "title": "Revenge of Analog",
+      "author": "David Sax",
+      "beloved": false,
+      "dims": {
+       "h": 210,
+       "w": 139,
+       "t": 17.9
+      },
+      "pose": "upright",
+      "texture": "../data/textures/revenge-of-analog.jpg",
+      "cover": "../data/covers/revenge-of-analog.jpg",
+      "back": "../data/backs/revenge-of-analog.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Feb 2020",
+       "source": "smus",
+       "headline": "Revenge of Analog",
+       "excerpt": "Very wordy, this is definitely a book to skim. The gist is that we’ve been overzealous about digitizing everything, and now analog is making a comeback in some areas. The book is a straightforward walkthrough of a few domains where this has been happening. The author does a good job of not sounding too crotchety, which is very easy to do in books like these. But this book has basically no insights. It’s more a summary of ideas that are all in the air.",
+       "paras": [
+        "Very wordy, this is definitely a book to skim. The gist is that we’ve been overzealous about digitizing everything, and now analog is making a comeback in some areas. The book is a straightforward walkthrough of a few domains where this has been happening. The author does a good job of not sounding too crotchety, which is very easy to do in books like these. But this book has basically no insights. It’s more a summary of ideas that are all in the air.",
+        "Notes: The author presents a semi interesting study on Moleskine, colored by the character who helped cofound the company. There is indeed something that feels inherently good about taking paper notes. But not much insight beyond this. …"
+       ],
+       "words": 421,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/revenge-of-analog.webp",
+       "card": "atlas/card/revenge-of-analog.webp",
+       "edge": "#2e7d91",
+       "hue": 0.5743
+      },
+      "publisher": "PublicAffairs",
+      "pages": 282,
+      "year": null
+     },
+     {
+      "slug": "the-shape-of-tomorrow-by-george-soule",
+      "link": "https://smus.com/books/the-shape-of-tomorrow-by-george-soule",
+      "title": "The Shape of Tomorrow",
+      "author": "George Henry Soule",
+      "beloved": false,
+      "dims": {
+       "h": 204,
+       "w": 135,
+       "t": 9.5
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-shape-of-tomorrow-by-george-soule.jpg",
+      "cover": "../data/covers/the-shape-of-tomorrow-by-george-soule.jpg",
+      "back": "../data/backs/the-shape-of-tomorrow-by-george-soule.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Nov 2018",
+       "source": "smus",
+       "headline": "The Shape of Tomorrow by George Soule",
+       "excerpt": "I picked up Shape of Tomorrow, its 35 cent price imbued proudly on the front cover, on a foray to Powell’s books in Portland.",
+       "paras": [
+        "I picked up Shape of Tomorrow, its 35 cent price imbued proudly on the front cover, on a foray to Powell’s books in Portland.",
+        "In 1958, the birth control pill wasn’t yet past clinical trials and TV watching hadn’t yet become the dominant American hobby. What a time to be alive!",
+        "Soule takes care not to speculate too wildly, hedging often, but many predictions are still downright comical. America’s increase in productivity is going to reduce inequality. The work week is on the brink of shortening to twenty four hours. Cool stories abound.",
+        "This was not a great read by any stretch. However, it is mercifully short. Safely skip the first half of the book, which excitedly enumerates unexciting innovations of the day. That said, if you’re looking for a time capsule into the technocratic mind of the 1950s, George Soule might just be the retro-futurist you are looking for."
+       ],
+       "words": 150,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-shape-of-tomorrow-by-george-soule.webp",
+       "card": "atlas/card/the-shape-of-tomorrow-by-george-soule.webp",
+       "edge": "#0c0b0a",
+       "hue": 1.8785
+      },
+      "publisher": "New American Library",
+      "pages": 141,
       "year": null
      },
      {
@@ -7607,6 +8222,39 @@
       },
       "publisher": "Wiley & Sons, Limited, John",
       "pages": 368,
+      "year": null
+     },
+     {
+      "slug": "gr-how-to-win-friends-influence-people",
+      "link": "https://www.goodreads.com/book/show/4865",
+      "title": "How to Win Friends & Influence People",
+      "author": "Dale Carnegie",
+      "beloved": false,
+      "dims": {
+       "h": 207,
+       "w": 137,
+       "t": 18.3
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-how-to-win-friends-influence-people.jpg",
+      "cover": "../data/covers/gr-how-to-win-friends-influence-people.jpg",
+      "back": "../data/backs/gr-how-to-win-friends-influence-people.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-how-to-win-friends-influence-people.webp",
+       "card": "atlas/card/gr-how-to-win-friends-influence-people.webp",
+       "edge": "#d5d6ce",
+       "hue": 1.1671
+      },
+      "publisher": "Gallery Books",
+      "pages": 288,
       "year": null
      },
      {
@@ -7878,7 +8526,7 @@
        "w": 147,
        "t": 15.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/the-right-it-audio.jpg",
       "cover": "../data/covers/the-right-it-audio.jpg",
       "back": "../data/backs/the-right-it-audio.jpg",
@@ -7904,8 +8552,310 @@
       },
       "publisher": "HarperCollins Publishers",
       "pages": 137,
+      "year": null,
+      "lean": 10.5
+     },
+     {
+      "slug": "how-to-take-smart-notes",
+      "link": "https://smus.com/books/how-to-take-smart-notes",
+      "title": "How to Take Smart Notes",
+      "author": "Sönke Ahrens",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 133,
+       "t": 11.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/how-to-take-smart-notes.jpg",
+      "cover": "../data/covers/how-to-take-smart-notes.jpg",
+      "back": "../data/backs/how-to-take-smart-notes.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Feb 2021",
+       "source": "smus",
+       "headline": "How to Take Smart Notes",
+       "excerpt": "Zettelkasten Method, In Praise of Niklas Luhmann, or Ode To The Slip-box.",
+       "paras": [
+        "Zettelkasten Method, In Praise of Niklas Luhmann, or Ode To The Slip-box.",
+        "The Roam cult sprang out of a practice called Zettelkasten. I refuse to join the cult, but see great value in cross-linked note taking practice. So far my tool of choice is Obsidian, mainly because I like plaintext. This book introduces the Zettel method. …"
+       ],
+       "words": 968,
+       "minutes": 4
+      },
+      "atlas": {
+       "lo": "atlas/lo/how-to-take-smart-notes.webp",
+       "card": "atlas/card/how-to-take-smart-notes.webp",
+       "edge": "#acad98",
+       "hue": 1.3546
+      },
+      "publisher": "Unknown Publisher",
+      "pages": 178,
+      "year": null,
+      "lean": 10.5,
+      "section": "Design",
+      "group": "Non-fiction"
+     },
+     {
+      "slug": "gr-a-pattern-language-towns-buildings-construction",
+      "link": "https://www.goodreads.com/book/show/79766",
+      "title": "A Pattern Language",
+      "subtitle": "Towns, Buildings, Construction",
+      "author": "Christopher Alexander",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 144,
+       "t": 46.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-a-pattern-language-towns-buildings-construction.jpg",
+      "cover": "../data/covers/gr-a-pattern-language-towns-buildings-construction.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-a-pattern-language-towns-buildings-construction.webp",
+       "card": "atlas/card/gr-a-pattern-language-towns-buildings-construction.webp",
+       "edge": "#deceb0",
+       "hue": 1.2483
+      },
+      "publisher": "Oxford University Press",
+      "pages": 1171,
       "year": null
      },
+     {
+      "slug": "the-timeless-way-of-building",
+      "link": "https://smus.com/books/the-timeless-way-of-building",
+      "title": "The Timeless Way of Building",
+      "author": "Christopher Alexander",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 140,
+       "t": 51.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-timeless-way-of-building.jpg",
+      "cover": "../data/covers/the-timeless-way-of-building.jpg",
+      "back": "../data/backs/the-timeless-way-of-building.jpg",
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "posted": "Nov 2022",
+       "source": "smus",
+       "headline": "The Timeless Way of Building",
+       "excerpt": "The built world is defined by a small number of patterns, which keep repeating over and over and over again. The patterns are deep and mostly relational. This applies at all scales in human construction: to American cities, Gothic cathedrals, Paris, Chinese kitchens, doors, and so on.",
+       "paras": [
+        "The built world is defined by a small number of patterns, which keep repeating over and over and over again. The patterns are deep and mostly relational. This applies at all scales in human construction: to American cities, Gothic cathedrals, Paris, Chinese kitchens, doors, and so on.",
+        "These patterns can be codified into a pattern language. And just like a great writer or orator has an intuitive grasp of human language, a great builder can and should strive to attain an intuitive grasp of his pattern language.",
+        "But just because you have a pattern language does not make it good. A concrete jungle is also governed by a pattern language. Alexander strives to capture a collection of patterns that create a microcosm that has \"The Quality Without a Name\", which he defines via negativa (see Negative theology and via negativa). Here's a quick summary…"
+       ],
+       "words": 762,
+       "minutes": 3
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-timeless-way-of-building.webp",
+       "card": "atlas/card/the-timeless-way-of-building.webp",
+       "edge": "#ddcfa6",
+       "hue": 1.3069
+      },
+      "publisher": "Oxford University Press",
+      "pages": 576,
+      "year": null
+     },
+     {
+      "slug": "and-suddenly-the-inventor-appeared-by-genrikh-altshuller",
+      "link": "https://smus.com/books/and-suddenly-the-inventor-appeared-by-genrikh-altshuller",
+      "title": "And Suddenly the Inventor Appeared",
+      "author": "G. Altshuller",
+      "beloved": true,
+      "dims": {
+       "h": 226,
+       "w": 142,
+       "t": 15.2
+      },
+      "pose": "upright",
+      "texture": "../data/textures/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
+      "cover": "../data/covers/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
+      "back": "../data/backs/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Aug 2026",
+       "source": "smus",
+       "headline": "TRIZ and the Elusive Invention Machine",
+       "excerpt": "This book is an odd one. Is it written for children? Most of the text focuses on invention case studies that are presented like math-olympiad puzzles for precocious ten-year-olds. Altshuller eggs the reader on. A sixth grader can solve this; why can't you, dumbass?",
+       "paras": [
+        "This book is an odd one. Is it written for children? Most of the text focuses on invention case studies that are presented like math-olympiad puzzles for precocious ten-year-olds. Altshuller eggs the reader on. A sixth grader can solve this; why can't you, dumbass?",
+        "The English edition often reads like an excessively literal, amateurish translation. One problem, poorly titled \"A and B Were Sitting on the Pipe,\" is rendered word-for-word from \"А и Б сидели на трубе\", destroying the rhyme which was trite even in Russian. …"
+       ],
+       "words": 2037,
+       "minutes": 9
+      },
+      "atlas": {
+       "lo": "atlas/lo/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.webp",
+       "card": "atlas/card/and-suddenly-the-inventor-appeared-by-genrikh-altshuller.webp",
+       "edge": "#f8f1d6",
+       "hue": 1.1567
+      },
+      "publisher": "Technical Innovation Center, Inc.",
+      "pages": 171,
+      "year": null
+     },
+     {
+      "slug": "gr-contextual-design-defining-customer-centered-systems",
+      "link": "https://www.goodreads.com/book/show/617137",
+      "title": "Contextual Design",
+      "author": "Hugh Beyer",
+      "beloved": false,
+      "dims": {
+       "h": 229,
+       "w": 183,
+       "t": 25.4
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-contextual-design-defining-customer-centered-systems.jpg",
+      "cover": "../data/covers/gr-contextual-design-defining-customer-centered-systems.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": "2009/10/29",
+       "rating": 1,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-contextual-design-defining-customer-centered-systems.webp",
+       "card": "atlas/card/gr-contextual-design-defining-customer-centered-systems.webp",
+       "edge": "#0c1112",
+       "hue": 1.9076
+      },
+      "publisher": "Morgan Kaufmann",
+      "pages": 472,
+      "year": null
+     },
+     {
+      "slug": "impro-by-keith-johnstone",
+      "link": "https://smus.com/books/impro-by-keith-johnstone",
+      "title": "Impro",
+      "author": "Keith Johnstone",
+      "beloved": true,
+      "dims": {
+       "h": 206,
+       "w": 130,
+       "t": 17.8
+      },
+      "pose": "upright",
+      "texture": "../data/textures/impro-by-keith-johnstone.jpg",
+      "cover": "../data/covers/impro-by-keith-johnstone.jpg",
+      "back": "../data/backs/impro-by-keith-johnstone.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jan 2018",
+       "source": "smus",
+       "headline": "Impro by Keith Johnstone",
+       "excerpt": "I picked this book up because of a recommendation from the Internet. My first reaction was negative: the author’s claim pointing at things and calling them wrong names will cause your whole sense of perception to shift: colors become more vivid, outlines become sharper, people look smaller, the shape of the room changes. This, presented not as metaphorical truth, or a parable, but as actual truth, is something I continue to find hard to swallow. That said I think the essays in the book are worth it, if you suspend a bit of disbelief. …",
+       "paras": [
+        "I picked this book up because of a recommendation from the Internet. My first reaction was negative: the author’s claim pointing at things and calling them wrong names will cause your whole sense of perception to shift: colors become more vivid, outlines become sharper, people look smaller, the shape of the room changes. This, presented not as metaphorical truth, or a parable, but as actual truth, is something I continue to find hard to swallow. That said I think the essays in the book are worth it, if you suspend a bit of disbelief. …"
+       ],
+       "words": 1894,
+       "minutes": 8
+      },
+      "atlas": {
+       "lo": "atlas/lo/impro-by-keith-johnstone.webp",
+       "card": "atlas/card/impro-by-keith-johnstone.webp",
+       "edge": "#3e4242",
+       "hue": 1.6899
+      },
+      "publisher": "Theatre Arts Book",
+      "pages": 208,
+      "year": null
+     },
+     {
+      "slug": "bird-by-bird-by-anne-lamott",
+      "link": "https://smus.com/books/bird-by-bird-by-anne-lamott",
+      "title": "Bird by Bird",
+      "author": "Anne Lamott",
+      "beloved": false,
+      "dims": {
+       "h": 210,
+       "w": 131,
+       "t": 19.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/bird-by-bird-by-anne-lamott.jpg",
+      "cover": "../data/covers/bird-by-bird-by-anne-lamott.jpg",
+      "back": "../data/backs/bird-by-bird-by-anne-lamott.jpg",
+      "spine_source": "photo",
+      "binding": "paperback",
+      "review": {
+       "posted": "Nov 2018",
+       "source": "smus",
+       "headline": "Bird by Bird by Anne Lamott",
+       "excerpt": "I've forgotten how this book appeared on my radar, but I think it was on someone's list of most influential books ever. I am more ambivalent.",
+       "paras": [
+        "I've forgotten how this book appeared on my radar, but I think it was on someone's list of most influential books ever. I am more ambivalent.",
+        "The book's subtitle is \"Some Instructions on Writing and Life\", and honestly I was hoping for more of the latter. Unfortunately it was more of the former, specifically how to write fiction, which is interesting in theory, but is not something that is very high on my current list of things I would like to spend my time doing.",
+        "In general, the author has some good tips for the fledgeling writer. These are pretty intuitive, but do serve as good reminders…"
+       ],
+       "words": 573,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/bird-by-bird-by-anne-lamott.webp",
+       "card": "atlas/card/bird-by-bird-by-anne-lamott.webp",
+       "edge": "#d5979e",
+       "hue": 0.0648
+      },
+      "publisher": "Anchor Books",
+      "pages": 239,
+      "year": null
+     },
+     {
+      "slug": "gr-the-design-of-everyday-things",
+      "link": "https://www.goodreads.com/book/show/840",
+      "title": "The Design of Everyday Things",
+      "author": "Donald A. Norman",
+      "beloved": false,
+      "dims": {
+       "h": 210,
+       "w": 140,
+       "t": 16.4
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-design-of-everyday-things.jpg",
+      "cover": "../data/covers/gr-the-design-of-everyday-things.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 3,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-design-of-everyday-things.webp",
+       "card": "atlas/card/gr-the-design-of-everyday-things.webp",
+       "edge": "#202125",
+       "hue": 1.8328
+      },
+      "publisher": "Basic Books",
+      "pages": 257,
+      "year": null
+     }
+    ],
+    [
      {
       "slug": "real-estate-and-cash-flow",
       "link": "https://smus.com/books/real-estate-and-cash-flow",
@@ -7917,7 +8867,7 @@
        "w": 154,
        "t": 20.2
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/real-estate-and-cash-flow.jpg",
       "cover": "../data/covers/real-estate-and-cash-flow.jpg",
       "back": "../data/backs/real-estate-and-cash-flow.jpg",
@@ -7945,7 +8895,6 @@
       "publisher": "McGraw-Hill",
       "pages": 320,
       "year": null,
-      "lean": 7.4,
       "section": "Finance",
       "group": "Non-fiction"
      },
@@ -7960,7 +8909,7 @@
        "w": 158,
        "t": 18.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/debt-the-first-5000-years.jpg",
       "cover": "../data/covers/debt-the-first-5000-years.jpg",
       "back": "../data/backs/debt-the-first-5000-years.jpg",
@@ -7986,8 +8935,7 @@
       },
       "publisher": "Melville House",
       "pages": 534,
-      "year": null,
-      "lean": 7.4
+      "year": null
      },
      {
       "slug": "why-information-grows-by-cesar-hidalgo",
@@ -8067,6 +9015,84 @@
       "year": null
      },
      {
+      "slug": "radical-markets-by-posner-and-weyl",
+      "link": "https://smus.com/books/radical-markets-by-posner-and-weyl",
+      "title": "Radical Markets",
+      "author": "Eric A. Posner",
+      "beloved": false,
+      "dims": {
+       "h": 202,
+       "w": 133,
+       "t": 21.2
+      },
+      "pose": "upright",
+      "texture": "../data/textures/radical-markets-by-posner-and-weyl.jpg",
+      "cover": "../data/covers/radical-markets-by-posner-and-weyl.jpg",
+      "back": "../data/backs/radical-markets-by-posner-and-weyl.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Apr 2019",
+       "source": "smus",
+       "headline": "Radical Markets by Posner and Weyl",
+       "excerpt": "The book Radical Markets is centered on one central premise: **Competitive, free markets are awesome, but most in reality are either not perfectly competitive, or insufficiently free**.",
+       "paras": [
+        "The book Radical Markets is centered on one central premise: **Competitive, free markets are awesome, but most in reality are either not perfectly competitive, or insufficiently free**.",
+        "Overall, the book covers a lot of ground, proposing solutions to many of modernity's major questions, from immigration to monopolies to property rights. I found the tone to be overly enthusiastic, and annoyingly focused on the word \"radical\". Although the authors try to provide nuance sometimes, for example emphasizing that they would like to see their ideas applied gradually and after small scale testing, it still reads more like a manifesto or a series of pamphlets than like a coherent book. …"
+       ],
+       "words": 1715,
+       "minutes": 7
+      },
+      "atlas": {
+       "lo": "atlas/lo/radical-markets-by-posner-and-weyl.webp",
+       "card": "atlas/card/radical-markets-by-posner-and-weyl.webp",
+       "edge": "#cd8928",
+       "hue": 0.1357
+      },
+      "publisher": null,
+      "pages": 337,
+      "year": null
+     },
+     {
+      "slug": "incorruptible-by-eric-ries",
+      "link": "https://smus.com/books/incorruptible-by-eric-ries",
+      "title": "Incorruptible",
+      "author": "Eric Ries",
+      "beloved": true,
+      "dims": {
+       "h": 216,
+       "w": 143,
+       "t": 19.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/incorruptible-by-eric-ries.jpg",
+      "cover": "../data/covers/incorruptible-by-eric-ries.jpg",
+      "back": "../data/backs/incorruptible-by-eric-ries.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Jul 2026",
+       "source": "smus",
+       "headline": "Defying Financial Gravity",
+       "excerpt": "When a bridge collapses, blaming gravity is a non-answer. Engineers are supposed to design for gravity, and people who design companies should similarly design for financial gravity. This book is about how to do that.",
+       "paras": [
+        "When a bridge collapses, blaming gravity is a non-answer. Engineers are supposed to design for gravity, and people who design companies should similarly design for financial gravity. This book is about how to do that.",
+        "Eric Ries, author of \"The Lean Startup\", spent most of his career advising early stage startups, but unlike most of the rest of the venture class, he seems to have become disillusioned with the enterprise. Startups are inherently short-termist, and corporations in general tend to start great and degrade over time, straying from their original mission as more and more of the corporation's efforts go towards appeasing shareholders. …"
+       ],
+       "words": 2616,
+       "minutes": 11
+      },
+      "atlas": {
+       "lo": "atlas/lo/incorruptible-by-eric-ries.webp",
+       "card": "atlas/card/incorruptible-by-eric-ries.webp",
+       "edge": "#252c49",
+       "hue": 1.6748
+      },
+      "publisher": "Penguin Random House NZ",
+      "pages": null,
+      "year": null
+     },
+     {
       "slug": "grand-transitions-by-vaclav-smil",
       "link": "https://smus.com/books/grand-transitions-by-vaclav-smil",
       "title": "Grand Transitions",
@@ -8077,7 +9103,7 @@
        "w": 157,
        "t": 22.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/grand-transitions-by-vaclav-smil.jpg",
       "cover": "../data/covers/grand-transitions-by-vaclav-smil.jpg",
       "back": "../data/backs/grand-transitions-by-vaclav-smil.jpg",
@@ -8104,7 +9130,8 @@
       },
       "publisher": "Oxford University Press, Incorporated",
       "pages": 384,
-      "year": null
+      "year": null,
+      "lean": 7.8
      },
      {
       "slug": "skin-in-the-game-by-taleb-audio",
@@ -8117,7 +9144,7 @@
        "w": 153,
        "t": 22.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/skin-in-the-game-by-taleb-audio.jpg",
       "cover": "../data/covers/skin-in-the-game-by-taleb-audio.jpg",
       "back": "../data/backs/skin-in-the-game-by-taleb-audio.jpg",
@@ -8143,7 +9170,8 @@
       },
       "publisher": "Allen Lane Penguin Random House UK",
       "pages": 292,
-      "year": null
+      "year": null,
+      "lean": 7.8
      },
      {
       "slug": "gr-investing-for-canadians-for-dummies",
@@ -8292,6 +9320,690 @@
       },
       "publisher": "HarperCollins Publishers",
       "pages": 400,
+      "year": null
+     },
+     {
+      "slug": "gr-concepts-and-categories-philosophical-essays",
+      "link": "https://www.goodreads.com/book/show/19416891",
+      "title": "Concepts and Categories",
+      "subtitle": "Philosophical Essays",
+      "author": "Isaiah Berlin",
+      "beloved": false,
+      "dims": {
+       "h": 220,
+       "w": 156,
+       "t": 23.7
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/gr-concepts-and-categories-philosophical-essays.jpg",
+      "cover": "../data/covers/gr-concepts-and-categories-philosophical-essays.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": "2023/01/20",
+       "rating": null,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-concepts-and-categories-philosophical-essays.webp",
+       "card": "atlas/card/gr-concepts-and-categories-philosophical-essays.webp",
+       "edge": "#e6e6df",
+       "hue": 1.2234
+      },
+      "publisher": "Princeton University Press",
+      "pages": 378,
+      "year": null,
+      "lean": 6.0,
+      "section": "Philosophy",
+      "group": "Non-fiction"
+     },
+     {
+      "slug": "the-hedgehog-and-the-fox",
+      "link": "https://smus.com/books/the-hedgehog-and-the-fox",
+      "title": "The Hedgehog and the Fox",
+      "author": "Isaiah Berlin",
+      "beloved": true,
+      "dims": {
+       "h": 197,
+       "w": 130,
+       "t": 13.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/the-hedgehog-and-the-fox.jpg",
+      "cover": "../data/covers/the-hedgehog-and-the-fox.jpg",
+      "back": "../data/backs/the-hedgehog-and-the-fox.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Sep 2016",
+       "source": "smus",
+       "headline": "The Hedgehog and the Fox",
+       "excerpt": "According to Isaiah Berlin, Tolstoy is a natural fox who wanted to be a hedgehog. IB suggests that Tolstoy was too broad minded to be able to fully embrace a single doctrine, which could satisfactorily explain how the world works:",
+       "paras": [
+        "According to Isaiah Berlin, Tolstoy is a natural fox who wanted to be a hedgehog. IB suggests that Tolstoy was too broad minded to be able to fully embrace a single doctrine, which could satisfactorily explain how the world works:",
+        "At the same time, Tolstoy wanted to be able to find some Einsteinian unified theory of everything (TOE), but was too talented as a critic to be able to do so.",
+        "This division within himself caused him great pain at the end of his life.",
+        "As you can see, the writing here is not flowery, but rather complex and requires a high degree of attention. Unfortunately, this is exactly what I lacked given the circumstances of moving to Seattle.",
+        "This short book / essay was supposedly intended as a joke (an elaborate one, at 90 pages). Part of the fun is classifying people into animals, for example, here's IB's take…"
+       ],
+       "words": 286,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-hedgehog-and-the-fox.webp",
+       "card": "atlas/card/the-hedgehog-and-the-fox.webp",
+       "edge": "#9b402c",
+       "hue": 0.0737
+      },
+      "publisher": "Orion Publishing Group, Limited",
+      "pages": 96,
+      "year": null,
+      "lean": 6.0
+     },
+     {
+      "slug": "science-and-human-values",
+      "link": "https://smus.com/books/science-and-human-values",
+      "title": "Science and Human Values",
+      "author": "Jacob Bronowski",
+      "beloved": false,
+      "dims": {
+       "h": 210,
+       "w": 136,
+       "t": 8.1
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/science-and-human-values.jpg",
+      "cover": "../data/covers/science-and-human-values.jpg",
+      "back": "../data/backs/science-and-human-values.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Sep 2015",
+       "source": "smus",
+       "headline": "Science and Human Values",
+       "excerpt": "Broznowski tries really hard to impress with his breadth of knowledge. He constantly drops references to art, literature and philosophy to make his point. It's as if he is using himself as an example of a scientist who is also well versed in liberal art (there are dozens of us!!). I found most of the writing to be very fluffy, deliberately convoluted, and kind of annoying. I had a hard time finishing despite it being such a short read. I set the book down for a month, and returned to it later (upon returning from vacation). …",
+       "paras": [
+        "Broznowski tries really hard to impress with his breadth of knowledge. He constantly drops references to art, literature and philosophy to make his point. It's as if he is using himself as an example of a scientist who is also well versed in liberal art (there are dozens of us!!). I found most of the writing to be very fluffy, deliberately convoluted, and kind of annoying. I had a hard time finishing despite it being such a short read. I set the book down for a month, and returned to it later (upon returning from vacation). …"
+       ],
+       "words": 218,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/science-and-human-values.webp",
+       "card": "atlas/card/science-and-human-values.webp",
+       "edge": "#e4cfa9",
+       "hue": 1.269
+      },
+      "publisher": "Harper & Row",
+      "pages": 119,
+      "year": null,
+      "lean": 6.0
+     },
+     {
+      "slug": "disappearance-of-ritual-by-byung-chul-han",
+      "link": "https://smus.com/books/disappearance-of-ritual-by-byung-chul-han",
+      "title": "Disappearance of Ritual",
+      "author": "Byung-Chul Han",
+      "beloved": false,
+      "dims": {
+       "h": 230,
+       "w": 145,
+       "t": 13.0
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/disappearance-of-ritual-by-byung-chul-han.jpg",
+      "cover": "../data/covers/disappearance-of-ritual-by-byung-chul-han.jpg",
+      "back": "../data/backs/disappearance-of-ritual-by-byung-chul-han.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Apr 2024",
+       "source": "smus",
+       "headline": "Disappearance of Ritual by Byung-Chul Han",
+       "excerpt": "I recently read The Burnout Society by Byung-Chul Han, a chaotic, disorganized read full of interesting ideas. \"Disappearance of Ritual\" continues in the same tradition, but I found the ideas presented in it somewhat weaker and less original than in \"Burnout Society\". In one section, BCH extols the virtues of beautiful and playful language and laments its disappearance. Yet he writes woeful passages like this…",
+       "paras": [
+        "I recently read The Burnout Society by Byung-Chul Han, a chaotic, disorganized read full of interesting ideas. \"Disappearance of Ritual\" continues in the same tradition, but I found the ideas presented in it somewhat weaker and less original than in \"Burnout Society\". In one section, BCH extols the virtues of beautiful and playful language and laments its disappearance. Yet he writes woeful passages like this…"
+       ],
+       "words": 1185,
+       "minutes": 5
+      },
+      "atlas": {
+       "lo": "atlas/lo/disappearance-of-ritual-by-byung-chul-han.webp",
+       "card": "atlas/card/disappearance-of-ritual-by-byung-chul-han.webp",
+       "edge": "#a89b87",
+       "hue": 1.3884
+      },
+      "publisher": "Polity Press",
+      "pages": 186,
+      "year": null,
+      "lean": 6.0
+     },
+     {
+      "slug": "the-burnout-society-by-byung-chul-han",
+      "link": "https://smus.com/books/the-burnout-society-by-byung-chul-han",
+      "title": "The Burnout Society",
+      "author": "Byung-Chul Han",
+      "beloved": true,
+      "dims": {
+       "h": 204,
+       "w": 127,
+       "t": 5.2
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-burnout-society-by-byung-chul-han.jpg",
+      "cover": "../data/covers/the-burnout-society-by-byung-chul-han.jpg",
+      "back": "../data/backs/the-burnout-society-by-byung-chul-han.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Oct 2023",
+       "source": "smus",
+       "headline": "The Burnout Society by Byung-Chul Han",
+       "excerpt": "Some interesting ideas in this philosophical pamphlet, but they are atomized and not woven into a strong coherent argument. The book is not especially well written: rambling and repetitive and lacking structure. I'd recommend a shorter summary (hello, you're welcome) or listening to Episode 188 of Philosophize This, which is what turned me onto Byung-Chul Han in the first place. …",
+       "paras": [
+        "Some interesting ideas in this philosophical pamphlet, but they are atomized and not woven into a strong coherent argument. The book is not especially well written: rambling and repetitive and lacking structure. I'd recommend a shorter summary (hello, you're welcome) or listening to Episode 188 of Philosophize This, which is what turned me onto Byung-Chul Han in the first place. …"
+       ],
+       "words": 1195,
+       "minutes": 5
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-burnout-society-by-byung-chul-han.webp",
+       "card": "atlas/card/the-burnout-society-by-byung-chul-han.webp",
+       "edge": "#121212",
+       "hue": 1.8641
+      },
+      "publisher": "Stanford Briefs",
+      "pages": 70,
+      "year": null
+     },
+     {
+      "slug": "the-crisis-of-narration-by-byung-chul-han",
+      "link": "https://smus.com/books/the-crisis-of-narration-by-byung-chul-han",
+      "title": "The Crisis of Narration",
+      "author": "Byung-Chul Han",
+      "beloved": true,
+      "dims": {
+       "h": 227,
+       "w": 151,
+       "t": 5.6
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-crisis-of-narration-by-byung-chul-han.jpg",
+      "cover": "../data/covers/the-crisis-of-narration-by-byung-chul-han.jpg",
+      "back": "../data/backs/the-crisis-of-narration-by-byung-chul-han.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Dec 2025",
+       "source": "smus",
+       "headline": "The Crisis of Narration by Byung-Chul Han",
+       "excerpt": "Han spends much of The Crisis of Narration mourning a lost world, one where humans were born into compelling, unifying narratives full of wisdom. Over time, this way of life shattered into many little narratives that fail to create the same level of overarching framework. Wisdom collapsed into knowledge, knowledge into information, and information into data. This is well captured in the Data Information Knowledge Wisdom (DIKW) pyramid, and by T. S. Eliot, who wrote…",
+       "paras": [
+        "Han spends much of The Crisis of Narration mourning a lost world, one where humans were born into compelling, unifying narratives full of wisdom. Over time, this way of life shattered into many little narratives that fail to create the same level of overarching framework. Wisdom collapsed into knowledge, knowledge into information, and information into data. This is well captured in the Data Information Knowledge Wisdom (DIKW) pyramid, and by T. S. Eliot, who wrote…"
+       ],
+       "words": 1154,
+       "minutes": 5
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-crisis-of-narration-by-byung-chul-han.webp",
+       "card": "atlas/card/the-crisis-of-narration-by-byung-chul-han.webp",
+       "edge": "#342e1e",
+       "hue": 1.7637
+      },
+      "publisher": "Polity",
+      "pages": 77,
+      "year": null
+     },
+     {
+      "slug": "the-moral-landscape-by-sam-harris",
+      "link": "https://smus.com/books/the-moral-landscape-by-sam-harris",
+      "title": "The Moral Landscape",
+      "author": "Sam Harris",
+      "beloved": true,
+      "dims": {
+       "h": 240,
+       "w": 143,
+       "t": 22.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-moral-landscape-by-sam-harris.jpg",
+      "cover": "../data/covers/the-moral-landscape-by-sam-harris.jpg",
+      "back": "../data/backs/the-moral-landscape-by-sam-harris.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Mar 2016",
+       "source": "smus",
+       "headline": "The Moral Landscape by Sam Harris",
+       "excerpt": "In many ways a rehashing of many ideas in philosophy, I think Sam did a good job of bringing some longstanding ideas and debates to the fore without requiring a degree in philosophy. The section on religion can be skipped, since he rehashes old theses from End of Faith (oh yeah, hobby horse!)",
+       "paras": [
+        "In many ways a rehashing of many ideas in philosophy, I think Sam did a good job of bringing some longstanding ideas and debates to the fore without requiring a degree in philosophy. The section on religion can be skipped, since he rehashes old theses from End of Faith (oh yeah, hobby horse!)",
+        "The overall thesis is that the well being of conscious entities is of supreme importance, and that morality is all about optimizing that. Intuitively, I agree that this is a good, pragmatic, and secular definition. I am less interested in the philosophical debate around it, but I don't think Sam adequately addresses the other side of the argument adequately. Debates between utilitarian ideas and other branches of philosophy have been raging for centuries, and with all due respect, I don't think Sam is the guy to put them to rest. …"
+       ],
+       "words": 248,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-moral-landscape-by-sam-harris.webp",
+       "card": "atlas/card/the-moral-landscape-by-sam-harris.webp",
+       "edge": "#ded8c9",
+       "hue": 1.1972
+      },
+      "publisher": "Bantam",
+      "pages": 291,
+      "year": null
+     },
+     {
+      "slug": "you-belong-to-the-universe-audio",
+      "link": "https://smus.com/books/you-belong-to-the-universe-audio",
+      "title": "You Belong to the Universe",
+      "author": "Jonathon Keats",
+      "beloved": false,
+      "dims": {
+       "h": 220,
+       "w": 145,
+       "t": 23.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/you-belong-to-the-universe-audio.jpg",
+      "cover": "../data/covers/you-belong-to-the-universe-audio.jpg",
+      "back": "../data/backs/you-belong-to-the-universe-audio.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "May 2018",
+       "source": "smus",
+       "headline": "You Belong to the Universe (audio)",
+       "excerpt": "Buckminster Fuller's name seems to pop up everywhere in the last few years. I saw Jonathon Keats talk at The Interval a few years ago, on a book tour about Fuller's life and work. I finally got to listen to the audio version. I found bits to be interesting, but overall this book is less of a biography, and more of an attempt to riff on various modern incarnations of Fuller's ideas. Fuller himself comes off as overly self-involved. His investment and belief in panacea projects like the World Game, Domed Manhattan, Dymaxions comes off as overly naive for such a great man. …",
+       "paras": [
+        "Buckminster Fuller's name seems to pop up everywhere in the last few years. I saw Jonathon Keats talk at The Interval a few years ago, on a book tour about Fuller's life and work. I finally got to listen to the audio version. I found bits to be interesting, but overall this book is less of a biography, and more of an attempt to riff on various modern incarnations of Fuller's ideas. Fuller himself comes off as overly self-involved. His investment and belief in panacea projects like the World Game, Domed Manhattan, Dymaxions comes off as overly naive for such a great man. …"
+       ],
+       "words": 332,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/you-belong-to-the-universe-audio.webp",
+       "card": "atlas/card/you-belong-to-the-universe-audio.webp",
+       "edge": "#11233c",
+       "hue": 0.6313
+      },
+      "publisher": "Oxford University Press",
+      "pages": 206,
+      "year": null
+     },
+     {
+      "slug": "the-power-of-ritual-by-casper-ter-kuile",
+      "link": "https://smus.com/books/the-power-of-ritual-by-casper-ter-kuile",
+      "title": "The Power of Ritual",
+      "author": "Casper ter Kuile",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 140,
+       "t": 16.4
+      },
+      "pose": "upright",
+      "texture": "../data/textures/the-power-of-ritual-by-casper-ter-kuile.jpg",
+      "cover": "../data/covers/the-power-of-ritual-by-casper-ter-kuile.jpg",
+      "back": "../data/backs/the-power-of-ritual-by-casper-ter-kuile.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Oct 2022",
+       "source": "smus",
+       "headline": "The Power of Ritual by Casper ter Kuile",
+       "excerpt": "Ritual is closely associated with an ancient monolithic tradition, but Casper ter Kuile encourages us to cherry-pick the good parts from many traditions, and reconstruct your own rituals. At times, the book gives off obnoxious self-help vibes, other times it came off as overly woke. Overall, I'm pretty sure it was ghost written by a slightly flamboyant gay alien who just landed on Earth. …",
+       "paras": [
+        "Ritual is closely associated with an ancient monolithic tradition, but Casper ter Kuile encourages us to cherry-pick the good parts from many traditions, and reconstruct your own rituals. At times, the book gives off obnoxious self-help vibes, other times it came off as overly woke. Overall, I'm pretty sure it was ghost written by a slightly flamboyant gay alien who just landed on Earth. …"
+       ],
+       "words": 943,
+       "minutes": 4
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-power-of-ritual-by-casper-ter-kuile.webp",
+       "card": "atlas/card/the-power-of-ritual-by-casper-ter-kuile.webp",
+       "edge": "#f2ce59",
+       "hue": 0.1574
+      },
+      "publisher": "HarperOne",
+      "pages": 256,
+      "year": null
+     },
+     {
+      "slug": "12-rules-for-life",
+      "link": "https://smus.com/books/12-rules-for-life",
+      "title": "12 Rules for Life",
+      "author": "Jordan B. Peterson",
+      "beloved": false,
+      "dims": {
+       "h": 240,
+       "w": 164,
+       "t": 33.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/12-rules-for-life.jpg",
+      "cover": "../data/covers/12-rules-for-life.jpg",
+      "back": "../data/backs/12-rules-for-life.jpg",
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "posted": "Jan 2019",
+       "source": "smus",
+       "headline": "12 Rules for Life",
+       "excerpt": "One of my rules for life is: listicles are always clickbait, even in book form. There is a balance to be found between order and chaos. These rules are Petersons take on where that balance should be. I come at this with a dislike for Peterson. I first heard him on a Sam Harris podcast and he came off as a deliberate obscutantist. Also, the pronouns debate seems like a foolish hill to die on. But when I. told me that he respected Peterson's ideas, I decided to give the book ago. Spoiler alert: I got through about a third. …",
+       "paras": [
+        "One of my rules for life is: listicles are always clickbait, even in book form. There is a balance to be found between order and chaos. These rules are Petersons take on where that balance should be. I come at this with a dislike for Peterson. I first heard him on a Sam Harris podcast and he came off as a deliberate obscutantist. Also, the pronouns debate seems like a foolish hill to die on. But when I. told me that he respected Peterson's ideas, I decided to give the book ago. Spoiler alert: I got through about a third. …"
+       ],
+       "words": 289,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/12-rules-for-life.webp",
+       "card": "atlas/card/12-rules-for-life.webp",
+       "edge": "#e7e6e2",
+       "hue": 1.189
+      },
+      "publisher": "Allen Lane",
+      "pages": 416,
+      "year": null
+     },
+     {
+      "slug": "gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va",
+      "link": "https://www.goodreads.com/book/show/629",
+      "title": "Zen and the Art of Motorcycle Maintenance",
+      "subtitle": "An Inquiry Into Values",
+      "author": "Robert M. Pirsig",
+      "beloved": false,
+      "dims": {
+       "h": 180,
+       "w": 106,
+       "t": 28.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va.jpg",
+      "cover": "../data/covers/gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 2,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va.webp",
+       "card": "atlas/card/gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va.webp",
+       "edge": "#abd2d1",
+       "hue": 1.2631
+      },
+      "publisher": "HarperTorch",
+      "pages": 540,
+      "year": null
+     },
+     {
+      "slug": "gr-my-ishmael",
+      "link": "https://www.goodreads.com/book/show/17022",
+      "title": "My Ishmael",
+      "author": "Daniel Quinn",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 132,
+       "t": 18.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-my-ishmael.jpg",
+      "cover": "../data/covers/gr-my-ishmael.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-my-ishmael.webp",
+       "card": "atlas/card/gr-my-ishmael.webp",
+       "edge": "#dad7cb",
+       "hue": 1.2339
+      },
+      "publisher": "Bantam Books",
+      "pages": 293,
+      "year": null
+     },
+     {
+      "slug": "gr-the-story-of-b",
+      "link": "https://www.goodreads.com/book/show/214579",
+      "title": "The Story of B",
+      "author": "Daniel Quinn",
+      "beloved": true,
+      "dims": {
+       "h": 240,
+       "w": 159,
+       "t": 23.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/gr-the-story-of-b.jpg",
+      "cover": "../data/covers/gr-the-story-of-b.jpg",
+      "back": null,
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "source": "goodreads",
+       "read": null,
+       "rating": 4,
+       "excerpt": ""
+      },
+      "atlas": {
+       "lo": "atlas/lo/gr-the-story-of-b.webp",
+       "card": "atlas/card/gr-the-story-of-b.webp",
+       "edge": "#ccb186",
+       "hue": 0.1236
+      },
+      "publisher": "Bantam",
+      "pages": 352,
+      "year": null
+     },
+     {
+      "slug": "wild-problems-by-russ-roberts",
+      "link": "https://smus.com/books/wild-problems-by-russ-roberts",
+      "title": "Wild Problems",
+      "author": "Russell Roberts",
+      "beloved": true,
+      "dims": {
+       "h": 217,
+       "w": 146,
+       "t": 21.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/wild-problems-by-russ-roberts.jpg",
+      "cover": "../data/covers/wild-problems-by-russ-roberts.jpg",
+      "back": "../data/backs/wild-problems-by-russ-roberts.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Sep 2022",
+       "source": "smus",
+       "headline": "Wild Problems by Russ Roberts",
+       "excerpt": "Despite being a famous economist, Russ Roberts has a tendency to disparage his own field for its shortcomings. His core argument is that a lot of the thinking employed by economists applies to overly simplified models along the lines of \"imagine a spherical cow\". In particular, Roberts focuses on so-called Wild problems, which seem to be the same as Wicked problems (see Kind and wicked problems), but usually in the personal domain. The thrust of this short book is that such problems can’t be solved in a naïve way. Who to marry, who to hire, who to befriend, whether to have children? There are many different ways to live. There are many different destinations that you may pick for yourself, and which destination to pick is often the hardest part of the exercise. …",
+       "paras": [
+        "Despite being a famous economist, Russ Roberts has a tendency to disparage his own field for its shortcomings. His core argument is that a lot of the thinking employed by economists applies to overly simplified models along the lines of \"imagine a spherical cow\". In particular, Roberts focuses on so-called Wild problems, which seem to be the same as Wicked problems (see Kind and wicked problems), but usually in the personal domain. The thrust of this short book is that such problems can’t be solved in a naïve way. Who to marry, who to hire, who to befriend, whether to have children? There are many different ways to live. There are many different destinations that you may pick for yourself, and which destination to pick is often the hardest part of the exercise. …"
+       ],
+       "words": 1140,
+       "minutes": 5
+      },
+      "atlas": {
+       "lo": "atlas/lo/wild-problems-by-russ-roberts.webp",
+       "card": "atlas/card/wild-problems-by-russ-roberts.webp",
+       "edge": "#f0efea",
+       "hue": 1.1554
+      },
+      "publisher": "Penguin Publishing Group",
+      "pages": null,
+      "year": null
+     },
+     {
+      "slug": "in-praise-of-idleness-by-bertrand-russell",
+      "link": "https://smus.com/books/in-praise-of-idleness-by-bertrand-russell",
+      "title": "In Praise of Idleness",
+      "author": "Bertrand Russell",
+      "beloved": true,
+      "dims": {
+       "h": 210,
+       "w": 135,
+       "t": 21.2
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/in-praise-of-idleness-by-bertrand-russell.jpg",
+      "cover": "../data/covers/in-praise-of-idleness-by-bertrand-russell.jpg",
+      "back": "../data/backs/in-praise-of-idleness-by-bertrand-russell.jpg",
+      "spine_source": "ai",
+      "binding": "hardcover",
+      "review": {
+       "posted": "Dec 2015",
+       "source": "smus",
+       "headline": "In Praise of Idleness by Bertrand Russell",
+       "excerpt": "Fascinating collection of essays. In \"In praise of idleness\", Russell in 1930 predicts that automation will reduce the working day drastically. If your quota of 1000 buttons can be fulfilled in 1/10th the time, you should have a lot more time for pursuing your hobbies. Unfortunately, this never happened.",
+       "paras": [
+        "Fascinating collection of essays. In \"In praise of idleness\", Russell in 1930 predicts that automation will reduce the working day drastically. If your quota of 1000 buttons can be fulfilled in 1/10th the time, you should have a lot more time for pursuing your hobbies. Unfortunately, this never happened.",
+        "In one of the essays, he declares himself as a socialist while simultaneously distancing from Marx, and Russian communism. Essentially, he lays groundwork for social democracy. His views on socialism are very reasonable and still relevant today."
+       ],
+       "words": 86,
+       "minutes": 1
+      },
+      "atlas": {
+       "lo": "atlas/lo/in-praise-of-idleness-by-bertrand-russell.webp",
+       "card": "atlas/card/in-praise-of-idleness-by-bertrand-russell.webp",
+       "edge": "#a8421c",
+       "hue": 0.0877
+      },
+      "publisher": "Simon & Schuster",
+      "pages": 231,
+      "year": null,
+      "lean": 6.2
+     },
+     {
+      "slug": "the-courage-to-be-by-paul-tillich",
+      "link": "https://smus.com/books/the-courage-to-be-by-paul-tillich",
+      "title": "The Courage to Be",
+      "author": "Paul Tillich",
+      "beloved": true,
+      "dims": {
+       "h": 230,
+       "w": 154,
+       "t": 12.8
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/the-courage-to-be-by-paul-tillich.jpg",
+      "cover": "../data/covers/the-courage-to-be-by-paul-tillich.jpg",
+      "back": "../data/backs/the-courage-to-be-by-paul-tillich.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Apr 2026",
+       "source": "smus",
+       "headline": "The Courage to Be by Paul Tillich",
+       "excerpt": "Paul Tillich’s The Courage to Be is a dense, philosophical manual for meaning masquerading as theology. Born from the ashes of post-war Europe, Tillich rails against collectivism with an almost Randian fervor. Beneath this mid-century veneer lies a deeply resonant, borderline heretical framework proposing a \"God above God\" that feels acutely relevant to our modern crises and reminded me of the abstractions of the Rambam (see Negative theology and via negativa (Maimonedes)).",
+       "paras": [
+        "Paul Tillich’s The Courage to Be is a dense, philosophical manual for meaning masquerading as theology. Born from the ashes of post-war Europe, Tillich rails against collectivism with an almost Randian fervor. Beneath this mid-century veneer lies a deeply resonant, borderline heretical framework proposing a \"God above God\" that feels acutely relevant to our modern crises and reminded me of the abstractions of the Rambam (see Negative theology and via negativa (Maimonedes)).",
+        "The overall thrust of the book seems to be that throughout history, there are periods when we are engulfed in a crisis of meaning, an onset of anxiety and existential dread, in which we must assert our existence without relying on dangerous shortcuts to escape the void. Tillich prescribes \"active negativity\", facing the void and asserting your existence in a stoic way. …"
+       ],
+       "words": 714,
+       "minutes": 3
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-courage-to-be-by-paul-tillich.webp",
+       "card": "atlas/card/the-courage-to-be-by-paul-tillich.webp",
+       "edge": "#e5e5e5",
+       "hue": 1.136
+      },
+      "publisher": "Yale University Press",
+      "pages": 197,
+      "year": null,
+      "lean": 6.2
+     },
+     {
+      "slug": "tao-of-philosophy-by-alan-watts",
+      "link": "https://smus.com/books/tao-of-philosophy-by-alan-watts",
+      "title": "Tao of Philosophy",
+      "author": "Alan Watts",
+      "beloved": true,
+      "dims": {
+       "h": 216,
+       "w": 119,
+       "t": 10.2
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/tao-of-philosophy-by-alan-watts.jpg",
+      "cover": "../data/covers/tao-of-philosophy-by-alan-watts.jpg",
+      "back": "../data/backs/tao-of-philosophy-by-alan-watts.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Aug 2018",
+       "source": "smus",
+       "headline": "Tao of Philosophy by Alan Watts",
+       "excerpt": "Every society operates on very deeply rooted assumptions that are worth understanding. Watts thinks we can seek wisdom from Chinese and Indian culture to better understand our own. …",
+       "paras": [
+        "Every society operates on very deeply rooted assumptions that are worth understanding. Watts thinks we can seek wisdom from Chinese and Indian culture to better understand our own. …"
+       ],
+       "words": 438,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/tao-of-philosophy-by-alan-watts.webp",
+       "card": "atlas/card/tao-of-philosophy-by-alan-watts.webp",
+       "edge": "#9b8c7f",
+       "hue": 0.0664
+      },
+      "publisher": "Tuttle Publishing",
+      "pages": 96,
+      "year": null,
+      "lean": 6.2
+     },
+     {
+      "slug": "on-the-shortness-of-life",
+      "link": "https://smus.com/books/on-the-shortness-of-life",
+      "title": "On the Shortness of Life",
+      "author": "Seneca the Younger",
+      "beloved": true,
+      "dims": {
+       "h": 190,
+       "w": 109,
+       "t": 8.0
+      },
+      "pose": "upright",
+      "texture": "../data/textures/on-the-shortness-of-life.jpg",
+      "cover": "../data/covers/on-the-shortness-of-life.jpg",
+      "back": "../data/backs/on-the-shortness-of-life.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Oct 2017",
+       "source": "smus",
+       "headline": "On the Shortness of Life",
+       "excerpt": "Seneca lies at the intersection of Roman history, stoic philosophy and Buddhism. Despite many endorsements, I haven’t had the time to sit down and read any of his writings. So I picked up this short volume of three letters, two to his friends and one to his mother.",
+       "paras": [
+        "Seneca lies at the intersection of Roman history, stoic philosophy and Buddhism. Despite many endorsements, I haven’t had the time to sit down and read any of his writings. So I picked up this short volume of three letters, two to his friends and one to his mother.",
+        "There are almost no clarifying notes in the book, no context about Seneca's life, events he references, or any of the many names he mentions in supporting his points with exemplars. The Wikipedia page provided some of that, but I missed having annotations in the book.",
+        "Overall the letters are very quotable and read easily, with the exception of a few convoluted sentences. I was surprised by how modern ancient Rome sounds, with a surprising plurality of cultures & peoples. Seneca himself was born in Córdoba and moved to Rome. …"
+       ],
+       "words": 568,
+       "minutes": 2
+      },
+      "atlas": {
+       "lo": "atlas/lo/on-the-shortness-of-life.webp",
+       "card": "atlas/card/on-the-shortness-of-life.webp",
+       "edge": "#e7e7e1",
+       "hue": 1.1322
+      },
+      "publisher": "Penguin Books",
+      "pages": 105,
       "year": null
      }
     ],
@@ -8751,7 +10463,7 @@
       "publisher": "PublicAffairs",
       "pages": 256,
       "year": null,
-      "lean": 8.6
+      "lean": 9.5
      },
      {
       "slug": "building-a-bridge-to-the-18th-century",
@@ -8790,7 +10502,7 @@
       "publisher": "Vintage",
       "pages": 224,
       "year": null,
-      "lean": 8.6
+      "lean": 9.5
      },
      {
       "slug": "bloodlands-by-timothy-snyder",
@@ -8987,7 +10699,7 @@
        "w": 174,
        "t": 15.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/collapse-of-complex-societies-by-joseph-tainter.jpg",
       "cover": "../data/covers/collapse-of-complex-societies-by-joseph-tainter.jpg",
       "back": "../data/backs/collapse-of-complex-societies-by-joseph-tainter.jpg",
@@ -9013,8 +10725,7 @@
       },
       "publisher": "Cambridge University Press",
       "pages": 262,
-      "year": null,
-      "lean": 11.6
+      "year": null
      },
      {
       "slug": "medieval-robots-by-e-r-truitt",
@@ -9027,7 +10738,7 @@
        "w": 168,
        "t": 19.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/medieval-robots-by-e-r-truitt.jpg",
       "cover": "../data/covers/medieval-robots-by-e-r-truitt.jpg",
       "back": "../data/backs/medieval-robots-by-e-r-truitt.jpg",
@@ -9052,8 +10763,7 @@
       },
       "publisher": "University of Pennsylvania Press",
       "pages": 255,
-      "year": null,
-      "lean": 11.6
+      "year": null
      },
      {
       "slug": "gr-ages-of-discord-a-structural-demographic-analysis-of-america",
@@ -9066,7 +10776,7 @@
        "w": 152,
        "t": 15.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-ages-of-discord-a-structural-demographic-analysis-of-america.jpg",
       "cover": "../data/covers/gr-ages-of-discord-a-structural-demographic-analysis-of-america.jpg",
       "back": null,
@@ -9086,8 +10796,7 @@
       },
       "publisher": "Beresta Books LLC",
       "pages": 395,
-      "year": null,
-      "lean": 11.6
+      "year": null
      },
      {
       "slug": "war-and-peace-and-war-by-peter-turchin",
@@ -9138,7 +10847,7 @@
        "w": 135,
        "t": 11.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/medieval-technology-and-social-change.jpg",
       "cover": "../data/covers/medieval-technology-and-social-change.jpg",
       "back": "../data/backs/medieval-technology-and-social-change.jpg",
@@ -9165,7 +10874,8 @@
       },
       "publisher": "Oxford University Press",
       "pages": 194,
-      "year": null
+      "year": null,
+      "lean": 9.1
      },
      {
       "slug": "night-by-elie-wiesel",
@@ -9178,7 +10888,7 @@
        "w": 168,
        "t": 12.0
       },
-      "pose": "upright",
+      "pose": "lean-run",
       "texture": "../data/textures/night-by-elie-wiesel.jpg",
       "cover": "../data/covers/night-by-elie-wiesel.jpg",
       "back": "../data/backs/night-by-elie-wiesel.jpg",
@@ -9204,7 +10914,8 @@
       },
       "publisher": "Hill and Wang",
       "pages": 120,
-      "year": null
+      "year": null,
+      "lean": 9.1
      }
     ],
     [
@@ -9789,7 +11500,7 @@
        "w": 133,
        "t": 22.0
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/absolutely-on-music-by-haruki-murakami.jpg",
       "cover": "../data/covers/absolutely-on-music-by-haruki-murakami.jpg",
       "back": "../data/backs/absolutely-on-music-by-haruki-murakami.jpg",
@@ -9814,8 +11525,7 @@
       },
       "publisher": "Vintage",
       "pages": null,
-      "year": null,
-      "lean": 6.9
+      "year": null
      },
      {
       "slug": "the-persuaders-audio",
@@ -9828,7 +11538,7 @@
        "w": 140,
        "t": 7.6
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/the-persuaders-audio.jpg",
       "cover": "../data/covers/the-persuaders-audio.jpg",
       "back": "../data/backs/the-persuaders-audio.jpg",
@@ -9854,8 +11564,7 @@
       },
       "publisher": "Ig Publishing",
       "pages": 240,
-      "year": null,
-      "lean": 6.9
+      "year": null
      },
      {
       "slug": "impossible-owls-by-brian-phillips",
@@ -9868,7 +11577,7 @@
        "w": 139,
        "t": 20.2
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/impossible-owls-by-brian-phillips.jpg",
       "cover": "../data/covers/impossible-owls-by-brian-phillips.jpg",
       "back": "../data/backs/impossible-owls-by-brian-phillips.jpg",
@@ -9894,8 +11603,7 @@
       },
       "publisher": "Orion Publishing Group, Limited",
       "pages": 320,
-      "year": null,
-      "lean": 6.9
+      "year": null
      },
      {
       "slug": "bowling-alone-by-robert-putnam",
@@ -10121,7 +11829,7 @@
       "publisher": "Transworld Publishers Limited",
       "pages": null,
       "year": null,
-      "lean": 4.7
+      "lean": 12.0
      },
      {
       "slug": "the-protestant-ethic-and-the-spirit-of-capitalism-by-max-weber",
@@ -10160,7 +11868,7 @@
       "publisher": "CreateSpace Independent Publishing Platform",
       "pages": 106,
       "year": null,
-      "lean": 4.7
+      "lean": 12.0
      },
      {
       "slug": "scale-by-geoffrey-west",
@@ -10199,1222 +11907,6 @@
       },
       "publisher": "Penguin Press",
       "pages": 481,
-      "year": null
-     }
-    ],
-    [
-     {
-      "slug": "gr-concepts-and-categories-philosophical-essays",
-      "link": "https://www.goodreads.com/book/show/19416891",
-      "title": "Concepts and Categories",
-      "subtitle": "Philosophical Essays",
-      "author": "Isaiah Berlin",
-      "beloved": false,
-      "dims": {
-       "h": 220,
-       "w": 156,
-       "t": 23.7
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-concepts-and-categories-philosophical-essays.jpg",
-      "cover": "../data/covers/gr-concepts-and-categories-philosophical-essays.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": "2023/01/20",
-       "rating": null,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-concepts-and-categories-philosophical-essays.webp",
-       "card": "atlas/card/gr-concepts-and-categories-philosophical-essays.webp",
-       "edge": "#e6e6df",
-       "hue": 1.2234
-      },
-      "publisher": "Princeton University Press",
-      "pages": 378,
-      "year": null,
-      "section": "Philosophy",
-      "group": "Non-fiction"
-     },
-     {
-      "slug": "the-hedgehog-and-the-fox",
-      "link": "https://smus.com/books/the-hedgehog-and-the-fox",
-      "title": "The Hedgehog and the Fox",
-      "author": "Isaiah Berlin",
-      "beloved": true,
-      "dims": {
-       "h": 197,
-       "w": 130,
-       "t": 13.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-hedgehog-and-the-fox.jpg",
-      "cover": "../data/covers/the-hedgehog-and-the-fox.jpg",
-      "back": "../data/backs/the-hedgehog-and-the-fox.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Sep 2016",
-       "source": "smus",
-       "headline": "The Hedgehog and the Fox",
-       "excerpt": "According to Isaiah Berlin, Tolstoy is a natural fox who wanted to be a hedgehog. IB suggests that Tolstoy was too broad minded to be able to fully embrace a single doctrine, which could satisfactorily explain how the world works:",
-       "paras": [
-        "According to Isaiah Berlin, Tolstoy is a natural fox who wanted to be a hedgehog. IB suggests that Tolstoy was too broad minded to be able to fully embrace a single doctrine, which could satisfactorily explain how the world works:",
-        "At the same time, Tolstoy wanted to be able to find some Einsteinian unified theory of everything (TOE), but was too talented as a critic to be able to do so.",
-        "This division within himself caused him great pain at the end of his life.",
-        "As you can see, the writing here is not flowery, but rather complex and requires a high degree of attention. Unfortunately, this is exactly what I lacked given the circumstances of moving to Seattle.",
-        "This short book / essay was supposedly intended as a joke (an elaborate one, at 90 pages). Part of the fun is classifying people into animals, for example, here's IB's take…"
-       ],
-       "words": 286,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-hedgehog-and-the-fox.webp",
-       "card": "atlas/card/the-hedgehog-and-the-fox.webp",
-       "edge": "#9b402c",
-       "hue": 0.0737
-      },
-      "publisher": "Orion Publishing Group, Limited",
-      "pages": 96,
-      "year": null
-     },
-     {
-      "slug": "science-and-human-values",
-      "link": "https://smus.com/books/science-and-human-values",
-      "title": "Science and Human Values",
-      "author": "Jacob Bronowski",
-      "beloved": false,
-      "dims": {
-       "h": 210,
-       "w": 136,
-       "t": 8.1
-      },
-      "pose": "upright",
-      "texture": "../data/textures/science-and-human-values.jpg",
-      "cover": "../data/covers/science-and-human-values.jpg",
-      "back": "../data/backs/science-and-human-values.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Sep 2015",
-       "source": "smus",
-       "headline": "Science and Human Values",
-       "excerpt": "Broznowski tries really hard to impress with his breadth of knowledge. He constantly drops references to art, literature and philosophy to make his point. It's as if he is using himself as an example of a scientist who is also well versed in liberal art (there are dozens of us!!). I found most of the writing to be very fluffy, deliberately convoluted, and kind of annoying. I had a hard time finishing despite it being such a short read. I set the book down for a month, and returned to it later (upon returning from vacation). …",
-       "paras": [
-        "Broznowski tries really hard to impress with his breadth of knowledge. He constantly drops references to art, literature and philosophy to make his point. It's as if he is using himself as an example of a scientist who is also well versed in liberal art (there are dozens of us!!). I found most of the writing to be very fluffy, deliberately convoluted, and kind of annoying. I had a hard time finishing despite it being such a short read. I set the book down for a month, and returned to it later (upon returning from vacation). …"
-       ],
-       "words": 218,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/science-and-human-values.webp",
-       "card": "atlas/card/science-and-human-values.webp",
-       "edge": "#e4cfa9",
-       "hue": 1.269
-      },
-      "publisher": "Harper & Row",
-      "pages": 119,
-      "year": null
-     },
-     {
-      "slug": "disappearance-of-ritual-by-byung-chul-han",
-      "link": "https://smus.com/books/disappearance-of-ritual-by-byung-chul-han",
-      "title": "Disappearance of Ritual",
-      "author": "Byung-Chul Han",
-      "beloved": false,
-      "dims": {
-       "h": 230,
-       "w": 145,
-       "t": 13.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/disappearance-of-ritual-by-byung-chul-han.jpg",
-      "cover": "../data/covers/disappearance-of-ritual-by-byung-chul-han.jpg",
-      "back": "../data/backs/disappearance-of-ritual-by-byung-chul-han.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Apr 2024",
-       "source": "smus",
-       "headline": "Disappearance of Ritual by Byung-Chul Han",
-       "excerpt": "I recently read The Burnout Society by Byung-Chul Han, a chaotic, disorganized read full of interesting ideas. \"Disappearance of Ritual\" continues in the same tradition, but I found the ideas presented in it somewhat weaker and less original than in \"Burnout Society\". In one section, BCH extols the virtues of beautiful and playful language and laments its disappearance. Yet he writes woeful passages like this…",
-       "paras": [
-        "I recently read The Burnout Society by Byung-Chul Han, a chaotic, disorganized read full of interesting ideas. \"Disappearance of Ritual\" continues in the same tradition, but I found the ideas presented in it somewhat weaker and less original than in \"Burnout Society\". In one section, BCH extols the virtues of beautiful and playful language and laments its disappearance. Yet he writes woeful passages like this…"
-       ],
-       "words": 1185,
-       "minutes": 5
-      },
-      "atlas": {
-       "lo": "atlas/lo/disappearance-of-ritual-by-byung-chul-han.webp",
-       "card": "atlas/card/disappearance-of-ritual-by-byung-chul-han.webp",
-       "edge": "#a89b87",
-       "hue": 1.3884
-      },
-      "publisher": "Polity Press",
-      "pages": 186,
-      "year": null
-     },
-     {
-      "slug": "the-burnout-society-by-byung-chul-han",
-      "link": "https://smus.com/books/the-burnout-society-by-byung-chul-han",
-      "title": "The Burnout Society",
-      "author": "Byung-Chul Han",
-      "beloved": true,
-      "dims": {
-       "h": 204,
-       "w": 127,
-       "t": 5.2
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-burnout-society-by-byung-chul-han.jpg",
-      "cover": "../data/covers/the-burnout-society-by-byung-chul-han.jpg",
-      "back": "../data/backs/the-burnout-society-by-byung-chul-han.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Oct 2023",
-       "source": "smus",
-       "headline": "The Burnout Society by Byung-Chul Han",
-       "excerpt": "Some interesting ideas in this philosophical pamphlet, but they are atomized and not woven into a strong coherent argument. The book is not especially well written: rambling and repetitive and lacking structure. I'd recommend a shorter summary (hello, you're welcome) or listening to Episode 188 of Philosophize This, which is what turned me onto Byung-Chul Han in the first place. …",
-       "paras": [
-        "Some interesting ideas in this philosophical pamphlet, but they are atomized and not woven into a strong coherent argument. The book is not especially well written: rambling and repetitive and lacking structure. I'd recommend a shorter summary (hello, you're welcome) or listening to Episode 188 of Philosophize This, which is what turned me onto Byung-Chul Han in the first place. …"
-       ],
-       "words": 1195,
-       "minutes": 5
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-burnout-society-by-byung-chul-han.webp",
-       "card": "atlas/card/the-burnout-society-by-byung-chul-han.webp",
-       "edge": "#121212",
-       "hue": 1.8641
-      },
-      "publisher": "Stanford Briefs",
-      "pages": 70,
-      "year": null
-     },
-     {
-      "slug": "the-crisis-of-narration-by-byung-chul-han",
-      "link": "https://smus.com/books/the-crisis-of-narration-by-byung-chul-han",
-      "title": "The Crisis of Narration",
-      "author": "Byung-Chul Han",
-      "beloved": true,
-      "dims": {
-       "h": 227,
-       "w": 151,
-       "t": 5.6
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-crisis-of-narration-by-byung-chul-han.jpg",
-      "cover": "../data/covers/the-crisis-of-narration-by-byung-chul-han.jpg",
-      "back": "../data/backs/the-crisis-of-narration-by-byung-chul-han.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Dec 2025",
-       "source": "smus",
-       "headline": "The Crisis of Narration by Byung-Chul Han",
-       "excerpt": "Han spends much of The Crisis of Narration mourning a lost world, one where humans were born into compelling, unifying narratives full of wisdom. Over time, this way of life shattered into many little narratives that fail to create the same level of overarching framework. Wisdom collapsed into knowledge, knowledge into information, and information into data. This is well captured in the Data Information Knowledge Wisdom (DIKW) pyramid, and by T. S. Eliot, who wrote…",
-       "paras": [
-        "Han spends much of The Crisis of Narration mourning a lost world, one where humans were born into compelling, unifying narratives full of wisdom. Over time, this way of life shattered into many little narratives that fail to create the same level of overarching framework. Wisdom collapsed into knowledge, knowledge into information, and information into data. This is well captured in the Data Information Knowledge Wisdom (DIKW) pyramid, and by T. S. Eliot, who wrote…"
-       ],
-       "words": 1154,
-       "minutes": 5
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-crisis-of-narration-by-byung-chul-han.webp",
-       "card": "atlas/card/the-crisis-of-narration-by-byung-chul-han.webp",
-       "edge": "#342e1e",
-       "hue": 1.7637
-      },
-      "publisher": "Polity",
-      "pages": 77,
-      "year": null
-     },
-     {
-      "slug": "the-moral-landscape-by-sam-harris",
-      "link": "https://smus.com/books/the-moral-landscape-by-sam-harris",
-      "title": "The Moral Landscape",
-      "author": "Sam Harris",
-      "beloved": true,
-      "dims": {
-       "h": 240,
-       "w": 143,
-       "t": 22.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-moral-landscape-by-sam-harris.jpg",
-      "cover": "../data/covers/the-moral-landscape-by-sam-harris.jpg",
-      "back": "../data/backs/the-moral-landscape-by-sam-harris.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Mar 2016",
-       "source": "smus",
-       "headline": "The Moral Landscape by Sam Harris",
-       "excerpt": "In many ways a rehashing of many ideas in philosophy, I think Sam did a good job of bringing some longstanding ideas and debates to the fore without requiring a degree in philosophy. The section on religion can be skipped, since he rehashes old theses from End of Faith (oh yeah, hobby horse!)",
-       "paras": [
-        "In many ways a rehashing of many ideas in philosophy, I think Sam did a good job of bringing some longstanding ideas and debates to the fore without requiring a degree in philosophy. The section on religion can be skipped, since he rehashes old theses from End of Faith (oh yeah, hobby horse!)",
-        "The overall thesis is that the well being of conscious entities is of supreme importance, and that morality is all about optimizing that. Intuitively, I agree that this is a good, pragmatic, and secular definition. I am less interested in the philosophical debate around it, but I don't think Sam adequately addresses the other side of the argument adequately. Debates between utilitarian ideas and other branches of philosophy have been raging for centuries, and with all due respect, I don't think Sam is the guy to put them to rest. …"
-       ],
-       "words": 248,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-moral-landscape-by-sam-harris.webp",
-       "card": "atlas/card/the-moral-landscape-by-sam-harris.webp",
-       "edge": "#ded8c9",
-       "hue": 1.1972
-      },
-      "publisher": "Bantam",
-      "pages": 291,
-      "year": null
-     },
-     {
-      "slug": "you-belong-to-the-universe-audio",
-      "link": "https://smus.com/books/you-belong-to-the-universe-audio",
-      "title": "You Belong to the Universe",
-      "author": "Jonathon Keats",
-      "beloved": false,
-      "dims": {
-       "h": 220,
-       "w": 145,
-       "t": 23.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/you-belong-to-the-universe-audio.jpg",
-      "cover": "../data/covers/you-belong-to-the-universe-audio.jpg",
-      "back": "../data/backs/you-belong-to-the-universe-audio.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "May 2018",
-       "source": "smus",
-       "headline": "You Belong to the Universe (audio)",
-       "excerpt": "Buckminster Fuller's name seems to pop up everywhere in the last few years. I saw Jonathon Keats talk at The Interval a few years ago, on a book tour about Fuller's life and work. I finally got to listen to the audio version. I found bits to be interesting, but overall this book is less of a biography, and more of an attempt to riff on various modern incarnations of Fuller's ideas. Fuller himself comes off as overly self-involved. His investment and belief in panacea projects like the World Game, Domed Manhattan, Dymaxions comes off as overly naive for such a great man. …",
-       "paras": [
-        "Buckminster Fuller's name seems to pop up everywhere in the last few years. I saw Jonathon Keats talk at The Interval a few years ago, on a book tour about Fuller's life and work. I finally got to listen to the audio version. I found bits to be interesting, but overall this book is less of a biography, and more of an attempt to riff on various modern incarnations of Fuller's ideas. Fuller himself comes off as overly self-involved. His investment and belief in panacea projects like the World Game, Domed Manhattan, Dymaxions comes off as overly naive for such a great man. …"
-       ],
-       "words": 332,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/you-belong-to-the-universe-audio.webp",
-       "card": "atlas/card/you-belong-to-the-universe-audio.webp",
-       "edge": "#11233c",
-       "hue": 0.6313
-      },
-      "publisher": "Oxford University Press",
-      "pages": 206,
-      "year": null
-     },
-     {
-      "slug": "the-power-of-ritual-by-casper-ter-kuile",
-      "link": "https://smus.com/books/the-power-of-ritual-by-casper-ter-kuile",
-      "title": "The Power of Ritual",
-      "author": "Casper ter Kuile",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 140,
-       "t": 16.4
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-power-of-ritual-by-casper-ter-kuile.jpg",
-      "cover": "../data/covers/the-power-of-ritual-by-casper-ter-kuile.jpg",
-      "back": "../data/backs/the-power-of-ritual-by-casper-ter-kuile.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Oct 2022",
-       "source": "smus",
-       "headline": "The Power of Ritual by Casper ter Kuile",
-       "excerpt": "Ritual is closely associated with an ancient monolithic tradition, but Casper ter Kuile encourages us to cherry-pick the good parts from many traditions, and reconstruct your own rituals. At times, the book gives off obnoxious self-help vibes, other times it came off as overly woke. Overall, I'm pretty sure it was ghost written by a slightly flamboyant gay alien who just landed on Earth. …",
-       "paras": [
-        "Ritual is closely associated with an ancient monolithic tradition, but Casper ter Kuile encourages us to cherry-pick the good parts from many traditions, and reconstruct your own rituals. At times, the book gives off obnoxious self-help vibes, other times it came off as overly woke. Overall, I'm pretty sure it was ghost written by a slightly flamboyant gay alien who just landed on Earth. …"
-       ],
-       "words": 943,
-       "minutes": 4
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-power-of-ritual-by-casper-ter-kuile.webp",
-       "card": "atlas/card/the-power-of-ritual-by-casper-ter-kuile.webp",
-       "edge": "#f2ce59",
-       "hue": 0.1574
-      },
-      "publisher": "HarperOne",
-      "pages": 256,
-      "year": null
-     },
-     {
-      "slug": "12-rules-for-life",
-      "link": "https://smus.com/books/12-rules-for-life",
-      "title": "12 Rules for Life",
-      "author": "Jordan B. Peterson",
-      "beloved": false,
-      "dims": {
-       "h": 240,
-       "w": 164,
-       "t": 33.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/12-rules-for-life.jpg",
-      "cover": "../data/covers/12-rules-for-life.jpg",
-      "back": "../data/backs/12-rules-for-life.jpg",
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "posted": "Jan 2019",
-       "source": "smus",
-       "headline": "12 Rules for Life",
-       "excerpt": "One of my rules for life is: listicles are always clickbait, even in book form. There is a balance to be found between order and chaos. These rules are Petersons take on where that balance should be. I come at this with a dislike for Peterson. I first heard him on a Sam Harris podcast and he came off as a deliberate obscutantist. Also, the pronouns debate seems like a foolish hill to die on. But when I. told me that he respected Peterson's ideas, I decided to give the book ago. Spoiler alert: I got through about a third. …",
-       "paras": [
-        "One of my rules for life is: listicles are always clickbait, even in book form. There is a balance to be found between order and chaos. These rules are Petersons take on where that balance should be. I come at this with a dislike for Peterson. I first heard him on a Sam Harris podcast and he came off as a deliberate obscutantist. Also, the pronouns debate seems like a foolish hill to die on. But when I. told me that he respected Peterson's ideas, I decided to give the book ago. Spoiler alert: I got through about a third. …"
-       ],
-       "words": 289,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/12-rules-for-life.webp",
-       "card": "atlas/card/12-rules-for-life.webp",
-       "edge": "#e7e6e2",
-       "hue": 1.189
-      },
-      "publisher": "Allen Lane",
-      "pages": 416,
-      "year": null
-     },
-     {
-      "slug": "gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va",
-      "link": "https://www.goodreads.com/book/show/629",
-      "title": "Zen and the Art of Motorcycle Maintenance",
-      "subtitle": "An Inquiry Into Values",
-      "author": "Robert M. Pirsig",
-      "beloved": false,
-      "dims": {
-       "h": 180,
-       "w": 106,
-       "t": 28.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va.jpg",
-      "cover": "../data/covers/gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 2,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va.webp",
-       "card": "atlas/card/gr-zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-va.webp",
-       "edge": "#abd2d1",
-       "hue": 1.2631
-      },
-      "publisher": "HarperTorch",
-      "pages": 540,
-      "year": null
-     },
-     {
-      "slug": "gr-my-ishmael",
-      "link": "https://www.goodreads.com/book/show/17022",
-      "title": "My Ishmael",
-      "author": "Daniel Quinn",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 132,
-       "t": 18.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-my-ishmael.jpg",
-      "cover": "../data/covers/gr-my-ishmael.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-my-ishmael.webp",
-       "card": "atlas/card/gr-my-ishmael.webp",
-       "edge": "#dad7cb",
-       "hue": 1.2339
-      },
-      "publisher": "Bantam Books",
-      "pages": 293,
-      "year": null
-     },
-     {
-      "slug": "gr-the-story-of-b",
-      "link": "https://www.goodreads.com/book/show/214579",
-      "title": "The Story of B",
-      "author": "Daniel Quinn",
-      "beloved": true,
-      "dims": {
-       "h": 240,
-       "w": 159,
-       "t": 23.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-story-of-b.jpg",
-      "cover": "../data/covers/gr-the-story-of-b.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-story-of-b.webp",
-       "card": "atlas/card/gr-the-story-of-b.webp",
-       "edge": "#ccb186",
-       "hue": 0.1236
-      },
-      "publisher": "Bantam",
-      "pages": 352,
-      "year": null
-     },
-     {
-      "slug": "wild-problems-by-russ-roberts",
-      "link": "https://smus.com/books/wild-problems-by-russ-roberts",
-      "title": "Wild Problems",
-      "author": "Russell Roberts",
-      "beloved": true,
-      "dims": {
-       "h": 217,
-       "w": 146,
-       "t": 21.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/wild-problems-by-russ-roberts.jpg",
-      "cover": "../data/covers/wild-problems-by-russ-roberts.jpg",
-      "back": "../data/backs/wild-problems-by-russ-roberts.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Sep 2022",
-       "source": "smus",
-       "headline": "Wild Problems by Russ Roberts",
-       "excerpt": "Despite being a famous economist, Russ Roberts has a tendency to disparage his own field for its shortcomings. His core argument is that a lot of the thinking employed by economists applies to overly simplified models along the lines of \"imagine a spherical cow\". In particular, Roberts focuses on so-called Wild problems, which seem to be the same as Wicked problems (see Kind and wicked problems), but usually in the personal domain. The thrust of this short book is that such problems can’t be solved in a naïve way. Who to marry, who to hire, who to befriend, whether to have children? There are many different ways to live. There are many different destinations that you may pick for yourself, and which destination to pick is often the hardest part of the exercise. …",
-       "paras": [
-        "Despite being a famous economist, Russ Roberts has a tendency to disparage his own field for its shortcomings. His core argument is that a lot of the thinking employed by economists applies to overly simplified models along the lines of \"imagine a spherical cow\". In particular, Roberts focuses on so-called Wild problems, which seem to be the same as Wicked problems (see Kind and wicked problems), but usually in the personal domain. The thrust of this short book is that such problems can’t be solved in a naïve way. Who to marry, who to hire, who to befriend, whether to have children? There are many different ways to live. There are many different destinations that you may pick for yourself, and which destination to pick is often the hardest part of the exercise. …"
-       ],
-       "words": 1140,
-       "minutes": 5
-      },
-      "atlas": {
-       "lo": "atlas/lo/wild-problems-by-russ-roberts.webp",
-       "card": "atlas/card/wild-problems-by-russ-roberts.webp",
-       "edge": "#f0efea",
-       "hue": 1.1554
-      },
-      "publisher": "Penguin Publishing Group",
-      "pages": null,
-      "year": null
-     },
-     {
-      "slug": "in-praise-of-idleness-by-bertrand-russell",
-      "link": "https://smus.com/books/in-praise-of-idleness-by-bertrand-russell",
-      "title": "In Praise of Idleness",
-      "author": "Bertrand Russell",
-      "beloved": true,
-      "dims": {
-       "h": 210,
-       "w": 135,
-       "t": 21.2
-      },
-      "pose": "upright",
-      "texture": "../data/textures/in-praise-of-idleness-by-bertrand-russell.jpg",
-      "cover": "../data/covers/in-praise-of-idleness-by-bertrand-russell.jpg",
-      "back": "../data/backs/in-praise-of-idleness-by-bertrand-russell.jpg",
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "posted": "Dec 2015",
-       "source": "smus",
-       "headline": "In Praise of Idleness by Bertrand Russell",
-       "excerpt": "Fascinating collection of essays. In \"In praise of idleness\", Russell in 1930 predicts that automation will reduce the working day drastically. If your quota of 1000 buttons can be fulfilled in 1/10th the time, you should have a lot more time for pursuing your hobbies. Unfortunately, this never happened.",
-       "paras": [
-        "Fascinating collection of essays. In \"In praise of idleness\", Russell in 1930 predicts that automation will reduce the working day drastically. If your quota of 1000 buttons can be fulfilled in 1/10th the time, you should have a lot more time for pursuing your hobbies. Unfortunately, this never happened.",
-        "In one of the essays, he declares himself as a socialist while simultaneously distancing from Marx, and Russian communism. Essentially, he lays groundwork for social democracy. His views on socialism are very reasonable and still relevant today."
-       ],
-       "words": 86,
-       "minutes": 1
-      },
-      "atlas": {
-       "lo": "atlas/lo/in-praise-of-idleness-by-bertrand-russell.webp",
-       "card": "atlas/card/in-praise-of-idleness-by-bertrand-russell.webp",
-       "edge": "#a8421c",
-       "hue": 0.0877
-      },
-      "publisher": "Simon & Schuster",
-      "pages": 231,
-      "year": null
-     },
-     {
-      "slug": "the-courage-to-be-by-paul-tillich",
-      "link": "https://smus.com/books/the-courage-to-be-by-paul-tillich",
-      "title": "The Courage to Be",
-      "author": "Paul Tillich",
-      "beloved": true,
-      "dims": {
-       "h": 230,
-       "w": 154,
-       "t": 12.8
-      },
-      "pose": "upright",
-      "texture": "../data/textures/the-courage-to-be-by-paul-tillich.jpg",
-      "cover": "../data/covers/the-courage-to-be-by-paul-tillich.jpg",
-      "back": "../data/backs/the-courage-to-be-by-paul-tillich.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Apr 2026",
-       "source": "smus",
-       "headline": "The Courage to Be by Paul Tillich",
-       "excerpt": "Paul Tillich’s The Courage to Be is a dense, philosophical manual for meaning masquerading as theology. Born from the ashes of post-war Europe, Tillich rails against collectivism with an almost Randian fervor. Beneath this mid-century veneer lies a deeply resonant, borderline heretical framework proposing a \"God above God\" that feels acutely relevant to our modern crises and reminded me of the abstractions of the Rambam (see Negative theology and via negativa (Maimonedes)).",
-       "paras": [
-        "Paul Tillich’s The Courage to Be is a dense, philosophical manual for meaning masquerading as theology. Born from the ashes of post-war Europe, Tillich rails against collectivism with an almost Randian fervor. Beneath this mid-century veneer lies a deeply resonant, borderline heretical framework proposing a \"God above God\" that feels acutely relevant to our modern crises and reminded me of the abstractions of the Rambam (see Negative theology and via negativa (Maimonedes)).",
-        "The overall thrust of the book seems to be that throughout history, there are periods when we are engulfed in a crisis of meaning, an onset of anxiety and existential dread, in which we must assert our existence without relying on dangerous shortcuts to escape the void. Tillich prescribes \"active negativity\", facing the void and asserting your existence in a stoic way. …"
-       ],
-       "words": 714,
-       "minutes": 3
-      },
-      "atlas": {
-       "lo": "atlas/lo/the-courage-to-be-by-paul-tillich.webp",
-       "card": "atlas/card/the-courage-to-be-by-paul-tillich.webp",
-       "edge": "#e5e5e5",
-       "hue": 1.136
-      },
-      "publisher": "Yale University Press",
-      "pages": 197,
-      "year": null
-     },
-     {
-      "slug": "tao-of-philosophy-by-alan-watts",
-      "link": "https://smus.com/books/tao-of-philosophy-by-alan-watts",
-      "title": "Tao of Philosophy",
-      "author": "Alan Watts",
-      "beloved": true,
-      "dims": {
-       "h": 216,
-       "w": 119,
-       "t": 10.2
-      },
-      "pose": "upright",
-      "texture": "../data/textures/tao-of-philosophy-by-alan-watts.jpg",
-      "cover": "../data/covers/tao-of-philosophy-by-alan-watts.jpg",
-      "back": "../data/backs/tao-of-philosophy-by-alan-watts.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Aug 2018",
-       "source": "smus",
-       "headline": "Tao of Philosophy by Alan Watts",
-       "excerpt": "Every society operates on very deeply rooted assumptions that are worth understanding. Watts thinks we can seek wisdom from Chinese and Indian culture to better understand our own. …",
-       "paras": [
-        "Every society operates on very deeply rooted assumptions that are worth understanding. Watts thinks we can seek wisdom from Chinese and Indian culture to better understand our own. …"
-       ],
-       "words": 438,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/tao-of-philosophy-by-alan-watts.webp",
-       "card": "atlas/card/tao-of-philosophy-by-alan-watts.webp",
-       "edge": "#9b8c7f",
-       "hue": 0.0664
-      },
-      "publisher": "Tuttle Publishing",
-      "pages": 96,
-      "year": null
-     },
-     {
-      "slug": "on-the-shortness-of-life",
-      "link": "https://smus.com/books/on-the-shortness-of-life",
-      "title": "On the Shortness of Life",
-      "author": "Seneca the Younger",
-      "beloved": true,
-      "dims": {
-       "h": 190,
-       "w": 109,
-       "t": 8.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/on-the-shortness-of-life.jpg",
-      "cover": "../data/covers/on-the-shortness-of-life.jpg",
-      "back": "../data/backs/on-the-shortness-of-life.jpg",
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "posted": "Oct 2017",
-       "source": "smus",
-       "headline": "On the Shortness of Life",
-       "excerpt": "Seneca lies at the intersection of Roman history, stoic philosophy and Buddhism. Despite many endorsements, I haven’t had the time to sit down and read any of his writings. So I picked up this short volume of three letters, two to his friends and one to his mother.",
-       "paras": [
-        "Seneca lies at the intersection of Roman history, stoic philosophy and Buddhism. Despite many endorsements, I haven’t had the time to sit down and read any of his writings. So I picked up this short volume of three letters, two to his friends and one to his mother.",
-        "There are almost no clarifying notes in the book, no context about Seneca's life, events he references, or any of the many names he mentions in supporting his points with exemplars. The Wikipedia page provided some of that, but I missed having annotations in the book.",
-        "Overall the letters are very quotable and read easily, with the exception of a few convoluted sentences. I was surprised by how modern ancient Rome sounds, with a surprising plurality of cultures & peoples. Seneca himself was born in Córdoba and moved to Rome. …"
-       ],
-       "words": 568,
-       "minutes": 2
-      },
-      "atlas": {
-       "lo": "atlas/lo/on-the-shortness-of-life.webp",
-       "card": "atlas/card/on-the-shortness-of-life.webp",
-       "edge": "#e7e7e1",
-       "hue": 1.1322
-      },
-      "publisher": "Penguin Books",
-      "pages": 105,
-      "year": null
-     },
-     {
-      "slug": "gr-aaa-italy-travelbook-2003",
-      "link": "https://www.goodreads.com/book/show/5804047",
-      "title": "AAA Italy TravelBook 2003",
-      "author": "American Automobile Association",
-      "beloved": true,
-      "dims": {
-       "h": 201,
-       "w": 121,
-       "t": 14.4
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-aaa-italy-travelbook-2003.jpg",
-      "cover": "../data/covers/gr-aaa-italy-travelbook-2003.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-aaa-italy-travelbook-2003.webp",
-       "card": "atlas/card/gr-aaa-italy-travelbook-2003.webp",
-       "edge": "#6a5763",
-       "hue": 0.1255
-      },
-      "publisher": "AAA",
-      "pages": 224,
-      "year": null,
-      "section": "Hobbies",
-      "group": "Non-fiction"
-     },
-     {
-      "slug": "gr-sushi-taste-and-techniques",
-      "link": "https://www.goodreads.com/book/show/304542",
-      "title": "Sushi: Taste and Techniques",
-      "author": "Kimiko Barber",
-      "beloved": true,
-      "dims": {
-       "h": 218,
-       "w": 168,
-       "t": 25.4
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-sushi-taste-and-techniques.jpg",
-      "cover": "../data/covers/gr-sushi-taste-and-techniques.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 5,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-sushi-taste-and-techniques.webp",
-       "card": "atlas/card/gr-sushi-taste-and-techniques.webp",
-       "edge": "#7c7f81",
-       "hue": 1.5796
-      },
-      "publisher": "DK",
-      "pages": 256,
-      "year": null
-     },
-     {
-      "slug": "gr-the-card-players-companion",
-      "link": "https://www.goodreads.com/book/show/6966627",
-      "title": "The Card Players Companion",
-      "author": "Gyles Daubeney Brandreth",
-      "beloved": true,
-      "dims": {
-       "h": 234,
-       "w": 180,
-       "t": 18.4
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-card-players-companion.jpg",
-      "cover": "../data/covers/gr-the-card-players-companion.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-card-players-companion.webp",
-       "card": "atlas/card/gr-the-card-players-companion.webp",
-       "edge": "#d8d0c2",
-       "hue": 1.2143
-      },
-      "publisher": "Treasure",
-      "pages": 192,
-      "year": null
-     },
-     {
-      "slug": "gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-",
-      "link": "https://www.goodreads.com/book/show/154964",
-      "title": "The Craft of the Cocktail",
-      "subtitle": "Everything You Need to Know to Be a Master Bartender, with 500 Recipes",
-      "author": "Dale Degroff",
-      "beloved": true,
-      "dims": {
-       "h": 260,
-       "w": 198,
-       "t": 20.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.jpg",
-      "cover": "../data/covers/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 5,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.webp",
-       "card": "atlas/card/gr-the-craft-of-the-cocktail-everything-you-need-to-know-to-be-.webp",
-       "edge": "#1d1613",
-       "hue": 1.8748
-      },
-      "publisher": "Clarkson Potter",
-      "pages": 240,
-      "year": null,
-      "lean": 6.3
-     },
-     {
-      "slug": "gr-unit-origami-multidimensional-transformations",
-      "link": "https://www.goodreads.com/book/show/1124001",
-      "title": "Unit Origami",
-      "subtitle": "Multidimensional Transformations",
-      "author": "Tomoko Fuse",
-      "beloved": false,
-      "dims": {
-       "h": 260,
-       "w": 181,
-       "t": 18.0
-      },
-      "pose": "lean-run",
-      "texture": "../data/textures/gr-unit-origami-multidimensional-transformations.jpg",
-      "cover": "../data/covers/gr-unit-origami-multidimensional-transformations.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": null,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-unit-origami-multidimensional-transformations.webp",
-       "card": "atlas/card/gr-unit-origami-multidimensional-transformations.webp",
-       "edge": "#d2924d",
-       "hue": 0.1208
-      },
-      "publisher": "Japan Publications",
-      "pages": 240,
-      "year": null,
-      "lean": 6.3
-     },
-     {
-      "slug": "gr-the-competitive-runner-s-handbook",
-      "link": "https://www.goodreads.com/book/show/98251",
-      "title": "The Competitive Runner's Handbook",
-      "author": "Bob Glover",
-      "beloved": true,
-      "dims": {
-       "h": 200,
-       "w": 132,
-       "t": 38.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-competitive-runner-s-handbook.jpg",
-      "cover": "../data/covers/gr-the-competitive-runner-s-handbook.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-competitive-runner-s-handbook.webp",
-       "card": "atlas/card/gr-the-competitive-runner-s-handbook.webp",
-       "edge": "#e9e9e6",
-       "hue": 1.1406
-      },
-      "publisher": "Penguin Publishing Group",
-      "pages": 688,
-      "year": null
-     },
-     {
-      "slug": "gr-rome-spiral-guide",
-      "link": "https://www.goodreads.com/book/show/2994725",
-      "title": "Rome Spiral Guide",
-      "author": "Tim Jepson",
-      "beloved": true,
-      "dims": {
-       "h": 218,
-       "w": 126,
-       "t": 15.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-rome-spiral-guide.jpg",
-      "cover": "../data/covers/gr-rome-spiral-guide.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 5,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-rome-spiral-guide.webp",
-       "card": "atlas/card/gr-rome-spiral-guide.webp",
-       "edge": "#352b6c",
-       "hue": 0.7312
-      },
-      "publisher": "AAA",
-      "pages": 213,
-      "year": null
-     },
-     {
-      "slug": "gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit",
-      "link": "https://www.goodreads.com/book/show/233712",
-      "title": "The PreHistory of The Far Side",
-      "subtitle": "A 10th Anniversary Exhibit",
-      "author": "Gary Larson",
-      "beloved": true,
-      "dims": {
-       "h": 280,
-       "w": 222,
-       "t": 24.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.jpg",
-      "cover": "../data/covers/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.webp",
-       "card": "atlas/card/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.webp",
-       "edge": "#150e16",
-       "hue": 1.826
-      },
-      "publisher": "Andrews McMeel",
-      "pages": 288,
-      "year": null
-     },
-     {
-      "slug": "gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra",
-      "link": "https://www.goodreads.com/book/show/6289283",
-      "title": "Born to Run",
-      "subtitle": "A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen",
-      "author": "Christopher McDougall",
-      "beloved": true,
-      "dims": {
-       "h": 250,
-       "w": 168,
-       "t": 30.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.jpg",
-      "cover": "../data/covers/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": "2010/05/06",
-       "rating": 5,
-       "excerpt": "Philosophy. Running. What more can you want?"
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.webp",
-       "card": "atlas/card/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.webp",
-       "edge": "#1b6497",
-       "hue": 0.6084
-      },
-      "publisher": "Knopf",
-      "pages": 287,
-      "year": null
-     },
-     {
-      "slug": "gr-what-i-talk-about-when-i-talk-about-running",
-      "link": "https://www.goodreads.com/book/show/2467833",
-      "title": "What I Talk About When I Talk About Running",
-      "author": "Haruki Murakami",
-      "beloved": true,
-      "dims": {
-       "h": 198,
-       "w": 137,
-       "t": 23.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-what-i-talk-about-when-i-talk-about-running.jpg",
-      "cover": "../data/covers/gr-what-i-talk-about-when-i-talk-about-running.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 5,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-what-i-talk-about-when-i-talk-about-running.webp",
-       "card": "atlas/card/gr-what-i-talk-about-when-i-talk-about-running.webp",
-       "edge": "#c7b484",
-       "hue": 0.1547
-      },
-      "publisher": "Bond Street Books",
-      "pages": 192,
-      "year": null
-     },
-     {
-      "slug": "gr-singing-for-dummies",
-      "link": "https://www.goodreads.com/book/show/375578",
-      "title": "Singing for Dummies",
-      "author": "Pamelia S. Phillips",
-      "beloved": false,
-      "dims": {
-       "h": 236,
-       "w": 185,
-       "t": 38.1
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-singing-for-dummies.jpg",
-      "cover": "../data/covers/gr-singing-for-dummies.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-singing-for-dummies.webp",
-       "card": "atlas/card/gr-singing-for-dummies.webp",
-       "edge": "#453e25",
-       "hue": 1.7526
-      },
-      "publisher": "For Dummies",
-      "pages": 360,
-      "year": null
-     },
-     {
-      "slug": "gr-red-wine-discovering-exploring-enjoying",
-      "link": "https://www.goodreads.com/book/show/700371",
-      "title": "Red Wine",
-      "subtitle": "Discovering, Exploring, Enjoying",
-      "author": "Jonathan Ray",
-      "beloved": false,
-      "dims": {
-       "h": 200,
-       "w": 197,
-       "t": 10.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-red-wine-discovering-exploring-enjoying.jpg",
-      "cover": "../data/covers/gr-red-wine-discovering-exploring-enjoying.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "hardcover",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-red-wine-discovering-exploring-enjoying.webp",
-       "card": "atlas/card/gr-red-wine-discovering-exploring-enjoying.webp",
-       "edge": "#1e1112",
-       "hue": 1.8643
-      },
-      "publisher": "Ryland Peters & Small",
-      "pages": 61,
-      "year": null
-     },
-     {
-      "slug": "gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne",
-      "link": "https://www.goodreads.com/book/show/626328",
-      "title": "The Little Black Book of Cocktails",
-      "author": "Virginia Reynolds",
-      "beloved": false,
-      "dims": {
-       "h": 146,
-       "w": 105,
-       "t": 13.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.jpg",
-      "cover": "../data/covers/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.webp",
-       "card": "atlas/card/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.webp",
-       "edge": "#2f2e2c",
-       "hue": 1.8196
-      },
-      "publisher": "Peter Pauper Press",
-      "pages": 160,
-      "year": null
-     },
-     {
-      "slug": "gr-the-essential-klezmer",
-      "link": "https://www.goodreads.com/book/show/64299",
-      "title": "The Essential Klezmer",
-      "author": "Seth Rogovoy",
-      "beloved": false,
-      "dims": {
-       "h": 226,
-       "w": 150,
-       "t": 22.9
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-the-essential-klezmer.jpg",
-      "cover": "../data/covers/gr-the-essential-klezmer.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": null,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-the-essential-klezmer.webp",
-       "card": "atlas/card/gr-the-essential-klezmer.webp",
-       "edge": "#3b1d19",
-       "hue": 1.7571
-      },
-      "publisher": "Algonquin Books",
-      "pages": 320,
-      "year": null
-     },
-     {
-      "slug": "gr-sports-nutrition-for-endurance-athletes",
-      "link": "https://www.goodreads.com/book/show/267729",
-      "title": "Sports Nutrition for Endurance Athletes",
-      "author": "Monique Ryan",
-      "beloved": false,
-      "dims": {
-       "h": 226,
-       "w": 150,
-       "t": 22.9
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-sports-nutrition-for-endurance-athletes.jpg",
-      "cover": "../data/covers/gr-sports-nutrition-for-endurance-athletes.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 3,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-sports-nutrition-for-endurance-athletes.webp",
-       "card": "atlas/card/gr-sports-nutrition-for-endurance-athletes.webp",
-       "edge": "#96ae94",
-       "hue": 1.4358
-      },
-      "publisher": "VeloPress",
-      "pages": 352,
-      "year": null
-     },
-     {
-      "slug": "gr-calvin-and-hobbes",
-      "link": "https://www.goodreads.com/book/show/77727",
-      "title": "Calvin and Hobbes",
-      "author": "Bill Watterson",
-      "beloved": true,
-      "dims": {
-       "h": 230,
-       "w": 217,
-       "t": 10.0
-      },
-      "pose": "upright",
-      "texture": "../data/textures/gr-calvin-and-hobbes.jpg",
-      "cover": "../data/covers/gr-calvin-and-hobbes.jpg",
-      "back": null,
-      "spine_source": "ai",
-      "binding": "paperback",
-      "review": {
-       "source": "goodreads",
-       "read": null,
-       "rating": 4,
-       "excerpt": ""
-      },
-      "atlas": {
-       "lo": "atlas/lo/gr-calvin-and-hobbes.webp",
-       "card": "atlas/card/gr-calvin-and-hobbes.webp",
-       "edge": "#e6ded2",
-       "hue": 1.1997
-      },
-      "publisher": "Andrews McMeel Publishing",
-      "pages": 128,
       "year": null
      }
     ]

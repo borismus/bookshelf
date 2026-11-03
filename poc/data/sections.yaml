@@ -86,6 +86,8 @@
       - gr-the-entrepreneur-s-guide-to-customer-development-a-cheat-she
       - gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha
       - gr-the-4-hour-workweek
+      # added 2026-11-02 by bookshelf.py
+      - gr-how-to-win-friends-influence-people
   - label: Design
     books:
       - bird-by-bird-by-anne-lamott
@@ -312,6 +314,8 @@
       - gr-ender-s-game
       - gr-the-salmon-of-doubt-hitchhiking-the-galaxy-one-last-time
       - gr-watchmen
+      # added 2026-11-02 by bookshelf.py
+      - gr-the-sirens-of-titan
   - label: Fiction
     books:
       - troy-by-stephen-fry
@@ -380,6 +384,12 @@
       - gr-kafka-on-the-shore
       # added 2026-11-02 by bookshelf.py
       - the-death-of-ivan-ilyich-by-lev-tolstoy
+      # added 2026-11-02 by bookshelf.py
+      - gr-alice-s-adventures-in-wonderland-through-the-looking-glass
+      # added 2026-11-02 by bookshelf.py
+      - gr-bashert
+      # added 2026-11-02 by bookshelf.py
+      - gr-life-of-pi
   - label: Children's
     books:
       - gr-the-bfg

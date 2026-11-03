@@ -460,7 +460,8 @@
   "binding_class": "paperback",
   "ol_authors": [
    "Eric RIES"
-  ]
+  ],
+  "display_author": "Eric Ries"
  },
  {
   "slug": "moral-ambition-by-rutger-bregman",
@@ -878,7 +879,25 @@
   "author": "",
   "beloved": false,
   "cover": null,
-  "error": "not found on Open Library"
+  "ol_work": "/works/OL34028976W",
+  "ol_author": "J.R.R. Tolkien",
+  "ol_title": "Battle of Maldon",
+  "ol_edition": "/books/OL46682411M",
+  "isbn13": "9780063338180",
+  "isbn10": null,
+  "publisher": "HarperCollins Publishers",
+  "format": null,
+  "pages": 208,
+  "ol_cover_id": 13830493,
+  "dims_mm": {
+   "h": 228,
+   "w": 152,
+   "t": 13.5
+  },
+  "dims_source": "cover ratio 0.667 -> paperback trim size; pages -> thickness",
+  "binding_class": "paperback",
+  "display_title": "The Battle of Maldon",
+  "display_author": "J.R.R. Tolkien"
  },
  {
   "slug": "secret-of-our-success-by-joseph-henrich",
@@ -3771,7 +3790,25 @@
   "author": "",
   "beloved": true,
   "cover": null,
-  "error": "not found on Open Library"
+  "ol_work": "/works/OL19385981W",
+  "ol_author": "Ken Liu",
+  "ol_title": "Invisible Planets",
+  "ol_edition": "/books/OL36220211M",
+  "isbn13": "9781784978648",
+  "isbn10": null,
+  "publisher": "Head of Zeus",
+  "format": null,
+  "pages": 384,
+  "ol_cover_id": 8496280,
+  "dims_mm": {
+   "h": 206,
+   "w": 136,
+   "t": 24.0
+  },
+  "dims_source": "estimate:paperback height + pages + small variation",
+  "binding_class": "paperback",
+  "display_title": "Invisible Planets",
+  "display_author": "Ken Liu"
  },
  {
   "slug": "bowling-alone-by-robert-putnam",
@@ -6059,7 +6096,16 @@
   "link": "https://www.goodreads.com/book/show/9772751",
   "gr_id": "9772751",
   "gr_rating": "4.0",
-  "error": "not found on Open Library"
+  "error": null,
+  "dims_mm": {
+   "h": 229,
+   "w": 152,
+   "t": 17.0
+  },
+  "dims_source": "hand: 6x9 trade paperback",
+  "pages": 290,
+  "binding_class": "paperback",
+  "display_title": "Bashert"
  },
  {
   "slug": "gr-the-world-as-i-see-it",
@@ -7472,7 +7518,20 @@
   "slug": "gr-alice-s-adventures-in-wonderland-through-the-looking-glass",
   "title": "Alice’s Adventures in Wonderland / Through the Looking-Glass",
   "author": "Lewis Carroll",
-  "error": "timeout('The read operation timed out')"
+  "beloved": false,
+  "cover": null,
+  "link": "https://www.goodreads.com/book/show/24213",
+  "gr_id": "24213",
+  "gr_rating": "4.0",
+  "error": null,
+  "dims_mm": {
+   "h": 198,
+   "w": 129,
+   "t": 22.0
+  },
+  "dims_source": "hand: typical Penguin Classics edition",
+  "pages": 400,
+  "binding_class": "paperback"
  },
  {
   "slug": "gr-the-phantom-tollbooth",

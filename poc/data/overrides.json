@@ -336,5 +336,60 @@
   "set": {
    "display_title": "Ages of Discord"
   }
+ },
+ "battle-of-maldon-homecoming-of-beorhtnoth": {
+  "title": "The Battle of Maldon",
+  "author": "J.R.R. Tolkien",
+  "isbn": "9780063338180",
+  "set": {
+   "display_title": "The Battle of Maldon",
+   "display_author": "J.R.R. Tolkien"
+  }
+ },
+ "infinite-planets": {
+  "title": "Invisible Planets",
+  "author": "Ken Liu",
+  "set": {
+   "display_title": "Invisible Planets",
+   "display_author": "Ken Liu"
+  }
+ },
+ "gr-alice-s-adventures-in-wonderland-through-the-looking-glass": {
+  "title": "Alice's Adventures in Wonderland",
+  "author": "Lewis Carroll",
+  "set": {
+   "dims_mm": {
+    "h": 198,
+    "w": 129,
+    "t": 22.0
+   },
+   "dims_source": "hand: typical Penguin Classics edition",
+   "pages": 400,
+   "binding_class": "paperback",
+   "error": null
+  }
+ },
+ "gr-bashert": {
+  "title": "Bashert",
+  "author": "Lior Samson",
+  "set": {
+   "dims_mm": {
+    "h": 229,
+    "w": 152,
+    "t": 17.0
+   },
+   "dims_source": "hand: 6x9 trade paperback",
+   "pages": 290,
+   "binding_class": "paperback",
+   "display_title": "Bashert",
+   "error": null
+  }
+ },
+ "incorruptible-by-eric-ries": {
+  "title": "Incorruptible",
+  "author": "Eric Ries",
+  "set": {
+   "display_author": "Eric Ries"
+  }
  }
 }
