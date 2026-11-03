@@ -94,7 +94,7 @@
 <body>
 <main class="sr-only">
 <h1>Boris Smus's Bookshelf</h1>
-<p>Books I've read and reviewed, arranged on two bookcases (Fiction and Non-fiction), sorted by section and author. Starred books are favourites; each links to my review on <a href="https://smus.com/books/">smus.com/books</a> or to Goodreads.</p>
+<p>Books I've read and reviewed, arranged on IKEA Billy bookcases (Fiction, Non-fiction, and a low one for hobbies and Lego), sorted by section and author. Starred books are favourites; each links to my review on <a href="https://smus.com/books/">smus.com/books</a> or to Goodreads.</p>
 <!--CATALOG-->
 </main>
 <div id="cases"></div>
@@ -128,9 +128,11 @@ const pitch = height + board;
 const caseW = inner + 2 * board;
 cases.forEach((c, i) => {
   c.x0 = i * (caseW + CASE_GAP);                                 // x of the case's inner left edge
-  c.N = Math.max(6, ...cases.map(x => x.shelves.length));        // paired Billys: same height, extra shelves stay empty
+  c.N = c.low ? c.shelves.length                                  // the low Billy (Lego + Hobbies) on the left
+    : Math.max(6, ...cases.filter(x => !x.low).map(x => x.shelves.length));   // paired Billys: same height
   c.H = c.N * height + (c.N - 1) * board;                        // inner height, bottom floor to top underside
 });
+const home = cases.find(c => !c.low) ?? cases[0];               // where the camera starts (Fiction)
 const baseY = (c, i) => plinth + (c.N - 1 - i) * pitch;         // floor height of shelf i (0 = top) in case c
 
 // Debug params: ?hover=<slug> (render that book pulled out), ?case=<index>, ?y=<mm> (camera height)
@@ -716,6 +718,8 @@ function clearLayout() {
   notes.length = 0;
   for (const p of pivots) p.removeFromParent();
   pivots.length = 0;
+  for (const p of layoutProps) p.removeFromParent();
+  layoutProps.length = 0;
 }
 
 function layoutAll(byColour) {
@@ -786,6 +790,7 @@ function layoutAll(byColour) {
       }
     });
     if (pending.length) placeStack(pending);
+    if (c.low && shelf.length) placeBookend(cx0 + cursor + 0.5, floor);
   });
   if (byColour) placeNote('SORTED BY COLOUR (SORRY)', c.x0 + inner / 2 - 80, baseY(c, 0));
   });
@@ -795,6 +800,7 @@ function layoutAll(byColour) {
 // Re-shelve every case by spine hue, everything upright, same number of books per shelf.
 function colourPlan() {
   return cases.map(c => {
+    if (c.low) return c.shelves.map(sh => [...sh].map(b => ({ ...b, section: null })).sort((a, b) => (a.atlas?.hue ?? 3) - (b.atlas?.hue ?? 3)));
     const all = c.shelves.flat().map(b => ({ ...b, pose: 'upright', section: null }));
     all.sort((a, b) => (a.atlas?.hue ?? 3) - (b.atlas?.hue ?? 3));   // spine colour, precomputed at build time
     const out = []; let row = [], used = 0;
@@ -806,7 +812,276 @@ function colourPlan() {
     return out;
   });
 }
-const notes = [], pivots = [];
+const notes = [], pivots = [], layoutProps = [];
+// ---------- props on the low Billy: Lego builds, a bookend, a snake plant ----------
+// Bricks are real-size (8 mm stud pitch, 9.6 mm bricks, 3.2 mm plates); each build is merged into one mesh per colour.
+const STUD = 8, BRICK = 9.6, PLATE = 3.2;
+const BRICK_RGB = { red: 0xc91a09, blue: 0x0055bf, yellow: 0xf2cd37, white: 0xf2f2ee, black: 0x1f2326, green: 0x237841,
+  grey: 0xa0a5a9, dkgrey: 0x5f6266, orange: 0xfe8a18, tan: 0xe4cd9e, brown: 0x6b3f22, azure: 0x36aebf, lime: 0xa5ca18 };
+const brickMats = {};
+const brickMat = c => brickMats[c] ??= c === 'glass'
+  ? new THREE.MeshStandardMaterial({ color: 0x9fd3e6, roughness: 0.05, transparent: true, opacity: 0.45 })
+  : new THREE.MeshStandardMaterial({ color: BRICK_RGB[c], roughness: 0.3 });
+const studGeo = new THREE.CylinderGeometry(2.4, 2.4, 1.7, 12);
+const brickGeos = new Map();
+function brickGeo(nx, nz, hgt, studs = true) {
+  const key = `${nx}/${nz}/${hgt}/${studs}`;
+  if (!brickGeos.has(key)) {
+    const parts = [new THREE.BoxGeometry(nx * STUD - 0.2, hgt - 0.1, nz * STUD - 0.2)];
+    if (studs) for (let i = 0; i < nx; i++) for (let k = 0; k < nz; k++)
+      parts.push(studGeo.clone().translate((i - (nx - 1) / 2) * STUD, hgt / 2 + 0.85, (k - (nz - 1) / 2) * STUD));
+    brickGeos.set(key, mergeGeometries(parts));
+  }
+  return brickGeos.get(key);
+}
+// A build: add bricks on a stud grid (gx, gz = corner in studs; y = bottom in mm), then done() -> Group.
+function build() {
+  const byColour = {};
+  const add = (c, nx, nz, gx, gz, y, hgt = BRICK, rot = 0, studs = true) => {
+    const g = brickGeo(nx, nz, hgt, studs).clone();
+    if (rot) g.rotateY(rot);
+    g.translate((gx + nx / 2) * STUD, y + hgt / 2, (gz + nz / 2) * STUD);
+    (byColour[c] ??= []).push(g);
+  };
+  const extra = [];
+  return {
+    add, extra, raw: (c, g) => (byColour[c] ??= []).push(g),
+    // one course of a wall along a line of cells, broken into bricks of up to 4 studs (staggered by course)
+    course(c, cells, y, row, alongX) {
+      let run = [];
+      const flush = () => {
+        for (let i = 0; i < run.length;) {
+          const len = Math.min(i === 0 && row % 2 ? 2 : 4, run.length - i);
+          const [x, z] = run[i];
+          alongX ? add(c, len, 1, x, z, y) : add(c, 1, len, x, z, y);
+          i += len;
+        }
+        run = [];
+      };
+      for (const cell of cells) {
+        if (cell === null) { flush(); continue; }
+        if (run.length && (alongX ? cell[0] !== run.at(-1)[0] + 1 : cell[1] !== run.at(-1)[1] + 1)) flush();
+        run.push(cell);
+      }
+      flush();
+    },
+    done() {
+      const grp = new THREE.Group();
+      for (const [c, gs] of Object.entries(byColour)) {
+        const m = new THREE.Mesh(mergeGeometries(gs), brickMat(c));
+        m.castShadow = c !== 'glass'; m.receiveShadow = true;
+        grp.add(m);
+      }
+      extra.forEach(m => grp.add(m));
+      return grp;
+    },
+  };
+}
+const range = (a, b) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
+
+function legoHouse(roof = 'red', walls = 'white') {
+  const b = build();
+  b.add('green', 16, 16, 0, 0, 0, PLATE);                          // baseplate
+  const x0 = 2, x1 = 13, z0 = 3, z1 = 12, y0 = PLATE;
+  const door = x => x >= 7 && x <= 8, win = x => (x >= 3 && x <= 4) || (x >= 11 && x <= 12);
+  for (let row = 0; row < 6; row++) {
+    const y = y0 + row * BRICK, c = row === 0 ? 'dkgrey' : walls;
+    const gap = x => (door(x) && row < 4) || (win(x) && row >= 2 && row <= 3);
+    b.course(c, range(x0, x1).map(x => gap(x) ? null : [x, z1]), y, row, true);          // front (faces us)
+    b.course(c, range(x0, x1).map(x => (win(x) && row >= 2 && row <= 3) ? null : [x, z0]), y, row + 1, true);   // back
+    b.course(c, range(z0 + 1, z1 - 1).map(z => [x0, z]), y, row + 1, false);
+    b.course(c, range(z0 + 1, z1 - 1).map(z => [x1, z]), y, row, false);
+  }
+  b.add(walls, 2, 1, 7, z1, y0 + 4 * BRICK);                     // lintel over the door
+  for (const wx of [3, 11]) b.add('glass', 2, 1, wx, z1, y0 + 2 * BRICK, BRICK * 2, 0, false);
+  // stepped gable roof: each course steps in one stud from front and back
+  for (let k = 0; k < 5; k++) {
+    const y = y0 + (6 + k) * BRICK;
+    b.course(roof, range(x0 - 1, x1 + 1).map(x => [x, z0 + k]), y, k, true);
+    b.course(roof, range(x0 - 1, x1 + 1).map(x => [x, z1 - k]), y, k + 1, true);
+    if (z1 - k - 1 > z0 + k) {                                        // fill the gable ends
+      b.course(walls, range(z0 + k + 1, z1 - k - 1).map(z => [x0, z]), y, k, false);
+      b.course(walls, range(z0 + k + 1, z1 - k - 1).map(z => [x1, z]), y, k + 1, false);
+    }
+  }
+  b.add(roof, 14, 1, x0 - 1, 7, y0 + 11 * BRICK);
+  b.add(roof, 14, 1, x0 - 1, 8, y0 + 11 * BRICK);
+  for (let r = 0; r < 3; r++) b.add('dkgrey', 2, 2, 10, 5, y0 + (9 + r) * BRICK);   // chimney
+  for (let r = 0; r < 4; r++) b.add('brown', 1, 1, 0, 14, y0 + r * BRICK);           // little tree
+  b.add('green', 3, 3, -1, 13, y0 + 4 * BRICK); b.add('green', 2, 2, -0.5, 13.5, y0 + 5 * BRICK);
+  b.add('tan', 2, 4, 7, 13, PLATE, PLATE);                          // path to the door
+  return b.done();
+}
+
+function legoTower(stone = 'grey') {
+  const b = build();
+  b.add('dkgrey', 10, 10, 0, 0, 0, PLATE);
+  const lo = 2, hi = 7, rows = 12;
+  for (let row = 0; row < rows; row++) {
+    const y = PLATE + row * BRICK, slit = row >= 6 && row <= 8;
+    b.course(stone, range(lo, hi).map(x => (slit && x >= 4 && x <= 5) ? null : [x, hi]), y, row, true);
+    b.course(stone, range(lo, hi).map(x => [x, lo]), y, row + 1, true);
+    b.course(stone, range(lo + 1, hi - 1).map(z => [lo, z]), y, row + 1, false);
+    b.course(stone, range(lo + 1, hi - 1).map(z => [hi, z]), y, row, false);
+  }
+  const top = PLATE + rows * BRICK;
+  for (const x of [lo, lo + 2, lo + 4]) { b.add(stone, 1, 1, x, hi, top); b.add(stone, 1, 1, x, lo, top); }
+  for (const z of [lo + 2, lo + 4]) { b.add(stone, 1, 1, lo, z, top); b.add(stone, 1, 1, hi, z, top); }
+  for (let r = 0; r < 5; r++) b.add('black', 1, 1, 4.5, 4.5, top + r * BRICK, BRICK, 0, false);   // flagpole
+  b.add('red', 3, 1, 5.5, 4.5, top + 3 * BRICK, BRICK * 1.6, 0, false);
+  b.add('brown', 2, 1, 4, hi + 0.12, PLATE, BRICK * 2.5, 0, false);  // door, just proud of the wall
+  return b.done();
+}
+
+function legoRocket(stripe = 'red') {
+  const b = build();
+  b.add('dkgrey', 8, 8, 0, 0, 0, PLATE);
+  for (let r = 0; r < 9; r++) b.add(r % 4 === 3 ? stripe : 'white', 4, 4, 2, 2, PLATE + r * BRICK);
+  for (const [x, z, nx, nz] of [[0, 3, 2, 2], [6, 3, 2, 2], [3, 0, 2, 2], [3, 6, 2, 2]]) {   // fins
+    b.add('blue', nx, nz, x, z, PLATE, BRICK);
+    b.add('blue', nx, nz, x, z, PLATE + BRICK, PLATE);
+  }
+  const top = PLATE + 9 * BRICK;
+  b.add(stripe, 4, 4, 2, 2, top, PLATE);
+  b.add(stripe, 2, 2, 3, 3, top + PLATE, BRICK);
+  b.add(stripe, 2, 2, 3, 3, top + PLATE + BRICK, BRICK);
+  b.add('yellow', 1, 1, 3.5, 3.5, top + PLATE + 2 * BRICK, BRICK);
+  b.add('glass', 2, 1, 3, 6, PLATE + 6 * BRICK, BRICK, 0, false);    // porthole
+  return b.done();
+}
+
+function legoCar(body = 'red') {
+  const b = build();
+  b.add('dkgrey', 4, 10, 0, 0, 7, PLATE);                           // chassis on the axles
+  const wheelGeo = new THREE.CylinderGeometry(7, 7, 6, 20).rotateZ(Math.PI / 2);
+  const hubGeo = new THREE.CylinderGeometry(3.5, 3.5, 6.4, 12).rotateZ(Math.PI / 2);
+  for (const z of [2, 8]) for (const x of [-0.4, 4.4]) {             // merged into the build's black/grey meshes
+    b.raw('black', wheelGeo.clone().translate(x * STUD, 7, z * STUD));
+    b.raw('grey', hubGeo.clone().translate(x * STUD, 7, z * STUD));
+  }
+  const y = 7 + PLATE;
+  b.add(body, 4, 3, 0, 7, y); b.add(body, 4, 2, 0, 0, y);           // bonnet and boot
+  b.add(body, 1, 5, 0, 2, y); b.add(body, 1, 5, 3, 2, y);           // sides
+  b.add('glass', 4, 1, 0, 6, y + BRICK, BRICK, 0, false);           // windscreen
+  b.add(body, 1, 4, 0, 2, y + BRICK); b.add(body, 1, 4, 3, 2, y + BRICK);
+  b.add('black', 4, 5, 0, 2, y + 2 * BRICK, PLATE);                 // roof
+  b.add('yellow', 1, 1, 0, 9, y, PLATE); b.add('yellow', 1, 1, 3, 9, y, PLATE);   // headlights
+  return b.done();
+}
+
+function legoPile(rng, n = 16) {
+  const b = build();
+  const colours = ['red', 'blue', 'yellow', 'white', 'green', 'orange', 'black', 'azure', 'lime'];
+  const sizes = [[2, 4], [2, 2], [1, 4], [1, 2], [2, 3], [1, 6], [2, 6]];
+  for (let i = 0; i < n; i++) {
+    const [nx, nz] = sizes[Math.floor(rng() * sizes.length)];
+    const stacked = rng() < 0.3;
+    b.add(colours[Math.floor(rng() * colours.length)], nx, nz, rng() * 14, rng() * 9, stacked ? BRICK : 0,
+          rng() < 0.4 ? PLATE : BRICK, rng() * Math.PI);
+  }
+  return b.done();
+}
+
+// A heavy walnut block bookend with a rounded top, holding the last book up.
+const walnut = new THREE.MeshStandardMaterial({ color: 0x5b3a26, roughness: 0.55 });
+const bookendGeo = (() => {
+  const W = 52, H = 150, R = 26, sh = new THREE.Shape();
+  sh.moveTo(0, 0); sh.lineTo(W, 0); sh.lineTo(W, H - R); sh.absarc(W - R, H - R, R, 0, Math.PI / 2, false);
+  sh.lineTo(0, H); sh.lineTo(0, 0);
+  const g = new THREE.ExtrudeGeometry(sh, { depth: 115, bevelEnabled: true, bevelThickness: 1.5, bevelSize: 1.5, bevelSegments: 2, curveSegments: 12 });
+  g.translate(0, 0, -115 / 2);
+  return g;
+})();
+function placeBookend(x, floor) {
+  const m = new THREE.Mesh(bookendGeo, walnut);
+  m.castShadow = m.receiveShadow = true;
+  m.position.set(x + 1.5, floor + 1.5, -12 - 115 / 2 - 15);
+  m.rotation.y = -0.04;
+  scene.add(m); layoutProps.push(m);
+}
+
+// Snake plant (sansevieria) in a terracotta pot: tapering banded blades with yellow margins.
+function leafTexture() {
+  const c = document.createElement('canvas'); c.width = 64; c.height = 512;
+  const g = c.getContext('2d');
+  g.fillStyle = '#2d5a2a'; g.fillRect(0, 0, 64, 512);
+  let r = 99; const rr = () => ((r = (r * 16807) % 2147483647) / 2147483647);
+  for (let y = 0; y < 512; y += 5 + rr() * 9) {                      // the wavy light/dark cross-banding
+    g.strokeStyle = rr() < 0.5 ? 'rgba(150,180,120,.35)' : 'rgba(15,40,20,.45)';
+    g.lineWidth = 1.5 + rr() * 3;
+    g.beginPath(); g.moveTo(0, y);
+    for (let x = 0; x <= 64; x += 8) g.lineTo(x, y + Math.sin(x / 9 + rr() * 2) * 4);
+    g.stroke();
+  }
+  const edge = g.createLinearGradient(0, 0, 64, 0);
+  edge.addColorStop(0, '#d9c95a'); edge.addColorStop(0.1, '#c8c060'); edge.addColorStop(0.15, 'rgba(200,192,96,0)');
+  edge.addColorStop(0.85, 'rgba(200,192,96,0)'); edge.addColorStop(0.9, '#c8c060'); edge.addColorStop(1, '#d9c95a');
+  g.fillStyle = edge; g.fillRect(0, 0, 64, 512);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = maxAniso;
+  return t;
+}
+function snakePlant(rng) {
+  const g = new THREE.Group();
+  const potMat = new THREE.MeshStandardMaterial({ color: 0xb4643c, roughness: 0.85 });
+  const pot = new THREE.Mesh(new THREE.CylinderGeometry(78, 60, 140, 40), potMat);
+  pot.position.y = 70;
+  const rim = new THREE.Mesh(new THREE.TorusGeometry(78, 6, 10, 40).rotateX(Math.PI / 2), potMat);
+  rim.position.y = 138;
+  const soil = new THREE.Mesh(new THREE.CircleGeometry(74, 32).rotateX(-Math.PI / 2),
+    new THREE.MeshStandardMaterial({ color: 0x3a2a1e, roughness: 1 }));
+  soil.position.y = 128;
+  for (const m of [pot, rim, soil]) { m.castShadow = m.receiveShadow = true; g.add(m); }
+  const leafMat = new THREE.MeshStandardMaterial({ map: leafTexture(), roughness: 0.5, side: THREE.DoubleSide });
+  const N = 11, blades = [];
+  for (let i = 0; i < N; i++) {
+    const L = 300 + rng() * 260, W = 38 + rng() * 22, bend = (0.08 + rng() * 0.22) * L;
+    const geo = new THREE.PlaneGeometry(1, 1, 2, 18);
+    const p = geo.attributes.position;
+    for (let k = 0; k < p.count; k++) {
+      const u = p.getX(k), v = p.getY(k) + 0.5;                     // u: -0.5..0.5 across, v: 0..1 up the blade
+      const width = W * (0.5 + 0.5 * Math.sin(Math.PI * Math.min(1, v * 1.25))) * (v > 0.78 ? Math.max(0, (1 - v) / 0.22) : 1);
+      p.setXYZ(k, u * width, v * L, bend * v * v - Math.abs(u) * width * 0.3);   // curve outward, V-shaped keel
+    }
+    geo.computeVertexNormals();
+    const a = (i / N) * Math.PI * 2 + rng() * 0.5, rad = 10 + rng() * 38;
+    geo.rotateY(-a + Math.PI / 2 + (rng() - 0.5) * 0.6);          // face outward, a little twisted
+    geo.translate(Math.cos(a) * rad, 122, Math.sin(a) * rad);
+    blades.push(geo);
+  }
+  const leaves = new THREE.Mesh(mergeGeometries(blades), leafMat);   // one draw call for the whole plant's leaves
+  leaves.castShadow = true; leaves.receiveShadow = true;
+  g.add(leaves);
+  return g;
+}
+
+{
+  const low = cases.find(c => c.low);
+  if (low) {
+    let r = 1234; const prng = () => ((r = (r * 16807) % 2147483647) / 2147483647);
+    const put = (obj, shelf, x, z, rotY = 0) => {
+      obj.position.set(low.x0 + x, baseY(low, shelf), z); obj.rotation.y = rotY; scene.add(obj);
+    };
+    const last = low.N - 1;
+    put(legoHouse(), 0, 30, -235, 0.05);                              // top compartment: a little town
+    put(legoCar('yellow'), 0, 175, -95, 0.4);
+    put(legoRocket(), 0, 250, -190, -0.2);
+    put(legoHouse('blue', 'tan'), 0, 340, -250, -0.1);
+    put(legoTower(), 0, 500, -200, 0.12);
+    put(legoRocket('orange'), 0, 620, -230, 0.3);
+    put(legoPile(prng, 10), 0, 560, -110, 0);
+    put(legoCar('red'), 1, 470, -150, 1.35);                          // book shelf: past the bookend
+    put(legoTower('tan'), 1, 600, -215, -0.1);
+    put(legoTower(), last, 30, -215, -0.08);                          // bottom: castle, cars, a bin of loose bricks
+    put(legoTower('dkgrey'), last, 120, -250, 0.05);
+    put(legoCar('blue'), last, 245, -130, -1.1);
+    put(legoPile(prng, 26), last, 300, -230, 0.1);
+    put(legoCar('green'), last, 440, -120, 0.25);
+    put(legoHouse('red', 'white'), last, 560, -240, -0.15);
+    const plant = snakePlant(prng);
+    plant.position.set(low.x0 + inner * 0.68, plinth + low.H + board, -depth / 2 - 10);
+    scene.add(plant);
+  }
+}
 layoutAll(params.get('sort') === 'colour');
 
 // ---------- lights ----------
@@ -845,7 +1120,7 @@ const camera = new THREE.PerspectiveCamera(16, innerWidth / innerHeight, 10, 300
 const caseOf = x => cases.reduce((a, b) => Math.abs(b.x0 + inner / 2 - x) < Math.abs(a.x0 + inner / 2 - x) ? b : a);
 const DEFAULT_W = caseW + 60;
 const minW = () => caseW * (innerWidth < 640 ? 0.35 : 0.7);   // closest zoom: 70% of a shelf (35% on phones)
-let camX = params.get('unit') ? cases[Number(params.get('unit'))].x0 + inner / 2 : null;   // debug: ?unit=<index>
+let camX = params.get('unit') ? cases[Number(params.get('unit'))].x0 + inner / 2 : null;   // debug: ?unit=<index> (0 = low Lego Billy, 1 = Fiction, 2 = Non-fiction)
 let camY = params.get('y') ? Number(params.get('y')) : null;
 let viewW = params.get('zoom') === 'all' ? Infinity : (params.get('w') ? Number(params.get('w')) : DEFAULT_W);   // debug: ?w=<mm>                             // debug: ?zoom=all
 const fullW = () => Math.max(sceneW + 240, (sceneH * 1.18 + 200) * camera.aspect);   // room for the category bar
@@ -853,7 +1128,7 @@ function frame() {
   const tanH = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
   viewW = Math.min(fullW(), Math.max(minW(), viewW));
   const dist = viewW / (2 * tanH * camera.aspect), halfH = dist * tanH, halfW = viewW / 2;
-  if (camX === null) camX = cases[0].x0 + inner / 2;
+  if (camX === null) camX = home.x0 + inner / 2;
   const xlo = halfW - 300, xhi = sceneW + 300 - halfW;
   camX = (xlo > xhi || viewW >= fullW() * 0.98) ? sceneW / 2 : Math.min(xhi, Math.max(xlo, camX));
   const ylo = halfH - 200, yhi = sceneH + 200 - halfH;
@@ -933,7 +1208,7 @@ function updateZoomBtn() {
   zoomBtn.className = out ? 'on' : '';
 }
 zoomBtn.onclick = () => {
-  if (viewW >= fullW() * 0.98) animateView({ w: DEFAULT_W, x: cases[0].x0 + inner / 2, y: Infinity });
+  if (viewW >= fullW() * 0.98) animateView({ w: DEFAULT_W, x: home.x0 + inner / 2, y: Infinity });
   else animateView({ w: fullW(), x: sceneW / 2, y: sceneH / 2 + sceneH * 0.05 });
   setTimeout(updateZoomBtn, 600);
 };

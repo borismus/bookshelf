@@ -231,6 +231,8 @@ def load_sections():
 
 
 CAPACITY = MAX_SHELVES * (INNER - 4)
+# A low three-shelf Billy on the left: Lego builds on the top and bottom shelves, these sections in the middle.
+LOW_CASE = {"name": "Hobbies", "sections": ["Hobbies"], "shelves": 3, "book_shelf": 1}
 
 
 def main():
@@ -248,12 +250,28 @@ def main():
                 secs.append((case["name"], sec["label"], have))
         plan.append(secs)
     width = lambda secs: sum(books[s]["dims_mm"]["t"] + 2.2 for _, _, ss in secs for s in ss)
+    # Sections that live on the low Billy to the left (with the Lego builds), not on the two tall bookcases.
+    low = [x for secs in plan for x in secs if x[1] in LOW_CASE["sections"]]
+    plan = [[x for x in secs if x[1] not in LOW_CASE["sections"]] for secs in plan]
     for i, secs in enumerate(plan):
         other = plan[1 - i]
         while width(secs) > CAPACITY * 0.92 and len(secs) > 1 and width(other) + width(secs[-1:]) <= CAPACITY * 0.92:
             other.append(secs.pop())
             print(f"  overflow: {other[-1][1]} ({other[-1][0]}) moves to the end of the {cases[1 - i]['name']} bookcase")
     out = []
+    if low:
+        row = []
+        for s in [s for _, _, ss in low for s in ss]:      # upright, held up by a bookend (no lean runs)
+            r = record(s, "upright")
+            if r:
+                for group, label, ss in low:
+                    if s == ss[0]:
+                        r["section"], r["group"] = label, group
+                row.append(r)
+        shelves = [[] for _ in range(LOW_CASE["shelves"])]
+        shelves[LOW_CASE["book_shelf"]] = row
+        out.append({"name": LOW_CASE["name"], "low": True, "shelves": shelves})
+        print(f"{LOW_CASE['name']} (low case): {len(row)} books")
     for case, secs in zip(cases, plan):
         ordered = [s for _, _, ss in secs for s in ss]
         starts = {ss[0]: (label, group) for group, label, ss in secs}
