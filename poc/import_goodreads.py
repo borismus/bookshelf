@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-GR = HERE.parent / "goodreads/goodreads_library_export_2026-08-18.csv"
+GR = max((HERE.parent / "goodreads").glob("goodreads_library_export_*.csv"))   # newest export
 
 # Not printed books, or not something on the shelf: lecture courses, sheet music, a mis-scanned product.
 SKIP_TITLES = ["Encyclopedia of Picture Chords", "Best of Metallica", "Piano/Vocal/Guitar", "Diesel Women",

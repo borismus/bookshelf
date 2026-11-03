@@ -4,6 +4,7 @@ smus.com is the source of truth (slug, title, author, beloved, cover).
 Goodreads fills in ISBN, binding, page count, publisher.
 """
 import csv
+import os
 import html
 import json
 import re
@@ -11,7 +12,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = Path.home() / "Projects/smus.com/preview-www"
+SITE = Path(os.environ.get("SMUS_WWW") or Path.home() / "Projects/smus.com/preview-www")   # bookshelf.py builds a fresh copy
 GR = ROOT / "goodreads"
 OUT = ROOT / "poc/data/books.json"
 
@@ -53,7 +54,7 @@ def load_goodreads():
         if old is None or score(meta) > score(old):
             rows[key] = meta
 
-    for r in csv.DictReader(open(GR / "goodreads_library_export_2026-08-18.csv")):
+    for r in csv.DictReader(open(max(GR.glob("goodreads_library_export_*.csv")))):   # newest export (dates sort lexically)
         add(norm(r["Title"]), {
             "isbn13": isbn_clean(r["ISBN13"]), "isbn10": isbn_clean(r["ISBN"]),
             "binding": r["Binding"], "pages": int(r["Number of Pages"] or 0) or None,

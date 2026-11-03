@@ -79,7 +79,8 @@ def main():
     shelf = json.loads((HERE / "preview/shelf.json").read_text())
     on_shelf = {b["slug"] for c in shelf["cases"] for s in c["shelves"] for b in s}
     recs = json.loads(PATH.read_text())
-    todo = [r for r in recs if r["slug"] in on_shelf and r.get("dims_source", "").startswith(ESTIMATED)]
+    only = set(a for a in __import__("sys").argv[1:] if not a.startswith("-"))      # optional: just these slugs
+    todo = [r for r in recs if (r["slug"] in only if only else r["slug"] in on_shelf) and r.get("dims_source", "").startswith(ESTIMATED)]
     hits = 0
     for r in todo:
         try:

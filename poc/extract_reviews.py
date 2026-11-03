@@ -7,11 +7,12 @@ Writes data/reviews.json: slug -> {headline, excerpt, posted, read, rating, sour
 import csv
 import html
 import json
+import os
 import re
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SITE = Path.home() / "Projects/smus.com/preview-www/books"
+SITE = Path(os.environ.get("SMUS_WWW") or Path.home() / "Projects/smus.com/preview-www") / "books"
 
 
 def text(fragment):
@@ -50,6 +51,18 @@ def opening(body, budget=900):
     return [*out[:-1], finish(out[-1])] if out else out
 
 
+def bullets(body, budget=600):
+    """For reviews written as a list: the first list's items, as '• item' lines, up to ~budget characters."""
+    m = re.search(r"<ul>(.*?)</ul>", body, re.S)
+    out, used = [], 0
+    for li in re.findall(r"<li>(.*?)</li>", m.group(1), re.S) if m else []:
+        t = text(li)
+        if used + len(t) > budget and out:
+            break
+        out.append("• " + t); used += len(t)
+    return [*out[:-1], finish(out[-1])] if out else out
+
+
 def finish(t):
     """The excerpt stops here: if it ends mid-thought (a colon introducing a quote or list we don't show, a comma,
     or no closing punctuation), end it with an ellipsis."""
@@ -68,7 +81,8 @@ def main():
             h = page.read_text()
             m = re.search(r"<h1 class='title'>(.*?)</h1>", h, re.S)
             body = h.split("<div class='body'>", 1)[1] if "<div class='body'>" in h else ""
-            paras = opening(body)
+            body = body.split("<div class='subfooter")[0].split("<section id='subscribe'")[0]   # article only
+            paras = opening(body) or bullets(body)
             body_text = text(body.split("<div class='discussion")[0].split("<div class='subfooter")[0])
             words = len(body_text.split())
             shown = sum(len(x.split()) for x in paras)
@@ -77,7 +91,7 @@ def main():
             rec.update(headline=text(m.group(1)) if m else None, excerpt=paras[0] if paras else '', paras=paras,
                        words=words, minutes=max(1, round(words / 230)))
         out[b["slug"]] = rec
-    rows = {r["Book Id"]: r for r in csv.DictReader(open(HERE.parent / "goodreads/goodreads_library_export_2026-08-18.csv"))}
+    rows = {r["Book Id"]: r for r in csv.DictReader(open(max((HERE.parent / "goodreads").glob("goodreads_library_export_*.csv"))))}
     for b in json.loads((HERE / "data/goodreads_books.json").read_text()):
         r = rows.get(b["gr_id"], {})
         review = r.get("My Review", "").replace("<br/>", "</p><p>")

@@ -18,3 +18,7 @@ __pycache__/
 .DS_Store
 dist/
 shots/
+poc/data/audit/
+poc/data/cover_candidates/
+poc/.cache/
+poc/preview/covers_review.html

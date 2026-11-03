@@ -10,6 +10,7 @@ Thickness stays page-count based. Writes data/enriched.json atomically (generato
 """
 import hashlib
 import json
+import sys
 import os
 import statistics
 import time
@@ -68,7 +69,10 @@ def from_editions(work, cls):
 def main():
     recs = json.loads(PATH.read_text())
     counts = {"editions": 0, "cover": 0, "wiggle": 0}
+    only = set(a for a in sys.argv[1:] if not a.startswith("-"))   # optional: just these slugs
     for r in recs:
+        if only and r["slug"] not in only:
+            continue
         src = r.get("dims_source", "")
         if "dims_mm" not in r or not src.startswith("estimate"):
             continue

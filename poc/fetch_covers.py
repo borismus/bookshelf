@@ -1,4 +1,5 @@
-"""Copy/fetch a front cover per sample book into data/covers/<slug>.jpg (smus.com first, else Open Library)."""
+"""Copy/fetch a front cover into data/covers/<slug>.jpg (smus.com first, else Open Library).
+Usage: fetch_covers.py [slug ...]   (default: books without a cover yet)"""
 import json, urllib.request
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
@@ -12,8 +13,12 @@ def front_like(path):
     w, h = Image.open(path).size
     return 0.55 <= w / h <= 0.8
 
+import sys
+only = set(sys.argv[1:])     # slugs to (re)fetch; with none, fetch only books that have no cover yet
 for b in json.loads((HERE / "data/enriched.json").read_text()):
     dst = out / f"{b['slug']}.jpg"
+    if (b["slug"] not in only) if only else dst.exists():
+        continue
     src = None
     if b["slug"] in jackets:
         print(f"{b['slug'][:42]:42} jacket (split_jackets.py)"); continue
