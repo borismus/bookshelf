@@ -1,0 +1,58 @@
+[
+ {
+  "set": "6991",
+  "name": "Monorail Transport Base",
+  "file": "props/lego/6991.jpg",
+  "aspect": 1.41,
+  "dims": [
+   650,
+   480,
+   120
+  ],
+  "year": 1994,
+  "top": "props/lego/6991_top.jpg",
+  "end": "props/lego/6991_end.jpg"
+ },
+ {
+  "set": "6973",
+  "name": "Deep Freeze Defender",
+  "file": "props/lego/6973.jpg",
+  "aspect": 1.298,
+  "dims": [
+   380,
+   285,
+   73
+  ],
+  "year": 1993,
+  "top": "props/lego/6973_top.jpg",
+  "end": "props/lego/6973_end.jpg"
+ },
+ {
+  "set": "6984",
+  "name": "Galactic Mediator",
+  "file": "props/lego/6984.jpg",
+  "aspect": 1.432,
+  "dims": [
+   430,
+   290,
+   74
+  ],
+  "year": 1992,
+  "top": "props/lego/6984_top.jpg",
+  "end": "props/lego/6984_end.jpg"
+ },
+ {
+  "set": "6957",
+  "name": "Solar Snooper",
+  "file": "props/lego/6957.jpg",
+  "aspect": 1.432,
+  "dims": [
+   340,
+   290,
+   80
+  ],
+  "year": 1992,
+  "top": "props/lego/6957_top.jpg",
+  "end": "props/lego/6957_end.jpg"
+ }
+]
