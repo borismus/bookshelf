@@ -315,5 +315,26 @@
    "display_title": "The Hebrew Bible",
    "display_author": "Robert Alter"
   }
+ },
+ "gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne": {
+  "title": "The Little Black Book of Cocktails: The Essential Guide to New & Old Classics (Updated and revised!) (Little Black Books (Peter Pauper Hardcover))",
+  "author": "Virginia Reynolds",
+  "set": {
+   "display_title": "The Little Black Book of Cocktails"
+  }
+ },
+ "gr-contextual-design-defining-customer-centered-systems": {
+  "title": "Contextual Design: Defining Customer-Centered Systems",
+  "author": "Karen Holtzblatt",
+  "set": {
+   "display_title": "Contextual Design"
+  }
+ },
+ "gr-ages-of-discord-a-structural-demographic-analysis-of-america": {
+  "title": "Ages of Discord: A Structural-Demographic Analysis of American History",
+  "author": "Peter Turchin",
+  "set": {
+   "display_title": "Ages of Discord"
+  }
  }
 }

@@ -31,7 +31,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-hitchhiker-s-guide-to-the-galaxy.webp",
        "card": "atlas/card/gr-the-hitchhiker-s-guide-to-the-galaxy.webp",
-       "edge": "#175c7b",
+       "edge": "#175c7a",
        "hue": 0.5915
       },
       "publisher": "Del Rey Books",
@@ -102,7 +102,7 @@
        "lo": "atlas/lo/gr-the-salmon-of-doubt-hitchhiking-the-galaxy-one-last-time.webp",
        "card": "atlas/card/gr-the-salmon-of-doubt-hitchhiking-the-galaxy-one-last-time.webp",
        "edge": "#132e49",
-       "hue": 0.615
+       "hue": 0.6154
       },
       "publisher": "Macmillan",
       "pages": 299,
@@ -141,7 +141,7 @@
        "lo": "atlas/lo/unsong-by-scott-alexander.webp",
        "card": "atlas/card/unsong-by-scott-alexander.webp",
        "edge": "#8b7f75",
-       "hue": 1.5113
+       "hue": 1.5114
       },
       "publisher": "Self published",
       "pages": null,
@@ -173,8 +173,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-foundation.webp",
        "card": "atlas/card/gr-foundation.webp",
-       "edge": "#ba7058",
-       "hue": 0.0633
+       "edge": "#d1682a",
+       "hue": 0.0664
       },
       "publisher": "Bantam",
       "pages": 244,
@@ -207,7 +207,7 @@
        "lo": "atlas/lo/gr-i-robot.webp",
        "card": "atlas/card/gr-i-robot.webp",
        "edge": "#656384",
-       "hue": 0.6664
+       "hue": 0.6656
       },
       "publisher": "Bantam Books",
       "pages": 224,
@@ -430,7 +430,7 @@
        "lo": "atlas/lo/gr-fahrenheit-451.webp",
        "card": "atlas/card/gr-fahrenheit-451.webp",
        "edge": "#53312e",
-       "hue": 0.0493
+       "hue": 0.0492
       },
       "publisher": "DeBolsillo",
       "pages": 158,
@@ -463,7 +463,7 @@
        "lo": "atlas/lo/gr-the-martian-chronicles.webp",
        "card": "atlas/card/gr-the-martian-chronicles.webp",
        "edge": "#66645c",
-       "hue": 0.0963
+       "hue": 0.0961
       },
       "publisher": "Bantam/Spectra",
       "pages": 182,
@@ -599,8 +599,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-speaker-for-the-dead.webp",
        "card": "atlas/card/gr-speaker-for-the-dead.webp",
-       "edge": "#403760",
-       "hue": 1.6682
+       "edge": "#202236",
+       "hue": 1.7817
       },
       "publisher": "Tor Books",
       "pages": 382,
@@ -627,8 +627,12 @@
        "posted": "Jan 2022",
        "source": "smus",
        "headline": "A Psalm for the Wild-Built by Becky Chambers",
-       "excerpt": "",
-       "paras": [],
+       "excerpt": "• Reliable phone-computers designed to last a lifetime",
+       "paras": [
+        "• Reliable phone-computers designed to last a lifetime",
+        "• Slow reveal of what the world is like, and what \"Post-Transition\" means",
+        "• Vivid descriptions of ruins of modernity (\"Factory Age\") …"
+       ],
        "words": 454,
        "minutes": 2
       },
@@ -707,7 +711,7 @@
        "lo": "atlas/lo/stories-of-your-life-and-others.webp",
        "card": "atlas/card/stories-of-your-life-and-others.webp",
        "edge": "#121c1b",
-       "hue": 0.6003
+       "hue": 0.6004
       },
       "publisher": "Small Beer Press",
       "pages": 281,
@@ -773,7 +777,7 @@
        "lo": "atlas/lo/gr-childhood-s-end.webp",
        "card": "atlas/card/gr-childhood-s-end.webp",
        "edge": "#386d9d",
-       "hue": 0.6197
+       "hue": 0.6196
       },
       "publisher": "Del Rey Books",
       "pages": 224,
@@ -884,8 +888,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-do-androids-dream-of-electric-sheep.webp",
        "card": "atlas/card/gr-do-androids-dream-of-electric-sheep.webp",
-       "edge": "#222e37",
-       "hue": 1.7527
+       "edge": "#1a272d",
+       "hue": 1.8352
       },
       "publisher": "Del Rey / Ballantine Books",
       "pages": 244,
@@ -924,7 +928,7 @@
       "atlas": {
        "lo": "atlas/lo/selected-short-stories-of-philip-k-dick.webp",
        "card": "atlas/card/selected-short-stories-of-philip-k-dick.webp",
-       "edge": "#56829b",
+       "edge": "#56819b",
        "hue": 0.6028
       },
       "publisher": null,
@@ -963,7 +967,7 @@
        "lo": "atlas/lo/valis-by-phillip-k-dick.webp",
        "card": "atlas/card/valis-by-phillip-k-dick.webp",
        "edge": "#915147",
-       "hue": 0.0686
+       "hue": 0.0685
       },
       "publisher": "Houghton Mifflin Harcourt Publishing Company",
       "pages": 240,
@@ -1081,7 +1085,7 @@
        "lo": "atlas/lo/smoke-and-mirrors-by-neil-gaiman.webp",
        "card": "atlas/card/smoke-and-mirrors-by-neil-gaiman.webp",
        "edge": "#1f1b1d",
-       "hue": 1.8278
+       "hue": 1.8279
       },
       "publisher": "Avon Books",
       "pages": 365,
@@ -1115,7 +1119,7 @@
        "lo": "atlas/lo/gr-neuromancer.webp",
        "card": "atlas/card/gr-neuromancer.webp",
        "edge": "#0a4d2a",
-       "hue": 0.434
+       "hue": 0.4341
       },
       "publisher": "Ace Books",
       "pages": 271,
@@ -1152,8 +1156,8 @@
       "atlas": {
        "lo": "atlas/lo/the-dispossessed-by-u-k-le-guin.webp",
        "card": "atlas/card/the-dispossessed-by-u-k-le-guin.webp",
-       "edge": "#a3905f",
-       "hue": 0.1624
+       "edge": "#a4905f",
+       "hue": 0.1623
       },
       "publisher": "Harper & Row",
       "pages": 387,
@@ -1227,8 +1231,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-moon-is-a-harsh-mistress.webp",
        "card": "atlas/card/gr-the-moon-is-a-harsh-mistress.webp",
-       "edge": "#1c1a1a",
-       "hue": 0.0609
+       "edge": "#5e5d5a",
+       "hue": 1.5637
       },
       "publisher": "Hodder & Stoughton",
       "pages": 288,
@@ -1405,7 +1409,7 @@
        "lo": "atlas/lo/gr-flowers-for-algernon.webp",
        "card": "atlas/card/gr-flowers-for-algernon.webp",
        "edge": "#dbceb9",
-       "hue": 1.2169
+       "hue": 1.217
       },
       "publisher": "Harvest Books",
       "pages": 311,
@@ -1476,7 +1480,7 @@
        "lo": "atlas/lo/gr-solaris.webp",
        "card": "atlas/card/gr-solaris.webp",
        "edge": "#233339",
-       "hue": 1.7256
+       "hue": 1.7255
       },
       "publisher": "Harcourt",
       "pages": 204,
@@ -1590,7 +1594,7 @@
        "lo": "atlas/lo/three-body-problem-by-liu-cixin-audio.webp",
        "card": "atlas/card/three-body-problem-by-liu-cixin-audio.webp",
        "edge": "#163b63",
-       "hue": 0.6212
+       "hue": 0.6213
       },
       "publisher": "A Tor Book / Tom Doherty Associates",
       "pages": 416,
@@ -1656,7 +1660,7 @@
        "lo": "atlas/lo/gr-a-game-of-thrones.webp",
        "card": "atlas/card/gr-a-game-of-thrones.webp",
        "edge": "#5a4a4e",
-       "hue": 1.7779
+       "hue": 1.7778
       },
       "publisher": "Bantam",
       "pages": 835,
@@ -1999,7 +2003,7 @@
        "lo": "atlas/lo/old-mans-war-by-john-scalzi.webp",
        "card": "atlas/card/old-mans-war-by-john-scalzi.webp",
        "edge": "#397599",
-       "hue": 0.6101
+       "hue": 0.61
       },
       "publisher": "Tor Books",
       "pages": 318,
@@ -2071,7 +2075,7 @@
        "lo": "atlas/lo/gr-cryptonomicon.webp",
        "card": "atlas/card/gr-cryptonomicon.webp",
        "edge": "#585f68",
-       "hue": 1.7901
+       "hue": 1.79
       },
       "publisher": "Avon",
       "pages": 1152,
@@ -2111,7 +2115,7 @@
        "lo": "atlas/lo/diamond-age-by-stephenson-audio.webp",
        "card": "atlas/card/diamond-age-by-stephenson-audio.webp",
        "edge": "#acaca7",
-       "hue": 1.3558
+       "hue": 1.3557
       },
       "publisher": "Spectra",
       "pages": 512,
@@ -2259,7 +2263,7 @@
        "lo": "atlas/lo/hard-to-be-a-god-by-the-strugatskys.webp",
        "card": "atlas/card/hard-to-be-a-god-by-the-strugatskys.webp",
        "edge": "#2b4434",
-       "hue": 1.7511
+       "hue": 1.7512
       },
       "publisher": "Eyre Methuen",
       "pages": 219,
@@ -2297,7 +2301,7 @@
        "lo": "atlas/lo/children-of-time-by-adrian-tchaikovsky.webp",
        "card": "atlas/card/children-of-time-by-adrian-tchaikovsky.webp",
        "edge": "#28342c",
-       "hue": 1.7815
+       "hue": 1.7814
       },
       "publisher": "Pan Macmillan",
       "pages": 624,
@@ -2332,7 +2336,7 @@
        "lo": "atlas/lo/gr-the-fellowship-of-the-ring.webp",
        "card": "atlas/card/gr-the-fellowship-of-the-ring.webp",
        "edge": "#271e1b",
-       "hue": 1.8113
+       "hue": 1.8112
       },
       "publisher": "Houghton Mifflin Harcourt",
       "pages": 398,
@@ -2365,7 +2369,7 @@
        "lo": "atlas/lo/gr-the-hobbit-or-there-and-back-again.webp",
        "card": "atlas/card/gr-the-hobbit-or-there-and-back-again.webp",
        "edge": "#635734",
-       "hue": 1.5574
+       "hue": 1.5573
       },
       "publisher": "Houghton Mifflin",
       "pages": 366,
@@ -2509,7 +2513,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-2br02b.webp",
        "card": "atlas/card/gr-2br02b.webp",
-       "edge": "#a97c4a",
+       "edge": "#a97c4b",
        "hue": 0.1376
       },
       "publisher": "Dunda Books",
@@ -2548,7 +2552,7 @@
        "lo": "atlas/lo/blindsight-by-peter-watts.webp",
        "card": "atlas/card/blindsight-by-peter-watts.webp",
        "edge": "#9a988f",
-       "hue": 1.4825
+       "hue": 1.4826
       },
       "publisher": "Tor Books",
       "pages": 384,
@@ -2575,8 +2579,14 @@
        "posted": "May 2020",
        "source": "smus",
        "headline": "Shadow of the Torturer",
-       "excerpt": "",
-       "paras": [],
+       "excerpt": "• Twisting narrative, very hard to predict any sort of narrative arc. In a good way.",
+       "paras": [
+        "• Twisting narrative, very hard to predict any sort of narrative arc. In a good way.",
+        "• Some great descriptive and lively, well developed characters.",
+        "• Well executed twists.",
+        "• Some really inventive fragments of world building, like the flower mechanic but I would say overall mostly unoriginal in that department.",
+        "• In the end, I’m 50% hooked, but not hooked enough to jump right into the sequel. Maybe it’s because the grand arc of the whole thing is kind of known, and explicitly so."
+       ],
        "words": 80,
        "minutes": 1
       },
@@ -2584,7 +2594,7 @@
        "lo": "atlas/lo/shadow-of-the-torturer.webp",
        "card": "atlas/card/shadow-of-the-torturer.webp",
        "edge": "#464632",
-       "hue": 0.1301
+       "hue": 0.13
       },
       "publisher": "Pocket Books",
       "pages": 262,
@@ -2651,7 +2661,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-lord-of-light.webp",
        "card": "atlas/card/gr-lord-of-light.webp",
-       "edge": "#3d4f3e",
+       "edge": "#3d4f3f",
        "hue": 1.6891
       },
       "publisher": "Harper Voyager",
@@ -2688,7 +2698,7 @@
        "lo": "atlas/lo/gr-things-fall-apart.webp",
        "card": "atlas/card/gr-things-fall-apart.webp",
        "edge": "#dbc8a8",
-       "hue": 1.2819
+       "hue": 1.282
       },
       "publisher": "Anchor Books",
       "pages": 215,
@@ -2756,7 +2766,7 @@
        "lo": "atlas/lo/gr-the-master-and-margarita.webp",
        "card": "atlas/card/gr-the-master-and-margarita.webp",
        "edge": "#5c2b2c",
-       "hue": 0.037
+       "hue": 0.0371
       },
       "publisher": "Vintage International",
       "pages": 372,
@@ -2895,7 +2905,7 @@
        "lo": "atlas/lo/gr-the-yiddish-policemen-s-union.webp",
        "card": "atlas/card/gr-the-yiddish-policemen-s-union.webp",
        "edge": "#407682",
-       "hue": 0.5725
+       "hue": 0.5726
       },
       "publisher": "Harper Perennial",
       "pages": 418,
@@ -2934,7 +2944,7 @@
        "lo": "atlas/lo/monkey-by-arthur-waley.webp",
        "card": "atlas/card/monkey-by-arthur-waley.webp",
        "edge": "#dac199",
-       "hue": 0.1229
+       "hue": 0.1234
       },
       "publisher": "Penguin Books, Limited",
       "pages": null,
@@ -2994,8 +3004,15 @@
        "posted": "Nov 2016",
        "source": "smus",
        "headline": "Brief Wondrous Life of Oscar Wao",
-       "excerpt": "",
-       "paras": [],
+       "excerpt": "• Copious references to nerd culture: nerdy books (LOTR, Dune, Lovecraft, Asimov, Heinlein), video games, comic books, the 1980s.",
+       "paras": [
+        "• Copious references to nerd culture: nerdy books (LOTR, Dune, Lovecraft, Asimov, Heinlein), video games, comic books, the 1980s.",
+        "• Magical realism aspects: The Mongoose, cartoonish villans (The Captain, Trujillo) and heroes (Beli, The Doctor).",
+        "• Harkening to 100 Years of Solitude in the hispanic family epic.",
+        "• Nonlinear time, with the story flashing generations back.",
+        "• Oscar's relatable innocence, goofy character, purity of spirit.",
+        "• Interesting autobiographical narrator. …"
+       ],
        "words": 154,
        "minutes": 1
       },
@@ -3035,7 +3052,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-crime-and-punishment.webp",
        "card": "atlas/card/gr-crime-and-punishment.webp",
-       "edge": "#c7a883",
+       "edge": "#c7a783",
        "hue": 0.1244
       },
       "publisher": "Penguin",
@@ -3068,8 +3085,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-paddy-clarke-ha-ha-ha.webp",
        "card": "atlas/card/gr-paddy-clarke-ha-ha-ha.webp",
-       "edge": "#bebdb4",
-       "hue": 1.2565
+       "edge": "#bebdb3",
+       "hue": 1.2564
       },
       "publisher": "Vintage Books",
       "pages": 282,
@@ -3102,7 +3119,7 @@
        "lo": "atlas/lo/gr-the-memory-keeper-s-daughter.webp",
        "card": "atlas/card/gr-the-memory-keeper-s-daughter.webp",
        "edge": "#1f242a",
-       "hue": 1.8375
+       "hue": 1.8374
       },
       "publisher": "Penguin Books",
       "pages": 401,
@@ -3358,7 +3375,7 @@
        "lo": "atlas/lo/gr-lord-of-the-flies.webp",
        "card": "atlas/card/gr-lord-of-the-flies.webp",
        "edge": "#457775",
-       "hue": 0.5349
+       "hue": 0.5348
       },
       "publisher": "Penguin Books ",
       "pages": 182,
@@ -3430,7 +3447,7 @@
        "lo": "atlas/lo/gr-the-curious-incident-of-the-dog-in-the-night-time.webp",
        "card": "atlas/card/gr-the-curious-incident-of-the-dog-in-the-night-time.webp",
        "edge": "#d54826",
-       "hue": 0.0756
+       "hue": 0.0755
       },
       "publisher": "Vintage",
       "pages": 226,
@@ -3501,7 +3518,7 @@
       "atlas": {
        "lo": "atlas/lo/the-odyssey-translated-by-emily-wilson-audio.webp",
        "card": "atlas/card/the-odyssey-translated-by-emily-wilson-audio.webp",
-       "edge": "#c7c5bc",
+       "edge": "#c7c5bd",
        "hue": 1.1704
       },
       "publisher": "Norton",
@@ -3681,7 +3698,7 @@
        "lo": "atlas/lo/gr-the-metamorphosis-and-other-stories.webp",
        "card": "atlas/card/gr-the-metamorphosis-and-other-stories.webp",
        "edge": "#4e7638",
-       "hue": 0.3139
+       "hue": 0.314
       },
       "publisher": "Dover Publications",
       "pages": 88,
@@ -3714,8 +3731,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-one-flew-over-the-cuckoo-s-nest.webp",
        "card": "atlas/card/gr-one-flew-over-the-cuckoo-s-nest.webp",
-       "edge": "#1e5d8c",
-       "hue": 0.6113
+       "edge": "#084f82",
+       "hue": 0.6102
       },
       "publisher": "Signet",
       "pages": 272,
@@ -3788,7 +3805,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-unbearable-lightness-of-being.webp",
        "card": "atlas/card/gr-the-unbearable-lightness-of-being.webp",
-       "edge": "#75634b",
+       "edge": "#74634b",
        "hue": 1.5735
       },
       "publisher": "Harpercollins",
@@ -3864,8 +3881,8 @@
       "atlas": {
        "lo": "atlas/lo/when-we-cease-to-understand-the-world-by-benjamín-labatut.webp",
        "card": "atlas/card/when-we-cease-to-understand-the-world-by-benjamín-labatut.webp",
-       "edge": "#a49f67",
-       "hue": 0.1847
+       "edge": "#e9e2b5",
+       "hue": 0.1896
       },
       "publisher": "Pushkin Press, Limited",
       "pages": 191,
@@ -3898,7 +3915,7 @@
        "lo": "atlas/lo/gr-to-kill-a-mockingbird.webp",
        "card": "atlas/card/gr-to-kill-a-mockingbird.webp",
        "edge": "#6e567b",
-       "hue": 1.6277
+       "hue": 1.6278
       },
       "publisher": "Warner Books",
       "pages": 376,
@@ -3964,7 +3981,7 @@
        "lo": "atlas/lo/gr-no-one-writes-to-the-colonel-and-other-stories.webp",
        "card": "atlas/card/gr-no-one-writes-to-the-colonel-and-other-stories.webp",
        "edge": "#5c3b2f",
-       "hue": 0.0626
+       "hue": 0.0627
       },
       "publisher": "Harper Perennial",
       "pages": 170,
@@ -3996,8 +4013,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-one-hundred-years-of-solitude.webp",
        "card": "atlas/card/gr-one-hundred-years-of-solitude.webp",
-       "edge": "#557d8c",
-       "hue": 1.5713
+       "edge": "#6d7a96",
+       "hue": 1.4944
       },
       "publisher": "Harper",
       "pages": 417,
@@ -4071,7 +4088,7 @@
        "lo": "atlas/lo/gr-blind-willow-sleeping-woman.webp",
        "card": "atlas/card/gr-blind-willow-sleeping-woman.webp",
        "edge": "#806956",
-       "hue": 0.1467
+       "hue": 0.1468
       },
       "publisher": "Knopf",
       "pages": 334,
@@ -4104,7 +4121,7 @@
        "lo": "atlas/lo/gr-dance-dance-dance.webp",
        "card": "atlas/card/gr-dance-dance-dance.webp",
        "edge": "#52473d",
-       "hue": 1.7746
+       "hue": 1.7745
       },
       "publisher": "Vintage",
       "pages": 393,
@@ -4136,8 +4153,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-hard-boiled-wonderland-and-the-end-of-the-world.webp",
        "card": "atlas/card/gr-hard-boiled-wonderland-and-the-end-of-the-world.webp",
-       "edge": "#63525e",
-       "hue": 1.6781
+       "edge": "#544b54",
+       "hue": 1.74
       },
       "publisher": "Vintage",
       "pages": 400,
@@ -4307,7 +4324,7 @@
        "lo": "atlas/lo/anthem-by-ayn-rand.webp",
        "card": "atlas/card/anthem-by-ayn-rand.webp",
        "edge": "#d2c8de",
-       "hue": 1.2655
+       "hue": 1.2656
       },
       "publisher": "General Press",
       "pages": 80,
@@ -4477,7 +4494,7 @@
       "atlas": {
        "lo": "atlas/lo/gr-portuguese-irregular-verbs.webp",
        "card": "atlas/card/gr-portuguese-irregular-verbs.webp",
-       "edge": "#e9dcb5",
+       "edge": "#eadcb5",
        "hue": 1.2449
       },
       "publisher": "Random House Large Print Publi",
@@ -4695,6 +4712,46 @@
       "year": null
      },
      {
+      "slug": "the-death-of-ivan-ilyich-by-lev-tolstoy",
+      "link": "https://smus.com/books/the-death-of-ivan-ilyich-by-lev-tolstoy",
+      "title": "The Death of Ivan Ilyich",
+      "author": "Leo Tolstoy",
+      "beloved": true,
+      "dims": {
+       "h": 170,
+       "w": 104,
+       "t": 10.2
+      },
+      "pose": "lean-run",
+      "texture": "../data/textures/the-death-of-ivan-ilyich-by-lev-tolstoy.jpg",
+      "cover": "../data/covers/the-death-of-ivan-ilyich-by-lev-tolstoy.jpg",
+      "back": "../data/backs/the-death-of-ivan-ilyich-by-lev-tolstoy.jpg",
+      "spine_source": "ai",
+      "binding": "paperback",
+      "review": {
+       "posted": "Oct 2026",
+       "source": "smus",
+       "headline": "Is Memento Mori Futile?",
+       "excerpt": "On graduating from law school, Ivan Ilyich outfits himself with fashionable clothes and a medallion inscribed respice finem: consider the end. Then he dines at a first-class restaurant. Decades later, dying in agony, he finally asks whether he has lived wrongly. What troubles me is that he already had the warning: he wore it.",
+       "paras": [
+        "On graduating from law school, Ivan Ilyich outfits himself with fashionable clothes and a medallion inscribed respice finem: consider the end. Then he dines at a first-class restaurant. Decades later, dying in agony, he finally asks whether he has lived wrongly. What troubles me is that he already had the warning: he wore it.",
+        "The plot is minimal: a judge falls ill and dies over a few months. His life, Tolstoy tells us, was \"most simple and most ordinary and therefore most terrible\" (самая простая и обыкновенная и самая ужасная). Tolstoy savages Russian officialdom for its conformism, pretense, and default drift toward money, power, and status (see The Inner Ring by C. S. Lewis). The EconTalk episode inspired me to read it first. I wanted to form my own opinion before hearing Roberts and Wolpe. …"
+       ],
+       "words": 1227,
+       "minutes": 5
+      },
+      "atlas": {
+       "lo": "atlas/lo/the-death-of-ivan-ilyich-by-lev-tolstoy.webp",
+       "card": "atlas/card/the-death-of-ivan-ilyich-by-lev-tolstoy.webp",
+       "edge": "#515751",
+       "hue": 1.6535
+      },
+      "publisher": "Bantam Books",
+      "pages": 128,
+      "year": null,
+      "lean": 6.8
+     },
+     {
       "slug": "gr-breakfast-of-champions",
       "link": "https://www.goodreads.com/book/show/4980",
       "title": "Breakfast of Champions",
@@ -4726,7 +4783,7 @@
       "publisher": "Dell Publishing",
       "pages": 303,
       "year": null,
-      "lean": 9.8
+      "lean": 6.8
      },
      {
       "slug": "gr-hocus-pocus",
@@ -4755,12 +4812,12 @@
        "lo": "atlas/lo/gr-hocus-pocus.webp",
        "card": "atlas/card/gr-hocus-pocus.webp",
        "edge": "#113163",
-       "hue": 0.6464
+       "hue": 0.6463
       },
       "publisher": "Berkley Books",
       "pages": 322,
       "year": null,
-      "lean": 9.8
+      "lean": 6.8
      },
      {
       "slug": "gr-slaughterhouse-five",
@@ -4773,7 +4830,7 @@
        "w": 130,
        "t": 17.8
       },
-      "pose": "lean-run",
+      "pose": "upright",
       "texture": "../data/textures/gr-slaughterhouse-five.jpg",
       "cover": "../data/covers/gr-slaughterhouse-five.jpg",
       "back": null,
@@ -4789,12 +4846,11 @@
        "lo": "atlas/lo/gr-slaughterhouse-five.webp",
        "card": "atlas/card/gr-slaughterhouse-five.webp",
        "edge": "#85614c",
-       "hue": 0.7843
+       "hue": 0.7837
       },
       "publisher": "Dell",
       "pages": 215,
-      "year": null,
-      "lean": 9.8
+      "year": null
      },
      {
       "slug": "gr-the-glass-menagerie",
@@ -4949,7 +5005,7 @@
       "atlas": {
        "lo": "atlas/lo/creativity-by-mihaly-csikszentmihalyi.webp",
        "card": "atlas/card/creativity-by-mihaly-csikszentmihalyi.webp",
-       "edge": "#d3042c",
+       "edge": "#d3042b",
        "hue": 0.0114
       },
       "publisher": "Harper Perennial",
@@ -5404,7 +5460,7 @@
       "atlas": {
        "lo": "atlas/lo/exploring-the-world-of-lucid-dreaming.webp",
        "card": "atlas/card/exploring-the-world-of-lucid-dreaming.webp",
-       "edge": "#0c396b",
+       "edge": "#0d396b",
        "hue": 0.6327
       },
       "publisher": "Ballantine Books",
@@ -5485,7 +5541,7 @@
        "lo": "atlas/lo/thinking-in-systems-a-primer.webp",
        "card": "atlas/card/thinking-in-systems-a-primer.webp",
        "edge": "#dec95c",
-       "hue": 0.1822
+       "hue": 0.1825
       },
       "publisher": "Chelsea Green Pub.",
       "pages": 218,
@@ -5523,8 +5579,8 @@
       "atlas": {
        "lo": "atlas/lo/john-napier-hands.webp",
        "card": "atlas/card/john-napier-hands.webp",
-       "edge": "#896f6d",
-       "hue": 0.0713
+       "edge": "#89706d",
+       "hue": 0.0714
       },
       "publisher": "Princeton University Press",
       "pages": 180,
@@ -5561,8 +5617,8 @@
       "atlas": {
        "lo": "atlas/lo/breath-by-james-nestor.webp",
        "card": "atlas/card/breath-by-james-nestor.webp",
-       "edge": "#eccf0b",
-       "hue": 0.1869
+       "edge": "#ecd00b",
+       "hue": 0.187
       },
       "publisher": "Riverhead Books",
       "pages": 304,
@@ -5640,7 +5696,7 @@
        "lo": "atlas/lo/blue-mind.webp",
        "card": "atlas/card/blue-mind.webp",
        "edge": "#dbdcd5",
-       "hue": 1.1596
+       "hue": 1.1597
       },
       "publisher": "Little, Brown and Company",
       "pages": 352,
@@ -5712,7 +5768,7 @@
        "lo": "atlas/lo/gr-the-end-of-certainty-time-chaos-and-the-new-laws-of-nature.webp",
        "card": "atlas/card/gr-the-end-of-certainty-time-chaos-and-the-new-laws-of-nature.webp",
        "edge": "#4f7e7e",
-       "hue": 0.5574
+       "hue": 0.5573
       },
       "publisher": "Free Press",
       "pages": 240,
@@ -6086,7 +6142,7 @@
        "lo": "atlas/lo/gr-origami-design-secrets-mathematical-methods-for-an-ancient-a.webp",
        "card": "atlas/card/gr-origami-design-secrets-mathematical-methods-for-an-ancient-a.webp",
        "edge": "#9f8764",
-       "hue": 1.5453
+       "hue": 1.5452
       },
       "publisher": "A K Peters/CRC Press",
       "pages": 594,
@@ -6158,7 +6214,7 @@
        "lo": "atlas/lo/math-from-three-to-seven-by-a-k-zvonkin.webp",
        "card": "atlas/card/math-from-three-to-seven-by-a-k-zvonkin.webp",
        "edge": "#d5d3cb",
-       "hue": 1.1834
+       "hue": 1.1833
       },
       "publisher": "American Mathematical Society",
       "pages": 300,
@@ -6322,7 +6378,6 @@
       "slug": "gr-contextual-design-defining-customer-centered-systems",
       "link": "https://www.goodreads.com/book/show/617137",
       "title": "Contextual Design",
-      "subtitle": "Defining Customer-Centered Systems",
       "author": "Hugh Beyer",
       "beloved": false,
       "dims": {
@@ -6345,8 +6400,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-contextual-design-defining-customer-centered-systems.webp",
        "card": "atlas/card/gr-contextual-design-defining-customer-centered-systems.webp",
-       "edge": "#292f22",
-       "hue": 1.8007
+       "edge": "#0c1112",
+       "hue": 1.9076
       },
       "publisher": "Morgan Kaufmann",
       "pages": 472,
@@ -6423,7 +6478,7 @@
       "atlas": {
        "lo": "atlas/lo/bird-by-bird-by-anne-lamott.webp",
        "card": "atlas/card/bird-by-bird-by-anne-lamott.webp",
-       "edge": "#d4979e",
+       "edge": "#d5979e",
        "hue": 0.0648
       },
       "publisher": "Anchor Books",
@@ -6608,7 +6663,7 @@
        "lo": "atlas/lo/mystery-teachings-by-j-m-greer.webp",
        "card": "atlas/card/mystery-teachings-by-j-m-greer.webp",
        "edge": "#20302b",
-       "hue": 1.7944
+       "hue": 1.7943
       },
       "publisher": "Weiser Books",
       "pages": 160,
@@ -6646,7 +6701,7 @@
        "lo": "atlas/lo/letters-to-my-palestinian-neighbor-by-halevi.webp",
        "card": "atlas/card/letters-to-my-palestinian-neighbor-by-halevi.webp",
        "edge": "#ddd7ce",
-       "hue": 1.2278
+       "hue": 1.2277
       },
       "publisher": "HarperCollins Publishers",
       "pages": 288,
@@ -6683,7 +6738,7 @@
       "atlas": {
        "lo": "atlas/lo/the-sabbath-by-heschel.webp",
        "card": "atlas/card/the-sabbath-by-heschel.webp",
-       "edge": "#e6e5da",
+       "edge": "#e6e5d9",
        "hue": 1.2058
       },
       "publisher": "Farrar, Straus and Giroux",
@@ -6763,7 +6818,7 @@
        "lo": "atlas/lo/the-new-father.webp",
        "card": "atlas/card/the-new-father.webp",
        "edge": "#c1c9ce",
-       "hue": 1.1941
+       "hue": 1.1942
       },
       "publisher": "Abbeville Press",
       "pages": 464,
@@ -6841,7 +6896,7 @@
        "lo": "atlas/lo/gardener-carpenter-by-alison-gopnik.webp",
        "card": "atlas/card/gardener-carpenter-by-alison-gopnik.webp",
        "edge": "#625934",
-       "hue": 0.1527
+       "hue": 0.1528
       },
       "publisher": "Penguin Random House",
       "pages": 320,
@@ -6882,7 +6937,7 @@
        "lo": "atlas/lo/good-inside-by-becky-kennedy.webp",
        "card": "atlas/card/good-inside-by-becky-kennedy.webp",
        "edge": "#e4c65b",
-       "hue": 0.1732
+       "hue": 0.173
       },
       "publisher": "Harper Wave",
       "pages": 336,
@@ -6921,7 +6976,7 @@
        "lo": "atlas/lo/emotional-life-of-the-toddler.webp",
        "card": "atlas/card/emotional-life-of-the-toddler.webp",
        "edge": "#ebe7db",
-       "hue": 1.2001
+       "hue": 1.2002
       },
       "publisher": "Free P.,U.S.",
       "pages": 20,
@@ -7082,7 +7137,7 @@
        "lo": "atlas/lo/whole-earth-discipline-by-stewart-brand.webp",
        "card": "atlas/card/whole-earth-discipline-by-stewart-brand.webp",
        "edge": "#a2bbc8",
-       "hue": 1.357
+       "hue": 1.3569
       },
       "publisher": "Penguin",
       "pages": 337,
@@ -7123,7 +7178,7 @@
        "lo": "atlas/lo/profiles-of-the-future-by-arthur-c-clarke.webp",
        "card": "atlas/card/profiles-of-the-future-by-arthur-c-clarke.webp",
        "edge": "#61504b",
-       "hue": 0.7313
+       "hue": 0.7309
       },
       "publisher": "Bantam Books",
       "pages": 235,
@@ -7353,7 +7408,7 @@
        "lo": "atlas/lo/sid-meiers-memoir.webp",
        "card": "atlas/card/sid-meiers-memoir.webp",
        "edge": "#0f467c",
-       "hue": 0.6215
+       "hue": 0.6217
       },
       "publisher": "Norton & Company, Incorporated, W. W.",
       "pages": 320,
@@ -7381,8 +7436,14 @@
        "posted": "Oct 2020",
        "source": "smus",
        "headline": "Frank Herbert by Tim O’Reilly",
-       "excerpt": "",
-       "paras": [],
+       "excerpt": "• I’ll be honest, I’m excited about the upcoming Dune movie. Prior failed attempts do not inspire confidence.",
+       "paras": [
+        "• I’ll be honest, I’m excited about the upcoming Dune movie. Prior failed attempts do not inspire confidence.",
+        "• How crazy is it that Tim O’Reilly wrote a book about Frank Herbert?",
+        "• Book reads as a sort of expose about Herbert’s intentions writing Dune.",
+        "• Good reminder about the series, which I first read probably more than 20 years ago. I’m due for a re-read.",
+        "• Lots of plot summarization, but this is necessary for the non-Dune corpus of Herbert’s works which I haven’t read. …"
+       ],
        "words": 1511,
        "minutes": 7
       },
@@ -7390,7 +7451,7 @@
        "lo": "atlas/lo/frank-herbert-by-tim-oreilly.webp",
        "card": "atlas/card/frank-herbert-by-tim-oreilly.webp",
        "edge": "#877b47",
-       "hue": 0.1788
+       "hue": 0.1787
       },
       "publisher": "Ungar",
       "pages": 216,
@@ -7462,7 +7523,7 @@
       "atlas": {
        "lo": "atlas/lo/how-to-fail-at-almost-everything-by-scott-adams.webp",
        "card": "atlas/card/how-to-fail-at-almost-everything-by-scott-adams.webp",
-       "edge": "#da5f27",
+       "edge": "#da5e27",
        "hue": 0.0938
       },
       "publisher": null,
@@ -7504,7 +7565,7 @@
        "lo": "atlas/lo/the-one-minute-manager.webp",
        "card": "atlas/card/the-one-minute-manager.webp",
        "edge": "#e7d8b7",
-       "hue": 1.3054
+       "hue": 1.3055
       },
       "publisher": "Blanchard-Johnson Publishers",
       "pages": 112,
@@ -7542,7 +7603,7 @@
        "lo": "atlas/lo/empowered-by-cagan-jones.webp",
        "card": "atlas/card/empowered-by-cagan-jones.webp",
        "edge": "#b1b5c7",
-       "hue": 0.6522
+       "hue": 0.6529
       },
       "publisher": "Wiley & Sons, Limited, John",
       "pages": 368,
@@ -7582,7 +7643,7 @@
        "lo": "atlas/lo/bad-blood-by-john-carreyrou.webp",
        "card": "atlas/card/bad-blood-by-john-carreyrou.webp",
        "edge": "#060606",
-       "hue": 1.8791
+       "hue": 1.8792
       },
       "publisher": "Alfred A. Knopf",
       "pages": 339,
@@ -7616,7 +7677,7 @@
        "lo": "atlas/lo/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.webp",
        "card": "atlas/card/gr-the-innovator-s-dilemma-the-revolutionary-book-that-will-cha.webp",
        "edge": "#828860",
-       "hue": 0.3525
+       "hue": 0.3549
       },
       "publisher": "Collins",
       "pages": 320,
@@ -7683,7 +7744,7 @@
        "lo": "atlas/lo/gr-the-4-hour-workweek.webp",
        "card": "atlas/card/gr-the-4-hour-workweek.webp",
        "edge": "#c8c8a6",
-       "hue": 1.3054
+       "hue": 1.3053
       },
       "publisher": "Harmony",
       "pages": 308,
@@ -7999,7 +8060,7 @@
        "lo": "atlas/lo/abundance-by-ezra-klein-and-derek-thompson.webp",
        "card": "atlas/card/abundance-by-ezra-klein-and-derek-thompson.webp",
        "edge": "#e6dfcd",
-       "hue": 1.1792
+       "hue": 1.1793
       },
       "publisher": "Avid Reader Press / Simon & Schuster",
       "pages": 304,
@@ -8188,7 +8249,7 @@
        "lo": "atlas/lo/practical-doomsday-by-michal-zalewski.webp",
        "card": "atlas/card/practical-doomsday-by-michal-zalewski.webp",
        "edge": "#337187",
-       "hue": 0.5865
+       "hue": 0.5864
       },
       "publisher": "No Starch Press",
       "pages": 236,
@@ -8227,7 +8288,7 @@
        "lo": "atlas/lo/end-of-the-world-by-peter-zeihan.webp",
        "card": "atlas/card/end-of-the-world-by-peter-zeihan.webp",
        "edge": "#cec6bb",
-       "hue": 1.3093
+       "hue": 1.3094
       },
       "publisher": "HarperCollins Publishers",
       "pages": 400,
@@ -8266,8 +8327,8 @@
       "atlas": {
        "lo": "atlas/lo/asimovs-chronology-of-science-and-discovery.webp",
        "card": "atlas/card/asimovs-chronology-of-science-and-discovery.webp",
-       "edge": "#17222b",
-       "hue": 1.8284
+       "edge": "#381f35",
+       "hue": 1.7689
       },
       "publisher": "HarperCollins",
       "pages": 790,
@@ -8308,7 +8369,7 @@
        "lo": "atlas/lo/history-of-future-cities-by-daniel-brook.webp",
        "card": "atlas/card/history-of-future-cities-by-daniel-brook.webp",
        "edge": "#1f6a41",
-       "hue": 0.461
+       "hue": 0.4611
       },
       "publisher": "W W Norton & Co Inc",
       "pages": 457,
@@ -8346,7 +8407,7 @@
       "atlas": {
        "lo": "atlas/lo/boyd-by-robert-coram.webp",
        "card": "atlas/card/boyd-by-robert-coram.webp",
-       "edge": "#50504b",
+       "edge": "#4f504b",
        "hue": 1.5401
       },
       "publisher": "Little, Brown and Company",
@@ -8424,7 +8485,7 @@
        "lo": "atlas/lo/the-coffee-house-a-cultural-history.webp",
        "card": "atlas/card/the-coffee-house-a-cultural-history.webp",
        "edge": "#e2d5b8",
-       "hue": 1.2037
+       "hue": 1.2038
       },
       "publisher": "Weidenfeld & Nicolson",
       "pages": 336,
@@ -8613,7 +8674,7 @@
        "lo": "atlas/lo/gr-a-tale-of-love-and-darkness.webp",
        "card": "atlas/card/gr-a-tale-of-love-and-darkness.webp",
        "edge": "#736948",
-       "hue": 0.1864
+       "hue": 0.1863
       },
       "publisher": "Harvest / Harcourt",
       "pages": 560,
@@ -8646,7 +8707,7 @@
        "lo": "atlas/lo/gr-the-last-lecture.webp",
        "card": "atlas/card/gr-the-last-lecture.webp",
        "edge": "#6d5c35",
-       "hue": 1.7699
+       "hue": 1.7698
       },
       "publisher": "Hachette Books",
       "pages": 206,
@@ -8684,7 +8745,7 @@
       "atlas": {
        "lo": "atlas/lo/nothing-is-true-and-everything-is-possible.webp",
        "card": "atlas/card/nothing-is-true-and-everything-is-possible.webp",
-       "edge": "#181719",
+       "edge": "#18171a",
        "hue": 1.8283
       },
       "publisher": "PublicAffairs",
@@ -8724,7 +8785,7 @@
        "lo": "atlas/lo/building-a-bridge-to-the-18th-century.webp",
        "card": "atlas/card/building-a-bridge-to-the-18th-century.webp",
        "edge": "#c3ad82",
-       "hue": 0.1486
+       "hue": 0.1488
       },
       "publisher": "Vintage",
       "pages": 224,
@@ -8797,7 +8858,7 @@
        "lo": "atlas/lo/gr-maus-ii-a-survivor-s-tale-and-here-my-troubles-began.webp",
        "card": "atlas/card/gr-maus-ii-a-survivor-s-tale-and-here-my-troubles-began.webp",
        "edge": "#2a2929",
-       "hue": 1.8321
+       "hue": 1.8322
       },
       "publisher": "Pantheon",
       "pages": 144,
@@ -8998,7 +9059,6 @@
       "slug": "gr-ages-of-discord-a-structural-demographic-analysis-of-america",
       "link": "https://www.goodreads.com/book/show/34515017",
       "title": "Ages of Discord",
-      "subtitle": "A Structural-Demographic Analysis of American History",
       "author": "Peter Turchin",
       "beloved": false,
       "dims": {
@@ -9021,8 +9081,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-ages-of-discord-a-structural-demographic-analysis-of-america.webp",
        "card": "atlas/card/gr-ages-of-discord-a-structural-demographic-analysis-of-america.webp",
-       "edge": "#bebfbf",
-       "hue": 1.2987
+       "edge": "#b8bfc4",
+       "hue": 1.2807
       },
       "publisher": "Beresta Books LLC",
       "pages": 395,
@@ -9140,7 +9200,7 @@
        "lo": "atlas/lo/night-by-elie-wiesel.webp",
        "card": "atlas/card/night-by-elie-wiesel.webp",
        "edge": "#b7bab6",
-       "hue": 1.3116
+       "hue": 1.3115
       },
       "publisher": "Hill and Wang",
       "pages": 120,
@@ -9523,7 +9583,7 @@
        "lo": "atlas/lo/secret-of-our-success-by-joseph-henrich.webp",
        "card": "atlas/card/secret-of-our-success-by-joseph-henrich.webp",
        "edge": "#b3dfe8",
-       "hue": 1.1629
+       "hue": 1.163
       },
       "publisher": "Princeton University Press",
       "pages": 456,
@@ -9595,7 +9655,7 @@
        "lo": "atlas/lo/tribe-by-sebastian-junger.webp",
        "card": "atlas/card/tribe-by-sebastian-junger.webp",
        "edge": "#152639",
-       "hue": 1.7703
+       "hue": 1.7704
       },
       "publisher": "Twelve",
       "pages": 182,
@@ -9635,7 +9695,7 @@
        "lo": "atlas/lo/palaces-for-the-people-audio.webp",
        "card": "atlas/card/palaces-for-the-people-audio.webp",
        "edge": "#e7e7df",
-       "hue": 1.1157
+       "hue": 1.1158
       },
       "publisher": "Broadway Books",
       "pages": 277,
@@ -9749,8 +9809,8 @@
       "atlas": {
        "lo": "atlas/lo/absolutely-on-music-by-haruki-murakami.webp",
        "card": "atlas/card/absolutely-on-music-by-haruki-murakami.webp",
-       "edge": "#d1cfcb",
-       "hue": 1.1617
+       "edge": "#e8e9e3",
+       "hue": 1.1534
       },
       "publisher": "Vintage",
       "pages": null,
@@ -9829,7 +9889,7 @@
       "atlas": {
        "lo": "atlas/lo/impossible-owls-by-brian-phillips.webp",
        "card": "atlas/card/impossible-owls-by-brian-phillips.webp",
-       "edge": "#4a4e52",
+       "edge": "#4a4e51",
        "hue": 1.6643
       },
       "publisher": "Orion Publishing Group, Limited",
@@ -10056,7 +10116,7 @@
        "lo": "atlas/lo/story-of-us.webp",
        "card": "atlas/card/story-of-us.webp",
        "edge": "#ece9d4",
-       "hue": 1.1977
+       "hue": 1.1978
       },
       "publisher": "Transworld Publishers Limited",
       "pages": null,
@@ -10134,7 +10194,7 @@
       "atlas": {
        "lo": "atlas/lo/scale-by-geoffrey-west.webp",
        "card": "atlas/card/scale-by-geoffrey-west.webp",
-       "edge": "#0f1111",
+       "edge": "#0f1112",
        "hue": 1.8658
       },
       "publisher": "Penguin Press",
@@ -10329,7 +10389,7 @@
        "lo": "atlas/lo/the-burnout-society-by-byung-chul-han.webp",
        "card": "atlas/card/the-burnout-society-by-byung-chul-han.webp",
        "edge": "#121212",
-       "hue": 1.8642
+       "hue": 1.8641
       },
       "publisher": "Stanford Briefs",
       "pages": 70,
@@ -10366,7 +10426,7 @@
       "atlas": {
        "lo": "atlas/lo/the-crisis-of-narration-by-byung-chul-han.webp",
        "card": "atlas/card/the-crisis-of-narration-by-byung-chul-han.webp",
-       "edge": "#342e1d",
+       "edge": "#342e1e",
        "hue": 1.7637
       },
       "publisher": "Polity",
@@ -10520,7 +10580,7 @@
        "lo": "atlas/lo/12-rules-for-life.webp",
        "card": "atlas/card/12-rules-for-life.webp",
        "edge": "#e7e6e2",
-       "hue": 1.1891
+       "hue": 1.189
       },
       "publisher": "Allen Lane",
       "pages": 416,
@@ -10587,7 +10647,7 @@
        "lo": "atlas/lo/gr-my-ishmael.webp",
        "card": "atlas/card/gr-my-ishmael.webp",
        "edge": "#dad7cb",
-       "hue": 1.2338
+       "hue": 1.2339
       },
       "publisher": "Bantam Books",
       "pages": 293,
@@ -10620,7 +10680,7 @@
        "lo": "atlas/lo/gr-the-story-of-b.webp",
        "card": "atlas/card/gr-the-story-of-b.webp",
        "edge": "#ccb186",
-       "hue": 0.1237
+       "hue": 0.1236
       },
       "publisher": "Bantam",
       "pages": 352,
@@ -10697,7 +10757,7 @@
        "lo": "atlas/lo/in-praise-of-idleness-by-bertrand-russell.webp",
        "card": "atlas/card/in-praise-of-idleness-by-bertrand-russell.webp",
        "edge": "#a8421c",
-       "hue": 0.0878
+       "hue": 0.0877
       },
       "publisher": "Simon & Schuster",
       "pages": 231,
@@ -10774,7 +10834,7 @@
        "lo": "atlas/lo/tao-of-philosophy-by-alan-watts.webp",
        "card": "atlas/card/tao-of-philosophy-by-alan-watts.webp",
        "edge": "#9b8c7f",
-       "hue": 0.0714
+       "hue": 0.0664
       },
       "publisher": "Tuttle Publishing",
       "pages": 96,
@@ -10813,7 +10873,7 @@
       "atlas": {
        "lo": "atlas/lo/on-the-shortness-of-life.webp",
        "card": "atlas/card/on-the-shortness-of-life.webp",
-       "edge": "#e7e6e1",
+       "edge": "#e7e7e1",
        "hue": 1.1322
       },
       "publisher": "Penguin Books",
@@ -10847,7 +10907,7 @@
        "lo": "atlas/lo/gr-aaa-italy-travelbook-2003.webp",
        "card": "atlas/card/gr-aaa-italy-travelbook-2003.webp",
        "edge": "#6a5763",
-       "hue": 0.1244
+       "hue": 0.1255
       },
       "publisher": "AAA",
       "pages": 224,
@@ -10915,7 +10975,7 @@
        "lo": "atlas/lo/gr-the-card-players-companion.webp",
        "card": "atlas/card/gr-the-card-players-companion.webp",
        "edge": "#d8d0c2",
-       "hue": 1.2142
+       "hue": 1.2143
       },
       "publisher": "Treasure",
       "pages": 192,
@@ -11051,7 +11111,7 @@
        "lo": "atlas/lo/gr-rome-spiral-guide.webp",
        "card": "atlas/card/gr-rome-spiral-guide.webp",
        "edge": "#352b6c",
-       "hue": 0.731
+       "hue": 0.7312
       },
       "publisher": "AAA",
       "pages": 213,
@@ -11085,7 +11145,7 @@
        "lo": "atlas/lo/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.webp",
        "card": "atlas/card/gr-the-prehistory-of-the-far-side-a-10th-anniversary-exhibit.webp",
        "edge": "#150e16",
-       "hue": 1.8259
+       "hue": 1.826
       },
       "publisher": "Andrews McMeel",
       "pages": 288,
@@ -11119,7 +11179,7 @@
        "lo": "atlas/lo/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.webp",
        "card": "atlas/card/gr-born-to-run-a-hidden-tribe-superathletes-and-the-greatest-ra.webp",
        "edge": "#1b6497",
-       "hue": 0.6083
+       "hue": 0.6084
       },
       "publisher": "Knopf",
       "pages": 287,
@@ -11151,8 +11211,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-what-i-talk-about-when-i-talk-about-running.webp",
        "card": "atlas/card/gr-what-i-talk-about-when-i-talk-about-running.webp",
-       "edge": "#d4b998",
-       "hue": 0.1017
+       "edge": "#c7b484",
+       "hue": 0.1547
       },
       "publisher": "Bond Street Books",
       "pages": 192,
@@ -11229,7 +11289,6 @@
       "slug": "gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne",
       "link": "https://www.goodreads.com/book/show/626328",
       "title": "The Little Black Book of Cocktails",
-      "subtitle": "The Essential Guide to New & Old Classics (Updated and revised!) (Little Black Books (Peter Pauper Hardcover))",
       "author": "Virginia Reynolds",
       "beloved": false,
       "dims": {
@@ -11252,8 +11311,8 @@
       "atlas": {
        "lo": "atlas/lo/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.webp",
        "card": "atlas/card/gr-the-little-black-book-of-cocktails-the-essential-guide-to-ne.webp",
-       "edge": "#575151",
-       "hue": 1.5789
+       "edge": "#2f2e2c",
+       "hue": 1.8196
       },
       "publisher": "Peter Pauper Press",
       "pages": 160,
@@ -11319,7 +11378,7 @@
        "lo": "atlas/lo/gr-sports-nutrition-for-endurance-athletes.webp",
        "card": "atlas/card/gr-sports-nutrition-for-endurance-athletes.webp",
        "edge": "#96ae94",
-       "hue": 1.4359
+       "hue": 1.4358
       },
       "publisher": "VeloPress",
       "pages": 352,

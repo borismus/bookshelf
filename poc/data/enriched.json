@@ -5656,7 +5656,8 @@
    "t": 15.0
   },
   "dims_source": "google books (intitle:Ages of Discord+inauthor:turchin)",
-  "binding_class": "paperback"
+  "binding_class": "paperback",
+  "display_title": "Ages of Discord"
  },
  {
   "slug": "gr-harry-potter-and-the-deathly-hallows",
@@ -7525,7 +7526,8 @@
    "t": 25.4
   },
   "dims_source": "openlibrary:physical_dimensions",
-  "binding_class": "paperback"
+  "binding_class": "paperback",
+  "display_title": "Contextual Design"
  },
  {
   "slug": "gr-blindness",
@@ -8984,7 +8986,8 @@
    "t": 13.0
   },
   "dims_source": "google books (isbn:9780880883603)",
-  "binding_class": "paperback"
+  "binding_class": "paperback",
+  "display_title": "The Little Black Book of Cocktails"
  },
  {
   "slug": "gr-origami-design-secrets-mathematical-methods-for-an-ancient-a",
@@ -10038,5 +10041,29 @@
   },
   "dims_source": "openlibrary:physical_dimensions",
   "binding_class": "hardcover"
+ },
+ {
+  "slug": "the-death-of-ivan-ilyich-by-lev-tolstoy",
+  "title": "The Death of Ivan Ilyich",
+  "author": "Lev Tolstoy",
+  "beloved": true,
+  "cover": "/assets/book-covers/death-ivan-ilyich.jpg",
+  "ol_work": "/works/OL267174W",
+  "ol_author": "Leo Tolstoy",
+  "ol_title": "Смерть Ивана Ильича",
+  "ol_edition": "/books/OL7820281M",
+  "isbn13": "9780553210354",
+  "isbn10": "0553210351",
+  "publisher": "Bantam Books",
+  "format": "Mass Market Paperback",
+  "pages": 128,
+  "ol_cover_id": 368393,
+  "dims_mm": {
+   "h": 170,
+   "w": 104,
+   "t": 10.2
+  },
+  "dims_source": "openlibrary:physical_dimensions",
+  "binding_class": "mass"
  }
 ]

@@ -1,4 +1,16 @@
 {
+ "the-death-of-ivan-ilyich-by-lev-tolstoy": {
+  "posted": "Oct 2026",
+  "source": "smus",
+  "headline": "Is Memento Mori Futile?",
+  "excerpt": "On graduating from law school, Ivan Ilyich outfits himself with fashionable clothes and a medallion inscribed respice finem: consider the end. Then he dines at a first-class restaurant. Decades later, dying in agony, he finally asks whether he has lived wrongly. What troubles me is that he already had the warning: he wore it.",
+  "paras": [
+   "On graduating from law school, Ivan Ilyich outfits himself with fashionable clothes and a medallion inscribed respice finem: consider the end. Then he dines at a first-class restaurant. Decades later, dying in agony, he finally asks whether he has lived wrongly. What troubles me is that he already had the warning: he wore it.",
+   "The plot is minimal: a judge falls ill and dies over a few months. His life, Tolstoy tells us, was \"most simple and most ordinary and therefore most terrible\" (самая простая и обыкновенная и самая ужасная). Tolstoy savages Russian officialdom for its conformism, pretense, and default drift toward money, power, and status (see The Inner Ring by C. S. Lewis). The EconTalk episode inspired me to read it first. I wanted to form my own opinion before hearing Roberts and Wolpe. …"
+  ],
+  "words": 1227,
+  "minutes": 5
+ },
  "troy-by-stephen-fry": {
   "posted": "Oct 2026",
   "source": "smus",
@@ -867,8 +879,12 @@
   "posted": "Jan 2022",
   "source": "smus",
   "headline": "A Psalm for the Wild-Built by Becky Chambers",
-  "excerpt": "",
-  "paras": [],
+  "excerpt": "• Reliable phone-computers designed to last a lifetime",
+  "paras": [
+   "• Reliable phone-computers designed to last a lifetime",
+   "• Slow reveal of what the world is like, and what \"Post-Transition\" means",
+   "• Vivid descriptions of ruins of modernity (\"Factory Age\") …"
+  ],
   "words": 454,
   "minutes": 2
  },
@@ -1178,8 +1194,14 @@
   "posted": "Oct 2020",
   "source": "smus",
   "headline": "Frank Herbert by Tim O’Reilly",
-  "excerpt": "",
-  "paras": [],
+  "excerpt": "• I’ll be honest, I’m excited about the upcoming Dune movie. Prior failed attempts do not inspire confidence.",
+  "paras": [
+   "• I’ll be honest, I’m excited about the upcoming Dune movie. Prior failed attempts do not inspire confidence.",
+   "• How crazy is it that Tim O’Reilly wrote a book about Frank Herbert?",
+   "• Book reads as a sort of expose about Herbert’s intentions writing Dune.",
+   "• Good reminder about the series, which I first read probably more than 20 years ago. I’m due for a re-read.",
+   "• Lots of plot summarization, but this is necessary for the non-Dune corpus of Herbert’s works which I haven’t read. …"
+  ],
   "words": 1511,
   "minutes": 7
  },
@@ -1262,8 +1284,14 @@
   "posted": "May 2020",
   "source": "smus",
   "headline": "Shadow of the Torturer",
-  "excerpt": "",
-  "paras": [],
+  "excerpt": "• Twisting narrative, very hard to predict any sort of narrative arc. In a good way.",
+  "paras": [
+   "• Twisting narrative, very hard to predict any sort of narrative arc. In a good way.",
+   "• Some great descriptive and lively, well developed characters.",
+   "• Well executed twists.",
+   "• Some really inventive fragments of world building, like the flower mechanic but I would say overall mostly unoriginal in that department.",
+   "• In the end, I’m 50% hooked, but not hooked enough to jump right into the sequel. Maybe it’s because the grand arc of the whole thing is kind of known, and explicitly so."
+  ],
   "words": 80,
   "minutes": 1
  },
@@ -2008,19 +2036,6 @@
   "words": 1918,
   "minutes": 8
  },
- "psychology-of-curiosity": {
-  "posted": "Jun 2017",
-  "source": "smus",
-  "headline": "The Psychology of Curiosity",
-  "excerpt": "I read an academic paper on curiosity by George Loewenstein. It was surprisingly readable and very insightful.",
-  "paras": [
-   "I read an academic paper on curiosity by George Loewenstein. It was surprisingly readable and very insightful.",
-   "Why did I read it? Just like some think about thinking, others are curious about curiosity. More specifically, I recently read a Vox article that suggested \"The more scientifically curious people are, the more they are immune to the power of partisan thinking\". What follows is mostly a summary of the article, as well as some sketches I made to help me understand it better.",
-   "Dark side of curiosity (it can be a vice)…"
-  ],
-  "words": 1187,
-  "minutes": 5
- },
  "on-tyranny-by-timothy-snyder": {
   "posted": "Jun 2017",
   "source": "smus",
@@ -2046,6 +2061,19 @@
   ],
   "words": 59,
   "minutes": 1
+ },
+ "psychology-of-curiosity": {
+  "posted": "Jun 2017",
+  "source": "smus",
+  "headline": "The Psychology of Curiosity",
+  "excerpt": "I read an academic paper on curiosity by George Loewenstein. It was surprisingly readable and very insightful.",
+  "paras": [
+   "I read an academic paper on curiosity by George Loewenstein. It was surprisingly readable and very insightful.",
+   "Why did I read it? Just like some think about thinking, others are curious about curiosity. More specifically, I recently read a Vox article that suggested \"The more scientifically curious people are, the more they are immune to the power of partisan thinking\". What follows is mostly a summary of the article, as well as some sketches I made to help me understand it better.",
+   "Dark side of curiosity (it can be a vice)…"
+  ],
+  "words": 1187,
+  "minutes": 5
  },
  "finite-and-infinite-games-by-james-carse": {
   "posted": "May 2017",
@@ -2193,8 +2221,15 @@
   "posted": "Nov 2016",
   "source": "smus",
   "headline": "Brief Wondrous Life of Oscar Wao",
-  "excerpt": "",
-  "paras": [],
+  "excerpt": "• Copious references to nerd culture: nerdy books (LOTR, Dune, Lovecraft, Asimov, Heinlein), video games, comic books, the 1980s.",
+  "paras": [
+   "• Copious references to nerd culture: nerdy books (LOTR, Dune, Lovecraft, Asimov, Heinlein), video games, comic books, the 1980s.",
+   "• Magical realism aspects: The Mongoose, cartoonish villans (The Captain, Trujillo) and heroes (Beli, The Doctor).",
+   "• Harkening to 100 Years of Solitude in the hispanic family epic.",
+   "• Nonlinear time, with the story flashing generations back.",
+   "• Oscar's relatable innocence, goofy character, purity of spirit.",
+   "• Interesting autobiographical narrator. …"
+  ],
   "words": 154,
   "minutes": 1
  },

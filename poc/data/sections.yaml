@@ -378,6 +378,8 @@
       - gr-the-grapes-of-wrath
       - gr-paddy-clarke-ha-ha-ha
       - gr-kafka-on-the-shore
+      # added 2026-11-02 by bookshelf.py
+      - the-death-of-ivan-ilyich-by-lev-tolstoy
   - label: Children's
     books:
       - gr-the-bfg

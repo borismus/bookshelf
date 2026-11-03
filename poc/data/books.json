@@ -1,5 +1,14 @@
 [
  {
+  "slug": "the-death-of-ivan-ilyich-by-lev-tolstoy",
+  "title": "The Death of Ivan Ilyich",
+  "author": "Lev Tolstoy",
+  "beloved": true,
+  "posted": "Oct 2026",
+  "audio": false,
+  "cover": "/assets/book-covers/death-ivan-ilyich.jpg"
+ },
+ {
   "slug": "troy-by-stephen-fry",
   "title": "Troy",
   "author": "Stephen Fry",
@@ -2000,15 +2009,6 @@
   "cover": null
  },
  {
-  "slug": "psychology-of-curiosity",
-  "title": "The Psychology of Curiosity",
-  "author": "",
-  "beloved": true,
-  "posted": "Jun 2017",
-  "audio": false,
-  "cover": null
- },
- {
   "slug": "on-tyranny-by-timothy-snyder",
   "title": "On Tyranny",
   "author": "Timothy Snyder",
@@ -2034,6 +2034,15 @@
   "gr_title": "The Great Gatsby",
   "gr_author": "F. Scott Fitzgerald",
   "gr_rating": "2.0"
+ },
+ {
+  "slug": "psychology-of-curiosity",
+  "title": "The Psychology of Curiosity",
+  "author": "",
+  "beloved": true,
+  "posted": "Jun 2017",
+  "audio": false,
+  "cover": null
  },
  {
   "slug": "finite-and-infinite-games-by-james-carse",
