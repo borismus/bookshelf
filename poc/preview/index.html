@@ -817,18 +817,25 @@ const notes = [], pivots = [], layoutProps = [];
 // Box art from preview/props/lego (see fetch_lego.py). Boxes stand on their long edge, leaning back a little,
 // big ones against the back panel and smaller ones in front.
 const legoSets = await fetch('props/lego/manifest.json').then(r => r.ok ? r.json() : []).catch(() => []);
-const boxSide = new THREE.MeshStandardMaterial({ color: 0x17171c, roughness: 0.55 });
-const boxTop = new THREE.MeshStandardMaterial({ color: 0x232329, roughness: 0.6 });
-async function legoBox(set, height) {
-  const img = await loadImg(set.file);
-  const tex = img ? new THREE.CanvasTexture(img) : null;
-  if (tex) { tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = maxAniso; }
-  const w = height * set.aspect, d = Math.max(45, Math.min(90, w * 0.17));
-  const front = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.42 });
-  const m = new THREE.Mesh(new THREE.BoxGeometry(w, height, d), [boxSide, boxSide, boxTop, boxSide, front, boxSide]);
-  m.geometry.translate(0, height / 2, -d / 2);                     // origin at the bottom front edge
+const boxDark = new THREE.MeshStandardMaterial({ color: 0x17171c, roughness: 0.55 });   // back and bottom (unseen)
+async function boxTex(url, rotate) {
+  const img = url ? await loadImg(url) : null;
+  if (!img) return null;
+  const t = new THREE.CanvasTexture(img);
+  t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = maxAniso;
+  if (rotate) { t.center.set(0.5, 0.5); t.rotation = Math.PI / 2; }     // end panels run up the box's height
+  return t;
+}
+// A real-size box (set.dims = [width, height, depth] in mm): front = box art, top and ends = generated panels.
+async function legoBox(set) {
+  const [w, h, d] = set.dims;
+  const [front, top, end] = await Promise.all([boxTex(set.file), boxTex(set.top), boxTex(set.end, true)]);
+  const mat = (map, rough = 0.42) => map ? new THREE.MeshStandardMaterial({ map, roughness: rough }) : boxDark;
+  const endMat = mat(end);
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), [endMat, endMat, mat(top), boxDark, mat(front), boxDark]);
+  m.geometry.translate(0, h / 2, -d / 2);                          // origin at the bottom front edge
   m.castShadow = m.receiveShadow = true;
-  m.userData.size = { w, h: height, d };
+  m.userData.size = { w, h, d };
   return m;
 }
 
@@ -908,26 +915,26 @@ function snakePlant(rng) {
   const low = cases.find(c => c.low);
   if (low) {
     let r = 1234; const prng = () => ((r = (r * 16807) % 2147483647) / 2147483647);
-    const put = (obj, shelf, x, z, rotY = 0) => {
-      obj.position.set(low.x0 + x, baseY(low, shelf), z); obj.rotation.y = rotY; scene.add(obj);
-    };
     const last = low.N - 1;
     const bySet = Object.fromEntries(legoSets.map(x => [x.set, x]));
-    // [set, shelf, x (left edge), z (front face), box height, lean back (rad), turn (rad)]
+    // [set, where (shelf index, or 'top' of the case), x of left edge, z of front face, lean back, turn] — real sizes
     const layout = [
-      ['6991', 0, 20, -225, 240, 0.07, 0.03], ['6984', 0, 385, -215, 225, 0.06, -0.05],
-      ['6957', 1, 455, -170, 195, 0.05, -0.07],
-      ['6973', last, 150, -210, 250, 0.07, 0.04],
+      ['6991', 'top', -5, -152, 0.03, 0.0],                          // 65 cm Monorail box: too tall for a shelf
+      ['6984', 0, 150, -150, 0.0, -0.32],                           // turned so its end panel shows
+      ['6973', last, 12, -200, 0.03, 0.02], ['6957', last, 395, -95, 0.0, -0.28],
     ];
-    for (const [num, shelf, x, z, h, lean, turn] of layout) {
+    const caseTop = plinth + low.H + board;
+    for (const [num, where, x, z, lean, turn] of layout) {
       if (!bySet[num]) continue;
-      const box = await legoBox(bySet[num], h);
+      const box = await legoBox(bySet[num]);
       const holder = new THREE.Group();
-      holder.add(box); box.rotation.x = -lean;                     // top tips back toward the wall
-      put(holder, shelf, x + box.userData.size.w / 2, z, turn);
+      holder.add(box); box.rotation.x = -lean;                       // top tips back toward the wall
+      holder.position.set(low.x0 + x + box.userData.size.w / 2, where === 'top' ? caseTop : baseY(low, where), z);
+      holder.rotation.y = turn;
+      scene.add(holder);
     }
     const plant = snakePlant(prng);
-    plant.position.set(low.x0 + inner * 0.68, plinth + low.H + board, -depth / 2 - 10);
+    plant.position.set(low.x0 + inner * 0.9, plinth + low.H + board, -74);   // in front of the Monorail box's corner
     scene.add(plant);
   }
 }
