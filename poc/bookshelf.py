@@ -51,8 +51,10 @@ def say(msg):
 
 
 def run(script, *args, numpy=False, check=True, quiet=False):
-    """Run a pipeline script under uv (pillow, + numpy for the spine generator), streaming its output."""
-    cmd = ["uv", "run", "-q", "--with", "pillow"] + (["--with", "numpy"] if numpy else []) + ["python", script, *args]
+    """Run a pipeline script, streaming its output."""
+    # The spine/back generators need numpy (run under uv); everything else uses this interpreter, whose TLS stack
+    # Open Library accepts (uv's Python 3.13 gets connection resets from openlibrary.org).
+    cmd = (["uv", "run", "-q", "--with", "pillow", "--with", "numpy", "python"] if numpy else [sys.executable]) + [script, *args]
     env = dict(os.environ, SMUS_WWW=str(CACHE))
     r = subprocess.run(cmd, cwd=HERE, env=env, text=True, capture_output=quiet)
     if check and r.returncode:
@@ -318,6 +320,7 @@ def cmd_redo(args):
         for s in slugs:
             (HERE / f"data/backs/{s}.jpg").unlink(missing_ok=True)
     generate(slugs, backs="--backs" in args)
+    place([s for s in status(verbose=False)["no section"] if has("textures", s)])
     rebuild()
     fit_check()
     audit(slugs)

@@ -246,6 +246,9 @@ def main():
             print(f"{s}: retrimmed -> {sp.size} (h/w {sp.size[1]/sp.size[0]:.1f})")
             continue
         # Try horizontal mode for thin books (twice), then the vertical mode; keep the first result that passes.
+        if not b.get("dims_mm"):
+            print(f"{s}: no dimensions (Open Library lookup failed?); skipped")
+            continue
         target = b["dims_mm"]["h"] / b["dims_mm"]["t"]
         modes = (["horizontal"] * 2 if target > THIN else []) + ["vertical"] * 2
         sp = raw = None
