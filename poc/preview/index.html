@@ -813,7 +813,7 @@ function colourPlan() {
   });
 }
 const notes = [], pivots = [], layoutProps = [];
-// ---------- props on the low Billy: classic Lego Space boxes, a bookend, a snake plant ----------
+// ---------- props on the low Billy: early-90s Lego Space boxes, a bookend, a snake plant ----------
 // Box art from preview/props/lego (see fetch_lego.py). Boxes stand on their long edge, leaning back a little,
 // big ones against the back panel and smaller ones in front.
 const legoSets = await fetch('props/lego/manifest.json').then(r => r.ok ? r.json() : []).catch(() => []);
@@ -915,11 +915,9 @@ function snakePlant(rng) {
     const bySet = Object.fromEntries(legoSets.map(x => [x.set, x]));
     // [set, shelf, x (left edge), z (front face), box height, lean back (rad), turn (rad)]
     const layout = [
-      ['6980', 0, 15, -228, 240, 0.07, 0.03], ['6970', 0, 395, -232, 235, 0.08, -0.04],
-      ['6842', 0, 470, -70, 120, 0.03, -0.14],
-      ['6950', 1, 565, -175, 200, 0.05, -0.08],
-      ['928', last, 10, -230, 250, 0.07, 0.02], ['6951', last, 395, -228, 245, 0.08, -0.03],
-      ['6880', last, 60, -75, 125, 0.03, 0.12],
+      ['6991', 0, 20, -225, 240, 0.07, 0.03], ['6984', 0, 385, -215, 225, 0.06, -0.05],
+      ['6957', 1, 455, -170, 195, 0.05, -0.07],
+      ['6973', last, 150, -210, 250, 0.07, 0.04],
     ];
     for (const [num, shelf, x, z, h, lean, turn] of layout) {
       if (!bySet[num]) continue;

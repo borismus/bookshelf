@@ -1,4 +1,4 @@
-"""Box art for the classic Lego Space sets on the low Billy (images: Brickset; box art (c) The LEGO Group).
+"""Box art for the early-90s Lego Space sets (Unitron, Ice Planet 2002, Space Police II) on the low Billy (images: Brickset; box art (c) The LEGO Group).
 Writes preview/props/lego/<set>.jpg (front, ~600 px) and preview/props/lego/manifest.json with each box's aspect
 ratio (sides are classic-Space black)."""
 import io
@@ -11,9 +11,8 @@ from PIL import Image
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "preview/props/lego"
 # set number, name, real box width in mm (approximate; boxes are scaled to fit the compartments)
-SETS = [("6980", "Galaxy Commander", 470), ("6970", "Beta-1 Command Base", 440), ("928", "Galaxy Explorer", 480),
-        ("6951", "Robot Command Center", 380), ("6880", "Surface Explorer", 240), ("6842", "Shuttle Craft", 220),
-        ("6950", "Mobile Rocket Transport", 250)]
+SETS = [("6991", "Monorail Transport Base", 580), ("6973", "Deep Freeze Defender", 480),
+        ("6984", "Galactic Mediator", 480), ("6957", "Solar Snooper", 380)]
 
 
 def main():
