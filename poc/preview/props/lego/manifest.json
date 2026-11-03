@@ -1,0 +1,58 @@
+[
+ {
+  "set": "6980",
+  "name": "Galaxy Commander",
+  "file": "props/lego/6980.jpg",
+  "aspect": 1.588,
+  "w": 470,
+  "side": "#17171c"
+ },
+ {
+  "set": "6951",
+  "name": "Robot Command Center",
+  "file": "props/lego/6951.jpg",
+  "aspect": 1.098,
+  "w": 380,
+  "side": "#17171c"
+ },
+ {
+  "set": "6970",
+  "name": "Beta-1 Command Base",
+  "file": "props/lego/6970.jpg",
+  "aspect": 1.416,
+  "w": 440,
+  "side": "#17171c"
+ },
+ {
+  "set": "928",
+  "name": "Galaxy Explorer",
+  "file": "props/lego/928.jpg",
+  "aspect": 1.425,
+  "w": 480,
+  "side": "#17171c"
+ },
+ {
+  "set": "6880",
+  "name": "Surface Explorer",
+  "file": "props/lego/6880.jpg",
+  "aspect": 1.0,
+  "w": 240,
+  "side": "#17171c"
+ },
+ {
+  "set": "6842",
+  "name": "Shuttle Craft",
+  "file": "props/lego/6842.jpg",
+  "aspect": 1.0,
+  "w": 220,
+  "side": "#17171c"
+ },
+ {
+  "set": "6950",
+  "name": "Mobile Rocket Transport",
+  "file": "props/lego/6950.jpg",
+  "aspect": 0.702,
+  "w": 250,
+  "side": "#17171c"
+ }
+]

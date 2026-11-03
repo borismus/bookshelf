@@ -5,6 +5,7 @@ cd "$(dirname "$0")/.."
 rm -rf dist && mkdir -p dist
 cp poc/preview/index.html dist/
 cp -R poc/preview/atlas dist/atlas
+cp -R poc/preview/props dist/props
 # shelf data without the source-image paths (the site only serves the atlases)
 python3 - <<'PY'
 import json
